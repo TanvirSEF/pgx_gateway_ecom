@@ -2,7 +2,7 @@
 
 import { CURRENCY } from "@/lib/constants";
 import { useCartStore } from "@/store/cart.store";
-import { Check, ShieldCheck, Sparkles, Tag } from "lucide-react";
+import { Check, ShieldCheck, Sparkles, Tag, Truck, RefreshCw, Globe, Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -192,49 +192,61 @@ export function PremiumBundlesSection() {
 export function ValuePropositionStrip() {
   const values = [
     {
-      title: "Free Shipping",
-      desc: "on orders over €50",
-      icon: "🚚",
+      title: "Free Express Shipping",
+      desc: "On orders over €50 worldwide",
+      icon: Truck,
+      color: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
     },
     {
-      title: "Secure Checkout",
-      desc: "Powered by Stripe",
-      icon: "🔒",
+      title: "100% Secure Checkout",
+      desc: "Encrypted & powered by Stripe",
+      icon: ShieldCheck,
+      color: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
     },
     {
-      title: "Easy Returns",
-      desc: "30-day hassle free",
-      icon: "📦",
+      title: "30-Day Hassle-Free Returns",
+      desc: "Guaranteed satisfaction policy",
+      icon: RefreshCw,
+      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
     },
     {
-      title: "Worldwide Shipping",
-      desc: "to 50+ countries",
-      icon: "🌐",
+      title: "Worldwide Express Delivery",
+      desc: "Fast tracked courier to 50+ countries",
+      icon: Globe,
+      color: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
     },
     {
-      title: "A Healthier Tomorrow",
-      desc: "Starts Today.",
-      icon: "🌿",
+      title: "Built For Longevity",
+      desc: "Commercial 2-year warranty included",
+      icon: Heart,
+      color: "bg-rose-500/10 text-rose-600 dark:text-rose-400",
     },
   ];
 
   return (
-    <section className="bg-background border-y border-border py-8">
+    <section className="bg-muted/20 border-y border-border/80 py-8 sm:py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {values.map((v, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <span className="text-2xl shrink-0">{v.icon}</span>
-              <div>
-                <h4 className="font-bold text-xs sm:text-sm text-foreground leading-tight">
-                  {v.title}
-                </h4>
-                <p className="text-[11px] text-muted-foreground font-medium">
-                  {v.desc}
-                </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
+          {values.map((v, i) => {
+            const Icon = v.icon;
+            return (
+              <div key={i} className="flex items-center gap-3.5 group">
+                <div
+                  className={`w-11 h-11 sm:w-12 sm:h-12 rounded-2xl ${v.color} flex items-center justify-center shrink-0 shadow-2xs group-hover:scale-105 transition-transform`}
+                >
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.8]" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-xs sm:text-sm text-foreground leading-snug">
+                    {v.title}
+                  </h4>
+                  <p className="text-[11px] text-muted-foreground font-normal mt-0.5">
+                    {v.desc}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

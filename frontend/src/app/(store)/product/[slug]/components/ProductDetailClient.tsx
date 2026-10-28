@@ -7,6 +7,9 @@ import { toast } from "sonner";
 import type { Product } from "@/types";
 import { ProductGallery } from "./ProductGallery";
 import { ProductInfo } from "./ProductInfo";
+import { ProductTabs } from "./ProductTabs";
+import { RelatedProducts } from "./RelatedProducts";
+import { MobileStickyBar } from "./MobileStickyBar";
 
 export function ProductDetailClient({ product }: { product: Product }) {
   const addItem = useCartStore((s) => s.addItem);
@@ -17,19 +20,25 @@ export function ProductDetailClient({ product }: { product: Product }) {
 
   const activePrice = selectedVariant
     ? product.variants?.find((v) => v.id === selectedVariant)?.price ||
-    product.price
+      product.price
     : product.price;
+
+  const activeStock = selectedVariant
+    ? product.variants?.find((v: any) => v.id === selectedVariant)?.stock || 0
+    : product.stock || 0;
+
+  const isOutOfStock = activeStock <= 0;
 
   const handleAdd = () => {
     if (product.variants && product.variants.length > 0 && !selectedVariant) {
-      toast.error("Please select a variant to order this product.");
+      toast.error("Please select a variant option first.");
       return;
     }
 
     const imageUrl = resolveImageUrl(product.images?.[0]?.url);
 
-    const selectedVariantData = selectedVariant 
-      ? product.variants?.find((v: any) => v.id === selectedVariant) 
+    const selectedVariantData = selectedVariant
+      ? product.variants?.find((v: any) => v.id === selectedVariant)
       : null;
 
     addItem({
@@ -41,11 +50,13 @@ export function ProductDetailClient({ product }: { product: Product }) {
       variantId: selectedVariant || undefined,
       image: imageUrl as string,
     });
+    toast.success(`${product.name} added to your cart!`);
   };
 
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex flex-col md:flex-row gap-10">
+    <div className="flex flex-col">
+      {/* Top Section: High-Definition Gallery & Product Info */}
+      <div className="flex flex-col md:flex-row gap-8 lg:gap-14 items-start">
         <ProductGallery product={product} />
 
         <ProductInfo
@@ -59,15 +70,27 @@ export function ProductDetailClient({ product }: { product: Product }) {
         />
       </div>
 
-      {product.description && (
-        <div className="mt-8 border-t pt-10">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Product Description</h2>
-          <article
-            className="prose prose-lg max-w-none prose-img:rounded-xl"
-            dangerouslySetInnerHTML={{ __html: product.description }}
-          />
-        </div>
-      )}
+      {/* Tabbed Specifications, Overview, Warranty & Reviews */}
+      <ProductTabs
+        description={product.description}
+        sku={product.sku}
+        weight={product.weight}
+        categoryName={product.category?.name}
+      />
+
+      {/* Recommendations / You Might Also Like */}
+      <RelatedProducts
+        currentProductId={product.id}
+        categorySlug={product.category?.slug}
+      />
+
+      {/* Mobile Sticky Action Bar */}
+      <MobileStickyBar
+        productName={product.name}
+        price={activePrice}
+        isOutOfStock={isOutOfStock}
+        onAddToCart={handleAdd}
+      />
     </div>
   );
 }
