@@ -8,3 +8,4 @@ export * from "./product";
 export * from "./setting";
 export * from "./shipping";
 export * from "./user";
+export * from "./wallet-bridge";

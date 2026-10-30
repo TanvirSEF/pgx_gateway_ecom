@@ -86,6 +86,22 @@ export class WebhookService {
       return;
     }
 
+    // Implements: Phase 2 - PGXSports Shared Wallet Integration (safety
+    // guard, paired with wallet.service.ts's createTopUpSession guard).
+    // This branch still credits the OLD Supabase wallet directly - with
+    // wallet.service.ts's getBalance/deductFunds/refundFunds now reading
+    // from the Central Wallet Service, letting this run would silently
+    // credit a balance product purchases can no longer see. A session
+    // created before this guard existed could still arrive here, so the
+    // check lives at settlement time too, not only at session-creation
+    // time in wallet.service.ts.
+    if (this.configService.get<string>('WALLET_LEGACY_TOPUP_ENABLED') !== 'true') {
+      this.logger.warn(
+        `Checkout session ${session.id} is a legacy Supabase wallet topup, which is disabled (WALLET_LEGACY_TOPUP_ENABLED!=true). Not crediting - this payment needs manual review/refund.`,
+      );
+      return;
+    }
+
     // Determine amount in EUR (convert from total cents if metadata missing)
     const amountTotalCents = session.amount_total ?? 0;
     const amountVal = amountEurStr ? parseFloat(amountEurStr) : amountTotalCents / 100;

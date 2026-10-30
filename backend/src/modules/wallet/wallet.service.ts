@@ -1,11 +1,53 @@
-import { BadRequestException, Injectable, InternalServerErrorException, Logger, NotFoundException } from '@nestjs/common';
+// Implements: Phase 2 - PGXSports Shared Wallet Integration
+//
+// getBalance/deductFunds/refundFunds below now delegate to PGX Casino's
+// Central Wallet Service instead of mutating Supabase `wallets`/
+// `transactions` directly (confirmed client decision: PGXSports uses the
+// Central Wallet Service instead of its own Supabase wallet). This closes
+// the "independent PGXSports wallet mutation" path those three methods
+// used to have - see wallet.service.spec.ts "Supabase wallet mutation
+// prevention" tests, which assert supabase.from('wallets').update/insert
+// is never called by any of them again.
+//
+// createTopUpSession is UNCHANGED - deliberately. Migrating it means
+// wiring Stripe Checkout + webhook settlement onto the new flow, which
+// this task's Strict Phase Boundaries explicitly exclude from Phase 2
+// ("Do not implement: Full Stripe Checkout creation, Stripe webhook
+// settlement"). See the final report for the resulting interim risk
+// (an orphaned EUR/Supabase top-up path) and the guard added for it.
+import { BadRequestException, Injectable, InternalServerErrorException, Logger, NotFoundException, ServiceUnavailableException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
+import { GlobalUserLinkService } from '../global-user-link/global-user-link.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { SupabaseService } from '../supabase/supabase.service';
+import { WalletServiceClientService } from '../wallet-service-client/wallet-service-client.service';
+import { WalletServiceError } from '../wallet-service-client/wallet-service-client.types';
 import { TopUpDto } from './dto/top-up.dto';
 
 const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** Maps a WalletServiceError (Central Wallet Service) to the exception
+ * shape this module's existing callers (orders.service.ts) already expect
+ * to catch. Never swallows the original code/message. */
+function toHttpException(err: WalletServiceError): Error {
+  switch (err.code) {
+    case 'INSUFFICIENT_BALANCE':
+      return new BadRequestException(err.message);
+    case 'USER_NOT_FOUND':
+    case 'WALLET_NOT_FOUND':
+      return new NotFoundException(err.message);
+    case 'ACCOUNT_LOCKED':
+    case 'IDEMPOTENCY_KEY_CONFLICT':
+      return new BadRequestException(err.message);
+    case 'NOT_CONFIGURED':
+    case 'NETWORK_ERROR':
+    case 'TIMEOUT':
+      return new ServiceUnavailableException('The shared wallet service is temporarily unavailable');
+    default:
+      return new InternalServerErrorException(err.message);
+  }
+}
 
 @Injectable()
 export class WalletService {
@@ -16,7 +58,24 @@ export class WalletService {
     private readonly supabaseService: SupabaseService,
     private readonly prisma: PrismaService,
     private readonly dynamicSettingsService: DynamicSettingsService,
+    private readonly globalUserLinkService: GlobalUserLinkService,
+    private readonly walletServiceClient: WalletServiceClientService,
   ) {}
+
+  /** Throws a clean, intentional BadRequestException - never a crash - when
+   * this PGXSports-native user has never gone through the PGX Casino
+   * handoff and therefore has no Central Wallet Service account linked
+   * yet. Deliberately fails closed rather than falling back to the old
+   * Supabase wallet or treating an unlinked user as a $0 balance. */
+  private async requireLinkedGlobalUserId(userId: string): Promise<string> {
+    const globalUserId = await this.globalUserLinkService.findGlobalUserId(userId);
+    if (!globalUserId) {
+      throw new BadRequestException(
+        'No linked PGX Casino wallet for this account yet. Top up via PGX Casino to create one.',
+      );
+    }
+    return globalUserId;
+  }
 
   /**
    * Helper to resolve the correct Supabase UUID for a given local user ID or Supabase ID.
@@ -62,83 +121,35 @@ export class WalletService {
   }
 
   async getBalance(userId: string) {
-    const supabase = this.supabaseService.getAdminClient();
-
-    if (!supabase) {
-      this.logger.warn('Supabase is not configured; returning fallback balance 0');
-      return {
-        userId,
-        balance: 0,
-        currency: 'EUR',
-      };
-    }
-
-    const targetUserId = (await this.resolveSupabaseUserId(userId)) || userId;
-    if (!UUID_REGEX.test(targetUserId)) {
-      this.logger.warn(`User ${userId} does not have a valid Supabase UUID; returning fallback balance 0`);
-      return {
-        userId,
-        balance: 0,
-        currency: 'EUR',
-      };
-    }
-
-    // Reconcile and fetch authoritative balance
+    const globalUserId = await this.requireLinkedGlobalUserId(userId);
     try {
-      const { data: recBal, error: rpcErr } = await supabase.rpc('reconcile_wallet_balance', {
-        p_user_id: targetUserId,
-      });
-
-      if (!rpcErr && recBal !== null && recBal !== undefined) {
-        return {
-          userId,
-          balance: Number(recBal),
-          currency: 'EUR',
-        };
-      }
-    } catch (err) {
-      this.logger.warn(`reconcile_wallet_balance RPC call failed for user ${targetUserId}:`, err);
-    }
-
-    // Fallback: direct select or create wallet
-    const { data: wallet, error } = await supabase
-      .from('wallets')
-      .select('id, balance, currency, updated_at')
-      .eq('user_id', targetUserId)
-      .maybeSingle();
-
-    if (error) {
-      this.logger.error(`Failed to fetch wallet for user ${targetUserId}:`, error);
-      throw new InternalServerErrorException('Failed to retrieve wallet balance');
-    }
-
-    if (!wallet) {
-      const { data: newWallet, error: createError } = await supabase
-        .from('wallets')
-        .insert({ user_id: targetUserId, balance: 0, currency: 'EUR' })
-        .select('id, balance, currency, updated_at')
-        .single();
-
-      if (createError) {
-        this.logger.error(`Failed to create initial wallet for user ${targetUserId}:`, createError);
-        throw new InternalServerErrorException('Failed to initialize user wallet');
-      }
-
+      const res = await this.walletServiceClient.getBalance(globalUserId);
       return {
         userId,
-        balance: 0,
-        currency: newWallet.currency || 'EUR',
+        balance: res.balances.chips.major,
+        currency: res.currency,
       };
+    } catch (err: any) {
+      if (err instanceof WalletServiceError) throw toHttpException(err);
+      throw err;
     }
-
-    return {
-      userId,
-      balance: Number(wallet.balance ?? 0),
-      currency: wallet.currency || 'EUR',
-    };
   }
 
   async createTopUpSession(userId: string, userEmail: string | undefined, dto: TopUpDto) {
+    // Safety guard added in Phase 2 (not a feature, a data-integrity fix):
+    // getBalance/deductFunds/refundFunds above now read/write the Central
+    // Wallet Service, but this method still creates a Stripe Checkout
+    // session whose webhook credits the OLD Supabase wallet directly
+    // (webhook.service.ts - unmigrated, see this file's header). Left
+    // enabled, a user could keep adding EUR to a Supabase balance that
+    // product-purchase debits can no longer see or spend from - two
+    // silently diverging balances, not fixed by anything else in Phase 2.
+    // Defaults OFF until Phase 3 rewires this path onto the shared wallet.
+    if (this.configService.get<string>('WALLET_LEGACY_TOPUP_ENABLED') !== 'true') {
+      throw new BadRequestException(
+        'Wallet top-up is moving to the new shared PGX Casino wallet. Please use the PGX Casino Add Funds flow.',
+      );
+    }
     const frontendUrl = this.configService.get<string>('FRONTEND_URL') || 'http://localhost:3000';
     const amountInCents = Math.round(dto.amount * 100);
 
@@ -200,140 +211,63 @@ export class WalletService {
       throw new BadRequestException('Debit amount must be greater than 0');
     }
 
-    const supabase = this.supabaseService.getAdminClient();
-    if (!supabase) {
-      this.logger.error('Supabase admin client unavailable');
-      throw new InternalServerErrorException('Payment processing service is unavailable');
-    }
-
-    const targetUserId = (await this.resolveSupabaseUserId(userId)) || userId;
-    if (!UUID_REGEX.test(targetUserId)) {
-      throw new BadRequestException('A valid PGX user account is required to pay with wallet');
-    }
-
+    const globalUserId = await this.requireLinkedGlobalUserId(userId);
     const descText = description || `Order Payment (#${orderNumber})`;
+    // Deterministic key: retrying the SAME order never double-debits, and
+    // Phase 1's own idempotency layer (not an app-level balance check
+    // alone) is the actual guard against a concurrent double-spend - see
+    // walletServiceController.js's insert-first ledger claim.
+    const idempotencyKey = `pgxsports-order-debit:${orderNumber}`;
 
-    // Check current balance first
-    const { balance } = await this.getBalance(targetUserId);
-    if (balance < amount) {
-      throw new BadRequestException(
-        `Insufficient wallet balance. Required: €${amount.toFixed(2)}, Current Balance: €${balance.toFixed(2)}. Please top up your wallet.`,
-      );
-    }
-
-    // Try deduct_funds RPC if available in database
     try {
-      const { data: rpcRes, error: rpcErr } = await supabase.rpc('deduct_funds', {
-        user_uuid: targetUserId,
-        amount_val: amount,
-        desc_text: descText,
+      const res = await this.walletServiceClient.debit({
+        globalUserId,
+        amountMinor: Math.round(amount * 100),
+        currency: 'EUR',
+        walletField: 'chips',
+        referenceId: orderNumber,
+        idempotencyKey,
+        metadata: { description: descText, orderNumber },
       });
-
-      if (!rpcErr) {
-        this.logger.log(`deduct_funds RPC succeeded for user ${targetUserId}, order ${orderNumber}, amount €${amount}`);
-        return { success: true, targetUserId };
-      }
-      this.logger.warn(`deduct_funds RPC returned error, falling back to direct transaction: ${rpcErr.message}`);
-    } catch (rpcCallErr) {
-      this.logger.warn('deduct_funds RPC failed, executing direct Supabase balance decrement:', rpcCallErr);
+      this.logger.log(`Debited €${amount} from global user ${globalUserId} for order ${orderNumber}`);
+      return { success: true, targetUserId: globalUserId, newBalance: res.balanceAfter };
+    } catch (err: any) {
+      if (err instanceof WalletServiceError) throw toHttpException(err);
+      throw err;
     }
-
-    // Fallback: fetch wallet, verify balance, update balance, and record transaction
-    const { data: wallet, error: getWalletErr } = await supabase
-      .from('wallets')
-      .select('id, balance')
-      .eq('user_id', targetUserId)
-      .single();
-
-    if (getWalletErr || !wallet) {
-      this.logger.error(`Wallet not found for user ${targetUserId}:`, getWalletErr);
-      throw new BadRequestException('Wallet account not found. Please top up first.');
-    }
-
-    const currentWalletBal = Number(wallet.balance ?? 0);
-    if (currentWalletBal < amount) {
-      throw new BadRequestException(
-        `Insufficient wallet balance. Required: €${amount.toFixed(2)}, Current Balance: €${currentWalletBal.toFixed(2)}.`,
-      );
-    }
-
-    const newBalance = Number((currentWalletBal - amount).toFixed(2));
-
-    const { error: updateErr } = await supabase
-      .from('wallets')
-      .update({ balance: newBalance, updated_at: new Date().toISOString() })
-      .eq('id', wallet.id);
-
-    if (updateErr) {
-      this.logger.error(`Failed to update wallet balance for user ${targetUserId}:`, updateErr);
-      throw new InternalServerErrorException('Failed to process wallet payment transaction');
-    }
-
-    // Record transaction
-    await supabase.from('transactions').insert({
-      user_id: targetUserId,
-      type: 'debit',
-      amount: amount,
-      status: 'completed',
-      description: descText,
-      metadata: { order_number: orderNumber, type: 'order_payment' },
-    });
-
-    this.logger.log(`Successfully deducted €${amount} from user ${targetUserId} for order ${orderNumber}`);
-    return { success: true, targetUserId, newBalance };
   }
 
   /**
    * Credits funds back to the user's wallet upon order cancellation/refund.
    */
   async refundFunds(userId: string, amount: number, orderNumber: string, reason?: string) {
+    // Preserves the original method's non-throwing, best-effort contract:
+    // this runs during order cancellation and must never block that flow,
+    // so every failure path here logs and returns rather than throwing.
     if (amount <= 0) return;
 
-    const supabase = this.supabaseService.getAdminClient();
-    if (!supabase) return;
-
-    const targetUserId = (await this.resolveSupabaseUserId(userId)) || userId;
-    if (!UUID_REGEX.test(targetUserId)) return;
-
-    const descText = reason || `Order Refund (#${orderNumber})`;
-
-    try {
-      const { error: rpcErr } = await supabase.rpc('add_funds', {
-        user_uuid: targetUserId,
-        amount_val: amount,
-        desc_text: descText,
-      });
-
-      if (!rpcErr) {
-        this.logger.log(`Successfully refunded €${amount} to user ${targetUserId} for order ${orderNumber}`);
-        return;
-      }
-    } catch (err) {
-      this.logger.warn(`add_funds RPC refund error, trying direct increment:`, err);
+    const globalUserId = await this.globalUserLinkService.findGlobalUserId(userId);
+    if (!globalUserId) {
+      this.logger.warn(`Cannot refund order ${orderNumber}: user ${userId} has no linked PGX Casino wallet`);
+      return;
     }
 
-    // Direct fallback
-    const { data: wallet } = await supabase
-      .from('wallets')
-      .select('id, balance')
-      .eq('user_id', targetUserId)
-      .maybeSingle();
+    const descText = reason || `Order Refund (#${orderNumber})`;
+    const idempotencyKey = `pgxsports-order-refund:${orderNumber}`;
 
-    if (wallet) {
-      const newBal = Number((Number(wallet.balance ?? 0) + amount).toFixed(2));
-      await supabase
-        .from('wallets')
-        .update({ balance: newBal, updated_at: new Date().toISOString() })
-        .eq('id', wallet.id);
-
-      await supabase.from('transactions').insert({
-        user_id: targetUserId,
-        type: 'credit',
-        amount: amount,
-        status: 'completed',
-        description: descText,
-        metadata: { order_number: orderNumber, type: 'order_refund' },
+    try {
+      await this.walletServiceClient.credit({
+        globalUserId,
+        amountMinor: Math.round(amount * 100),
+        currency: 'EUR',
+        walletField: 'chips',
+        referenceId: orderNumber,
+        idempotencyKey,
+        metadata: { description: descText, orderNumber },
       });
+      this.logger.log(`Successfully refunded €${amount} to global user ${globalUserId} for order ${orderNumber}`);
+    } catch (err: any) {
+      this.logger.error(`Failed to refund order ${orderNumber} via Central Wallet Service:`, err?.message || err);
     }
   }
 }

@@ -36,6 +36,7 @@ model User {
   orders    Order[]
   reviews   Review[]
   wishlist  Wishlist[]
+  globalUserLink GlobalUserLink?
 
   @@map("users")
 }
@@ -442,4 +443,41 @@ model SettingsAuditLog {
 
   @@index([entityType, createdAt])
   @@map("settings_audit_logs")
+}
+
+// ─── PGX CASINO SHARED-WALLET LINK (Phase 2) ─────
+// Implements: Phase 2 - PGXSports Shared Wallet Integration
+//
+// Maps this app's own local User to PGX Casino's `global_user_id` (PGX
+// Casino's own Mongo User _id - there is no separate identity service; PGX
+// Casino's id IS the shared identity, per the confirmed architecture). One
+// row per linked PGXSports user. Created exactly once via an insert-first
+// claim (GlobalUserLinkService.findOrCreateByGlobalUserId) - never
+// find-then-create - to close the exact race window Phase 1's own review
+// flagged for its idempotency key (two concurrent handoffs for a user who
+// has never been seen before must not create two local accounts).
+model GlobalUserLink {
+  id             String   @id @default(cuid())
+  // PGX Casino's Mongo ObjectId for this user, as a 24-char hex string.
+  // This is the `globalUserId` sent in every Central Wallet Service call.
+  globalUserId   String   @unique
+  pgxsportsUserId String  @unique
+  pgxsportsUser  User     @relation(fields: [pgxsportsUserId], references: [id], onDelete: Cascade)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("global_user_links")
+}
+
+// One-time consumption record for a PGX Casino payment handoff token's
+// `nonce` claim. Replay protection: a second redemption of the same nonce
+// hits the unique constraint and is rejected, exactly mirroring Phase 1's
+// own insert-first idempotency pattern (never SELECT-then-INSERT).
+model HandoffNonce {
+  id          String   @id @default(cuid())
+  nonce       String   @unique
+  globalUserId String
+  consumedAt  DateTime @default(now())
+
+  @@map("handoff_nonces")
 }
