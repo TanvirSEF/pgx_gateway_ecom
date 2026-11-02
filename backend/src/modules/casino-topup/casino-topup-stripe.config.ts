@@ -1,19 +1,21 @@
 // Implements: Phase 2/3 - PGX Casino + PGXSports shared-wallet Stripe top-up
 //
-// DELIBERATELY A SEPARATE Stripe account/credential pair from BOTH:
-//   - PGXSports' own e-commerce StripeProfile (Prisma, dynamic-settings.service.ts)
-//     - that account is approved for selling physical/fitness products, NOT
-//       for funding a casino/gambling wallet. The architecture doc itself
-//       says this outright: "An e-commerce Stripe account must NOT conceal
-//       casino / gambling wallet funding."
-//   - PGX Casino's own Stripe.js (App/Controller/PaymentController/Stripe.js),
-//     which is a separate, still-inactive integration on a different repo.
+// MERGED ONTO THE STOREFRONT STRIPE ACCOUNT (2026-11-02, client decision).
+// This previously ran on a deliberately separate CASINO_TOPUP_STRIPE_SECRET_KEY/
+// CASINO_TOPUP_STRIPE_WEBHOOK_SECRET pair, precisely because the architecture
+// doc says "An e-commerce Stripe account must NOT conceal casino/gambling
+// wallet funding." The client confirmed both credential pairs already held
+// the identical value and asked to collapse them into one explicitly,
+// accepting that casino-wallet funding now runs through the storefront's
+// e-commerce-approved Stripe account. That compliance trade-off is the
+// client's call, not this code's - recorded here so it isn't "fixed" back
+// by accident. Reads STRIPE_SECRET_KEY/STRIPE_WEBHOOK_SECRET below - the
+// same two vars dynamic-settings.service.ts's getStripeClient() already uses.
 //
-// Mirrors PGX Casino's own App/Config/stripeConfig.js gate exactly: fails
-// closed by construction until BOTH CASINO_TOPUP_STRIPE_SECRET_KEY and
-// CASINO_TOPUP_STRIPE_WEBHOOK_SECRET are present and non-empty - credential
-// presence alone is the switch, no separate on/off flag, no package
-// require()'d unguarded at module-load time.
+// Still mirrors PGX Casino's own App/Config/stripeConfig.js gate: fails
+// closed by construction until BOTH values are present and non-empty -
+// credential presence alone is the switch, no separate on/off flag, no
+// package require()'d unguarded at module-load time.
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import Stripe from 'stripe';
@@ -26,11 +28,11 @@ export class CasinoTopupStripeConfig {
   constructor(private readonly configService: ConfigService) {}
 
   private get secretKey(): string {
-    return this.configService.get<string>('CASINO_TOPUP_STRIPE_SECRET_KEY') || '';
+    return this.configService.get<string>('STRIPE_SECRET_KEY') || '';
   }
 
   private get webhookSecret(): string {
-    return this.configService.get<string>('CASINO_TOPUP_STRIPE_WEBHOOK_SECRET') || '';
+    return this.configService.get<string>('STRIPE_WEBHOOK_SECRET') || '';
   }
 
   /** 'test' | 'live' - informational only (which Stripe mode the configured
@@ -53,8 +55,8 @@ export class CasinoTopupStripeConfig {
       enabled: this.isEnabled(),
       mode: this.mode,
       missing: [
-        ...(this.secretKey ? [] : ['CASINO_TOPUP_STRIPE_SECRET_KEY']),
-        ...(this.webhookSecret ? [] : ['CASINO_TOPUP_STRIPE_WEBHOOK_SECRET']),
+        ...(this.secretKey ? [] : ['STRIPE_SECRET_KEY']),
+        ...(this.webhookSecret ? [] : ['STRIPE_WEBHOOK_SECRET']),
       ],
     };
   }

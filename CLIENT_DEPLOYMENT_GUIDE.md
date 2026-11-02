@@ -115,25 +115,27 @@ already-indexed collection).
 
 ## 8. Required Stripe test-mode configuration
 
-**Important, read before testing anything:** this integration uses its **own, dedicated** Stripe
-secret key and webhook signing secret (`CASINO_TOPUP_STRIPE_SECRET_KEY` /
-`CASINO_TOPUP_STRIPE_WEBHOOK_SECRET` - see §9) - **deliberately separate** from:
-- Your existing e-commerce Stripe account (`STRIPE_SECRET_KEY`/`STRIPE_WEBHOOK_SECRET`) - that
-  account is approved for selling physical/fitness products, not for funding a casino wallet.
-- PGX Casino's own, separate Stripe.js integration on their side.
+**Updated 2026-11-02:** this integration now uses the **same** Stripe secret key and webhook signing
+secret as your existing e-commerce account (`STRIPE_SECRET_KEY`/`STRIPE_WEBHOOK_SECRET`) - there is no
+separate `CASINO_TOPUP_STRIPE_*` pair any more. This was originally built as a **deliberately
+separate** credential pair specifically because an e-commerce-approved Stripe account should not
+conceal casino/gambling wallet funding; merging them back onto one account was an explicit client
+decision after confirming both pairs already held the identical value, not a default - see
+`casino-topup-stripe.config.ts`'s header comment.
 
-For test-mode validation: use a Stripe **test-mode** secret key (`sk_test_...`) and configure a test
-webhook endpoint pointed at `POST /casino-topup/webhook` (your deployed backend URL +
-that path), subscribed to at least `checkout.session.completed`,
-`checkout.session.async_payment_failed`, and `checkout.session.expired`. Use Stripe's test card
-`4242 4242 4242 4242` for a successful payment.
+A **second, dedicated webhook endpoint is still required** regardless of the account merge: Stripe
+issues a unique signing secret per registered endpoint, and the casino top-up flow is served by its
+own route, **`POST /api/webhook/casino-stripe`** (not `/casino-topup/webhook` - that path doesn't
+exist in the code; use the route above). Configure that endpoint in the Stripe dashboard, subscribed
+to at least `checkout.session.completed`, `checkout.session.async_payment_failed`, and
+`checkout.session.expired`, pointed at your deployed backend URL + that path. Without this second
+endpoint, casino top-up payments will never reach the casino-topup webhook handler even though the
+account/key is shared. Use Stripe's test card `4242 4242 4242 4242` for a successful test-mode payment.
 
-🔴 **Before any REAL money flows**: the architecture explicitly requires a Stripe account **approved
-for casino/gambling wallet funding** before going live - an e-commerce-approved account must not be
-used to conceal this use case. **This has not happened yet on either side as of this delivery.**
-Keep `CASINO_TOPUP_STRIPE_SECRET_KEY`/`WEBHOOK_SECRET` unset (or test-mode only) until that approval
-exists - the code fails closed (the feature reports itself disabled) with no credentials configured,
-so there is no risk of accidentally going live.
+🔴 **Before any REAL money flows**: running casino-wallet funding through an e-commerce-approved
+Stripe account is the trade-off the client explicitly accepted on 2026-11-02, not a resolved
+compliance question - revisit before going live with real money, per the architecture doc's own
+launch checklist ("Confirm the intended business and funds use are permitted").
 
 ---
 
@@ -234,10 +236,13 @@ This feature is **additive and fails closed**:
   `casino-topup.module.ts` (reverting that one line) removes only the new status endpoint; the
   existing webhook/checkout/recovery logic (built in an earlier phase) is independent of it and
   continues to work either way.
-- **Fastest rollback of all**: unset `CASINO_TOPUP_STRIPE_SECRET_KEY`/`CASINO_TOPUP_STRIPE_WEBHOOK_SECRET`
-  - the whole Checkout-creation feature reports itself disabled and refuses to start a new session,
-  with zero code changes needed. This is also the correct state to leave it in until Stripe approves
-  the casino-wallet-funding use case (§8).
+- **Rollback note (updated 2026-11-02):** since the account merge, `STRIPE_SECRET_KEY`/
+  `STRIPE_WEBHOOK_SECRET` are now shared with the storefront's own checkout - unsetting them to
+  disable casino top-ups would also disable the storefront. The isolated "unset two vars" rollback
+  from before the merge no longer applies. To disable only the casino top-up feature now, remove the
+  `CasinoTopupModule`'s registration (or its controller routes) instead - see the `casino-topup.module.ts`
+  rollback note above for the status endpoint; the same approach applies to the webhook/checkout
+  controllers.
 - No database rows are deleted or mutated by a rollback - `wallet_topups` documents and
   `global_user_links`/`handoff_nonces` rows from before the rollback remain exactly as they were.
 

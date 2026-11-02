@@ -11,14 +11,14 @@ describe('CasinoTopupStripeConfig', () => {
     expect(config.isEnabled()).toBe(false);
     expect(config.getClient()).toBeNull();
     expect(config.describeStatus().missing).toEqual([
-      'CASINO_TOPUP_STRIPE_SECRET_KEY',
-      'CASINO_TOPUP_STRIPE_WEBHOOK_SECRET',
+      'STRIPE_SECRET_KEY',
+      'STRIPE_WEBHOOK_SECRET',
     ]);
   });
 
   it('is disabled when only one of the two required secrets is set', () => {
     const config = new CasinoTopupStripeConfig(
-      makeConfigService({ CASINO_TOPUP_STRIPE_SECRET_KEY: 'sk_test_abc' }),
+      makeConfigService({ STRIPE_SECRET_KEY: 'sk_test_abc' }),
     );
     expect(config.isEnabled()).toBe(false);
     expect(config.getClient()).toBeNull();
@@ -27,8 +27,8 @@ describe('CasinoTopupStripeConfig', () => {
   it('is enabled and builds a real client when both secrets are present', () => {
     const config = new CasinoTopupStripeConfig(
       makeConfigService({
-        CASINO_TOPUP_STRIPE_SECRET_KEY: 'sk_test_abc',
-        CASINO_TOPUP_STRIPE_WEBHOOK_SECRET: 'whsec_abc',
+        STRIPE_SECRET_KEY: 'sk_test_abc',
+        STRIPE_WEBHOOK_SECRET: 'whsec_abc',
       }),
     );
     expect(config.isEnabled()).toBe(true);
@@ -38,12 +38,12 @@ describe('CasinoTopupStripeConfig', () => {
 
   it('reports mode from the secret key prefix, never from a separate env flag', () => {
     const test = new CasinoTopupStripeConfig(
-      makeConfigService({ CASINO_TOPUP_STRIPE_SECRET_KEY: 'sk_test_abc', CASINO_TOPUP_STRIPE_WEBHOOK_SECRET: 'x' }),
+      makeConfigService({ STRIPE_SECRET_KEY: 'sk_test_abc', STRIPE_WEBHOOK_SECRET: 'x' }),
     );
     expect(test.mode).toBe('test');
 
     const live = new CasinoTopupStripeConfig(
-      makeConfigService({ CASINO_TOPUP_STRIPE_SECRET_KEY: 'sk_live_abc', CASINO_TOPUP_STRIPE_WEBHOOK_SECRET: 'x' }),
+      makeConfigService({ STRIPE_SECRET_KEY: 'sk_live_abc', STRIPE_WEBHOOK_SECRET: 'x' }),
     );
     expect(live.mode).toBe('live');
   });
@@ -51,8 +51,8 @@ describe('CasinoTopupStripeConfig', () => {
   it('never includes a secret value in describeStatus()', () => {
     const config = new CasinoTopupStripeConfig(
       makeConfigService({
-        CASINO_TOPUP_STRIPE_SECRET_KEY: 'sk_live_super_secret_value',
-        CASINO_TOPUP_STRIPE_WEBHOOK_SECRET: 'whsec_super_secret_value',
+        STRIPE_SECRET_KEY: 'sk_live_super_secret_value',
+        STRIPE_WEBHOOK_SECRET: 'whsec_super_secret_value',
       }),
     );
     const status = JSON.stringify(config.describeStatus());
