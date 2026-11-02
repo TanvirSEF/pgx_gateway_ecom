@@ -221,23 +221,40 @@ export class DynamicSettingsService {
           this.logger.error('Failed to decrypt active Stripe webhook secret:', err);
         }
 
-        const resolved: ResolvedStripeProfile = {
-          id: activeDbProfile.id,
-          source: 'database',
-          label: activeDbProfile.label,
-          mode: activeDbProfile.mode,
-          publishableKey: activeDbProfile.publishableKey,
-          secretKey: decryptedSecret,
-          webhookSecret: decryptedWebhook,
-          currency: (activeDbProfile.currency || 'eur').toLowerCase(),
-          isActive: true,
-        };
+        // Only trust this DB profile if its secret key actually decrypted to
+        // something usable. A row can exist and be marked active while its
+        // ciphertext no longer decrypts under the current encryption key
+        // (e.g. JWT_SECRET, which CryptoService derives its key from, was
+        // rotated after this row was saved) - in that case `decryptedSecret`
+        // stays '' (see the catch above) and `new Stripe('', ...)` in
+        // getStripeClient() would throw synchronously, uncaught, crashing
+        // every webhook/checkout request with a 500. Treat an undecryptable
+        // active profile the same as "no active profile" and fall through to
+        // the environment fallback below, instead of returning early with an
+        // empty secret.
+        if (decryptedSecret) {
+          const resolved: ResolvedStripeProfile = {
+            id: activeDbProfile.id,
+            source: 'database',
+            label: activeDbProfile.label,
+            mode: activeDbProfile.mode,
+            publishableKey: activeDbProfile.publishableKey,
+            secretKey: decryptedSecret,
+            webhookSecret: decryptedWebhook,
+            currency: (activeDbProfile.currency || 'eur').toLowerCase(),
+            isActive: true,
+          };
 
-        this.cachedActiveStripe = {
-          data: resolved,
-          expiresAt: now + this.CACHE_TTL_MS,
-        };
-        return resolved;
+          this.cachedActiveStripe = {
+            data: resolved,
+            expiresAt: now + this.CACHE_TTL_MS,
+          };
+          return resolved;
+        }
+
+        this.logger.error(
+          `Active Stripe profile ${activeDbProfile.id} has an undecryptable secret key - falling back to environment variables`,
+        );
       }
     } catch (err) {
       this.logger.warn('Error reading active StripeProfile from DB, falling back to environment:', err);
