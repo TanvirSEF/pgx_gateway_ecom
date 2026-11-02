@@ -1,16 +1,21 @@
 // Implements: Phase 2/3 - PGX Casino + PGXSports shared-wallet Stripe top-up
 //
-// MERGED ONTO THE STOREFRONT STRIPE ACCOUNT (2026-11-02, client decision).
-// This previously ran on a deliberately separate CASINO_TOPUP_STRIPE_SECRET_KEY/
-// CASINO_TOPUP_STRIPE_WEBHOOK_SECRET pair, precisely because the architecture
-// doc says "An e-commerce Stripe account must NOT conceal casino/gambling
-// wallet funding." The client confirmed both credential pairs already held
-// the identical value and asked to collapse them into one explicitly,
-// accepting that casino-wallet funding now runs through the storefront's
-// e-commerce-approved Stripe account. That compliance trade-off is the
-// client's call, not this code's - recorded here so it isn't "fixed" back
-// by accident. Reads STRIPE_SECRET_KEY/STRIPE_WEBHOOK_SECRET below - the
-// same two vars dynamic-settings.service.ts's getStripeClient() already uses.
+// API KEY SHARED, WEBHOOK SECRET DEDICATED (2026-11-02, client decision, revised).
+// The Stripe API key (STRIPE_SECRET_KEY) is shared with the storefront's
+// e-commerce-approved Stripe account, per the client's explicit 2026-11-02
+// decision - both credential pairs already held the identical value, and
+// that compliance trade-off is the client's call, not this code's (see the
+// architecture doc's "An e-commerce Stripe account must NOT conceal
+// casino/gambling wallet funding").
+//
+// The webhook signing secret is NOT shared, and never can be: Stripe issues
+// a unique signing secret per registered webhook ENDPOINT, not per account
+// or API key. The casino top-up flow is served by its own endpoint/route
+// (POST /api/webhook/casino-stripe, separate from the storefront's POST
+// /api/webhook/stripe), so it has its own CASINO_TOPUP_STRIPE_WEBHOOK_SECRET,
+// restored here - reusing STRIPE_WEBHOOK_SECRET for this endpoint would be
+// simply wrong (Stripe would reject the signature), not just a compliance
+// concern.
 //
 // Still mirrors PGX Casino's own App/Config/stripeConfig.js gate: fails
 // closed by construction until BOTH values are present and non-empty -
@@ -32,7 +37,7 @@ export class CasinoTopupStripeConfig {
   }
 
   private get webhookSecret(): string {
-    return this.configService.get<string>('STRIPE_WEBHOOK_SECRET') || '';
+    return this.configService.get<string>('CASINO_TOPUP_STRIPE_WEBHOOK_SECRET') || '';
   }
 
   /** 'test' | 'live' - informational only (which Stripe mode the configured
@@ -56,7 +61,7 @@ export class CasinoTopupStripeConfig {
       mode: this.mode,
       missing: [
         ...(this.secretKey ? [] : ['STRIPE_SECRET_KEY']),
-        ...(this.webhookSecret ? [] : ['STRIPE_WEBHOOK_SECRET']),
+        ...(this.webhookSecret ? [] : ['CASINO_TOPUP_STRIPE_WEBHOOK_SECRET']),
       ],
     };
   }
