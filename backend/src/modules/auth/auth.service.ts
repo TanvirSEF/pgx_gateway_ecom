@@ -28,13 +28,15 @@ export class AuthService {
 
   async register(dto: RegisterDto) {
     const supabase = this.supabaseService.getAdminClient();
+    const cleanEmail = dto.email.toLowerCase().trim();
+    const cleanPhone = dto.phone && dto.phone.trim().length > 0 ? dto.phone.trim() : null;
 
     // 1. Check if user already exists in local DB
     const existingLocal = await this.prisma.user.findFirst({
       where: {
         OR: [
-          { email: dto.email.toLowerCase().trim() },
-          ...(dto.phone ? [{ phone: dto.phone }] : []),
+          { email: cleanEmail },
+          ...(cleanPhone ? [{ phone: cleanPhone }] : []),
         ],
       },
     });
@@ -94,9 +96,9 @@ export class AuthService {
     const user = await this.prisma.user.create({
       data: {
         id: supabaseUserId,
-        name: dto.name,
-        email: dto.email.toLowerCase().trim(),
-        phone: dto.phone,
+        name: dto.name.trim(),
+        email: cleanEmail,
+        phone: cleanPhone,
         password: hashedPassword,
         role: 'CUSTOMER',
       },

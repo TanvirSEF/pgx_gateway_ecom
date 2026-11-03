@@ -1,34 +1,63 @@
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Zap } from "lucide-react";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-muted/30 flex flex-col justify-center py-12 sm:px-6 lg:px-8 text-foreground relative">
-      <div className="absolute top-4 left-4 sm:top-8 sm:left-8">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-slate-50/50 to-slate-100/80 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex flex-col justify-between py-6 sm:py-10 px-4 sm:px-6 lg:px-8 text-foreground relative selection:bg-[#00a3ff]/20 selection:text-[#00a3ff]">
+      {/* Ambient background glow accents */}
+      <div
+        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 sm:h-96 bg-gradient-to-br from-[#00a3ff]/10 via-primary/5 to-transparent blur-3xl opacity-70 -z-10"
+        aria-hidden="true"
+      />
+
+      {/* Top Header Bar */}
+      <header className="w-full max-w-md sm:max-w-xl mx-auto flex items-center justify-between pt-2 pb-6">
         <Link
           href="/"
-          className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-[#00a3ff]/50 hover:text-[#00a3ff] transition-all group backdrop-blur-xs"
         >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Store
+          <ArrowLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5" />
+          <span>Back to Store</span>
         </Link>
-      </div>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
-        <Link href="/" className="inline-flex justify-center">
-          <img
-            src="/logo.png"
-            alt="PGX Logo"
-            className="h-14 sm:h-16 w-auto object-contain"
-          />
-        </Link>
-      </div>
+        <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+          <Zap className="w-3 h-3 text-[#00a3ff]" />
+          PGX Sports
+        </span>
+      </header>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
-        <div className="bg-card py-8 px-6 sm:px-10 rounded-2xl border border-border shadow-xs">
-          {children}
+      {/* Main Content Area */}
+      <main className="flex-1 flex flex-col justify-center items-center py-2 sm:py-6">
+        <div className="w-full max-w-md sm:max-w-lg">
+          {/* Brand Logo */}
+          <div className="text-center mb-6">
+            <Link
+              href="/"
+              className="inline-flex justify-center transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              title="Return to Home"
+            >
+              <img
+                src="/logo.png"
+                alt="PGX Playground Fitnex Logo"
+                className="h-12 sm:h-14 w-auto object-contain drop-shadow-xs"
+              />
+            </Link>
+          </div>
+
+          {/* Form Card */}
+          <div className="bg-white dark:bg-slate-900/95 p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-slate-200/90 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-black/40 backdrop-blur-md transition-all">
+            {children}
+          </div>
         </div>
-      </div>
+      </main>
+
+      {/* Reassuring Security / Trust Footer */}
+      <footer className="w-full max-w-md sm:max-w-xl mx-auto pt-6 pb-2 text-center">
+        <div className="inline-flex items-center justify-center gap-2 text-[11px] text-slate-400 dark:text-slate-500 font-medium">
+          <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+          <span>256-bit SSL Secure Checkout & Membership Protection</span>
+        </div>
+      </footer>
     </div>
   );
 }

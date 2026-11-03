@@ -9,16 +9,11 @@ export const loginSchema = z.object({
 
 export const registerSchema = z
   .object({
-    name: z.string().min(2, "Name must be at least 2 characters").max(50),
-    email: z.string().email("Invalid email address"),
-    phone: z
-      .string()
-      .regex(/^01[3-9]\d{8}$/, "Enter a valid Bangladeshi phone number")
-      .optional()
-      .or(z.literal("")),
+    name: z.string().min(2, "Name must be at least 2 characters").max(60),
+    email: z.string().email("Enter a valid email address"),
+    phone: z.string().optional().or(z.literal("")),
     password: z.string().min(6, "Password must be at least 6 characters"),
-    
-  })
+  });
 
 export const forgotPasswordSchema = z.object({
   email: z.string().email("Invalid email address"),

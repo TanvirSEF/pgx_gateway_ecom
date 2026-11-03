@@ -9,7 +9,7 @@ export class RegisterDto {
   email: string;
 
   @IsOptional()
-  @Matches(/^01[3-9]\d{8}$/, { message: 'Enter a valid Bangladeshi phone number' })
+  @IsString()
   phone?: string;
 
   @IsString()
