@@ -8,7 +8,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   User,
   Mail,
-  Phone,
   Lock,
   Eye,
   EyeOff,
@@ -42,7 +41,6 @@ function RegisterPage() {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
       password: "",
     },
   });
@@ -53,11 +51,10 @@ function RegisterPage() {
   const onSubmit = async (data: RegisterInput) => {
     setServerError(null);
     try {
-      // Clean payload: no number validation required, trim strings, omit empty phone
+      // Clean payload: fast 3-field sign up (name, email, password)
       const payload: RegisterInput = {
         name: data.name.trim(),
         email: data.email.trim().toLowerCase(),
-        phone: data.phone && data.phone.trim().length > 0 ? data.phone.trim() : undefined,
         password: data.password,
       };
 
@@ -169,34 +166,6 @@ function RegisterPage() {
           )}
         </div>
 
-        {/* Phone Number (Optional - No strict validation) */}
-        <div className="space-y-1.5">
-          <div className="flex items-center justify-between">
-            <Label
-              htmlFor="phone"
-              className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-            >
-              Phone Number
-            </Label>
-            <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
-              Optional
-            </span>
-          </div>
-          <div className="relative">
-            <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
-            <Input
-              id="phone"
-              type="tel"
-              autoComplete="tel"
-              placeholder="e.g. +1 555 000 0000 (optional)"
-              {...formRegister("phone")}
-              className="h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all"
-            />
-          </div>
-          <p className="text-[11px] text-slate-400 dark:text-slate-500">
-            No verification required. Feel free to skip.
-          </p>
-        </div>
 
         {/* Password */}
         <div className="space-y-1.5">
