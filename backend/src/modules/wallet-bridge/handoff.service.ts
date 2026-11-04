@@ -84,11 +84,15 @@ export class HandoffService {
       });
     } catch (err: any) {
       if (err instanceof jwt.TokenExpiredError) {
+        this.logger.warn('Handoff token rejected: EXPIRED');
         throw new HandoffError('EXPIRED', 'This payment handoff has expired - ask PGX Casino for a new one');
       }
       // Wrong signature, wrong audience/issuer, malformed token, etc. -
       // all are "tampered or not genuinely from PGX Casino" from this
-      // service's point of view; never reveal which check failed.
+      // service's point of view; never reveal which check failed. The log
+      // below never includes the token itself or the underlying jwt error
+      // detail, only the fact that verification failed.
+      this.logger.warn('Handoff token rejected: TAMPERED (signature/audience/issuer/format check failed)');
       throw new HandoffError('TAMPERED', 'This payment handoff is invalid');
     }
 
@@ -105,11 +109,13 @@ export class HandoffService {
       });
     } catch (err: any) {
       if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === PRISMA_UNIQUE_CONSTRAINT) {
+        this.logger.warn(`Handoff token rejected: REPLAYED for globalUserId=${claims.sub}`);
         throw new HandoffError('REPLAYED', 'This payment handoff has already been used');
       }
       throw err;
     }
 
+    this.logger.log(`Handoff verified and consumed for globalUserId=${claims.sub}`);
     return {
       globalUserId: claims.sub,
       amountMinor: claims.amountMinor,

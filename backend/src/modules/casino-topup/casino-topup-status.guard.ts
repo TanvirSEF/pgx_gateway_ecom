@@ -20,7 +20,7 @@
 // PGXSports calling Casino's /internal/wallet/*) and never
 // CASINO_HANDOFF_SECRET (that signs/verifies the one-time handoff JWT, a
 // different purpose entirely).
-import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
+import { CanActivate, ExecutionContext, Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import * as crypto from 'crypto';
 
 const HEADER = 'x-casino-status-key';
@@ -34,16 +34,21 @@ function safeEqual(a: string, b: string): boolean {
 
 @Injectable()
 export class CasinoTopupStatusGuard implements CanActivate {
+  // Diagnostic only - never logs the header value or the configured key.
+  private readonly logger = new Logger(CasinoTopupStatusGuard.name);
+
   canActivate(context: ExecutionContext): boolean {
     const req = context.switchToHttp().getRequest();
     const expected = process.env.CASINO_TOPUP_STATUS_API_KEY;
     if (!expected) {
       // Fail closed, never guess - same discipline as
       // CasinoTopupStripeConfig/walletServiceAuth.js.
+      this.logger.error('GET /casino-topup/status rejected: CASINO_TOPUP_STATUS_API_KEY is not configured');
       throw new UnauthorizedException('Top-up status lookup is not configured');
     }
     const provided = req.headers[HEADER];
     if (!provided || !safeEqual(String(provided), expected)) {
+      this.logger.warn('GET /casino-topup/status rejected: missing or invalid status credential');
       throw new UnauthorizedException('Invalid status service credential');
     }
     return true;
