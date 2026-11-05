@@ -40,7 +40,7 @@ export default function ReturnRefundPolicyPage() {
 
           <h2 className="text-xl font-black uppercase font-mono text-slate-900 mt-8 mb-4">Damaged Freight Upon Arrival</h2>
           <p>
-            If any freight packaging arrives visibly damaged by courier transit, photograph the exterior box before opening and contact <a href="mailto:support@playgroundfitnex.com" className="text-[#00a3ff] font-medium hover:underline">support@playgroundfitnex.com</a> within 48 hours for immediate replacement parts or a unit swap.
+            If any freight packaging arrives visibly damaged by courier transit, photograph the exterior box before opening and contact <a href="mailto:support@pgxsports.com" className="text-[#00a3ff] font-medium hover:underline">support@pgxsports.com</a> within 48 hours for immediate replacement parts or a unit swap.
           </p>
         </div>
       </div>

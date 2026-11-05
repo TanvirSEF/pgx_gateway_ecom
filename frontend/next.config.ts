@@ -21,17 +21,22 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "api.playgroundfitnex.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
         hostname: "api.pgxsports.shop",
         pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "pgxsports.shop",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "api.pgxsports.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "pgxsports.com",
         pathname: "/**",
       },
       {

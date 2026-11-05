@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
         
         <div className="prose prose-slate max-w-none text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
           <p>
-            At PGX (<a href="https://playgroundfitnex.com" className="text-[#00a3ff] font-medium hover:underline">playgroundfitnex.com</a>), we take your privacy and data security seriously. This Privacy Policy explains how we collect, handle, protect, and process your personal information when using our ecommerce storefront and ordering fitness gear.
+            At PGX (<a href="https://pgxsports.com" className="text-[#00a3ff] font-medium hover:underline">pgxsports.com</a>), we take your privacy and data security seriously. This Privacy Policy explains how we collect, handle, protect, and process your personal information when using our ecommerce storefront and ordering fitness gear.
           </p>
 
           <h2 className="text-xl font-black uppercase font-mono text-slate-900 mt-8 mb-4">1. Information We Collect</h2>

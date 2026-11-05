@@ -4,7 +4,7 @@ import { Prisma } from '@prisma/client';
 import { HandoffService } from './handoff.service';
 
 const SECRET = 'test-handoff-secret';
-const ALLOWED_RETURN_URL = 'https://playgroundfitnex.com/wallet/return';
+const ALLOWED_RETURN_URL = 'https://pgxsports.com/wallet/return';
 const VALID_GLOBAL_USER_ID = '507f1f77bcf86cd799439011';
 
 function makeConfigService(overrides: Record<string, string> = {}) {

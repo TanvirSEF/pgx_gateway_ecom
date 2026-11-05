@@ -42,14 +42,14 @@ async function bootstrap() {
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:3002',
+    'https://pgxsports.com',
+    'https://www.pgxsports.com',
+    'https://api.pgxsports.com',
     'https://pgxsports.shop',
     'https://www.pgxsports.shop',
     'https://api.pgxsports.shop',
-    'https://playgroundfitnex.com',
-    'https://www.playgroundfitnex.com',
-    'https://api.playgroundfitnex.com',
     'https://playgroundx.vip',
-    'https://www.playgroundx.vip'
+    'https://www.playgroundx.vip',
   ];
 
   const allowedOrigins = Array.from(new Set([...defaultOrigins, ...configuredOrigins]));

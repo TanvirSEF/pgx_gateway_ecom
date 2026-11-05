@@ -5,18 +5,34 @@ import { getCookie, removeCookie, COOKIE_KEYS } from "./cookie-client";
 // Determine API base URL: prioritize env, but ensure reliable production fallback both in browser and SSR
 export const getBaseApiUrl = () => {
   const envUrl = process.env.NEXT_PUBLIC_API_URL || env.NEXT_PUBLIC_API_URL;
+
+  // In the browser
   if (typeof window !== "undefined") {
-    // If running in browser on playgroundfitnex.com or any non-localhost domain, don't allow localhost:4000
-    if (!window.location.hostname.includes("localhost") && (!envUrl || envUrl.includes("localhost"))) {
-      return "https://api.playgroundfitnex.com/api";
+    const hostname = window.location.hostname;
+    // Local development: use envUrl or fallback to localhost:4000
+    if (hostname.includes("localhost")) {
+      return envUrl || "http://localhost:4000/api";
     }
-  } else {
-    // Server-side (SSR / RSC): If NODE_ENV is production or envUrl is missing/localhost, default to production API
-    if (process.env.NODE_ENV === "production" && (!envUrl || envUrl.includes("localhost"))) {
-      return "https://api.playgroundfitnex.com/api";
+    // Remote/Production environment: if envUrl is set and does not point to localhost, use it
+    if (envUrl && !envUrl.includes("localhost")) {
+      return envUrl;
     }
+    // Dynamic fallback based on current host: e.g. api.domain.com/api
+    const hostParts = hostname.split(".");
+    if (hostParts.length >= 2) {
+      const rootDomain = hostParts.slice(-2).join(".");
+      return `${window.location.protocol}//api.${rootDomain}/api`;
+    }
+    return `${window.location.origin}/api`;
   }
-  return envUrl || "https://api.playgroundfitnex.com/api";
+
+  // Server-side (SSR / RSC)
+  if (envUrl && (!process.env.NODE_ENV || process.env.NODE_ENV !== "production" || !envUrl.includes("localhost"))) {
+    return envUrl;
+  }
+  return process.env.NODE_ENV === "production"
+    ? "https://api.pgxsports.com/api"
+    : "http://localhost:4000/api";
 };
 
 export const api = axios.create({
