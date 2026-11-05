@@ -10,9 +10,9 @@ This guide details how to deploy this repository on [Docploy](https://docploy.co
 ## 1. Prerequisites & Remote Database Status
 
 Your remote PostgreSQL database has already been migrated and seeded with:
-- `DATABASE_URL`: `postgresql://postgres:zmBjwrBiwYgdF30sodkI@72.62.81.204:5432/postgres?schema=public`
+- `DATABASE_URL`: `postgresql://<user>:<password>@<host>:5432/<database>?schema=public` — get the real value from Docploy's own Environment tab for this app, never from this file.
 - **PGX International Fitness Catalog**: 18 products, premium bundles, categories, and international shipping zones.
-- **Admin Account**: `admin@store.com` / `admin123`
+- **Admin Account**: `admin@store.com` / `<rotate and set via Docploy — do not reuse any password that was ever committed to this file>`
 
 ---
 
@@ -37,9 +37,9 @@ In your Docploy Dashboard:
    ```env
    NODE_ENV=production
    PORT=4000
-   DATABASE_URL=postgresql://postgres:zmBjwrBiwYgdF30sodkI@72.62.81.204:5432/postgres?schema=public
-   DIRECT_URL=postgresql://postgres:zmBjwrBiwYgdF30sodkI@72.62.81.204:5432/postgres?schema=public
-   JWT_SECRET=pgx-super-secret-jwt-key-change-in-production-2026
+   DATABASE_URL=postgresql://<user>:<password>@<host>:5432/<database>?schema=public
+   DIRECT_URL=postgresql://<user>:<password>@<host>:5432/<database>?schema=public
+   JWT_SECRET=<generate a long random value - never reuse an example/placeholder in production>
    JWT_EXPIRATION=7d
    FRONTEND_URL=https://pgxsports.shop,https://api.pgxsports.shop
    UPLOAD_DIR=./uploads
@@ -155,4 +155,4 @@ Once both containers report healthy in Docploy:
    - Refresh the wallet page on `https://pgxsports.shop` or check the adult platform to confirm both share the updated balance!
 4. **Test Admin Portal**:
    - Navigate to `https://pgxsports.shop/admin`.
-   - Log in with `admin@store.com` and password `admin123`.
+   - Log in with `admin@store.com` and the password you set during seeding (never `admin123` in production - rotate it if it was ever left at that default).
