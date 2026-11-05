@@ -26,7 +26,7 @@ export function resolveImageUrl(url?: string | null): string {
   }
 
   if (!base) {
-    base = process.env.NODE_ENV === "production" ? "https://api.pgxsports.com" : "http://localhost:4000";
+    base = process.env.NODE_ENV === "production" ? "https://api.pgxsports.shop" : "http://localhost:4000";
   }
 
   const normalizedBase = base.endsWith("/") ? base.slice(0, -1) : base;

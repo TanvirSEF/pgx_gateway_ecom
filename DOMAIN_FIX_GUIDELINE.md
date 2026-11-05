@@ -1,7 +1,7 @@
 # Developer Guideline: Remove Hardcoded Legacy Domains & Enable Dynamic Environment Configuration
 
 ## Objective
-The codebase currently contains several hardcoded references to the legacy domain (`playgroundfitnex.com` and `api.playgroundfitnex.com`). This causes issues when switching domains (e.g. to `pgxsports.com` or `pgxsports.shop`) because requests and image asset resolvers fall back to the wrong domain.
+The codebase currently contains several hardcoded references to the legacy domain (`playgroundfitnex.com` and `api.playgroundfitnex.com`). This causes issues when switching domains (e.g. to `pgxsports.shop` or `pgxsports.shop`) because requests and image asset resolvers fall back to the wrong domain.
 
 This guide outlines all the exact files, issues, and code updates required to make API routing, image resolution, CORS headers, and branding links completely dynamic.
 
@@ -92,7 +92,7 @@ export function resolveImageUrl(url?: string | null): string {
 ### 1.3. `frontend/next.config.ts`
 * **Issue:** 
   1. `api.playgroundfitnex.com` is hardcoded in `images.remotePatterns`.
-  2. `pgxsports.com` and `api.pgxsports.com` are missing from `remotePatterns` (only `pgxsports.shop` was configured). Next.js `<Image />` will throw an error if assets are served from `.com`.
+  2. `pgxsports.shop` and `api.pgxsports.shop` are missing from `remotePatterns` (only `pgxsports.shop` was configured). Next.js `<Image />` will throw an error if assets are served from `.com`.
 * **Resolution:** Remove `api.playgroundfitnex.com` and include both `.com` and `.shop` domains.
 
 #### Recommended Update:
@@ -108,8 +108,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "traqtwdfhxduijhqsuwg.supabase.co", pathname: "/**" },
       { protocol: "https", hostname: "api.pgxsports.shop", pathname: "/**" },
       { protocol: "https", hostname: "pgxsports.shop", pathname: "/**" },
-      { protocol: "https", hostname: "api.pgxsports.com", pathname: "/**" },
-      { protocol: "https", hostname: "pgxsports.com", pathname: "/**" },
+      { protocol: "https", hostname: "api.pgxsports.shop", pathname: "/**" },
+      { protocol: "https", hostname: "pgxsports.shop", pathname: "/**" },
       { protocol: "http", hostname: "localhost", port: "4000", pathname: "/**" },
     ],
   },
@@ -123,13 +123,13 @@ export default nextConfig;
 ### 1.4. Static Pages & Contact Emails
 Update obsolete contact emails and links in the following files:
 * **`frontend/src/app/(store)/career/page.tsx`**:
-  * Replace `careers@playgroundfitnex.com` with `careers@pgxsports.com`.
+  * Replace `careers@playgroundfitnex.com` with `careers@pgxsports.shop`.
 * **`frontend/src/app/(store)/corporate-deal/page.tsx`**:
-  * Replace `wholesale@playgroundfitnex.com` with `wholesale@pgxsports.com`.
+  * Replace `wholesale@playgroundfitnex.com` with `wholesale@pgxsports.shop`.
 * **`frontend/src/app/(store)/privacy-policy/page.tsx`**:
-  * Replace `playgroundfitnex.com` with `pgxsports.com`.
+  * Replace `playgroundfitnex.com` with `pgxsports.shop`.
 * **`frontend/src/app/(store)/return-refund-policy/page.tsx`**:
-  * Replace `support@playgroundfitnex.com` with `support@pgxsports.com`.
+  * Replace `support@playgroundfitnex.com` with `support@pgxsports.shop`.
 
 ---
 
@@ -156,9 +156,9 @@ Update obsolete contact emails and links in the following files:
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:3002',
-    'https://pgxsports.com',
-    'https://www.pgxsports.com',
-    'https://api.pgxsports.com',
+    'https://pgxsports.shop',
+    'https://www.pgxsports.shop',
+    'https://api.pgxsports.shop',
     'https://pgxsports.shop',
     'https://www.pgxsports.shop',
     'https://api.pgxsports.shop',
@@ -182,15 +182,15 @@ Ensure deployment configurations (Docploy, Docker Compose, or `.env`) use the co
 
 ### Backend `.env`:
 ```env
-FRONTEND_URL=https://pgxsports.com,https://api.pgxsports.com
-MAIL_FROM="PGX Sports <info@pgxsports.com>"
+FRONTEND_URL=https://pgxsports.shop,https://api.pgxsports.shop
+MAIL_FROM="PGX Sports <info@pgxsports.shop>"
 ```
 
 ### Frontend `.env` / Docker Build Args:
 ```env
-NEXT_PUBLIC_API_URL=https://api.pgxsports.com/api
-NEXT_PUBLIC_IMAGE_BASE_URL=https://api.pgxsports.com
-NEXT_PUBLIC_SITE_URL=https://pgxsports.com
+NEXT_PUBLIC_API_URL=https://api.pgxsports.shop/api
+NEXT_PUBLIC_IMAGE_BASE_URL=https://api.pgxsports.shop
+NEXT_PUBLIC_SITE_URL=https://pgxsports.shop
 NEXT_PUBLIC_STORE_NAME=PGX Sports
 ```
 

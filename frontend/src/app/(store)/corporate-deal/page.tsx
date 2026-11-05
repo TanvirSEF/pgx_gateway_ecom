@@ -50,7 +50,7 @@ export default function CorporateDealPage() {
 
             <div className="flex items-center gap-3 text-muted-foreground bg-card p-6 rounded-xl border border-border">
               <Mail className="w-5 h-5 text-primary" />
-              <span className="text-sm">Or email directly: <a href="mailto:wholesale@pgxsports.com" className="font-bold text-foreground hover:text-primary underline transition-colors">wholesale@pgxsports.com</a></span>
+              <span className="text-sm">Or email directly: <a href="mailto:wholesale@pgxsports.shop" className="font-bold text-foreground hover:text-primary underline transition-colors">wholesale@pgxsports.shop</a></span>
             </div>
           </div>
 

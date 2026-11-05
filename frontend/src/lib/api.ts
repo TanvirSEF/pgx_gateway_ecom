@@ -31,7 +31,7 @@ export const getBaseApiUrl = () => {
     return envUrl;
   }
   return process.env.NODE_ENV === "production"
-    ? "https://api.pgxsports.com/api"
+    ? "https://api.pgxsports.shop/api"
     : "http://localhost:4000/api";
 };
 
