@@ -23,7 +23,30 @@
 // package require()'d unguarded at module-load time.
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import * as https from 'node:https';
 import Stripe from 'stripe';
+
+// 2026-11-05 incident: the live checkout.sessions.create() call was failing
+// with a raw TLS "internal_error" alert (SSL alert number 80) from inside
+// the running app, while the identical call succeeded every time from a
+// fresh one-off process in the same container. Root cause was never
+// isolated (ruled out: network path, DNS/IPv6, OpenSSL/Alpine base image, a
+// stale pooled connection surviving a restart, deployed-code drift). The
+// one proven difference left is that this service caches ONE Stripe client
+// - and therefore one long-lived keep-alive HTTPS connection pool - for the
+// life of the process. These two settings make the client resilient to
+// that whole failure class without having to prove which exact mechanism
+// caused it:
+//   - keepAlive: false - never reuse a pooled socket that may have gone
+//     stale/been silently dropped by a middlebox; pay a fresh TLS
+//     handshake per request instead of risking a corrupted read on reuse.
+//   - maxNetworkRetries - Stripe's own official answer to a transient
+//     connection-level failure on a safe-to-retry request (idempotencyKey
+//     is already set on every call site), so a one-off failure of this
+//     kind self-heals instead of surfacing as a 500/checkoutError.
+const STRIPE_HTTP_AGENT = new https.Agent({ keepAlive: false });
+const STRIPE_MAX_NETWORK_RETRIES = 2;
+const STRIPE_TIMEOUT_MS = 20000;
 
 @Injectable()
 export class CasinoTopupStripeConfig {
@@ -83,10 +106,16 @@ export class CasinoTopupStripeConfig {
       // getStripeClient() - the installed `stripe` SDK's TS types pin
       // apiVersion to its own latest known literal, which this repo has
       // already chosen to work around the same way elsewhere.
-      const client = new Stripe(this.secretKey, { apiVersion: '2025-02-24.acacia' as any });
+      const client = new Stripe(this.secretKey, {
+        apiVersion: '2025-02-24.acacia' as any,
+        httpAgent: STRIPE_HTTP_AGENT,
+        timeout: STRIPE_TIMEOUT_MS,
+        maxNetworkRetries: STRIPE_MAX_NETWORK_RETRIES,
+      });
       this.cachedClient = { secretKey: this.secretKey, client };
       return client;
     } catch (err: any) {
+      // Names/reason only - never the key itself, same rule as describeStatus().
       this.logger.error(`Could not construct Stripe client: ${err?.message}`);
       return null;
     }

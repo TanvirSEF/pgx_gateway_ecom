@@ -83,7 +83,16 @@ export class WalletBridgeController {
       this.logger.log(`Checkout session created for globalUserId=${verified.globalUserId}`);
     } catch (err: any) {
       result.checkoutError = err?.message || 'Could not start the Stripe Checkout session';
-      this.logger.error(`Checkout session creation failed for globalUserId=${verified.globalUserId}: ${result.checkoutError}`);
+      // Full diagnostic detail server-side only - never added to the HTTP
+      // response above. type/code cover Stripe SDK errors (StripeConnectionError
+      // etc.); code/syscall/cause cover plain Node network errors (ECONNRESET,
+      // TLS alerts). Never logs the Stripe key or any request/response body.
+      this.logger.error(
+        `Checkout session creation failed for globalUserId=${verified.globalUserId}: ${result.checkoutError} ` +
+          `[type=${err?.type ?? 'n/a'} code=${err?.code ?? 'n/a'} syscall=${err?.syscall ?? 'n/a'} ` +
+          `cause=${err?.cause?.message ?? 'n/a'}]`,
+        err?.stack,
+      );
     }
 
     return result;
