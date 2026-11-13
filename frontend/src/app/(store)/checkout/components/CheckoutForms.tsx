@@ -12,12 +12,25 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { CURRENCY } from "@/lib/constants";
+import { useAuth } from "@/providers/AuthProvider";
 import { useWallet } from "@/providers/WalletProvider";
 import { WalletPill } from "@/components/storefront/WalletPill";
 import { GuestCheckoutInput } from "@/schemas/checkout.schema";
 import type { Address, ShippingZone } from "@/types";
-import { CheckCircle2, MapPin, Wallet, ShieldCheck, AlertCircle, Sparkles, Globe } from "lucide-react";
+import {
+  AlertCircle,
+  CheckCircle2,
+  CreditCard,
+  Globe,
+  Lock,
+  MapPin,
+  ShieldCheck,
+  Sparkles,
+  Wallet,
+} from "lucide-react";
+import Link from "next/link";
 import { UseFormReturn } from "react-hook-form";
+import { toast } from "sonner";
 
 const COUNTRIES = [
   "United States",
@@ -70,8 +83,10 @@ export function CheckoutForms({
   } = form;
 
   const { balance, isLoading: isWalletLoading } = useWallet();
+  const { isAuthenticated } = useAuth();
   const selectedAddressId = watch("addressId");
   const selectedCountry = watch("country") || "United States";
+  const selectedPaymentMethod = watch("paymentMethod") || "STRIPE";
   const hasInsufficientBalance = !isWalletLoading && balance < totalOrderAmount;
 
   const handleSelectAddress = (addr: Address) => {
@@ -373,7 +388,7 @@ export function CheckoutForms({
         </div>
       </div>
 
-      {/* 2. Payment Method: PGX Universal Wallet */}
+      {/* 2. Payment Method */}
       <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm space-y-6">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold flex items-center gap-2 text-gray-900">
@@ -382,62 +397,247 @@ export function CheckoutForms({
             </span>
             Payment Method
           </h2>
-          <div className="flex items-center gap-1.5 text-xs text-[#0070cc] bg-[#00a3ff]/10 px-3 py-1 rounded-full font-bold">
-            <Sparkles className="w-3.5 h-3.5 text-[#00a3ff]" />
-            <span>Universal PGX Wallet</span>
+          <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full border">
+            <Lock className="w-3.5 h-3.5 text-emerald-600" />
+            <span>256-Bit SSL Encrypted</span>
           </div>
         </div>
+
+        {/* Payment Method Selector Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Option 1: Credit / Debit Card (Stripe) */}
+          <div
+            onClick={() => setValue("paymentMethod", "STRIPE")}
+            className={`cursor-pointer rounded-2xl border-2 p-5 transition-all relative ${
+              selectedPaymentMethod === "STRIPE"
+                ? "border-[#00a3ff] bg-blue-50/40 ring-4 ring-[#00a3ff]/10 shadow-sm"
+                : "border-gray-200 hover:border-gray-300 bg-white"
+            }`}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                    selectedPaymentMethod === "STRIPE"
+                      ? "bg-[#00a3ff] text-white shadow-sm"
+                      : "bg-gray-100 text-gray-600"
+                  }`}
+                >
+                  <CreditCard className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-sm flex items-center gap-2">
+                    Credit / Debit Card
+                    <span className="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full uppercase">
+                      Recommended
+                    </span>
+                  </h4>
+                  <p className="text-xs text-gray-500 mt-0.5">
+                    Stripe Secure Checkout • Guest Friendly
+                  </p>
+                </div>
+              </div>
+              <div
+                className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 ${
+                  selectedPaymentMethod === "STRIPE"
+                    ? "border-[#00a3ff] bg-[#00a3ff]"
+                    : "border-gray-300"
+                }`}
+              >
+                {selectedPaymentMethod === "STRIPE" && (
+                  <div className="w-2 h-2 rounded-full bg-white" />
+                )}
+              </div>
+            </div>
+
+            <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
+              <div className="flex items-center gap-1.5">
+                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                <span>Visa, MC, Amex, Apple Pay</span>
+              </div>
+              <span className="font-semibold text-gray-700">Instant</span>
+            </div>
+          </div>
+
+          {/* Option 2: Universal PGX Wallet */}
+          <div
+            onClick={() => {
+              if (!isAuthenticated) {
+                toast.info("Please sign in to use your Universal PGX Wallet, or proceed with Credit Card.");
+              }
+              setValue("paymentMethod", "WALLET");
+            }}
+            className={`cursor-pointer rounded-2xl border-2 p-5 transition-all relative ${
+              selectedPaymentMethod === "WALLET"
+                ? "border-[#00a3ff] bg-slate-900 text-white ring-4 ring-[#00a3ff]/20 shadow-md"
+                : "border-gray-200 hover:border-gray-300 bg-white"
+            }`}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                    selectedPaymentMethod === "WALLET"
+                      ? "bg-[#00a3ff] text-white shadow-sm"
+                      : "bg-gray-100 text-gray-600"
+                  }`}
+                >
+                  <Wallet className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4
+                    className={`font-bold text-sm flex items-center gap-2 ${
+                      selectedPaymentMethod === "WALLET" ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    Universal PGX Wallet
+                    <Sparkles className="w-3.5 h-3.5 text-[#00a3ff]" />
+                  </h4>
+                  <p
+                    className={`text-xs mt-0.5 ${
+                      selectedPaymentMethod === "WALLET" ? "text-slate-300" : "text-gray-500"
+                    }`}
+                  >
+                    {isAuthenticated
+                      ? `Available: €${balance.toFixed(2)} EUR`
+                      : "Members only • 1-click deduction"}
+                  </p>
+                </div>
+              </div>
+              <div
+                className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 ${
+                  selectedPaymentMethod === "WALLET"
+                    ? "border-[#00a3ff] bg-[#00a3ff]"
+                    : "border-gray-300"
+                }`}
+              >
+                {selectedPaymentMethod === "WALLET" && (
+                  <div className="w-2 h-2 rounded-full bg-white" />
+                )}
+              </div>
+            </div>
+
+            <div
+              className={`mt-4 pt-3 border-t flex items-center justify-between text-[11px] ${
+                selectedPaymentMethod === "WALLET"
+                  ? "border-slate-800 text-slate-400"
+                  : "border-gray-100 text-gray-500"
+              }`}
+            >
+              <div className="flex items-center gap-1.5">
+                <ShieldCheck
+                  className={`w-3.5 h-3.5 ${
+                    selectedPaymentMethod === "WALLET" ? "text-[#00a3ff]" : "text-emerald-600"
+                  }`}
+                />
+                <span>Zero gateway fees</span>
+              </div>
+              <span
+                className={`font-semibold ${
+                  selectedPaymentMethod === "WALLET" ? "text-white" : "text-gray-700"
+                }`}
+              >
+                PGX Network
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Selected Card Badge */}
+        {selectedPaymentMethod === "STRIPE" && (
+          <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-200/80 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-blue-100 text-[#0070cc] flex items-center justify-center shrink-0">
+                <Lock className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-gray-900">
+                  Direct Card Payment via Stripe Checkout
+                </p>
+                <p className="text-[11px] text-gray-600">
+                  After placing your order, you will be redirected to the official Stripe hosted checkout page to complete payment securely with your credit/debit card in EUR.
+                </p>
+              </div>
+            </div>
+            <div className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-gray-600 bg-white px-3 py-1.5 rounded-lg border shadow-2xs shrink-0">
+              <span>Powered by</span>
+              <strong className="text-indigo-600 font-bold">Stripe</strong>
+            </div>
+          </div>
+        )}
 
         {/* Universal Wallet Card Box */}
-        <div className="border-2 border-[#00a3ff]/40 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden">
-          {/* Subtle glow background */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#00a3ff]/10 rounded-full blur-3xl pointer-events-none"></div>
-
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <Wallet className="w-5 h-5 text-[#00a3ff]" />
-                <span className="text-xs font-mono font-bold tracking-wider uppercase text-slate-400">
-                  Shared PGX Network Balance
-                </span>
+        {selectedPaymentMethod === "WALLET" && (
+          <div className="space-y-4">
+            {!isAuthenticated ? (
+              <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-start gap-3">
+                  <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                  <div className="space-y-1">
+                    <h4 className="text-sm font-bold text-amber-900">Sign in to use your PGX Wallet</h4>
+                    <p className="text-xs text-amber-700">
+                      Universal PGX Wallet is linked to member accounts. Please sign in or switch to Credit / Debit Card for instant guest checkout.
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href="/login?redirect=/checkout"
+                  className="shrink-0 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-xl transition-all text-center"
+                >
+                  Sign In
+                </Link>
               </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-black tracking-tight text-white">
-                  {isWalletLoading ? "..." : `€${balance.toFixed(2)}`}
-                </span>
-                <span className="text-xs text-slate-400 font-mono">EUR Available</span>
+            ) : (
+              <div className="border-2 border-[#00a3ff]/40 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#00a3ff]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2">
+                      <Wallet className="w-5 h-5 text-[#00a3ff]" />
+                      <span className="text-xs font-mono font-bold tracking-wider uppercase text-slate-400">
+                        Shared PGX Network Balance
+                      </span>
+                    </div>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-3xl font-black tracking-tight text-white">
+                        {isWalletLoading ? "..." : `€${balance.toFixed(2)}`}
+                      </span>
+                      <span className="text-xs text-slate-400 font-mono">EUR Available</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <WalletPill compact={false} />
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-400 gap-2">
+                  <div className="flex items-center gap-1.5">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>Instant 1-Click Payment • Automatically deducted upon order placement</span>
+                  </div>
+                  <span className="text-[11px] text-slate-400">
+                    Shared across Store & Platform
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Quick Top-Up Trigger */}
-            <div className="flex items-center gap-3">
-              <WalletPill compact={false} />
-            </div>
-          </div>
-
-          <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-400 gap-2">
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Instant 1-Click Payment • Automatically deducted upon order placement</span>
-            </div>
-            <span className="text-[11px] text-slate-400">
-              Shared across Store & Platform
-            </span>
-          </div>
-        </div>
-
-        {/* Insufficient balance warning if balance is below total */}
-        {hasInsufficientBalance && (
-          <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3">
-            <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-            <div className="space-y-1">
-              <h4 className="text-sm font-bold text-amber-900">
-                Insufficient Wallet Balance (€{balance.toFixed(2)} / €{totalOrderAmount.toFixed(2)})
-              </h4>
-              <p className="text-xs text-amber-700">
-                Your order total exceeds your available PGX Universal Wallet balance. Please click the <strong>Deposit Funds</strong> button above to top up your balance via Stripe before completing the order.
-              </p>
-            </div>
+            {/* Insufficient balance warning if balance is below total */}
+            {isAuthenticated && hasInsufficientBalance && (
+              <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3">
+                <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold text-amber-900">
+                    Insufficient Wallet Balance (€{balance.toFixed(2)} / €{totalOrderAmount.toFixed(2)})
+                  </h4>
+                  <p className="text-xs text-amber-700">
+                    Your order total exceeds your available PGX Universal Wallet balance. Please click the <strong>Deposit Funds</strong> button above to top up your balance, or switch to <strong>Credit / Debit Card</strong> above to pay directly via Stripe.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

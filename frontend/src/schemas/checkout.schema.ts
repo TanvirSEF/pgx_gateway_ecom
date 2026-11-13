@@ -6,7 +6,7 @@ export const guestCheckoutSchema = z.object({
     .string()
     .min(6, "Enter a valid international phone number")
     .regex(/^[+0-9\s\-()]+$/, "Enter a valid international phone number with country code (e.g. +1 555 123 4567)"),
-  email: z.string().email("Invalid email address").optional().or(z.literal("")),
+  email: z.string().min(1, "Email is required for order confirmation").email("Invalid email address"),
   country: z.string().min(2, "Country is required").default("United States"),
   street: z.string().min(3, "Street address is required"),
   addressLine2: z.string().optional().or(z.literal("")),
@@ -18,7 +18,7 @@ export const guestCheckoutSchema = z.object({
     message: "Select a shipping method",
   }),
   notes: z.string().optional(),
-  paymentMethod: z.string().default("WALLET"),
+  paymentMethod: z.string().default("STRIPE"),
   addressId: z.string().optional(),
   saveAddress: z.boolean().default(false).optional(),
 });

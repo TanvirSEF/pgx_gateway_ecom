@@ -37,7 +37,7 @@ export interface CreateOrderPayload {
 export const useCreateOrder = () => {
   return useMutation({
     mutationFn: async (payload: CreateOrderPayload) => {
-      const response = await instance.post<ApiResponse<Order>>(
+      const response = await instance.post<ApiResponse<Order & { checkoutUrl?: string }>>(
         "/orders",
         payload,
       );

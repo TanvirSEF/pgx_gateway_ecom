@@ -1,21 +1,29 @@
 import {
   BadRequestException,
   Injectable,
+  InternalServerErrorException,
+  Logger,
   NotFoundException,
 } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { OrderStatus, PaymentMethod, PaymentStatus, Prisma } from '@prisma/client';
 import { CouponsService } from 'modules/coupons/service';
 import { PrismaService } from '../../prisma/prisma.service';
 import { MailService } from '../mail/mail.service';
+import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { WalletService } from '../wallet/wallet.service';
 
 @Injectable()
 export class OrdersService {
+  private readonly logger = new Logger(OrdersService.name);
+
   constructor(
     private prisma: PrismaService,
     private mailService: MailService,
     private couponsService: CouponsService,
     private walletService: WalletService,
+    private dynamicSettingsService: DynamicSettingsService,
+    private configService: ConfigService,
   ) {}
 
   async create(data: {
@@ -106,7 +114,9 @@ export class OrdersService {
     const shippingCost = Number(shippingZone.cost);
     const total = subtotal - discount + shippingCost;
 
-    const requestedPaymentMethod = (data.paymentMethod as PaymentMethod) || PaymentMethod.WALLET;
+    const requestedPaymentMethod = data.paymentMethod
+      ? (data.paymentMethod.toUpperCase() as PaymentMethod)
+      : (data.userId ? PaymentMethod.WALLET : PaymentMethod.STRIPE);
 
     if (requestedPaymentMethod === PaymentMethod.WALLET) {
       if (!data.userId) {
@@ -144,7 +154,11 @@ export class OrdersService {
           statusHistory: {
             create: {
               status: 'PENDING',
-              note: requestedPaymentMethod === PaymentMethod.WALLET ? 'Order placed and paid via PGX Universal Wallet' : 'Order placed',
+              note: requestedPaymentMethod === PaymentMethod.WALLET
+                ? 'Order placed and paid via PGX Universal Wallet'
+                : requestedPaymentMethod === PaymentMethod.STRIPE
+                  ? 'Order placed, awaiting Stripe card payment'
+                  : 'Order placed',
             },
           },
           invoice: {
@@ -209,22 +223,107 @@ export class OrdersService {
       }
     }
 
-    // Send confirmation email
-    const email =
-      data.guestEmail ||
-      (data.userId
-        ? (await this.prisma.user.findUnique({ where: { id: data.userId } }))
-            ?.email
-        : null);
-    if (email) {
+    let checkoutUrl: string | undefined = undefined;
+
+    if (requestedPaymentMethod === PaymentMethod.STRIPE) {
       try {
-        await this.mailService.sendOrderConfirmation(email, order as any);
-      } catch (error) {
-        console.error('Failed to send order confirmation email:', error);
+        const { client: stripeClient, profile } = await this.dynamicSettingsService.getStripeClient();
+        const currency = (profile.currency || 'eur').toLowerCase();
+        const frontendUrl = this.configService.get<string>('FRONTEND_URL') || 'https://pgxsports.shop';
+
+        const line_items: any[] = order.items.map((item) => {
+          const productImages = (item.product as any)?.images?.map((img: any) => img.url) || [];
+          return {
+            price_data: {
+              currency,
+              product_data: {
+                name: item.variantName ? `${item.productName} (${item.variantName})` : item.productName,
+                images: productImages.filter((u: string) => typeof u === 'string' && u.startsWith('http')).slice(0, 1),
+              },
+              unit_amount: Math.round(Number(item.unitPrice) * 100),
+            },
+            quantity: item.quantity,
+          };
+        });
+
+        if (shippingCost > 0) {
+          line_items.push({
+            price_data: {
+              currency,
+              product_data: {
+                name: `Shipping (${shippingZone.name})`,
+                description: 'Tracked international courier delivery',
+              },
+              unit_amount: Math.round(shippingCost * 100),
+            },
+            quantity: 1,
+          });
+        }
+
+        const discounts: any[] = [];
+        if (discount > 0) {
+          try {
+            const stripeCoupon = await stripeClient.coupons.create({
+              amount_off: Math.round(discount * 100),
+              currency,
+              duration: 'once',
+              name: data.couponCode || 'Discount',
+            });
+            discounts.push({ coupon: stripeCoupon.id });
+          } catch (couponErr: any) {
+            this.logger.warn(`Could not create ephemeral Stripe discount coupon: ${couponErr.message}`);
+          }
+        }
+
+        const customerEmail =
+          data.guestEmail ||
+          (data.userId
+            ? (await this.prisma.user.findUnique({ where: { id: data.userId } }))?.email
+            : undefined);
+
+        const session = await stripeClient.checkout.sessions.create({
+          payment_method_types: ['card'],
+          mode: 'payment',
+          customer_email: customerEmail || undefined,
+          line_items,
+          discounts: discounts.length > 0 ? discounts : undefined,
+          metadata: {
+            orderId: order.id,
+            orderNumber: order.orderNumber,
+            type: 'order_payment',
+          },
+          success_url: `${frontendUrl}/order-confirmation/${order.orderNumber}?session_id={CHECKOUT_SESSION_ID}&payment_success=true`,
+          cancel_url: `${frontendUrl}/checkout?cancelled=true&order=${order.orderNumber}`,
+        });
+
+        checkoutUrl = session.url || undefined;
+      } catch (stripeErr: any) {
+        this.logger.error(`Failed to create Stripe Checkout session for order ${order.orderNumber}:`, stripeErr);
+        throw new BadRequestException(`Failed to initialize card payment: ${stripeErr.message}`);
       }
     }
 
-    return order;
+    // Send confirmation email for wallet / offline orders
+    if (requestedPaymentMethod !== PaymentMethod.STRIPE) {
+      const email =
+        data.guestEmail ||
+        (data.userId
+          ? (await this.prisma.user.findUnique({ where: { id: data.userId } }))
+              ?.email
+          : null);
+      if (email) {
+        try {
+          await this.mailService.sendOrderConfirmation(email, order as any);
+        } catch (error) {
+          console.error('Failed to send order confirmation email:', error);
+        }
+      }
+    }
+
+    return {
+      ...order,
+      checkoutUrl,
+    };
   }
 
   async trackOrder(orderNumber: string, phone: string) {

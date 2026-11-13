@@ -167,6 +167,7 @@ enum OrderStatus {
 }
 
 enum PaymentMethod {
+  STRIPE
   WALLET
   CASH_ON_DELIVERY
   BKASH

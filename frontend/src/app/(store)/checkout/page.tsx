@@ -49,7 +49,7 @@ export default function CheckoutPage() {
       name: user?.name || "",
       email: user?.email || "",
       country: "United States",
-      paymentMethod: "WALLET",
+      paymentMethod: "STRIPE",
       saveAddress: false,
     },
   });
@@ -184,11 +184,11 @@ export default function CheckoutPage() {
       }
 
       const orderData = {
-        userId: user.id,
+        userId: user?.id || undefined,
         addressId: finalAddressId,
         guestName: data.name,
         guestPhone: data.phone,
-        guestEmail: data.email || user.email,
+        guestEmail: data.email || user?.email || undefined,
         shippingAddress: {
           name: data.name,
           phone: data.phone,
@@ -203,7 +203,7 @@ export default function CheckoutPage() {
         },
         zone: data.zone,
         notes: data.notes,
-        paymentMethod: "WALLET",
+        paymentMethod: data.paymentMethod || "STRIPE",
         items: items.map((item) => ({
           productId: item.productId,
           variantId: item.variantId,
@@ -213,8 +213,18 @@ export default function CheckoutPage() {
       };
 
       const result = await createOrderMutation.mutateAsync(orderData);
+
+      if (data.paymentMethod === "STRIPE" && result.checkoutUrl) {
+        clearCart();
+        toast.success("Redirecting to secure Stripe Checkout...");
+        window.location.href = result.checkoutUrl;
+        return;
+      }
+
       clearCart();
-      await refreshWallet();
+      if (isAuthenticated) {
+        await refreshWallet();
+      }
       toast.success("Order placed and paid successfully via PGX Universal Wallet!");
       router.push(`/order-confirmation/${result.orderNumber}`);
     } catch (error: unknown) {
@@ -226,34 +236,6 @@ export default function CheckoutPage() {
       toast.error("Failed to place order");
     }
   };
-
-  if (!isAuthLoading && !isAuthenticated) {
-    return (
-      <div className="container mx-auto px-4 py-20 max-w-xl text-center">
-        <div className="w-16 h-16 bg-[#00a3ff]/10 text-[#0070cc] rounded-full flex items-center justify-center mx-auto mb-6">
-          <LogIn className="w-8 h-8" />
-        </div>
-        <h1 className="text-3xl font-black text-gray-900 mb-3">Login Required for Checkout</h1>
-        <p className="text-gray-600 mb-8 leading-relaxed">
-          Orders on the PGX store are processed securely through your <strong>Universal PGX Wallet</strong>. Please log in or create an account to proceed with your order.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/login?redirect=/checkout"
-            className="px-6 py-3.5 rounded-xl bg-[#00a3ff] hover:bg-[#008fdf] text-white font-bold text-sm shadow-lg shadow-[#00a3ff]/20 transition-all"
-          >
-            Sign In to Account
-          </Link>
-          <Link
-            href="/register?redirect=/checkout"
-            className="px-6 py-3.5 rounded-xl border border-slate-300 hover:bg-slate-50 font-bold text-sm text-gray-700 transition-all"
-          >
-            Create New Account
-          </Link>
-        </div>
-      </div>
-    );
-  }
 
   if (items.length === 0) {
     return (
@@ -280,7 +262,7 @@ export default function CheckoutPage() {
       <div className="mb-8 space-y-1">
         <h1 className="text-3xl font-black text-gray-900 tracking-tight">Express International Checkout</h1>
         <p className="text-sm text-slate-500">
-          Fast worldwide fulfillment with seamless Universal PGX Wallet debit payment.
+          Fast worldwide delivery with secure Stripe card checkout or Universal PGX Wallet.
         </p>
       </div>
 
@@ -309,6 +291,7 @@ export default function CheckoutPage() {
           handleRemoveCoupon={handleRemoveCoupon}
           isSubmitting={isSubmitting}
           isValidatingCoupon={validateCouponMutation.isPending}
+          paymentMethod={watch("paymentMethod")}
         />
       </form>
     </div>

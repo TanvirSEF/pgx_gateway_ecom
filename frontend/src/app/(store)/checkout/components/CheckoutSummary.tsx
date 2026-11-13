@@ -20,6 +20,7 @@ interface CheckoutSummaryProps {
   handleRemoveCoupon: () => void;
   isSubmitting: boolean;
   isValidatingCoupon: boolean;
+  paymentMethod?: string;
 }
 
 export function CheckoutSummary(props: CheckoutSummaryProps) {
@@ -37,6 +38,7 @@ export function CheckoutSummary(props: CheckoutSummaryProps) {
     handleRemoveCoupon,
     isSubmitting,
     isValidatingCoupon,
+    paymentMethod = "STRIPE",
   } = props;
 
   return (
@@ -162,7 +164,13 @@ export function CheckoutSummary(props: CheckoutSummaryProps) {
           disabled={isSubmitting}
           className="w-full h-12 bg-[#00a3ff] hover:bg-[#008fdf] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-[#00a3ff]/20 transition-all cursor-pointer"
         >
-          {isSubmitting ? "Processing Wallet Payment..." : "Pay with Universal Wallet"}{" "}
+          {isSubmitting
+            ? paymentMethod === "WALLET"
+              ? "Processing Wallet Payment..."
+              : "Redirecting to Stripe..."
+            : paymentMethod === "WALLET"
+              ? "Pay with Universal Wallet"
+              : "Proceed to Card Checkout"}{" "}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
 

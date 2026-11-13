@@ -12,6 +12,7 @@ import {
   RefreshCw,
   Share2,
   Check,
+  Zap,
 } from "lucide-react";
 import { CURRENCY } from "@/lib/constants";
 import { motion } from "framer-motion";
@@ -25,6 +26,7 @@ interface ProductInfoProps {
   quantity: number;
   setQuantity: (qty: number) => void;
   handleAdd: () => void;
+  handleBuyNow?: () => void;
 }
 
 export function ProductInfo({
@@ -35,6 +37,7 @@ export function ProductInfo({
   quantity,
   setQuantity,
   handleAdd,
+  handleBuyNow,
 }: ProductInfoProps) {
   const [isWishlisted, setIsWishlisted] = useState(false);
 
@@ -204,7 +207,7 @@ export function ProductInfo({
           </button>
         </div>
 
-        {/* Primary Add to Cart Button */}
+        {/* Add to Cart Button */}
         <button
           onClick={handleAdd}
           disabled={
@@ -213,11 +216,28 @@ export function ProductInfo({
               !selectedVariant) ||
             isOutOfStock
           }
-          className="flex-1 h-12 px-6 rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/25 disabled:opacity-50 disabled:cursor-not-allowed active:scale-98 cursor-pointer"
+          className="flex-1 h-12 px-4 rounded-2xl border-2 border-primary/25 bg-primary/10 hover:bg-primary/20 text-primary font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
         >
           <ShoppingBag className="w-4 h-4" />
           <span>{isOutOfStock ? "Out of Stock" : "Add to Cart"}</span>
         </button>
+
+        {/* Buy Now Button - Direct to Checkout */}
+        {handleBuyNow && (
+          <button
+            onClick={handleBuyNow}
+            disabled={
+              (product.variants &&
+                product.variants.length > 0 &&
+                !selectedVariant) ||
+              isOutOfStock
+            }
+            className="flex-1 h-12 px-4 rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-md shadow-primary/25 disabled:opacity-50 disabled:cursor-not-allowed active:scale-98 cursor-pointer"
+          >
+            <Zap className="w-4 h-4" />
+            <span>Buy Now</span>
+          </button>
+        )}
 
         {/* Wishlist Button */}
         <button

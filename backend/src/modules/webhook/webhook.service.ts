@@ -5,7 +5,10 @@ import {
   Logger,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { OrderStatus, PaymentStatus } from '@prisma/client';
 import Stripe from 'stripe';
+import { PrismaService } from '../../prisma/prisma.service';
+import { MailService } from '../mail/mail.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { SupabaseService } from '../supabase/supabase.service';
 
@@ -17,6 +20,8 @@ export class WebhookService {
     private readonly configService: ConfigService,
     private readonly supabaseService: SupabaseService,
     private readonly dynamicSettingsService: DynamicSettingsService,
+    private readonly prisma: PrismaService,
+    private readonly mailService: MailService,
   ) {}
 
   async handleStripeWebhook(signature: string, rawBody: Buffer) {
@@ -77,6 +82,13 @@ export class WebhookService {
   }
 
   private async processCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
+    const sessionType = session.metadata?.type;
+
+    if (sessionType === 'order_payment') {
+      await this.processOrderPaymentCompleted(session);
+      return;
+    }
+
     const userId = session.metadata?.user_id;
     const amountEurStr = session.metadata?.amount_eur;
     const isWalletTopUp = session.metadata?.type === 'wallet_topup';
@@ -153,6 +165,78 @@ export class WebhookService {
     } catch (err: any) {
       this.logger.error(`Failed to credit wallet for session ${session.id}:`, err);
       throw err;
+    }
+  }
+
+  private async processOrderPaymentCompleted(session: Stripe.Checkout.Session) {
+    const orderId = session.metadata?.orderId;
+    const orderNumber = session.metadata?.orderNumber;
+
+    if (!orderId && !orderNumber) {
+      this.logger.warn(`Stripe session ${session.id} marked as order_payment has no orderId or orderNumber in metadata.`);
+      return;
+    }
+
+    this.logger.log(`Processing Stripe card order payment for orderId: ${orderId}, orderNumber: ${orderNumber}`);
+
+    const order = await this.prisma.order.findFirst({
+      where: orderId ? { id: orderId } : { orderNumber },
+      include: {
+        items: { include: { product: { include: { images: { take: 1 } } } } },
+        invoice: true,
+      },
+    });
+
+    if (!order) {
+      this.logger.error(`Order not found for Stripe session ${session.id} (orderId: ${orderId}, orderNumber: ${orderNumber})`);
+      return;
+    }
+
+    // Idempotency: if already marked PAID, skip duplicate processing
+    if (order.paymentStatus === PaymentStatus.PAID) {
+      this.logger.log(`Order ${order.orderNumber} is already marked as PAID; skipping duplicate fulfillment.`);
+      return;
+    }
+
+    const paymentIntentId = typeof session.payment_intent === 'string'
+      ? session.payment_intent
+      : session.payment_intent?.id || session.id;
+
+    // Update order status to PAID and PROCESSING
+    const updatedOrder = await this.prisma.order.update({
+      where: { id: order.id },
+      data: {
+        paymentStatus: PaymentStatus.PAID,
+        status: OrderStatus.PROCESSING,
+        statusHistory: {
+          create: {
+            status: OrderStatus.PROCESSING,
+            note: `Payment confirmed via Stripe Card Checkout (Session: ${session.id}, Tx: ${paymentIntentId})`,
+          },
+        },
+      },
+      include: {
+        items: { include: { product: { include: { images: { take: 1 } } } } },
+        invoice: true,
+      },
+    });
+
+    this.logger.log(`Order ${order.orderNumber} successfully marked PAID and PROCESSING via Stripe.`);
+
+    // Send confirmation email to guest or user
+    const recipientEmail =
+      updatedOrder.guestEmail ||
+      (updatedOrder.userId
+        ? (await this.prisma.user.findUnique({ where: { id: updatedOrder.userId } }))?.email
+        : null);
+
+    if (recipientEmail) {
+      try {
+        await this.mailService.sendOrderConfirmation(recipientEmail, updatedOrder as any);
+        this.logger.log(`Sent order confirmation email to ${recipientEmail} for order ${order.orderNumber}`);
+      } catch (err: any) {
+        this.logger.error(`Failed to send order confirmation email for order ${order.orderNumber}: ${err.message}`);
+      }
     }
   }
 }

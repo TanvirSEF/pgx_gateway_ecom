@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/cart.store";
 import { resolveImageUrl } from "@/lib/utils";
 import { toast } from "sonner";
@@ -12,6 +13,7 @@ import { RelatedProducts } from "./RelatedProducts";
 import { MobileStickyBar } from "./MobileStickyBar";
 
 export function ProductDetailClient({ product }: { product: Product }) {
+  const router = useRouter();
   const addItem = useCartStore((s) => s.addItem);
   const [quantity, setQuantity] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(
@@ -51,6 +53,14 @@ export function ProductDetailClient({ product }: { product: Product }) {
       image: imageUrl as string,
     });
     toast.success(`${product.name} added to your cart!`);
+    return true;
+  };
+
+  const handleBuyNow = () => {
+    const success = handleAdd();
+    if (success) {
+      router.push("/checkout");
+    }
   };
 
   return (
@@ -67,6 +77,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
           quantity={quantity}
           setQuantity={setQuantity}
           handleAdd={handleAdd}
+          handleBuyNow={handleBuyNow}
         />
       </div>
 
