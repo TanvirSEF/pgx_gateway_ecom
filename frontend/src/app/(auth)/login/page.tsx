@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -23,7 +23,7 @@ import { withPublicRoute } from "@/helpers/with-route-guard";
 import { useAuth } from "@/providers/AuthProvider";
 import { LoginInput, loginSchema } from "@/schemas/auth.schema";
 
-function LoginPage() {
+function LoginFormContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { login } = useAuth();
@@ -191,6 +191,20 @@ function LoginPage() {
         </Link>
       </div>
     </div>
+  );
+}
+
+function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center py-12">
+          <Loader2 className="w-6 h-6 animate-spin text-[#00a3ff]" />
+        </div>
+      }
+    >
+      <LoginFormContent />
+    </Suspense>
   );
 }
 

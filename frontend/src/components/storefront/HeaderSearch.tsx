@@ -3,10 +3,10 @@
 import { useShopParams } from "@/hooks/use-shop-params";
 import { Search } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
 
-export function HeaderSearch() {
+function HeaderSearchForm() {
   const router = useRouter();
   const pathname = usePathname();
   const isShopPage = pathname === "/shop";
@@ -51,5 +51,19 @@ export function HeaderSearch() {
         </button>
       </div>
     </form>
+  );
+}
+
+export function HeaderSearch() {
+  return (
+    <Suspense
+      fallback={
+        <div className="relative w-full max-w-2xl flex items-center">
+          <div className="w-full h-10 rounded-lg bg-white/10 animate-pulse" />
+        </div>
+      }
+    >
+      <HeaderSearchForm />
+    </Suspense>
   );
 }
