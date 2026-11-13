@@ -9,6 +9,21 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "api.pgxdigital.shop",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "pgxdigital.shop",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "m.media-amazon.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "gadgetbd.com",
         pathname: "/**",
       },

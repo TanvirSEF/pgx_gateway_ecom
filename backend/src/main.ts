@@ -48,6 +48,9 @@ async function bootstrap() {
     'https://pgxsports.shop',
     'https://www.pgxsports.shop',
     'https://api.pgxsports.shop',
+    'https://pgxdigital.shop',
+    'https://www.pgxdigital.shop',
+    'https://api.pgxdigital.shop',
     'https://playgroundx.vip',
     'https://www.playgroundx.vip',
   ];
