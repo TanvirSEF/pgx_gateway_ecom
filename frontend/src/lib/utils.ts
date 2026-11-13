@@ -8,6 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export function resolveImageUrl(url?: string | null): string {
   if (!url) return "/placeholder-product.jpg";
   if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  if (url.startsWith("/products/") || url.startsWith("/images/") || url.startsWith("/placeholder")) return url;
 
   let base = process.env.NEXT_PUBLIC_IMAGE_BASE_URL || "";
   if (

@@ -1,12 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 import { ChevronDown, Grid, List as ListIcon } from "lucide-react";
 
 interface ShopHeaderProps {
@@ -40,17 +41,21 @@ export function ShopHeader({ search, totalProducts, viewMode, setViewMode, sort,
       <div className="flex items-center gap-3">
         {setSort && (
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="outline" size="sm" className="h-9 gap-1 text-xs sm:text-sm">
-                Sort: {currentSortLabel} <ChevronDown className="h-4 w-4 opacity-50" />
-              </Button>
+            <DropdownMenuTrigger
+              className={cn(
+                buttonVariants({ variant: "outline", size: "sm" }),
+                "h-9 gap-1.5 text-xs sm:text-sm cursor-pointer shadow-xs"
+              )}
+            >
+              <span>Sort: {currentSortLabel}</span>
+              <ChevronDown className="h-4 w-4 opacity-50" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {sortOptions.map((option) => (
                 <DropdownMenuItem 
                   key={option.value} 
                   onClick={() => setSort(option.value)}
-                  className={sort === option.value ? "text-[#00a3ff] font-bold" : ""}
+                  className={sort === option.value ? "text-[#7c3aed] font-bold" : ""}
                 >
                   {option.label}
                 </DropdownMenuItem>
@@ -61,14 +66,16 @@ export function ShopHeader({ search, totalProducts, viewMode, setViewMode, sort,
 
         <div className="flex items-center border rounded-lg bg-gray-50 p-1">
           <button
+            type="button"
             onClick={() => setViewMode("grid")}
-            className={`p-1.5 rounded ${viewMode === "grid" ? "bg-white shadow-sm text-slate-950" : "text-gray-500"}`}
+            className={`p-1.5 rounded cursor-pointer transition-colors ${viewMode === "grid" ? "bg-white shadow-xs text-slate-950 font-medium" : "text-gray-500 hover:text-gray-900"}`}
           >
             <Grid className="h-4 w-4" />
           </button>
           <button
+            type="button"
             onClick={() => setViewMode("list")}
-            className={`p-1.5 rounded ${viewMode === "list" ? "bg-white shadow-sm text-slate-950" : "text-gray-500"}`}
+            className={`p-1.5 rounded cursor-pointer transition-colors ${viewMode === "list" ? "bg-white shadow-xs text-slate-950 font-medium" : "text-gray-500 hover:text-gray-900"}`}
           >
             <ListIcon className="h-4 w-4" />
           </button>

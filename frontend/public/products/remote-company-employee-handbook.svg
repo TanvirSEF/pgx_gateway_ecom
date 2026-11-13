@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#131b2e" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181328" />
+      <stop offset="50%" stop-color="#2d1e4e" />
+      <stop offset="100%" stop-color="#140b24" />
+    </linearGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.04" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <rect width="800" height="600" fill="url(#gridPattern)" />
+
+  <!-- Subtle Ambient Glow -->
+  <circle cx="200" cy="150" r="260" fill="#eab308" opacity="0.08" filter="blur(60px)" />
+  <circle cx="650" cy="450" r="280" fill="#7c3aed" opacity="0.09" filter="blur(60px)" />
+
+  <!-- Category Pill Badge -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="190" height="34" rx="17" fill="#ca8a04" fill-opacity="0.25" stroke="#eab308" stroke-width="1.5" />
+    <circle cx="16" cy="17" r="4.5" fill="#eab308" />
+    <text x="32" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#ffffff" letter-spacing="1">LEGAL & BUSINESS</text>
+  </g>
+
+  <!-- SKU Badge -->
+  <g transform="translate(265, 64)">
+    <text x="0" y="20" font-family="monospace" font-size="12" font-weight="700" fill="#94a3b8">PGX-TMP-BIZ-009</text>
+  </g>
+
+  <!-- Main Product Title (Left Column) -->
+  <g transform="translate(60, 160)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Remote Company
+    </text>
+    <text x="0" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">Employee Handbook</text>
+
+    <!-- Short Value Subtitle -->
+    <text x="0" y="96" font-family="system-ui, sans-serif" font-size="14" fill="#cbd5e1" font-weight="500">
+      Comprehensive guide covering asynchronous communicat...
+    </text>
+
+    <!-- Pricing Box -->
+    <g transform="translate(0, 140)">
+      <rect x="0" y="0" width="180" height="60" rx="16" fill="#030712" fill-opacity="0.6" stroke="#334155" stroke-width="1.5" />
+      <text x="18" y="38" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#eab308">$29.00</text>
+      <text x="120" y="36" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-decoration="line-through">$49.00</text>
+    </g>
+
+    <!-- Feature Checklist -->
+    <g transform="translate(0, 230)">
+      <circle cx="8" cy="8" r="7" fill="#eab308" fill-opacity="0.2" />
+      <text x="8" y="11" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#eab308" text-anchor="middle">✓</text>
+      <text x="24" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Instant Automated Access</text>
+
+      <circle cx="8" cy="36" r="7" fill="#eab308" fill-opacity="0.2" />
+      <text x="8" y="39" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#eab308" text-anchor="middle">✓</text>
+      <text x="24" y="40" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Commercial Rights Included</text>
+
+      <circle cx="8" cy="64" r="7" fill="#eab308" fill-opacity="0.2" />
+      <text x="8" y="67" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#eab308" text-anchor="middle">✓</text>
+      <text x="24" y="68" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Free Lifetime Version Updates</text>
+    </g>
+  </g>
+
+  <!-- Graphic Mockup Area (Right Side) -->
+  
+      <!-- Verified Contract Document with Gold Seal -->
+      <g transform="translate(470, 140)">
+        <rect x="20" y="0" width="240" height="250" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+        
+        <!-- Document Content Lines -->
+        <rect x="40" y="30" width="120" height="12" rx="4" fill="#0f172a" />
+        <rect x="40" y="52" width="200" height="6" rx="3" fill="#94a3b8" />
+        <rect x="40" y="66" width="180" height="6" rx="3" fill="#94a3b8" />
+        <rect x="40" y="80" width="190" height="6" rx="3" fill="#94a3b8" />
+        
+        <rect x="40" y="104" width="90" height="10" rx="4" fill="#334155" />
+        <rect x="40" y="122" width="200" height="6" rx="3" fill="#94a3b8" />
+        <rect x="40" y="136" width="170" height="6" rx="3" fill="#94a3b8" />
+
+        <!-- Signature Flourish -->
+        <path d="M40 185 Q 60 160 80 185 T 120 170 T 150 190" fill="none" stroke="#2563eb" stroke-width="2.5" />
+        <line x1="40" y1="200" x2="160" y2="200" stroke="#64748b" stroke-width="1.5" />
+        <text x="40" y="214" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">AUTHORIZED SIGNATURE</text>
+
+        <!-- Gold Foil Seal -->
+        <circle cx="210" cy="195" r="26" fill="#fef08a" stroke="#ca8a04" stroke-width="2.5" />
+        <circle cx="210" cy="195" r="21" fill="#eab308" />
+        <polygon points="210,183 214,191 223,191 216,197 218,206 210,201 202,206 204,197 197,191 206,191" fill="#ffffff" />
+      </g>
+    
+
+  <!-- Bottom Brand Watermark Strip -->
+  <g transform="translate(60, 545)">
+    <rect x="0" y="0" width="680" height="1" fill="#ffffff" fill-opacity="0.1" />
+    <text x="0" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#94a3b8" letter-spacing="1">PGX DIGITAL</text>
+    <text x="82" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#64748b">• SMARTER TOOLS. BETTER RESULTS.</text>
+    <text x="680" y="24" font-family="monospace" font-size="10" font-weight="700" fill="#64748b" text-anchor="end">VERIFIED PRODUCTION ASSET</text>
+  </g>
+</svg>

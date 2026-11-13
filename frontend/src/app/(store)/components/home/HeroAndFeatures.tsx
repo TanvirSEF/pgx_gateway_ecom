@@ -1,377 +1,252 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
-  Activity,
   ArrowRight,
-  Bike,
-  Briefcase,
-  ChevronLeft,
-  ChevronRight,
-  Dumbbell,
-  Flame,
-  Footprints,
-  Heart,
-  Package,
+  Bot,
+  Code2,
+  Cpu,
+  Download,
+  GraduationCap,
+  Layers,
+  Lock,
+  RefreshCw,
   ShieldCheck,
-  Shirt,
   Sparkles,
-  Truck,
+  Terminal,
   Zap,
 } from "lucide-react";
-import { useGetCategories } from "@/lib/api/category";
-import { Skeleton } from "@/components/ui/skeleton";
-import { ScrollReveal } from "@/components/motion/ScrollReveal";
-
-const HERO_SLIDES = [
-  {
-    badge: "New 2026 Collection",
-    titleStart: "Elevate Your Everyday",
-    titleHighlight: "Style & Peak Fitness",
-    description:
-      "Precision-engineered commercial strength gear, smart cardio systems, and athletic performance wear crafted for champions.",
-    primaryCta: { text: "Shop Collection", href: "/shop" },
-    secondaryCta: { text: "Explore Deals", href: "/shop?category=deals" },
-    mainImage: "/hero-gym-model.jpg",
-    floatingCards: [
-      {
-        title: "Motorized Treadmill X18",
-        price: "€1,899.00",
-        image: "/hero-card-treadmill.jpg",
-        className: "top-6 -left-6 sm:left-2 lg:-left-6",
-        href: "/product/healthengine-commercial-motorized-treadmill-motion-x18",
-      },
-      {
-        title: "Smart Exercise Bike",
-        price: "€1,299.00",
-        image: "/hero-card-bike.jpg",
-        className: "top-4 -right-4 sm:right-4 lg:-right-4",
-        href: "/product/pgx-smart-exercise-bike",
-      },
-      {
-        title: "Adjustable Dumbbells Pro",
-        price: "€599.00",
-        image: "/hero-card-dumbbells.jpg",
-        className: "bottom-16 -left-4 sm:left-4 lg:-left-2",
-        href: "/product/pgx-adjustable-dumbbells",
-      },
-    ],
-  },
-  {
-    badge: "Strength Heavyweight Series",
-    titleStart: "Build Your Ultimate",
-    titleHighlight: "Commercial Home Gym",
-    description:
-      "Heavy-duty power cages, Olympic bar systems, and high-density rubber bumper plates engineered for uncompromising durability.",
-    primaryCta: { text: "View Strength Gear", href: "/shop?category=strength-equipment" },
-    secondaryCta: { text: "Gym Bundles", href: "/shop?category=bundles" },
-    mainImage: "/hero-card-powerrack.jpg",
-    floatingCards: [
-      {
-        title: "Pro Power Rack Cage",
-        price: "€1,599.00",
-        image: "/hero-card-powerrack.jpg",
-        className: "top-8 -left-4 sm:left-2",
-        href: "/product/pgx-power-rack-package",
-      },
-      {
-        title: "Bumper Plate Set 120kg",
-        price: "€449.00",
-        image: "/hero-card-dumbbells.jpg",
-        className: "bottom-12 -right-4 sm:right-4",
-        href: "/shop?category=strength-equipment",
-      },
-    ],
-  },
-];
+import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 }, [
-    Autoplay({ delay: 6500, stopOnInteraction: false }),
-  ]);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi, onSelect]);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
+  const floatingBadges = [
+    {
+      title: "AI Tools",
+      icon: Cpu,
+      gradient: "from-blue-500/80 to-purple-600/80",
+      border: "border-blue-400/40",
+      position: "top-4 left-2 sm:top-6 sm:left-4 lg:-left-6",
+      delay: 0,
+    },
+    {
+      title: "Templates",
+      icon: Code2,
+      gradient: "from-purple-500/80 to-indigo-600/80",
+      border: "border-purple-400/40",
+      position: "top-32 left-0 sm:top-36 sm:left-2 lg:-left-12",
+      delay: 0.8,
+    },
+    {
+      title: "Software",
+      icon: Terminal,
+      gradient: "from-emerald-500/80 to-teal-600/80",
+      border: "border-emerald-400/40",
+      position: "bottom-8 left-4 sm:bottom-12 sm:left-10 lg:-left-8",
+      delay: 1.4,
+    },
+    {
+      title: "Software",
+      icon: Layers,
+      gradient: "from-cyan-500/80 to-blue-600/80",
+      border: "border-cyan-400/40",
+      position: "top-8 right-2 sm:top-10 sm:right-6 lg:-right-6",
+      delay: 0.4,
+    },
+    {
+      title: "Courses",
+      icon: GraduationCap,
+      gradient: "from-purple-600/80 to-fuchsia-600/80",
+      border: "border-purple-400/40",
+      position: "top-36 right-0 sm:top-40 sm:right-4 lg:-right-12",
+      delay: 1.1,
+    },
+    {
+      title: "Digital Assets",
+      icon: Download,
+      gradient: "from-pink-500/80 to-rose-600/80",
+      border: "border-pink-400/40",
+      position: "bottom-12 right-2 sm:bottom-14 sm:right-6 lg:-right-6",
+      delay: 1.7,
+    },
+  ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 via-muted/20 to-background border-b border-border/80">
-      {/* Decorative ambient background glows */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#0c0728] via-[#09051e] to-[#080420] text-white pt-10 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-28 select-none">
+      {/* Background Cyber Glowing Orbs */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#7c3aed]/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-[#06b6d4]/15 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute -bottom-10 left-1/3 w-80 h-80 bg-[#a855f7]/15 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-        {/* Embla Viewport */}
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex">
-            {HERO_SLIDES.map((slide, slideIdx) => (
-              <div
-                key={slideIdx}
-                className="flex-[0_0_100%] min-w-0 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          {/* Left Column: Hero Typography & CTAs */}
+          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
+            <motion.h1
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-black tracking-tight leading-[1.12] text-white"
+            >
+              Digital Products for a <br className="hidden sm:inline" />
+              <span className="text-white">Smarter World.</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-slate-300 text-sm sm:text-base lg:text-lg max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed"
+            >
+              Discover premium software, AI tools, website templates, marketing resources,
+              and more — all in one place.
+            </motion.p>
+
+            {/* Feature Pills: Instant Download, Secure Payments, Lifetime Access */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 pt-2 text-xs sm:text-sm font-semibold text-slate-200"
+            >
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-[#7c3aed]/30 text-[#a78bfa] flex items-center justify-center">
+                  <Zap className="w-3.5 h-3.5 fill-current" />
+                </span>
+                <span>Instant Download</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                </span>
+                <span>Secure Payments</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                  <RefreshCw className="w-3.5 h-3.5" />
+                </span>
+                <span>Lifetime Access</span>
+              </div>
+            </motion.div>
+
+            {/* Action CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-3"
+            >
+              <Link
+                href="/shop"
+                className="px-6 sm:px-8 py-3.5 rounded-xl bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-bold text-xs sm:text-sm transition-all shadow-lg shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 flex items-center gap-2 cursor-pointer active:scale-95"
               >
-                {/* Left Column: Typography & CTAs */}
-                <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center text-center lg:text-left space-y-6">
-                  <div>
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4">
-                      <Sparkles className="w-3.5 h-3.5" />
-                      <span>{slide.badge}</span>
+                <span>Shop Now</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/shop"
+                className="px-6 sm:px-8 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold text-xs sm:text-sm border border-white/20 hover:border-white/40 transition-all flex items-center gap-2 cursor-pointer active:scale-95"
+              >
+                <span>Explore Categories</span>
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Right Column: High-Tech Laptop Mockup + 3D Floating Category Badges */}
+          <div className="lg:col-span-6 relative flex items-center justify-center min-h-[380px] sm:min-h-[460px] lg:min-h-[500px]">
+            {/* Center Laptop Frame Mockup */}
+            <div className="relative z-10 w-full max-w-[360px] sm:max-w-[460px] lg:max-w-[500px] aspect-[16/10] bg-[#120e2e] rounded-2xl border-4 border-slate-700/60 shadow-2xl p-2.5 sm:p-3 overflow-hidden">
+              {/* Laptop Screen Header */}
+              <div className="h-4 sm:h-5 bg-slate-900 rounded-t-lg flex items-center px-2 gap-1.5 border-b border-white/10">
+                <div className="w-2 h-2 rounded-full bg-red-500/80" />
+                <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
+                <div className="w-2 h-2 rounded-full bg-green-500/80" />
+                <div className="ml-auto text-[9px] text-slate-400 font-mono">pgxdigital.app</div>
+              </div>
+
+              {/* Laptop Screen Content (SaaS Dashboard matching mockup) */}
+              <div className="bg-[#0f0b29] h-[calc(100%-16px)] sm:h-[calc(100%-20px)] rounded-b-lg p-3 sm:p-4 text-white flex flex-col justify-between overflow-hidden relative">
+                {/* Dashboard Header */}
+                <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-md bg-[#7c3aed] flex items-center justify-center font-bold text-[10px]">
+                      PGX
                     </div>
-
-                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground leading-[1.12] font-serif">
-                      {slide.titleStart} <br />
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-600 to-indigo-600">
-                        {slide.titleHighlight}
-                      </span>
-                    </h1>
-
-                    <p className="mt-4 text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
-                      {slide.description}
-                    </p>
+                    <span className="text-xs font-bold text-slate-200">Dashboard</span>
                   </div>
-
-                  {/* Action buttons */}
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
-                    <Link
-                      href={slide.primaryCta.href}
-                      className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs sm:text-sm tracking-wide transition-all shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 active:scale-95 cursor-pointer"
-                    >
-                      <span>{slide.primaryCta.text}</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-
-                    <Link
-                      href={slide.secondaryCta.href}
-                      className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-card hover:bg-muted/70 text-foreground border border-border/80 font-bold text-xs sm:text-sm tracking-wide transition-all hover:border-primary/40 active:scale-95 cursor-pointer shadow-2xs"
-                    >
-                      <span>{slide.secondaryCta.text}</span>
-                    </Link>
-                  </div>
-
-                  {/* Customer social proof avatar row */}
-                  <div className="flex items-center justify-center lg:justify-start gap-3 pt-3">
-                    <div className="flex -space-x-2.5 overflow-hidden">
-                      <img
-                        className="inline-block h-8 w-8 rounded-full ring-2 ring-background object-cover"
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces"
-                        alt="Customer avatar"
-                      />
-                      <img
-                        className="inline-block h-8 w-8 rounded-full ring-2 ring-background object-cover"
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
-                        alt="Customer avatar"
-                      />
-                      <img
-                        className="inline-block h-8 w-8 rounded-full ring-2 ring-background object-cover"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces"
-                        alt="Customer avatar"
-                      />
-                      <img
-                        className="inline-block h-8 w-8 rounded-full ring-2 ring-background object-cover"
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces"
-                        alt="Customer avatar"
-                      />
-                    </div>
-                    <div className="text-left">
-                      <p className="text-xs font-semibold text-foreground">
-                        50,000+ Athletes &amp; Gyms
-                      </p>
-                      <p className="text-[11px] text-muted-foreground">
-                        Rated 4.9/5 from 12,000+ verified reviews
-                      </p>
-                    </div>
+                  <div className="flex items-center gap-2 text-[10px] text-slate-400">
+                    <span className="text-emerald-400 font-bold">$12,450</span>
+                    <span className="bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded">
+                      +28.4%
+                    </span>
                   </div>
                 </div>
 
-                {/* Right Column: Hero Visual Showcase with Floating Cards */}
-                <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center min-h-[360px] sm:min-h-[460px] md:min-h-[520px]">
-                  {/* Backdrop Glow */}
-                  <div className="absolute inset-0 max-w-[460px] max-h-[460px] m-auto rounded-full bg-gradient-to-tr from-primary/20 via-purple-400/20 to-transparent blur-3xl pointer-events-none" />
-
-                  {/* Hero Showcase Center Frame */}
-                  <div className="relative z-10 w-full max-w-[340px] sm:max-w-[420px] md:max-w-[460px] aspect-square rounded-3xl overflow-hidden shadow-2xl border border-white/60 dark:border-white/10 bg-card">
-                    <Image
-                      src={slide.mainImage}
-                      alt="PGX Athletic & Fitness Gear"
-                      fill
-                      priority={slideIdx === 0}
-                      className="object-cover object-center filter contrast-[1.02]"
-                    />
+                {/* Dashboard Center Hero Block */}
+                <div className="my-auto space-y-1.5 py-2">
+                  <h3 className="text-lg sm:text-2xl font-black text-white leading-tight">
+                    Build <br />
+                    <span className="text-[#a78bfa]">Create</span> <br />
+                    <span className="text-cyan-400">Grow</span>
+                  </h3>
+                  <p className="text-[10px] sm:text-xs text-slate-400 max-w-[180px]">
+                    Everything you need to succeed online.
+                  </p>
+                  <div className="pt-1">
+                    <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#7c3aed] text-white text-[10px] sm:text-xs font-bold rounded-lg shadow-sm">
+                      Get Started <ArrowRight className="w-3 h-3" />
+                    </span>
                   </div>
+                </div>
 
-                  {/* Floating Product Cards (Desktop & Tablet) */}
-                  {slide.floatingCards.map((card, cardIdx) => (
-                    <motion.div
-                      key={cardIdx}
-                      animate={{ y: [0, -6, 0] }}
-                      transition={{
-                        duration: 3 + cardIdx * 0.8,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                      }}
-                      className={`absolute z-20 ${card.className} hidden sm:flex`}
-                    >
-                      <Link
-                        href={card.href}
-                        className="flex items-center gap-3 p-2.5 sm:p-3 bg-card/95 backdrop-blur-xl rounded-2xl border border-border/80 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all duration-300 group"
-                      >
-                        <div className="relative w-11 h-11 rounded-xl overflow-hidden bg-muted/40 border border-border/60 shrink-0">
-                          <Image
-                            src={card.image}
-                            alt={card.title}
-                            fill
-                            className="object-cover group-hover:scale-108 transition-transform"
-                          />
-                        </div>
-                        <div className="pr-1 text-left">
-                          <h4 className="text-[11px] sm:text-xs font-bold text-foreground group-hover:text-primary transition-colors leading-tight line-clamp-1">
-                            {card.title}
-                          </h4>
-                          <p className="text-[11px] font-bold text-primary mt-0.5">
-                            {card.price}
-                          </p>
-                        </div>
-                      </Link>
-                    </motion.div>
-                  ))}
+                {/* Dashboard Chart Preview Bars */}
+                <div className="flex items-end gap-1.5 h-10 pt-1 border-t border-white/10">
+                  <div className="w-1/6 bg-[#7c3aed]/40 h-4 rounded-xs" />
+                  <div className="w-1/6 bg-[#7c3aed]/60 h-6 rounded-xs" />
+                  <div className="w-1/6 bg-[#7c3aed]/80 h-9 rounded-xs" />
+                  <div className="w-1/6 bg-[#06b6d4]/60 h-7 rounded-xs" />
+                  <div className="w-1/6 bg-[#06b6d4]/80 h-10 rounded-xs" />
+                  <div className="w-1/6 bg-emerald-400 h-8 rounded-xs" />
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Carousel Pagination Dots & Arrow Controls */}
-        <div className="flex items-center justify-between pt-6 border-t border-border/60 mt-8">
-          <div className="flex items-center gap-2">
-            {HERO_SLIDES.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => emblaApi && emblaApi.scrollTo(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                  selectedIndex === idx
-                    ? "w-8 bg-primary"
-                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
-              />
-            ))}
-          </div>
+              {/* Laptop Hinge / Stand Base */}
+              <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-48 sm:w-64 h-2 bg-slate-600 rounded-b-xl shadow-lg border-t border-slate-500" />
+            </div>
 
-          <div className="flex items-center gap-2">
-            <button
-              onClick={scrollPrev}
-              aria-label="Previous slide"
-              className="w-9 h-9 rounded-full bg-card border border-border/80 hover:border-primary/50 flex items-center justify-center text-foreground hover:text-primary transition-all shadow-2xs active:scale-95 cursor-pointer"
-            >
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button
-              onClick={scrollNext}
-              aria-label="Next slide"
-              className="w-9 h-9 rounded-full bg-card border border-border/80 hover:border-primary/50 flex items-center justify-center text-foreground hover:text-primary transition-all shadow-2xs active:scale-95 cursor-pointer"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Icon mapper for categories
-function getCategoryIcon(slug: string) {
-  const s = slug.toLowerCase();
-  if (s.includes("treadmill") || s.includes("running")) return Footprints;
-  if (s.includes("cardio") || s.includes("health")) return Activity;
-  if (s.includes("strength") || s.includes("dumbbell")) return Dumbbell;
-  if (s.includes("bike") || s.includes("cycling")) return Bike;
-  if (s.includes("gym") || s.includes("power")) return Zap;
-  if (s.includes("apparel") || s.includes("wear") || s.includes("clothing")) return Shirt;
-  if (s.includes("bag")) return Briefcase;
-  if (s.includes("deal") || s.includes("hot") || s.includes("sale")) return Flame;
-  return Package;
-}
-
-// Pastel category gradients matching Pinterest references (ShopMore & NovaShop)
-const CATEGORY_COLORS = [
-  "from-pink-500/20 to-rose-500/10 text-pink-600 dark:text-pink-400",
-  "from-blue-500/20 to-cyan-500/10 text-blue-600 dark:text-blue-400",
-  "from-amber-500/20 to-yellow-500/10 text-amber-600 dark:text-amber-400",
-  "from-emerald-500/20 to-teal-500/10 text-emerald-600 dark:text-emerald-400",
-  "from-purple-500/20 to-violet-500/10 text-purple-600 dark:text-purple-400",
-  "from-indigo-500/20 to-sky-500/10 text-indigo-600 dark:text-indigo-400",
-  "from-orange-500/20 to-amber-500/10 text-orange-600 dark:text-orange-400",
-  "from-rose-500/20 to-purple-500/10 text-rose-600 dark:text-rose-400",
-];
-
-export function QuickCategoriesBar() {
-  const { data: categories, isLoading } = useGetCategories();
-  const categoriesToRender = (categories || []).filter((cat) => cat.isActive !== false);
-
-  return (
-    <section className="bg-background py-8 sm:py-10 border-b border-border/60">
-      <div className="container mx-auto px-4">
-        {isLoading ? (
-          <div className="flex items-center gap-4 overflow-x-auto no-scrollbar py-2">
-            {Array.from({ length: 7 }).map((_, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center shrink-0 min-w-[85px] p-2 space-y-2"
-              >
-                <Skeleton className="w-16 h-16 rounded-full" />
-                <Skeleton className="w-14 h-3 rounded" />
-              </div>
-            ))}
-          </div>
-        ) : categoriesToRender.length > 0 ? (
-          <div className="flex items-center justify-start sm:justify-center gap-4 sm:gap-8 overflow-x-auto no-scrollbar py-2 snap-x snap-mandatory">
-            {categoriesToRender.map((cat, idx) => {
-              const Icon = getCategoryIcon(cat.slug);
-              const colorClass = CATEGORY_COLORS[idx % CATEGORY_COLORS.length];
-
+            {/* 3D Floating Glassmorphism Category Cards (Framer Motion Animated) */}
+            {floatingBadges.map((badge, idx) => {
+              const Icon = badge.icon;
               return (
-                <Link
-                  key={cat.id || cat.slug}
-                  href={`/shop?category=${cat.slug}`}
-                  className="group flex flex-col items-center shrink-0 min-w-[76px] sm:min-w-[90px] text-center snap-center transition-transform hover:-translate-y-1"
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{
+                    opacity: 1,
+                    scale: 1,
+                    y: [0, -8, 0],
+                  }}
+                  transition={{
+                    opacity: { duration: 0.5, delay: badge.delay * 0.3 },
+                    y: {
+                      duration: 3.5 + idx * 0.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    },
+                  }}
+                  className={`absolute z-20 ${badge.position} cursor-pointer hidden xs:flex items-center gap-2 p-2 sm:p-2.5 rounded-2xl bg-gradient-to-br ${badge.gradient} backdrop-blur-xl border ${badge.border} shadow-xl hover:scale-105 transition-transform select-none`}
                 >
-                  <div
-                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br ${colorClass} border border-black/5 dark:border-white/10 flex items-center justify-center shadow-xs group-hover:scale-108 group-hover:shadow-md transition-all duration-300`}
-                  >
-                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 stroke-[1.8]" />
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-white/20 flex items-center justify-center text-white shrink-0 shadow-inner">
+                    <Icon className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
                   </div>
-                  <span className="mt-2 text-xs font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-1">
-                    {cat.name}
+                  <span className="text-[11px] sm:text-xs font-bold text-white tracking-wide pr-1">
+                    {badge.title}
                   </span>
-                </Link>
+                </motion.div>
               );
             })}
           </div>
-        ) : null}
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-export const CURRENCY = "€";
+export const CURRENCY = "$";
 
 export const ORDER_STATUSES: Record<string, { label: string; color: string }> = {
   PENDING: { label: "Pending", color: "bg-yellow-100 text-yellow-800" },

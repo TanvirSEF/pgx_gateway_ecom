@@ -40,21 +40,24 @@ export function StoreSettingsProvider({ children }: { children: ReactNode }) {
       settings,
       isLoading,
       getSetting,
-      storeName: getSetting("store_name", "PGX"),
+      storeName: getSetting("store_name", "PGX DIGITAL"),
       storeDescription: getSetting(
         "store_description",
-        "PGX — Lifestyle, Fitness, Gear, Everyday. Premium fitness equipment, apparel and everyday essentials.",
+        "Discover premium software, AI tools, website templates, marketing resources, and more — all in one place.",
       ),
       storeLogo: getSetting("store_logo", "/logo.png"),
-      storeEmail: getSetting("store_email", "support@pgxfitness.com"),
+      storeEmail: getSetting("store_email", "support@pgxdigital.com"),
       storePhone: getSetting("store_phone", "+1 (800) 555-0199"),
-      storeAddress: getSetting("store_address", "Amsterdam / London / Global Hubs"),
+      storeAddress: getSetting("store_address", "Global Digital Hub"),
       whatsappNumber: getSetting("whatsapp_number", "+1 (800) 555-0199"),
       facebookUrl: getSetting("facebook_url", "https://facebook.com"),
       instagramUrl: getSetting("instagram_url", "https://instagram.com"),
-      heroTitle: getSetting("hero_title", "A STRONGER TOMORROW."),
-      heroSubtitle: getSetting("hero_subtitle", "Premium fitness equipment, apparel and everyday essentials for a healthier, happier you."),
-      heroBadge: getSetting("hero_badge", "DISCIPLINE TODAY."),
+      heroTitle: getSetting("hero_title", "Digital Products for a Smarter World."),
+      heroSubtitle: getSetting(
+        "hero_subtitle",
+        "Discover premium software, AI tools, website templates, marketing resources, and more — all in one place.",
+      ),
+      heroBadge: getSetting("hero_badge", "SMARTER TOOLS. BETTER RESULTS."),
     };
   }, [data, isLoading]);
 

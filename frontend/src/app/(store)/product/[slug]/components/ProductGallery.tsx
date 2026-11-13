@@ -77,7 +77,7 @@ export function ProductGallery({ product }: ProductGalleryProps) {
         onMouseEnter={() => setIsZooming(true)}
         onMouseLeave={() => setIsZooming(false)}
         onMouseMove={handleMouseMove}
-        className="relative flex-1 aspect-square rounded-3xl bg-muted/20 border border-border/80 overflow-hidden flex items-center justify-center p-6 shadow-sm group select-none cursor-crosshair"
+        className="relative flex-1 aspect-square rounded-3xl bg-white border border-slate-200/80 overflow-hidden flex items-center justify-center p-6 shadow-sm group select-none cursor-crosshair"
       >
         {/* Subtle Zoom Helper Pill */}
         <div className="absolute top-3 right-3 z-10 hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-background/80 backdrop-blur-md border border-border/60 text-[11px] font-medium text-muted-foreground shadow-2xs pointer-events-none group-hover:text-primary transition-colors">

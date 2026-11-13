@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Amazon-Style Soft Ground Shadow -->
+    <radialGradient id="contactShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Pure White Amazon Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+
+  <!-- Soft Studio Ground Shadow -->
+  <ellipse cx="400" cy="510" rx="260" ry="28" fill="url(#contactShadow)" />
+  <ellipse cx="400" cy="500" rx="160" ry="14" fill="url(#contactShadow)" opacity="0.6" />
+
+  <!-- Clean Top Amazon Tags -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="105" height="26" rx="6" fill="#f1f5f9" stroke="#e2e8f0" />
+    <text x="52" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">PRIME ELIGIBLE</text>
+  </g>
+
+  <g transform="translate(640, 40)">
+    <rect x="0" y="0" width="120" height="26" rx="6" fill="#ecfdf5" stroke="#a7f3d0" />
+    <text x="60" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#059669" text-anchor="middle">★ VERIFIED GENUINE</text>
+  </g>
+
+  <!-- Product Illustration -->
+  
+      <!-- Digital Masterclass Book / Curriculum Binder -->
+      <g transform="translate(400, 350)">
+        <!-- Spine -->
+        <polygon points="-120,-140 -80,-160 -80,120 -120,140" fill="#1e1b4b" stroke="#312e81" />
+        <!-- Front Cover -->
+        <polygon points="-80,-160 100,-130 100,150 -80,120" fill="#1e293b" stroke="#475569" stroke-width="2" />
+        
+        <!-- Gold Seal Badge on Book -->
+        <circle cx="10" cy="-20" r="42" fill="#fef08a" stroke="#ca8a04" stroke-width="3" />
+        <circle cx="10" cy="-20" r="34" fill="#eab308" />
+        <polygon points="10,-35 15,-25 26,-25 18,-18 21,-7 10,-13 -1,-7 2,-18 -6,-25 5,-25" fill="#ffffff" />
+        
+        <text x="10" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">OFFICIAL</text>
+        <text x="10" y="48" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#38bdf8" text-anchor="middle">GUIDE 2026</text>
+      </g>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <g transform="translate(400, 565)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#94a3b8" letter-spacing="1" text-anchor="middle">
+      PGX DIGITAL • OFFICIAL SPECIFICATION
+    </text>
+  </g>
+</svg>

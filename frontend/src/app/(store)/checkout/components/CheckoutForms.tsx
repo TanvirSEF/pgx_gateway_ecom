@@ -499,7 +499,7 @@ export function CheckoutForms({
                     }`}
                   >
                     {isAuthenticated
-                      ? `Available: €${balance.toFixed(2)} EUR`
+                      ? `Available: $${balance.toFixed(2)} USD`
                       : "Members only • 1-click deduction"}
                   </p>
                 </div>
@@ -601,9 +601,9 @@ export function CheckoutForms({
                     </div>
                     <div className="flex items-baseline gap-2">
                       <span className="text-3xl font-black tracking-tight text-white">
-                        {isWalletLoading ? "..." : `€${balance.toFixed(2)}`}
+                        {isWalletLoading ? "..." : `$${balance.toFixed(2)}`}
                       </span>
-                      <span className="text-xs text-slate-400 font-mono">EUR Available</span>
+                      <span className="text-xs text-slate-400 font-mono">USD Available</span>
                     </div>
                   </div>
 
@@ -630,7 +630,7 @@ export function CheckoutForms({
                 <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <h4 className="text-sm font-bold text-amber-900">
-                    Insufficient Wallet Balance (€{balance.toFixed(2)} / €{totalOrderAmount.toFixed(2)})
+                    Insufficient Wallet Balance (${balance.toFixed(2)} / ${totalOrderAmount.toFixed(2)})
                   </h4>
                   <p className="text-xs text-amber-700">
                     Your order total exceeds your available PGX Universal Wallet balance. Please click the <strong>Deposit Funds</strong> button above to top up your balance, or switch to <strong>Credit / Debit Card</strong> above to pay directly via Stripe.

@@ -157,7 +157,7 @@ export default function CheckoutPage() {
 
     if (balance < total) {
       toast.error(
-        `Insufficient PGX Wallet balance (€${balance.toFixed(2)} available, €${total.toFixed(2)} required). Please top up your wallet.`,
+        `Insufficient PGX Wallet balance ($${balance.toFixed(2)} available, $${total.toFixed(2)} required). Please top up your wallet.`,
       );
       return;
     }
@@ -245,7 +245,7 @@ export default function CheckoutPage() {
         </div>
         <h1 className="text-3xl font-bold mb-3 text-gray-900">Your Cart is Empty</h1>
         <p className="text-gray-600 mb-8 text-sm">
-          Explore our premium catalog of high-performance gear, apparel, and equipment.
+          Explore our premium catalog of high-performance software, AI tools, and digital templates.
         </p>
         <Link
           href="/shop"

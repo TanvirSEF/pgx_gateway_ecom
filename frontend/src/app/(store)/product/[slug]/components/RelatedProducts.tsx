@@ -30,7 +30,7 @@ export function RelatedProducts({
       <SectionHeader
         badge="Recommendations"
         title="You Might Also Like"
-        subtitle="Frequently paired with this item by athletes and fitness professionals."
+        subtitle="Frequently paired with this item by developers, creators, and digital teams."
         viewAllHref="/shop"
         viewAllText="Explore Shop"
       />

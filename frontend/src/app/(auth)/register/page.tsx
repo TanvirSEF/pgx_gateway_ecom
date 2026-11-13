@@ -81,7 +81,7 @@ function RegisterPage() {
           Create Account
         </h1>
         <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-xs mx-auto">
-          Fast, effortless registration. Start exploring PGX gear today.
+          Fast, effortless registration. Start exploring PGX Digital tools today.
         </p>
       </div>
 
@@ -151,7 +151,7 @@ function RegisterPage() {
               id="email"
               type="email"
               autoComplete="email"
-              placeholder="athlete@domain.com"
+              placeholder="user@domain.com"
               {...formRegister("email")}
               className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all ${
                 errors.email ? "border-red-500 focus:border-red-500 focus:ring-red-500/15" : ""

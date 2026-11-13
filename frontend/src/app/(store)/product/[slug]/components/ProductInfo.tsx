@@ -76,7 +76,7 @@ export function ProductInfo({
       {/* Category / Collection Tag & Share */}
       <div className="flex items-center justify-between gap-2 mb-3">
         <span className="text-xs font-bold uppercase tracking-wider text-primary">
-          {product.category?.name || "Premium Athletic System"}
+          {product.category?.name || "Digital Asset"}
         </span>
 
         <button
@@ -103,7 +103,7 @@ export function ProductInfo({
         <span className="hover:underline cursor-pointer">128 Customer Reviews</span>
         <span className="text-border">|</span>
         <span className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
-          <Check className="w-3.5 h-3.5 stroke-[2.5]" /> In Stock &amp; Ready to Ship
+          <Check className="w-3.5 h-3.5 stroke-[2.5]" /> In Stock • Instant Digital Access
         </span>
       </div>
 
@@ -133,7 +133,7 @@ export function ProductInfo({
         )}
 
         <p className="w-full text-[11px] text-muted-foreground mt-1">
-          Price includes standard courier freight &amp; 2-year warranty.
+          ⚡ Instant download • Includes official license key &amp; lifetime updates.
         </p>
       </div>
 
@@ -257,11 +257,11 @@ export function ProductInfo({
       <div className="grid grid-cols-2 gap-3 pt-6 border-t border-border/80">
         <div className="flex items-center gap-3 p-3 rounded-2xl bg-muted/20 border border-border/50">
           <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-            <Truck className="w-4 h-4" />
+            <Zap className="w-4 h-4" />
           </div>
           <div>
-            <h5 className="font-bold text-xs text-foreground">Fast Delivery</h5>
-            <p className="text-[10px] text-muted-foreground">Tracked 3-5 days</p>
+            <h5 className="font-bold text-xs text-foreground">Instant Access</h5>
+            <p className="text-[10px] text-muted-foreground">Automated digital delivery</p>
           </div>
         </div>
 
@@ -270,8 +270,8 @@ export function ProductInfo({
             <ShieldCheck className="w-4 h-4" />
           </div>
           <div>
-            <h5 className="font-bold text-xs text-foreground">2-Year Warranty</h5>
-            <p className="text-[10px] text-muted-foreground">Commercial grade</p>
+            <h5 className="font-bold text-xs text-foreground">100% Authentic</h5>
+            <p className="text-[10px] text-muted-foreground">Verified &amp; lifetime updates</p>
           </div>
         </div>
       </div>

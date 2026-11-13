@@ -40,7 +40,7 @@ export default function ProductDetailPage({ params }: Props) {
           Product Not Available
         </h1>
         <p className="text-muted-foreground text-sm max-w-md mb-6 leading-relaxed">
-          The fitness equipment or item you are looking for may have moved or is temporarily out of stock.
+          The digital product or asset you are looking for may have moved or is currently unavailable.
         </p>
         <Link
           href="/shop"

@@ -10,7 +10,7 @@ export function HeaderSearch() {
   const router = useRouter();
   const pathname = usePathname();
   const isShopPage = pathname === "/shop";
-  
+
   const [{ search }, setParams] = useShopParams();
   const [localSearch, setLocalSearch] = useState(search);
   const [debouncedSearch] = useDebounceValue(localSearch, 500);
@@ -33,15 +33,23 @@ export function HeaderSearch() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="relative w-full max-w-md">
-      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-      <input
-        type="text"
-        value={localSearch}
-        onChange={(e) => setLocalSearch(e.target.value)}
-        placeholder="Search products..."
-        className="w-full pl-10 pr-4 py-2 rounded-lg bg-muted/50 text-foreground placeholder:text-muted-foreground border border-border focus:border-primary focus:bg-background focus:ring-2 focus:ring-primary/20 outline-none transition-all text-xs sm:text-sm font-medium"
-      />
+    <form onSubmit={handleSubmit} className="relative w-full max-w-2xl flex items-center">
+      <div className="relative w-full">
+        <input
+          type="text"
+          value={localSearch}
+          onChange={(e) => setLocalSearch(e.target.value)}
+          placeholder="Search for software, templates, courses and more..."
+          className="w-full pl-4 pr-12 py-2.5 rounded-lg bg-white text-slate-900 placeholder:text-slate-400 border border-slate-200 focus:border-[#7c3aed] focus:ring-2 focus:ring-[#7c3aed]/25 outline-none transition-all text-xs sm:text-sm font-normal shadow-inner"
+        />
+        <button
+          type="submit"
+          className="absolute right-1 top-1/2 -translate-y-1/2 w-8 h-8 rounded-md bg-[#7c3aed] hover:bg-[#6d28d9] text-white flex items-center justify-center transition-colors shadow-sm cursor-pointer"
+          aria-label="Search"
+        >
+          <Search className="w-4 h-4" />
+        </button>
+      </div>
     </form>
   );
 }

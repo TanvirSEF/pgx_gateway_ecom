@@ -9,21 +9,40 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/providers/AuthProvider";
 import { useCartStore } from "@/store/cart.store";
+import { CURRENCY } from "@/lib/constants";
 import {
   ChevronDown,
   LogOut,
   Menu,
-  ShoppingBag,
+  ShoppingCart,
   User,
   X,
   Sparkles,
+  Bot,
+  Laptop,
+  Code2,
+  GraduationCap,
+  Layers,
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HeaderSearch } from "./HeaderSearch";
-import { WalletPill } from "./WalletPill";
+import { PgxDigitalLogo } from "./PgxDigitalLogo";
+
+interface NavDropdownItem {
+  title: string;
+  href: string;
+  icon?: any;
+}
+
+interface NavLinkItem {
+  title: string;
+  href: string;
+  hasDropdown?: boolean;
+  items?: NavDropdownItem[];
+}
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,290 +50,240 @@ export function Navbar() {
   const cartItems = useCartStore((s) => s.items);
   const openCart = useCartStore((s) => s.openCart);
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  const cartSubtotal = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
   const router = useRouter();
   const pathname = usePathname();
 
-  const navLinks = [
+  const digitalCategories: NavDropdownItem[] = [
+    { title: "Software & Licenses", href: "/shop?category=software-licenses", icon: Laptop },
+    { title: "Website Templates", href: "/shop?category=website-templates", icon: Code2 },
+    { title: "AI Tools & Automation", href: "/shop?category=ai-tools-automation", icon: Bot },
+    { title: "Digital Marketing", href: "/shop?category=digital-marketing", icon: Sparkles },
+    { title: "Online Courses & E-books", href: "/shop?category=online-courses-ebooks", icon: GraduationCap },
+    { title: "Creative Assets", href: "/shop?category=creative-assets", icon: Layers },
+  ];
+
+  const navLinks: NavLinkItem[] = [
+    { title: "Home", href: "/" },
     {
-      title: "All Products",
+      title: "Shop",
       href: "/shop",
-    },
-    {
-      title: "Equipment",
-      href: "/shop?category=strength-equipment",
-      badge: "Popular",
-      children: [
-        { title: "All Equipment", href: "/shop?category=strength-equipment" },
-        { title: "Commercial Treadmills", href: "/shop?category=cardio-equipment" },
-        { title: "Smart Exercise Bikes", href: "/shop?category=cardio-equipment" },
-        { title: "Power Racks & Cages", href: "/shop?category=strength-equipment" },
-        { title: "Adjustable Dumbbells", href: "/shop?category=strength-equipment" },
+      hasDropdown: true,
+      items: [
+        { title: "All Digital Products", href: "/shop" },
+        { title: "Featured Software", href: "/shop?filter=featured" },
+        { title: "Best Selling Templates", href: "/shop?sort=best-sellers" },
+        { title: "New Releases", href: "/shop?sort=newest" },
       ],
     },
     {
-      title: "Apparel",
-      href: "/shop?category=apparel",
-      children: [
-        { title: "Men's Performance", href: "/shop?category=apparel" },
-        { title: "Women's Activewear", href: "/shop?category=apparel" },
-        { title: "Training Footwear", href: "/shop?category=apparel" },
-      ],
+      title: "Categories",
+      href: "/shop",
+      hasDropdown: true,
+      items: digitalCategories,
     },
-    {
-      title: "Accessories",
-      href: "/shop?category=accessories",
-      children: [
-        { title: "Resistance Bands", href: "/shop?category=accessories" },
-        { title: "Yoga & Floor Mats", href: "/shop?category=accessories" },
-        { title: "Hydration & Shakers", href: "/shop?category=accessories" },
-      ],
-    },
-    {
-      title: "Bundles",
-      href: "/shop?category=bundles",
-      badge: "Save 20%",
-    },
-    {
-      title: "About Us",
-      href: "/about-us",
-    },
+    { title: "Best Sellers", href: "/shop?filter=best-sellers" },
+    { title: "New Arrivals", href: "/shop?sort=newest" },
+    { title: "Blog", href: "/blog" },
+    { title: "Support", href: "/contact-us" },
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-background/85 backdrop-blur-xl border-b border-border/80 text-foreground transition-all duration-300">
-      <div className="container mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 bg-[#0c0728] border-b border-white/10 text-white select-none transition-colors">
+      {/* 1. Main Header Row: Logo, Search, Cart */}
+      <div className="container mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between gap-4 lg:gap-8">
         {/* Brand Logo */}
-        <Link
-          href="/"
-          className="inline-flex items-center shrink-0 group transition-transform active:scale-95"
-        >
-          <img
-            src="/logo.png"
-            alt="PGX Logo"
-            className="h-8 sm:h-10 w-auto object-contain transition-opacity group-hover:opacity-90"
-          />
-        </Link>
+        <div className="shrink-0">
+          <PgxDigitalLogo variant="dark" />
+        </div>
 
-        {/* Center Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 text-[13px] font-medium tracking-wide">
-          {navLinks.map((link) => {
-            const isCurrent =
-              pathname === link.href ||
-              (link.children &&
-                link.children.some((c) => pathname.startsWith(c.href)));
-
-            return link.children ? (
-              <DropdownMenu key={link.title}>
-                <DropdownMenuTrigger className="px-3.5 py-2 rounded-xl text-foreground/80 hover:text-foreground hover:bg-muted/70 transition-all flex items-center gap-1.5 outline-none font-medium cursor-pointer">
-                  <span>{link.title}</span>
-                  {link.badge && (
-                    <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-primary/10 text-primary">
-                      {link.badge}
-                    </span>
-                  )}
-                  <ChevronDown className="w-3.5 h-3.5 text-muted-foreground transition-transform duration-200" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-popover/95 backdrop-blur-xl border border-border/80 text-popover-foreground min-w-[210px] shadow-xl rounded-2xl p-1.5 animate-in fade-in-80 zoom-in-95">
-                  {link.children.map((sub) => (
-                    <DropdownMenuItem
-                      key={sub.title}
-                      onClick={() => router.push(sub.href)}
-                      className="cursor-pointer text-xs font-medium text-foreground/90 hover:text-primary hover:bg-primary/5 rounded-xl py-2 px-3 transition-colors"
-                    >
-                      {sub.title}
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <Link
-                key={link.title}
-                href={link.href}
-                className={`relative px-3.5 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
-                  isCurrent
-                    ? "text-primary bg-primary/5 font-semibold"
-                    : "text-foreground/80 hover:text-foreground hover:bg-muted/70"
-                }`}
-              >
-                <span>{link.title}</span>
-                {link.badge && (
-                  <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-primary/10 text-primary">
-                    {link.badge}
-                  </span>
-                )}
-              </Link>
-            );
-          })}
-        </nav>
-
-        {/* Search Bar (Desktop & Tablet) */}
-        <div className="hidden md:flex flex-1 max-w-xs lg:max-w-sm xl:max-w-md mx-2">
+        {/* Center Search Bar (Desktop & Tablet) */}
+        <div className="hidden sm:flex flex-1 max-w-2xl mx-auto">
           <HeaderSearch />
         </div>
 
-        {/* Right Action Icons */}
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-          {/* Universal Wallet Pill */}
-          <WalletPill />
-
-          {/* User Account Dropdown */}
+        {/* Right Action Icons & Cart */}
+        <div className="flex items-center gap-3 shrink-0">
+          {/* User Account Quick Dropdown */}
           {isAuthenticated ? (
             <DropdownMenu>
-              <DropdownMenuTrigger className="p-2 sm:p-2.5 rounded-xl text-foreground/80 hover:text-foreground hover:bg-muted/70 transition-all outline-none cursor-pointer">
-                <User className="w-5 h-5" />
+              <DropdownMenuTrigger className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition-colors outline-none cursor-pointer hidden md:flex items-center gap-1.5 text-xs font-medium">
+                <User className="w-4 h-4 text-[#8b5cf6]" />
+                <span className="truncate max-w-[100px]">{user?.name}</span>
+                <ChevronDown className="w-3 h-3 text-slate-400" />
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 align="end"
-                className="bg-popover/95 backdrop-blur-xl border border-border/80 text-popover-foreground min-w-[220px] shadow-xl rounded-2xl p-2 animate-in fade-in-80"
+                className="bg-[#110b38] border border-white/15 text-white min-w-[200px] shadow-2xl rounded-xl p-1.5 animate-in fade-in-80"
               >
-                <div className="px-3 py-2.5 text-xs border-b border-border/60">
-                  <p className="font-bold text-foreground truncate">
-                    {user?.name}
-                  </p>
-                  <p className="text-muted-foreground truncate">{user?.email}</p>
+                <div className="px-3 py-2 text-xs border-b border-white/10">
+                  <p className="font-bold text-white truncate">{user?.name}</p>
+                  <p className="text-slate-400 text-[11px] truncate">{user?.email}</p>
                 </div>
                 <DropdownMenuItem
                   onClick={() => router.push("/my-account")}
-                  className="cursor-pointer text-xs hover:bg-muted/80 rounded-xl py-2 mt-1"
+                  className="cursor-pointer text-xs hover:bg-white/10 rounded-lg py-2 mt-1"
                 >
                   My Account
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => router.push("/my-account/wallet")}
-                  className="cursor-pointer text-xs hover:bg-primary/5 text-primary font-semibold rounded-xl py-2"
-                >
-                  Wallet &amp; Top-Up
-                </DropdownMenuItem>
-                <DropdownMenuItem
                   onClick={() => router.push("/my-account/orders")}
-                  className="cursor-pointer text-xs hover:bg-muted/80 rounded-xl py-2"
+                  className="cursor-pointer text-xs hover:bg-white/10 rounded-lg py-2"
                 >
-                  Order History
+                  My Purchases &amp; Licenses
                 </DropdownMenuItem>
                 {isAdmin && (
                   <DropdownMenuItem
                     onClick={() => router.push("/admin")}
-                    className="cursor-pointer text-xs text-primary font-semibold hover:bg-primary/10 rounded-xl py-2"
+                    className="cursor-pointer text-xs text-[#8b5cf6] font-semibold hover:bg-white/10 rounded-lg py-2"
                   >
                     Admin Dashboard
                   </DropdownMenuItem>
                 )}
-                <DropdownMenuSeparator className="bg-border/60 my-1" />
+                <DropdownMenuSeparator className="bg-white/10 my-1" />
                 <DropdownMenuItem
                   onClick={logout}
-                  className="cursor-pointer text-xs text-destructive hover:bg-destructive/10 rounded-xl py-2 flex items-center gap-2"
+                  className="cursor-pointer text-xs text-red-400 hover:bg-red-500/10 rounded-lg py-2 flex items-center gap-2"
                 >
                   <LogOut className="w-3.5 h-3.5" /> Log Out
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          ) : (
-            <Link
-              href="/login"
-              className="p-2 sm:p-2.5 rounded-xl text-foreground/80 hover:text-foreground hover:bg-muted/70 transition-all"
-              title="Sign In"
-            >
-              <User className="w-5 h-5" />
-            </Link>
-          )}
+          ) : null}
 
-          {/* Cart Icon & Dynamic Spring Badge */}
+          {/* Cart Pill Display: Cart Icon + Badge + Live Total (Exact Mockup Match) */}
           <button
             onClick={openCart}
-            className="relative p-2 sm:p-2.5 rounded-xl text-foreground/80 hover:text-foreground hover:bg-muted/70 transition-all flex items-center justify-center cursor-pointer active:scale-95"
-            aria-label="Shopping Cart"
+            className="flex items-center gap-2.5 px-3.5 py-2 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 active:scale-95 transition-all cursor-pointer shadow-sm"
+            aria-label="Open Shopping Cart"
           >
-            <ShoppingBag className="w-5 h-5" />
-            {totalItems > 0 && (
-              <motion.span
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] font-black h-4 min-w-[16px] px-1 rounded-full flex items-center justify-center shadow-sm"
-              >
-                {totalItems}
-              </motion.span>
-            )}
+            <div className="relative flex items-center justify-center">
+              <ShoppingCart className="w-4 h-4 text-white" />
+              {totalItems > 0 ? (
+                <span className="absolute -top-2.5 -right-2.5 bg-[#7c3aed] text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center shadow-xs">
+                  {totalItems}
+                </span>
+              ) : (
+                <span className="absolute -top-2.5 -right-2.5 bg-white/20 text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                  0
+                </span>
+              )}
+            </div>
+            <span className="font-bold text-xs sm:text-sm text-white tracking-tight">
+              {CURRENCY}
+              {cartSubtotal.toFixed(2)}
+            </span>
           </button>
 
-          {/* Mobile Menu Hamburger */}
+          {/* Mobile Menu Hamburger Button */}
           <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 rounded-xl text-foreground/80 hover:text-foreground hover:bg-muted/70 transition-all cursor-pointer"
-            aria-label="Toggle Menu"
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 lg:hidden"
+            aria-label="Toggle Navigation"
           >
-            {mobileMenuOpen ? (
-              <X className="w-5 h-5" />
-            ) : (
-              <Menu className="w-5 h-5" />
-            )}
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Search Input Row */}
-      <div className="md:hidden px-4 pb-3">
+      <div className="sm:hidden px-4 pb-3">
         <HeaderSearch />
       </div>
 
-      {/* Mobile Animated Dropdown Menu */}
+      {/* 2. Sub-Navigation Bar (Desktop Row) */}
+      <div className="hidden lg:block border-t border-white/10 bg-[#09051e]">
+        <div className="container mx-auto px-4 flex items-center gap-8">
+          {navLinks.map((link) => {
+            const isCurrent =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname === link.href || pathname.startsWith(link.href + "/");
+
+            if (link.hasDropdown && link.items) {
+              return (
+                <DropdownMenu key={link.title}>
+                  <DropdownMenuTrigger className="py-2.5 text-xs font-semibold tracking-wide text-slate-300 hover:text-white transition-colors flex items-center gap-1 cursor-pointer outline-none">
+                    <span>{link.title}</span>
+                    <ChevronDown className="w-3 h-3 text-slate-400" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-[#110b38] border border-white/15 text-white min-w-[210px] shadow-2xl rounded-xl p-1.5 animate-in fade-in-80">
+                    {link.items.map((sub) => (
+                      <DropdownMenuItem
+                        key={sub.title}
+                        onClick={() => router.push(sub.href)}
+                        className="cursor-pointer text-xs font-medium text-slate-200 hover:text-white hover:bg-white/10 rounded-lg py-2 px-3 transition-colors flex items-center gap-2"
+                      >
+                        {sub.icon && <sub.icon className="w-3.5 h-3.5 text-[#8b5cf6]" />}
+                        <span>{sub.title}</span>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              );
+            }
+
+            return (
+              <Link
+                key={link.title}
+                href={link.href}
+                className={`relative py-2.5 text-xs font-semibold tracking-wide transition-colors ${
+                  isCurrent ? "text-white" : "text-slate-300 hover:text-white"
+                }`}
+              >
+                <span>{link.title}</span>
+                {isCurrent && (
+                  <motion.div
+                    layoutId="activeNavIndicator"
+                    className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#8b5cf6] rounded-full"
+                  />
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* 3. Mobile Navigation Drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="xl:hidden border-t border-border/80 bg-background/95 backdrop-blur-xl px-4 py-4 space-y-2 overflow-hidden"
+            className="lg:hidden border-t border-white/10 bg-[#09051e] px-4 py-4 space-y-3"
           >
             <div className="flex flex-col space-y-1">
               {navLinks.map((link) => (
-                <div key={link.title}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-muted/70 text-foreground/90 font-medium text-sm transition-colors"
-                  >
-                    <span>{link.title}</span>
-                    {link.badge && (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-primary/10 text-primary">
-                        {link.badge}
-                      </span>
-                    )}
-                  </Link>
-
-                  {link.children && (
-                    <div className="pl-4 pr-2 py-1 space-y-1 border-l-2 border-primary/20 ml-3 my-1">
-                      {link.children.map((sub) => (
-                        <Link
-                          key={sub.title}
-                          href={sub.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1.5 px-2 text-xs text-muted-foreground hover:text-primary transition-colors"
-                        >
-                          {sub.title}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-3 py-2 rounded-lg text-xs font-semibold text-slate-200 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  {link.title}
+                </Link>
               ))}
             </div>
 
-            <div className="pt-3 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground px-2">
-              <Link
-                href="/orders/track"
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-primary"
-              >
-                Track Order
-              </Link>
-              <Link
-                href="/contact-us"
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-primary"
-              >
-                Customer Support
-              </Link>
+            <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
+              <p className="text-[10px] uppercase font-bold tracking-wider text-slate-400 px-3">
+                Digital Categories
+              </p>
+              {digitalCategories.map((cat) => (
+                <Link
+                  key={cat.title}
+                  href={cat.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-white/5"
+                >
+                  <cat.icon className="w-3.5 h-3.5 text-[#8b5cf6]" />
+                  <span>{cat.title}</span>
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}

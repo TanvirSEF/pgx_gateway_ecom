@@ -1,62 +1,100 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Sparkles, Truck, ShieldCheck, Flame, ArrowRight } from "lucide-react";
+import { useAuth } from "@/providers/AuthProvider";
+import { ChevronDown, Globe, LogIn, User, UserPlus } from "lucide-react";
 import Link from "next/link";
-
-const ANNOUNCEMENTS = [
-  {
-    icon: Truck,
-    text: "Free Express Worldwide Shipping on Orders Over €50",
-    badge: "Limited Offer",
-    href: "/shop",
-  },
-  {
-    icon: Flame,
-    text: "Mid-Season Lifestyle Sale: Up to 50% Off Select Gear",
-    badge: "Sale",
-    href: "/shop?category=deals",
-  },
-  {
-    icon: ShieldCheck,
-    text: "2-Year Comprehensive Commercial Warranty On All Equipment",
-    badge: "Guaranteed",
-    href: "/about-us",
-  },
-  {
-    icon: Sparkles,
-    text: "New Athletic Collections Just Dropped — Elevate Your Everyday",
-    badge: "New In",
-    href: "/shop?category=apparel",
-  },
-];
+import { useState } from "react";
 
 export function AnnouncementBar() {
+  const { user, isAuthenticated } = useAuth();
+  const [currency, setCurrency] = useState("USD");
+  const [language, setLanguage] = useState("English");
+
   return (
-    <div className="relative overflow-hidden bg-foreground text-background py-2 text-[11px] sm:text-xs font-medium border-b border-white/10 select-none">
-      {/* Infinite smooth ticker for high-end boutique e-commerce feel */}
-      <div className="flex w-max animate-marquee space-x-10 sm:space-x-16 hover:[animation-play-state:paused]">
-        {[...ANNOUNCEMENTS, ...ANNOUNCEMENTS].map((item, idx) => {
-          const Icon = item.icon;
-          return (
+    <div className="bg-[#080420] text-slate-300 text-[11px] sm:text-xs py-2 px-4 sm:px-8 border-b border-white/5 select-none transition-colors">
+      <div className="container mx-auto flex items-center justify-between gap-3">
+        {/* Left: Global access tagline */}
+        <div className="flex items-center gap-2">
+          <Globe className="w-3.5 h-3.5 text-[#8b5cf6] shrink-0" />
+          <span className="font-medium tracking-wide text-slate-200">
+            Global Digital Products. Instant Access.
+          </span>
+        </div>
+
+        {/* Right: Currency, Language & Auth Links */}
+        <div className="flex items-center gap-4 sm:gap-6 shrink-0">
+          {/* Currency Switcher */}
+          <div className="relative group cursor-pointer hidden xs:flex items-center gap-1 hover:text-white transition-colors">
+            <span className="font-semibold text-slate-200">{currency}</span>
+            <ChevronDown className="w-3 h-3 text-slate-400 group-hover:text-white transition-colors" />
+            <div className="absolute top-full right-0 mt-1 hidden group-hover:block bg-[#110b38] border border-white/10 rounded-lg shadow-xl p-1 z-50 min-w-[70px]">
+              {["USD", "EUR", "GBP"].map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  onClick={() => setCurrency(c)}
+                  className={`w-full text-left px-2 py-1 rounded text-[11px] transition-colors ${
+                    currency === c ? "text-[#8b5cf6] font-bold bg-white/5" : "text-slate-300 hover:bg-white/5"
+                  }`}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Language Selector */}
+          <div className="relative group cursor-pointer hidden md:flex items-center gap-1 hover:text-white transition-colors">
+            <span className="font-medium text-slate-300">{language}</span>
+            <ChevronDown className="w-3 h-3 text-slate-400 group-hover:text-white transition-colors" />
+            <div className="absolute top-full right-0 mt-1 hidden group-hover:block bg-[#110b38] border border-white/10 rounded-lg shadow-xl p-1 z-50 min-w-[90px]">
+              {["English", "Español", "Deutsch"].map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => setLanguage(l)}
+                  className={`w-full text-left px-2 py-1 rounded text-[11px] transition-colors ${
+                    language === l ? "text-[#8b5cf6] font-bold bg-white/5" : "text-slate-300 hover:bg-white/5"
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="h-3 w-px bg-white/15 hidden xs:block" />
+
+          {/* Auth Links */}
+          {isAuthenticated ? (
             <Link
-              key={idx}
-              href={item.href}
-              className="inline-flex items-center gap-2 group transition-opacity hover:opacity-80 shrink-0"
+              href="/my-account"
+              className="flex items-center gap-1.5 hover:text-white font-medium transition-colors"
             >
-              <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-primary/20 text-primary">
-                <Icon className="w-2.5 h-2.5 text-purple-300" />
-              </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-white/10 text-white/90">
-                {item.badge}
-              </span>
-              <span className="text-white/90 tracking-wide">{item.text}</span>
-              <ArrowRight className="w-3 h-3 text-white/40 group-hover:translate-x-0.5 group-hover:text-white transition-all" />
+              <User className="w-3.5 h-3.5 text-[#8b5cf6]" />
+              <span className="truncate max-w-[120px]">{user?.name || "My Account"}</span>
             </Link>
-          );
-        })}
+          ) : (
+            <div className="flex items-center gap-3">
+              <Link
+                href="/login"
+                className="flex items-center gap-1 hover:text-white font-medium transition-colors"
+              >
+                <LogIn className="w-3.5 h-3.5 text-slate-400" />
+                <span>Login</span>
+              </Link>
+              <span className="text-white/20">|</span>
+              <Link
+                href="/register"
+                className="flex items-center gap-1 hover:text-[#8b5cf6] font-semibold transition-colors"
+              >
+                <UserPlus className="w-3.5 h-3.5 text-[#8b5cf6]" />
+                <span>Register</span>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
 }
-

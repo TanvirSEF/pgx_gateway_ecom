@@ -63,7 +63,7 @@ function WalletPageContent() {
     }
 
     if (isNaN(effectiveAmount) || effectiveAmount < 1) {
-      toast.error("Minimum deposit amount is €1");
+      toast.error("Minimum deposit amount is $1");
       return;
     }
 
@@ -133,10 +133,10 @@ function WalletPageContent() {
             </span>
             <div className="flex items-baseline gap-2">
               <span className="text-4xl sm:text-5xl font-black text-foreground font-mono tracking-tight">
-                {isLoading ? "..." : `€${balance.toFixed(2)}`}
+                {isLoading ? "..." : `$${balance.toFixed(2)}`}
               </span>
               <span className="text-xs font-bold text-primary uppercase tracking-wider font-mono">
-                EUR
+                USD
               </span>
             </div>
           </div>
@@ -159,7 +159,7 @@ function WalletPageContent() {
           </div>
           <div>
             <h2 className="text-lg font-bold text-foreground tracking-wide font-heading">Instant Stripe Deposit</h2>
-            <p className="text-xs text-muted-foreground">All transactions processed in Euros (€). Minimum top-up is €1.</p>
+            <p className="text-xs text-muted-foreground">All transactions processed in US Dollars ($). Minimum top-up is $1.</p>
           </div>
         </div>
 
@@ -185,7 +185,7 @@ function WalletPageContent() {
                       : "border-border bg-muted/40 text-foreground hover:border-primary/40 hover:bg-muted"
                   }`}
                 >
-                  €{amt}
+                  ${amt}
                 </button>
               );
             })}
@@ -195,10 +195,10 @@ function WalletPageContent() {
         {/* Custom Amount Field */}
         <div className="space-y-2">
           <label className="text-xs font-bold text-muted-foreground uppercase tracking-wider font-mono">
-            Or Enter Custom Amount (€)
+            Or Enter Custom Amount ($)
           </label>
           <div className="relative max-w-xs">
-            <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground font-bold">€</span>
+            <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground font-bold">$</span>
             <input
               type="number"
               min="1"
@@ -242,7 +242,7 @@ function WalletPageContent() {
             </>
           ) : (
             <>
-              <span>Top Up €{effectiveAmount ? effectiveAmount.toFixed(2) : "0.00"} via Stripe</span>
+              <span>Top Up ${effectiveAmount ? effectiveAmount.toFixed(2) : "0.00"} via Stripe</span>
               <ArrowUpRight className="w-4 h-4" />
             </>
           )}

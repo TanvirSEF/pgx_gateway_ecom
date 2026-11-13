@@ -91,7 +91,7 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-muted-foreground">Email Inquiries</h4>
-                  <p className="text-sm font-semibold text-foreground mt-0.5">{storeEmail || "support@pgxfitness.com"}</p>
+                  <p className="text-sm font-semibold text-foreground mt-0.5">{storeEmail || "support@pgxdigital.com"}</p>
                 </div>
               </div>
 
@@ -161,7 +161,7 @@ export default function ContactUsPage() {
                 <label className="text-xs font-bold uppercase tracking-wider text-foreground">Message *</label>
                 <Textarea
                   rows={5}
-                  placeholder="How can our fitness gear specialists assist you?"
+                  placeholder="How can our digital product specialists assist you?"
                   {...register("message")}
                   className="rounded-lg bg-background border-border focus:border-primary"
                 />

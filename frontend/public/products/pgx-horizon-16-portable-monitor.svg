@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Amazon-Style Soft Ground Shadow -->
+    <radialGradient id="contactShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Pure White Amazon Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+
+  <!-- Soft Studio Ground Shadow -->
+  <ellipse cx="400" cy="510" rx="260" ry="28" fill="url(#contactShadow)" />
+  <ellipse cx="400" cy="500" rx="160" ry="14" fill="url(#contactShadow)" opacity="0.6" />
+
+  <!-- Clean Top Amazon Tags -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="105" height="26" rx="6" fill="#f1f5f9" stroke="#e2e8f0" />
+    <text x="52" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">PRIME ELIGIBLE</text>
+  </g>
+
+  <g transform="translate(640, 40)">
+    <rect x="0" y="0" width="120" height="26" rx="6" fill="#ecfdf5" stroke="#a7f3d0" />
+    <text x="60" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#059669" text-anchor="middle">★ VERIFIED GENUINE</text>
+  </g>
+
+  <!-- Product Illustration -->
+  
+      <!-- 4K Portable USB-C Monitor -->
+      <g transform="translate(400, 360)">
+        <!-- Display Frame -->
+        <rect x="-240" y="-140" width="480" height="280" rx="16" fill="#090d16" stroke="#475569" stroke-width="4" />
+        
+        <!-- Screen Content (High-res Dashboard) -->
+        <rect x="-225" y="-125" width="450" height="250" rx="8" fill="#0f172a" />
+        
+        <!-- Chart on Screen -->
+        <rect x="-205" y="-105" width="200" height="100" rx="10" fill="#1e293b" />
+        <path d="M-195 -30 Q -150 -80 -100 -50 T -20 -90" fill="none" stroke="#38bdf8" stroke-width="3" />
+        <rect x="-205" y="10" width="200" height="95" rx="10" fill="#1e293b" />
+        
+        <rect x="15" y="-105" width="200" height="210" rx="10" fill="#1e293b" />
+        <circle cx="115" cy="-10" r="45" fill="none" stroke="#7c3aed" stroke-width="12" />
+        <circle cx="115" cy="-10" r="45" fill="none" stroke="#06b6d4" stroke-width="12" stroke-dasharray="160, 280" />
+        <text x="115" y="-4" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">4K IPS</text>
+
+        <!-- Kickstand -->
+        <polygon points="-240,140 -200,165 200,165 240,140" fill="#334155" opacity="0.6" />
+      </g>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <g transform="translate(400, 565)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#94a3b8" letter-spacing="1" text-anchor="middle">
+      PGX DIGITAL • OFFICIAL SPECIFICATION
+    </text>
+  </g>
+</svg>

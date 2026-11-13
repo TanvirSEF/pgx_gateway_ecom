@@ -43,7 +43,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
     }
 
     if (isNaN(effectiveAmount) || effectiveAmount < 1) {
-      toast.error("Minimum deposit amount is €1");
+      toast.error("Minimum deposit amount is $1");
       return;
     }
 
@@ -74,7 +74,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
       >
         <Coins size={compact ? 13 : 15} className="text-amber-500 group-hover:rotate-12 transition-transform" />
         <span className="font-bold text-foreground tracking-wide">
-          {isLoading ? "..." : `€${balance.toFixed(2)}`}
+          {isLoading ? "..." : `$${balance.toFixed(2)}`}
         </span>
         <span className="flex items-center justify-center w-4 h-4 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all ml-0.5">
           <Plus size={10} strokeWidth={3} />
@@ -92,7 +92,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
             <DialogTitle className="text-xl font-bold tracking-tight text-foreground flex items-center justify-between">
               <span>Deposit Funds</span>
               <span className="text-sm font-normal text-muted-foreground font-mono">
-                Current: <strong className="text-foreground">€{balance.toFixed(2)}</strong>
+                Current: <strong className="text-foreground">${balance.toFixed(2)}</strong>
               </span>
             </DialogTitle>
             <DialogDescription className="text-xs text-muted-foreground">
@@ -103,7 +103,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
           <div className="space-y-5 my-2">
             {/* Preset Amount Grid */}
             <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-300">Select Amount (EUR)</label>
+              <label className="text-xs font-semibold text-slate-300">Select Amount (USD)</label>
               <div className="grid grid-cols-3 gap-2">
                 {PRESET_AMOUNTS.map((amt) => {
                   const isSelected = selectedAmount === amt && !customAmount;
@@ -116,11 +116,11 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
                         setCustomAmount("");
                       }}
                       className={`py-2.5 px-3 rounded-xl border text-sm font-bold transition-all ${isSelected
-                        ? "border-[#00a3ff] bg-[#00a3ff]/15 text-[#00a3ff] shadow-sm shadow-[#00a3ff]/20"
+                        ? "border-[#7c3aed] bg-[#7c3aed]/15 text-[#a855f7] shadow-sm shadow-[#7c3aed]/20"
                         : "border-slate-800 bg-slate-900/60 text-slate-300 hover:border-slate-700 hover:text-white"
                         }`}
                     >
-                      €{amt}
+                      ${amt}
                     </button>
                   );
                 })}
@@ -131,7 +131,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
                     if (!customAmount) setCustomAmount("300");
                   }}
                   className={`py-2.5 px-3 rounded-xl border text-sm font-bold transition-all ${customAmount
-                    ? "border-[#00a3ff] bg-[#00a3ff]/15 text-[#00a3ff] shadow-sm shadow-[#00a3ff]/20"
+                    ? "border-[#7c3aed] bg-[#7c3aed]/15 text-[#a855f7] shadow-sm shadow-[#7c3aed]/20"
                     : "border-slate-800 bg-slate-900/60 text-slate-300 hover:border-slate-700 hover:text-white"
                     }`}
                 >
@@ -143,16 +143,16 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
             {/* Custom Input if active */}
             {customAmount !== "" && (
               <div className="space-y-1.5 animate-in fade-in duration-200">
-                <label className="text-xs font-semibold text-slate-300">Custom Amount (Min €1)</label>
+                <label className="text-xs font-semibold text-slate-300">Custom Amount (Min $1)</label>
                 <div className="relative">
-                  <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-bold">€</span>
+                  <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-bold">$</span>
                   <input
                     type="number"
                     min="1"
                     step="5"
                     value={customAmount}
                     onChange={(e) => setCustomAmount(e.target.value)}
-                    className="w-full bg-slate-900/90 border border-slate-700 rounded-xl py-2 pl-8 pr-4 text-white font-mono font-bold focus:outline-none focus:border-[#00a3ff]"
+                    className="w-full bg-slate-900/90 border border-slate-700 rounded-xl py-2 pl-8 pr-4 text-white font-mono font-bold focus:outline-none focus:border-[#7c3aed]"
                     placeholder="99"
                   />
                 </div>
@@ -164,7 +164,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
               <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
               <div className="text-[11px] text-slate-400 space-y-0.5">
                 <p className="font-semibold text-slate-200">Official Stripe Checkout</p>
-                <p>256-bit encrypted card processing. Funds sync across the adult platform &amp; athlete hub instantly upon completion.</p>
+                <p>256-bit encrypted card processing. Funds sync across the platform &amp; PGX Digital ecosystem instantly upon completion.</p>
               </div>
             </div>
 
@@ -172,7 +172,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
             <button
               onClick={handleTopUp}
               disabled={submitting || (effectiveAmount < 25)}
-              className="w-full py-3.5 px-4 rounded-xl bg-[#00a3ff] hover:bg-[#008fdf] text-white font-black uppercase tracking-wider text-xs shadow-lg shadow-[#00a3ff]/25 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3.5 px-4 rounded-xl bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-black uppercase tracking-wider text-xs shadow-lg shadow-[#7c3aed]/25 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {submitting ? (
                 <>
@@ -181,7 +181,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
                 </>
               ) : (
                 <>
-                  <span>Proceed to Pay €{effectiveAmount ? effectiveAmount.toFixed(2) : "0.00"}</span>
+                  <span>Proceed to Pay ${effectiveAmount ? effectiveAmount.toFixed(2) : "0.00"}</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </>
               )}

@@ -111,7 +111,7 @@ function NewPasswordContent() {
           Set New Password
         </h1>
         <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-xs mx-auto">
-          Secure your athlete account with a new password.
+          Secure your PGX Digital account with a new password.
         </p>
       </div>
 

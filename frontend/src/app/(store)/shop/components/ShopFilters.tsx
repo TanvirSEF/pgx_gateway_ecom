@@ -73,7 +73,7 @@ function CategoryItem({
           onClick={() => setActiveCategory(category.slug)}
           className={`flex-1 text-sm text-left px-3 py-2 rounded-lg transition-all flex items-center justify-between font-medium ${
             isActive
-              ? "bg-[#00a3ff]/10 text-[#0070cc] font-bold"
+              ? "bg-[#7c3aed]/10 text-[#7c3aed] font-bold"
               : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
           }`}
           style={{ paddingLeft: `${depth * 12 + 12}px` }}

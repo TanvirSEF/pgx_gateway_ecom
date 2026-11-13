@@ -29,18 +29,20 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "PGX — Lifestyle, Fitness, Gear, Everyday",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
+  title: "PGX DIGITAL — Smarter Tools. Better Results.",
   description:
-    "Premium fitness equipment, apparel and everyday essentials for a healthier, happier you.",
+    "Discover premium software, AI tools, website templates, marketing resources, and more — all in one place.",
   keywords: [
-    "fitness equipment",
-    "gym gear",
-    "dumbbells",
-    "treadmill",
-    "exercise bike",
-    "athletic apparel",
-    "PGX",
-    "power rack",
+    "PGX DIGITAL",
+    "software",
+    "AI tools",
+    "website templates",
+    "digital marketing",
+    "online courses",
+    "business tools",
+    "creative assets",
+    "digital downloads",
   ],
   icons: {
     icon: [

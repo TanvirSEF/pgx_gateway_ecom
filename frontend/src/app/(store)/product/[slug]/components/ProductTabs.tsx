@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, ShieldCheck, Truck, Star, Check } from "lucide-react";
+import { FileText, ShieldCheck, Zap, Star, Check, Code2 } from "lucide-react";
 
 interface ProductTabsProps {
   description?: string;
@@ -14,16 +14,15 @@ interface ProductTabsProps {
 export function ProductTabs({
   description,
   sku,
-  weight,
   categoryName,
 }: ProductTabsProps) {
-  const [activeTab, setActiveTab] = useState<"desc" | "specs" | "shipping" | "reviews">("desc");
+  const [activeTab, setActiveTab] = useState<"desc" | "specs" | "delivery" | "reviews">("desc");
 
   const tabs = [
     { id: "desc", label: "Overview", icon: FileText },
-    { id: "specs", label: "Specifications", icon: Check },
-    { id: "shipping", label: "Shipping & Warranty", icon: Truck },
-    { id: "reviews", label: "Reviews (128)", icon: Star },
+    { id: "specs", label: "Specifications", icon: Code2 },
+    { id: "delivery", label: "License & Delivery", icon: Zap },
+    { id: "reviews", label: "Reviews (Verified)", icon: Star },
   ];
 
   return (
@@ -71,7 +70,7 @@ export function ProductTabs({
                 <div dangerouslySetInnerHTML={{ __html: description }} />
               ) : (
                 <p>
-                  Engineered with commercial-grade materials, this equipment delivers the highest standard of durability, ergonomic alignment, and performance for your training regimen.
+                  Production-ready digital asset built with clean architecture, comprehensive documentation, and lifetime access.
                 </p>
               )}
             </motion.div>
@@ -88,36 +87,38 @@ export function ProductTabs({
             >
               <div className="rounded-2xl border border-border/80 divide-y divide-border/60 overflow-hidden text-xs sm:text-sm bg-card">
                 {sku && (
-                  <div className="grid grid-cols-3 p-3 sm:p-4">
+                  <div className="grid grid-cols-3 p-3.5 sm:p-4">
                     <span className="font-semibold text-foreground">Product Code / SKU</span>
                     <span className="col-span-2 text-muted-foreground font-mono">{sku}</span>
                   </div>
                 )}
-                <div className="grid grid-cols-3 p-3 sm:p-4">
-                  <span className="font-semibold text-foreground">Classification</span>
-                  <span className="col-span-2 text-muted-foreground">{categoryName || "Commercial Grade Fitness"}</span>
+                <div className="grid grid-cols-3 p-3.5 sm:p-4">
+                  <span className="font-semibold text-foreground">Category</span>
+                  <span className="col-span-2 text-muted-foreground">{categoryName || "Digital Tools & Assets"}</span>
                 </div>
-                {weight && (
-                  <div className="grid grid-cols-3 p-3 sm:p-4">
-                    <span className="font-semibold text-foreground">Unit Weight</span>
-                    <span className="col-span-2 text-muted-foreground">{weight}</span>
-                  </div>
-                )}
-                <div className="grid grid-cols-3 p-3 sm:p-4">
-                  <span className="font-semibold text-foreground">Build Quality</span>
-                  <span className="col-span-2 text-muted-foreground">High-gauge structural alloy steel &amp; electrostatic coat</span>
+                <div className="grid grid-cols-3 p-3.5 sm:p-4">
+                  <span className="font-semibold text-foreground">Delivery Format</span>
+                  <span className="col-span-2 text-muted-foreground">Instant Digital Download (ZIP, Git Repository &amp; License Key)</span>
                 </div>
-                <div className="grid grid-cols-3 p-3 sm:p-4">
-                  <span className="font-semibold text-foreground">Safety Standard</span>
-                  <span className="col-span-2 text-muted-foreground">ISO 20957 Certified / Commercial Gym Safe</span>
+                <div className="grid grid-cols-3 p-3.5 sm:p-4">
+                  <span className="font-semibold text-foreground">License Scope</span>
+                  <span className="col-span-2 text-muted-foreground">Commercial &amp; Personal Rights with Lifetime Access</span>
+                </div>
+                <div className="grid grid-cols-3 p-3.5 sm:p-4">
+                  <span className="font-semibold text-foreground">Documentation</span>
+                  <span className="col-span-2 text-muted-foreground">Step-by-step setup guides, source code, and API reference included</span>
+                </div>
+                <div className="grid grid-cols-3 p-3.5 sm:p-4">
+                  <span className="font-semibold text-foreground">System Compatibility</span>
+                  <span className="col-span-2 text-muted-foreground">Universal Cross-Platform (macOS, Windows, Linux, Cloud)</span>
                 </div>
               </div>
             </motion.div>
           )}
 
-          {activeTab === "shipping" && (
+          {activeTab === "delivery" && (
             <motion.div
-              key="shipping"
+              key="delivery"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -126,19 +127,19 @@ export function ProductTabs({
             >
               <div className="p-5 rounded-2xl bg-muted/20 border border-border/70 space-y-2">
                 <h4 className="font-bold text-foreground text-sm flex items-center gap-2">
-                  <Truck className="w-4 h-4 text-primary" /> Delivery &amp; Freight
+                  <Zap className="w-4 h-4 text-primary" /> Instant Automated Delivery
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Heavy equipment ships via specialized freight carriers with liftgate service included. Standard parcel items dispatch within 24 hours. Full tracking is sent automatically via SMS and email.
+                  Zero waiting. Your product files, license keys, and private repository invitations are provisioned immediately upon successful checkout and displayed directly on your confirmation screen. A permanent copy is also delivered to your email.
                 </p>
               </div>
 
               <div className="p-5 rounded-2xl bg-muted/20 border border-border/70 space-y-2">
                 <h4 className="font-bold text-foreground text-sm flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-primary" /> 2-Year Full Coverage
+                  <ShieldCheck className="w-4 h-4 text-primary" /> Lifetime Updates &amp; Support
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Every PGX product is protected by our manufacturer warranty covering mechanical frames, electronic sensors, and moving parts. Dedicated technical support available 24/7.
+                  Every PGX DIGITAL product comes with lifetime access and all future version upgrades included at zero extra cost. Our technical engineering team is available 24/7 to assist with onboarding and integration.
                 </p>
               </div>
             </motion.div>
@@ -155,20 +156,31 @@ export function ProductTabs({
             >
               {[
                 {
-                  author: "Alexander K.",
+                  author: "Marcus Vance",
+                  role: "CTO & SaaS Founder",
                   rating: 5,
-                  title: "Exceptional build quality & finish",
+                  title: "Saved our engineering team weeks of boilerplate setup",
                   comment:
-                    "This is legitimately gym quality. Solid steel, seamless welds, smooth operation. Shipping was smooth and packaging was indestructible.",
-                  date: "October 14, 2026",
+                    "Outstanding digital asset. Clean architecture, robust type safety, and battle-tested code. Saved our startup at least 4 weeks of development. Truly commercial quality.",
+                  date: "2 days ago",
                 },
                 {
-                  author: "Sophia M.",
+                  author: "Elena Rostova",
+                  role: "Lead Product Designer",
                   rating: 5,
-                  title: "Transformed my daily routine",
+                  title: "Impeccable quality and production fidelity",
                   comment:
-                    "Best investment in my health this year. Looks ultra-modern in my apartment and performs flawlessly.",
-                  date: "September 28, 2026",
+                    "The component structure, design system tokens, and UX fidelity are leagues ahead of standard templates. Easily adapted for three client client launches already.",
+                  date: "1 week ago",
+                },
+                {
+                  author: "David Chen",
+                  role: "Principal Cloud Architect",
+                  rating: 5,
+                  title: "Flawless execution and zero technical debt",
+                  comment:
+                    "Rock-solid configurations and clean documentation. Deployed seamlessly to production without a single hiccup. Highly recommended!",
+                  date: "2 weeks ago",
                 },
               ].map((rev, idx) => (
                 <div
@@ -176,17 +188,22 @@ export function ProductTabs({
                   className="p-4 sm:p-5 rounded-2xl bg-card border border-border/80 space-y-2"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-xs sm:text-sm text-foreground">
-                      {rev.author}
-                    </span>
-                    <span className="text-[11px] text-muted-foreground">{rev.date}</span>
+                    <div>
+                      <span className="font-bold text-xs sm:text-sm text-foreground block">
+                        {rev.author}
+                      </span>
+                      <span className="text-[11px] text-muted-foreground">{rev.role}</span>
+                    </div>
+                    <span className="text-[11px] text-muted-foreground font-mono">{rev.date}</span>
                   </div>
-                  <div className="flex items-center gap-1 text-amber-500">
+
+                  <div className="flex items-center gap-1 text-amber-400">
                     {Array.from({ length: rev.rating }).map((_, i) => (
                       <Star key={i} className="w-3.5 h-3.5 fill-amber-400 stroke-none" />
                     ))}
                   </div>
-                  <h5 className="font-bold text-xs sm:text-sm text-foreground">{rev.title}</h5>
+
+                  <h5 className="font-bold text-xs sm:text-sm text-foreground pt-1">{rev.title}</h5>
                   <p className="text-xs text-muted-foreground leading-relaxed">{rev.comment}</p>
                 </div>
               ))}
@@ -197,4 +214,3 @@ export function ProductTabs({
     </div>
   );
 }
-
