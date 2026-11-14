@@ -8,6 +8,7 @@ import { ConfigService } from '@nestjs/config';
 import { OrderStatus, PaymentStatus } from '@prisma/client';
 import Stripe from 'stripe';
 import { PrismaService } from '../../prisma/prisma.service';
+import { GatewayBridgeService } from '../gateway-bridge/gateway-bridge.service';
 import { MailService } from '../mail/mail.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { SupabaseService } from '../supabase/supabase.service';
@@ -22,6 +23,7 @@ export class WebhookService {
     private readonly dynamicSettingsService: DynamicSettingsService,
     private readonly prisma: PrismaService,
     private readonly mailService: MailService,
+    private readonly gatewayBridgeService: GatewayBridgeService,
   ) {}
 
   async handleStripeWebhook(signature: string, rawBody: Buffer) {
@@ -71,7 +73,7 @@ export class WebhookService {
     switch (event.type) {
       case 'checkout.session.completed': {
         const session = event.data.object as Stripe.Checkout.Session;
-        await this.processCheckoutSessionCompleted(session);
+        await this.processCheckoutSessionCompleted(session, event.id);
         break;
       }
       default:
@@ -81,7 +83,13 @@ export class WebhookService {
     return { received: true };
   }
 
-  private async processCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
+  private async processCheckoutSessionCompleted(session: Stripe.Checkout.Session, eventId: string) {
+    // 1. Check if session originated from PGX Gateway / Arxopay Bridge
+    if (session.metadata?.source === 'pgx_gateway') {
+      await this.processGatewayBridgePayment(session, eventId);
+      return;
+    }
+
     const sessionType = session.metadata?.type;
 
     if (sessionType === 'order_payment') {
@@ -237,6 +245,38 @@ export class WebhookService {
       } catch (err: any) {
         this.logger.error(`Failed to send order confirmation email for order ${order.orderNumber}: ${err.message}`);
       }
+    }
+  }
+
+  private async processGatewayBridgePayment(session: Stripe.Checkout.Session, eventId: string) {
+    const metadata = session.metadata || {};
+    const merchantRefId = metadata.merchant_ref_id || '';
+    const resellerId = metadata.reseller_id || 'admin_root';
+    const orderId = metadata.order_id || '';
+    const grossAmount = (session.amount_total || 0) / 100;
+    const currency = (session.currency || 'USD').toUpperCase();
+
+    this.logger.log(
+      `Processing PGX Gateway payment completion for merchant ${merchantRefId} (Session: ${session.id}, Gross: $${grossAmount} ${currency})`,
+    );
+
+    const forwarded = await this.gatewayBridgeService.forwardSettlementToGateway({
+      stripeSessionId: session.id,
+      stripeEventId: eventId,
+      merchantRefId,
+      resellerId,
+      orderId,
+      grossAmount,
+      currency,
+      customerEmail: session.customer_details?.email || undefined,
+      customerName: session.customer_details?.name || undefined,
+      metadata,
+    });
+
+    if (!forwarded) {
+      this.logger.warn(
+        `Settlement forwarding to PGX Gateway returned unsuccessful status for session ${session.id}. May require retry.`,
+      );
     }
   }
 }

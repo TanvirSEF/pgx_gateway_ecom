@@ -19,6 +19,7 @@ import { UploadModule } from './modules/upload/upload.module';
 import { UsersModule } from './modules/users/users.module';
 import { WalletModule } from './modules/wallet/wallet.module';
 import { WalletBridgeModule } from './modules/wallet-bridge/wallet-bridge.module';
+import { GatewayBridgeModule } from './modules/gateway-bridge/gateway-bridge.module';
 import { WalletTopupModule } from './modules/wallet-topup/wallet-topup.module';
 import { CasinoTopupModule } from './modules/casino-topup/casino-topup.module';
 import { WebhookModule } from './modules/webhook/webhook.module';
@@ -53,6 +54,7 @@ import { PrismaModule } from './prisma/prisma.module';
     SettingsModule,
     WalletModule,
     WalletBridgeModule,
+    GatewayBridgeModule,
     WalletTopupModule,
     CasinoTopupModule,
     WebhookModule,
