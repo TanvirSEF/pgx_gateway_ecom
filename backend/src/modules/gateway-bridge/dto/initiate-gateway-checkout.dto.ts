@@ -51,4 +51,9 @@ export class InitiateGatewayCheckoutDto {
   @IsString()
   @IsNotEmpty()
   cancelUrl: string;
+
+  @ApiPropertyOptional({ description: 'Routing mode: test for sandbox trial, live for real payments', example: 'test', default: 'test' })
+  @IsString()
+  @IsOptional()
+  mode?: 'test' | 'live';
 }

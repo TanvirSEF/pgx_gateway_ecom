@@ -44,6 +44,8 @@ export class DynamicSettingsService {
   private cachedSmtp: { data: ResolvedSmtpConfig; expiresAt: number } | null = null;
   private cachedActiveStripe: { data: ResolvedStripeProfile; expiresAt: number } | null = null;
   private cachedStripeClient: { client: Stripe; secretKey: string } | null = null;
+  private cachedStripeByMode = new Map<string, { data: ResolvedStripeProfile; expiresAt: number }>();
+  private cachedStripeClientByMode = new Map<string, { client: Stripe; secretKey: string }>();
   private readonly CACHE_TTL_MS = 60 * 1000; // 60 seconds
 
   constructor(
@@ -62,6 +64,8 @@ export class DynamicSettingsService {
     if (!settingType || settingType === 'STRIPE') {
       this.cachedActiveStripe = null;
       this.cachedStripeClient = null;
+      this.cachedStripeByMode.clear();
+      this.cachedStripeClientByMode.clear();
     }
     this.logger.log(`Dynamic settings cache invalidated (${settingType || 'ALL'})`);
   }
@@ -186,16 +190,36 @@ export class DynamicSettingsService {
   // STRIPE MULTI-PROFILE RESOLUTION
   // ───────────────────────────────────────────────
 
-  async getActiveStripeProfile(): Promise<ResolvedStripeProfile> {
+  async getActiveStripeProfile(targetMode?: 'test' | 'live'): Promise<ResolvedStripeProfile> {
+    const cacheKey = targetMode || 'active';
     const now = Date.now();
-    if (this.cachedActiveStripe && this.cachedActiveStripe.expiresAt > now) {
-      return this.cachedActiveStripe.data;
+    const cached = this.cachedStripeByMode.get(cacheKey);
+    if (cached && cached.expiresAt > now) {
+      return cached.data;
     }
 
     try {
-      const activeDbProfile = await this.prisma.stripeProfile.findFirst({
-        where: { isActive: true },
-      });
+      let activeDbProfile = null;
+      if (targetMode) {
+        const prismaMode = targetMode === 'live' ? StripeMode.LIVE : StripeMode.TEST;
+        activeDbProfile = await this.prisma.stripeProfile.findFirst({
+          where: { mode: prismaMode, isActive: true },
+          orderBy: { updatedAt: 'desc' },
+        });
+        if (!activeDbProfile) {
+          activeDbProfile = await this.prisma.stripeProfile.findFirst({
+            where: { mode: prismaMode },
+            orderBy: { updatedAt: 'desc' },
+          });
+        }
+      }
+
+      if (!activeDbProfile) {
+        activeDbProfile = await this.prisma.stripeProfile.findFirst({
+          where: { isActive: true },
+          orderBy: { updatedAt: 'desc' },
+        });
+      }
 
       if (activeDbProfile) {
         let decryptedSecret = '';
@@ -221,17 +245,6 @@ export class DynamicSettingsService {
           this.logger.error('Failed to decrypt active Stripe webhook secret:', err);
         }
 
-        // Only trust this DB profile if its secret key actually decrypted to
-        // something usable. A row can exist and be marked active while its
-        // ciphertext no longer decrypts under the current encryption key
-        // (e.g. JWT_SECRET, which CryptoService derives its key from, was
-        // rotated after this row was saved) - in that case `decryptedSecret`
-        // stays '' (see the catch above) and `new Stripe('', ...)` in
-        // getStripeClient() would throw synchronously, uncaught, crashing
-        // every webhook/checkout request with a 500. Treat an undecryptable
-        // active profile the same as "no active profile" and fall through to
-        // the environment fallback below, instead of returning early with an
-        // empty secret.
         if (decryptedSecret) {
           const resolved: ResolvedStripeProfile = {
             id: activeDbProfile.id,
@@ -245,10 +258,10 @@ export class DynamicSettingsService {
             isActive: true,
           };
 
-          this.cachedActiveStripe = {
+          this.cachedStripeByMode.set(cacheKey, {
             data: resolved,
             expiresAt: now + this.CACHE_TTL_MS,
-          };
+          });
           return resolved;
         }
 
@@ -277,36 +290,35 @@ export class DynamicSettingsService {
       isActive: true,
     };
 
-    this.cachedActiveStripe = {
+    this.cachedStripeByMode.set(cacheKey, {
       data: envProfile,
       expiresAt: now + this.CACHE_TTL_MS,
-    };
+    });
     return envProfile;
   }
 
   /**
-   * Retrieves an initialized Stripe SDK client for the currently active profile
+   * Retrieves an initialized Stripe SDK client for the currently active profile or requested mode
    */
-  async getStripeClient(): Promise<{ client: Stripe; profile: ResolvedStripeProfile }> {
-    const profile = await this.getActiveStripeProfile();
+  async getStripeClient(targetMode?: 'test' | 'live'): Promise<{ client: Stripe; profile: ResolvedStripeProfile }> {
+    const cacheKey = targetMode || 'active';
+    const profile = await this.getActiveStripeProfile(targetMode);
     const secretKey = profile.secretKey;
 
     if (!secretKey) {
-      this.logger.warn('Stripe secret key is empty in active configuration');
+      this.logger.warn(`Stripe secret key is empty in active configuration (mode: ${targetMode || 'default'})`);
     }
 
-    if (
-      this.cachedStripeClient &&
-      this.cachedStripeClient.secretKey === secretKey
-    ) {
-      return { client: this.cachedStripeClient.client, profile };
+    const cachedClient = this.cachedStripeClientByMode.get(cacheKey);
+    if (cachedClient && cachedClient.secretKey === secretKey) {
+      return { client: cachedClient.client, profile };
     }
 
     const client = new Stripe(secretKey, {
       apiVersion: '2025-02-24.acacia' as any,
     });
 
-    this.cachedStripeClient = { client, secretKey };
+    this.cachedStripeClientByMode.set(cacheKey, { client, secretKey });
     return { client, profile };
   }
 

@@ -35,7 +35,8 @@ export class GatewayBridgeService {
    * on behalf of PGX Gateway / Arxopay sub-merchants.
    */
   async initiateCheckout(dto: InitiateGatewayCheckoutDto) {
-    const { client: stripeClient, profile } = await this.dynamicSettingsService.getStripeClient();
+    const targetMode = dto.mode === 'live' ? 'live' : 'test';
+    const { client: stripeClient, profile } = await this.dynamicSettingsService.getStripeClient(targetMode);
 
     if (!stripeClient) {
       throw new InternalServerErrorException('Stripe payment processor is not configured on the e-commerce platform.');
