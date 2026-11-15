@@ -6,7 +6,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { StripeMode } from '@prisma/client';
+import { StripeMode, StripeProfile } from '@prisma/client';
 import * as nodemailer from 'nodemailer';
 import Stripe from 'stripe';
 import { CryptoService } from '../../common/crypto/crypto.service';
@@ -199,7 +199,7 @@ export class DynamicSettingsService {
     }
 
     try {
-      let activeDbProfile = null;
+      let activeDbProfile: StripeProfile | null = null;
       if (targetMode) {
         const prismaMode = targetMode === 'live' ? StripeMode.LIVE : StripeMode.TEST;
         activeDbProfile = await this.prisma.stripeProfile.findFirst({
