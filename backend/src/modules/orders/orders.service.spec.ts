@@ -51,7 +51,7 @@ describe('OrdersService (unmodified) against the migrated WalletService contract
       getBalance: jest.fn(async () => ({ userId: 'u1', balance: 100, currency: 'USD' })),
       deductFunds: jest.fn(async () => ({ success: true, targetUserId: 'g1', newBalance: 75 })),
     } as any;
-    const service = new OrdersService(makePrisma() as any, makeMail(), makeCoupons(), wallet);
+    const service = new OrdersService(makePrisma() as any, makeMail(), makeCoupons(), wallet, {} as any, {} as any);
 
     const result = await service.create({
       userId: 'u1',
@@ -71,7 +71,7 @@ describe('OrdersService (unmodified) against the migrated WalletService contract
       getBalance: jest.fn(async () => ({ userId: 'u1', balance: 5, currency: 'USD' })),
       deductFunds: jest.fn(),
     } as any;
-    const service = new OrdersService(prisma as any, makeMail(), makeCoupons(), wallet);
+    const service = new OrdersService(prisma as any, makeMail(), makeCoupons(), wallet, {} as any, {} as any);
 
     await expect(
       service.create({
@@ -94,7 +94,7 @@ describe('OrdersService (unmodified) against the migrated WalletService contract
         throw new BadRequestException('The wallet balance is insufficient for this debit.');
       }),
     } as any;
-    const service = new OrdersService(prisma as any, makeMail(), makeCoupons(), wallet);
+    const service = new OrdersService(prisma as any, makeMail(), makeCoupons(), wallet, {} as any, {} as any);
 
     await expect(
       service.create({
