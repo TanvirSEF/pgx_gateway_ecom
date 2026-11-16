@@ -105,3 +105,43 @@ applyTo: "**"
 ## Precedence
 
 - In case of any rule conflicts, repository-specific rules take precedence over global rules.
+
+---
+
+# PGX Gateway Commercial & Integration Protocol Instructions
+
+## 1. Arxopay Partner Fee Policy & Go-Live Pop-Up Protocol
+- **No Client-Direct Setup or Maintenance Fees**: For all sub-merchants under the Arxopay partner umbrella (`resellerId === 'ARXO' || resellerId === 'arxopay' || refId.startsWith('ARXO-')`), clients are never charged setup fees or recurring monthly maintenance fees directly. Any client-facing fee modals or payment steps are strictly suppressed.
+- **Wholesale Go-Live Setup Fee ($499 via Crypto Only)**:
+  - When the Arxopay partner desk requests "Go Live" for an approved sub-merchant, a pop-up modal appears directly to Arxopay.
+  - Arxopay pays the wholesale setup fee of **$499.00 USD** to PGX Gateway on behalf of the merchant.
+  - Payment options are strictly **Crypto Only** (USDT TRC-20, USDT ERC-20, BTC, USDC). Stripe and credit card payment options are strictly forbidden for partner wholesale fees.
+  - The partner submits the payment transaction hash (TxID), which is recorded in `merchant.arxopayWholesale.setupFee` for underwriter verification.
+- **Wholesale Recurring Monthly Maintenance ($499 via Crypto Only)**:
+  - From the exact timestamp a merchant goes live, a 30-day recurring maintenance cycle is initiated.
+  - When 30 days elapse, a pop-up and alert banner appear to Arxopay: *"This merchant is due to pay monthly fees to PGX Gateway. Amount: $499.00 USD (Crypto options only)."*
+  - Arxopay submits the $499 payment via Crypto with the TxID, resetting the 30-day timer for the next cycle.
+
+## 2. 24-Hour Integration Sandbox Guardrails & Auto-Expiry
+- **Strict Pre-Activation Lock**:
+  - A newly registered or unapproved merchant cannot access trial integration credentials, API endpoints, SDK snippets, or their Merchant Reference ID if Admin / Underwriting has not manually turned on the 24-hour trial period.
+  - The API & Integration workspace remains locked with an explicit *"Integration Workspace Locked — Awaiting Underwriter Review"* banner.
+  - Any checkout session initiated via `POST /api/v1/checkout/session` for a merchant without an active trial will return `403 TRIAL_NOT_ACTIVATED`.
+- **24-Hour Auto-Expiry**:
+  - Once turned on by Admin, the trial runs for exactly 24 hours.
+  - If 24 hours elapse without the merchant or partner completing permanent live conversion, trial status is set to `expired`.
+  - Integration workspace credentials and checkout session creation are immediately disabled with `403 TRIAL_EXPIRED`.
+
+## 3. Pre-Offer Privacy & Zero Commercial Leaks
+- Before an underwriter officially reviews a merchant's business documents and dispatches a customized commercial offer (`!offer.isAvailable || !offer.rate`):
+  - All commercial metric cards (`Interchange / Rate`, `Volume Ceiling`, `Settlement Cadence`, `Rolling Reserve`, `Setup Fee`, `Monthly Fee`) must display `—` (dash) with subtitles stating `"Pending review"`.
+  - Footers must state `"Underwriting review"`.
+  - No default percentages, presets, or rates may be leaked or printed on the merchant's screen before the offer is officially sent.
+
+## 4. Arxopay Reseller Ledger
+- Arxopay partner administrators have a dedicated transaction ledger (`TransactionsTab` in the admin portal and `GET /api/v1/reseller/arxo/overview`) tracking:
+  - All sub-merchants in their portfolio.
+  - Gross processing volume per merchant.
+  - Hardwired platform fee (9%).
+  - Reseller profit spread margin (`+${txn.resellerProfitAmount}`).
+  - Total merchant net pool and individual transaction history.
