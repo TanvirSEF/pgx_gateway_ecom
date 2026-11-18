@@ -69,7 +69,7 @@ function LoginFormContent() {
           Sign In
         </h1>
         <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-xs mx-auto">
-          Access your PGX Digital account, licenses, downloads & orders.
+          Access your PGX MarketPlace account, licenses, downloads & orders.
         </p>
       </div>
 

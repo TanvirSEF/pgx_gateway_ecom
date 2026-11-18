@@ -139,7 +139,7 @@ export function ProductTabs({
                   <ShieldCheck className="w-4 h-4 text-primary" /> Lifetime Updates &amp; Support
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Every PGX DIGITAL product comes with lifetime access and all future version upgrades included at zero extra cost. Our technical engineering team is available 24/7 to assist with onboarding and integration.
+                  Every PGX MarketPlace product comes with lifetime access and all future version upgrades included at zero extra cost. Our technical engineering team is available 24/7 to assist with onboarding and integration.
                 </p>
               </div>
             </motion.div>

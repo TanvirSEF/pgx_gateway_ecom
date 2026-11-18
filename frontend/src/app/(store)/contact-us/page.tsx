@@ -91,7 +91,7 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-muted-foreground">Email Inquiries</h4>
-                  <p className="text-sm font-semibold text-foreground mt-0.5">{storeEmail || "support@pgxdigital.com"}</p>
+                  <p className="text-sm font-semibold text-foreground mt-0.5">{storeEmail || "support@pgxmarketplace.shop"}</p>
                 </div>
               </div>
 

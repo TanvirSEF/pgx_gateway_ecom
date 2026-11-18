@@ -164,7 +164,7 @@ export function WalletPill({ className = "", compact = false }: WalletPillProps)
               <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
               <div className="text-[11px] text-slate-400 space-y-0.5">
                 <p className="font-semibold text-slate-200">Official Stripe Checkout</p>
-                <p>256-bit encrypted card processing. Funds sync across the platform &amp; PGX Digital ecosystem instantly upon completion.</p>
+                <p>256-bit encrypted card processing. Funds sync across the platform &amp; PGX MarketPlace ecosystem instantly upon completion.</p>
               </div>
             </div>
 

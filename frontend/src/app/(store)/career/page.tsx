@@ -46,7 +46,7 @@ export default function CareerPage() {
         <div className="mt-16 text-center bg-card text-card-foreground rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto border border-border shadow-sm">
            <h3 className="text-2xl font-black uppercase font-mono tracking-tight mb-2">Don&apos;t See The Right Role?</h3>
            <p className="text-muted-foreground text-sm max-w-md mx-auto mb-6">Send us your portfolio and background. We are constantly expanding our engineering, digital design, and AI teams.</p>
-           <a href="mailto:careers@pgxdigital.com" className="inline-flex items-center justify-center h-11 px-8 rounded-lg bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-black text-xs uppercase tracking-wider transition-all shadow-xs">
+           <a href="mailto:support@pgxmarketplace.shop" className="inline-flex items-center justify-center h-11 px-8 rounded-lg bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-black text-xs uppercase tracking-wider transition-all shadow-xs">
              Email Your Resume
            </a>
         </div>

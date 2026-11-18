@@ -81,7 +81,7 @@ function RegisterPage() {
           Create Account
         </h1>
         <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-xs mx-auto">
-          Fast, effortless registration. Start exploring PGX Digital tools today.
+          Fast, effortless registration. Start exploring PGX MarketPlace tools today.
         </p>
       </div>
 

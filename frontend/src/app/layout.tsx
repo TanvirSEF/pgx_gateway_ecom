@@ -30,16 +30,17 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
-  title: "PGX DIGITAL — Smarter Tools. Better Results.",
+  title: "PGX MarketPlace — Smarter Tools. Better Results.",
   description:
-    "Discover premium software, AI tools, website templates, marketing resources, and more — all in one place.",
+    "Discover premium software licenses, AI tools, website templates, developer suites, and digital assets — all in one place.",
   keywords: [
-    "PGX DIGITAL",
-    "software",
+    "PGX MarketPlace",
+    "PGX",
+    "software licenses",
     "AI tools",
     "website templates",
     "digital marketing",
-    "online courses",
+    "cloud infrastructure",
     "business tools",
     "creative assets",
     "digital downloads",
@@ -53,8 +54,8 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "PGX — Lifestyle, Fitness, Gear, Everyday",
-    description: "Premium fitness equipment, apparel and everyday essentials.",
+    title: "PGX MarketPlace — Smarter Tools. Better Results.",
+    description: "Premium software licenses, developer tools, cloud suites, and digital assets.",
     images: [{ url: "/logo.png" }],
   },
 };

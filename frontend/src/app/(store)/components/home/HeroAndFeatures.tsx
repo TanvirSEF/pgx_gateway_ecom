@@ -161,7 +161,7 @@ export function HeroSection() {
                 <div className="w-2 h-2 rounded-full bg-red-500/80" />
                 <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
                 <div className="w-2 h-2 rounded-full bg-green-500/80" />
-                <div className="ml-auto text-[9px] text-slate-400 font-mono">pgxdigital.app</div>
+                <div className="ml-auto text-[9px] text-slate-400 font-mono">pgxmarketplace.shop</div>
               </div>
 
               {/* Laptop Screen Content (SaaS Dashboard matching mockup) */}

@@ -15,7 +15,7 @@ export default function CorporateDealPage() {
             <Handshake className="w-9 h-9 text-[#7c3aed]" /> Team &amp; Enterprise Deals
           </h1>
           <p className="text-muted-foreground text-base mt-4">
-            Partner with PGX DIGITAL for multi-seat software licenses, agency bundles, white-label AI tools, and enterprise developer tools.
+            Partner with PGX MarketPlace for multi-seat software licenses, agency bundles, white-label AI tools, and enterprise developer tools.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function CorporateDealPage() {
                 Enterprise Benefits
               </span>
               <h3 className="text-2xl font-black uppercase tracking-tight font-mono text-foreground">
-                Why Partner With PGX DIGITAL?
+                Why Partner With PGX MarketPlace?
               </h3>
               <ul className="space-y-4 pt-2">
                 <li className="flex items-start gap-3">
@@ -50,7 +50,7 @@ export default function CorporateDealPage() {
 
             <div className="flex items-center gap-3 text-muted-foreground bg-card p-6 rounded-xl border border-border">
               <Mail className="w-5 h-5 text-[#7c3aed]" />
-              <span className="text-sm">Or email directly: <a href="mailto:enterprise@pgxdigital.com" className="font-bold text-foreground hover:text-[#7c3aed] underline transition-colors">enterprise@pgxdigital.com</a></span>
+              <span className="text-sm">Or email directly: <a href="mailto:support@pgxmarketplace.shop" className="font-bold text-foreground hover:text-[#7c3aed] underline transition-colors">support@pgxmarketplace.shop</a></span>
             </div>
           </div>
 

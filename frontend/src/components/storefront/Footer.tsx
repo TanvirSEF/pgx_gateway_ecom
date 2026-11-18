@@ -57,7 +57,7 @@ export function Footer() {
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    toast.success("Welcome to PGX DIGITAL Insider! Check your inbox for exclusive creator drops.");
+    toast.success("Welcome to PGX MarketPlace Insider! Check your inbox for exclusive creator drops.");
     setEmail("");
   };
 
@@ -70,7 +70,7 @@ export function Footer() {
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#7c3aed]/20 text-[#a78bfa] font-bold text-[11px] uppercase tracking-wider mb-2">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Join PGX DIGITAL</span>
+                <span>Join PGX MarketPlace</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                 Get Exclusive Releases &amp; $20 Off Your First Order
@@ -195,7 +195,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/about-us" className="hover:text-white transition-colors">
-                  About PGX DIGITAL
+                  About PGX MarketPlace
                 </Link>
               </li>
             </ul>
@@ -231,7 +231,7 @@ export function Footer() {
       <div className="border-t border-white/10 bg-[#060318] py-6">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>
-            © 2026 PGX DIGITAL. All rights reserved. Smarter Tools. Better Results.
+            © 2026 PGX MarketPlace. All rights reserved. Smarter Tools. Better Results.
           </div>
 
           <div className="flex items-center gap-3">

@@ -10,7 +10,7 @@ export default function AboutUsPage() {
             Our Story &amp; Mission
           </span>
           <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground mt-2 font-mono">
-            About PG<span className="text-[#7c3aed]">X</span> DIGITAL
+            About PG<span className="text-[#7c3aed]">X</span> MarketPlace
           </h1>
           <p className="text-muted-foreground text-base mt-4 leading-relaxed">
             Smarter Tools. Better Results. Empowering developers, creators, entrepreneurs, and agencies worldwide with instant digital assets.
@@ -27,7 +27,7 @@ export default function AboutUsPage() {
               Built For The Modern Digital Creator
             </h2>
             <p className="text-purple-200 text-sm sm:text-base mt-4 leading-relaxed">
-              At PGX DIGITAL, we engineer and curate premium software licenses, autonomous AI agents, enterprise-grade website templates, and actionable digital guides. Every asset is rigorously vetted to accelerate your workflow and elevate your business.
+              At PGX MarketPlace, we engineer and curate premium software licenses, autonomous AI agents, enterprise-grade website templates, and actionable digital guides. Every asset is rigorously vetted to accelerate your workflow and elevate your business.
             </p>
           </div>
           <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none translate-x-12 translate-y-12">
@@ -80,7 +80,7 @@ export default function AboutUsPage() {
             Our Commitment
           </h2>
           <p className="leading-relaxed text-sm sm:text-base">
-            Whether you are launching your next SaaS product, automating marketing funnels with AI, or scaling client deliverables, PGX DIGITAL delivers clean, high-performance digital architecture and battle-tested codebases.
+            Whether you are launching your next SaaS product, automating marketing funnels with AI, or scaling client deliverables, PGX MarketPlace delivers clean, high-performance digital architecture and battle-tested codebases.
           </p>
           <p className="leading-relaxed text-sm sm:text-base">
             Every digital product comes with clear documentation, updates, and lifetime access to ensure you build faster and operate smarter.
