@@ -172,12 +172,17 @@ export class GatewayBridgeService {
       throw new BadRequestException('Transaction amount must be at least $0.50.');
     }
 
-    // 1. Cloak product description by matching price with pgxdigital catalog
+    // 1. Resolve clean order number for line item display (e.g. 'Order #2781')
+    // Sanitizes order ID to remove any merchant/site names and leave pure neutral reference numbers
+    const rawOrderId = String(dto.orderId || '').trim();
+    const digitsOnly = rawOrderId.replace(/\D/g, '');
+    const cleanOrderNum = digitsOnly.length >= 2
+      ? digitsOnly
+      : (rawOrderId.replace(/[^a-zA-Z0-9]/g, '').slice(-8) || Date.now().toString().slice(-6));
+    const displayProductName = `Order #${cleanOrderNum}`;
+
+    // Cloaked internal catalog fallback for metadata tracking
     const cloakedItem = await this.resolveCloakedProduct(dto.amount);
-    const shortRef = dto.orderId
-      ? dto.orderId.replace(/[^a-zA-Z0-9]/g, '').slice(-8).toUpperCase()
-      : Date.now().toString(36).toUpperCase();
-    const lineItemDesc = `${cloakedItem.description} (Ref: #${shortRef})`;
 
     // 2. Disguise metadata into innocuous short codes (cid, rid, oid, sku)
     // Avoids any explicit keywords: 'merchant_ref_id', 'reseller_id', 'pgx_gateway', 'gateway_amount'
@@ -191,7 +196,7 @@ export class GatewayBridgeService {
     const cloakedMetadata: Record<string, string> = {
       cid: dto.merchantRefId,
       rid: partnerCode,
-      oid: dto.orderId || `ORD-${shortRef}`,
+      oid: dto.orderId || `ORD-${cleanOrderNum}`,
       sku: cloakedItem.sku,
       cart_id: `CR-${Date.now().toString(36).toUpperCase()}`,
     };
@@ -223,8 +228,8 @@ export class GatewayBridgeService {
             price_data: {
               currency,
               product_data: {
-                name: cloakedItem.name,
-                description: lineItemDesc,
+                name: displayProductName,
+                description: `Payment for ${displayProductName}`,
               },
               unit_amount: unitAmountCents,
             },
@@ -233,7 +238,7 @@ export class GatewayBridgeService {
         ],
         metadata: cloakedMetadata,
         payment_intent_data: {
-          description: `${cloakedItem.name} (${cloakedItem.sku})`,
+          description: `${displayProductName} (${cloakedItem.sku})`,
           metadata: cloakedMetadata,
         },
         customer_email: dto.customerEmail || undefined,
