@@ -1,6 +1,15 @@
-import { Body, Controller, Get, HttpCode, HttpStatus, Post, Query, Res, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  HttpCode,
+  HttpStatus,
+  Post,
+  Query,
+  Redirect,
+  UseGuards,
+} from '@nestjs/common';
 import { ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { Response } from 'express';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
 import { GatewayBridgeGuard } from './gateway-bridge.guard';
 import { GatewayBridgeService } from './gateway-bridge.service';
@@ -23,12 +32,12 @@ export class GatewayBridgeController {
   }
 
   @Get('return')
+  @Redirect('https://pgxdigital.shop', 302)
   @ApiOperation({ summary: 'Cloaked redirect return handler forwarding buyer back to merchant store' })
-  async handleReturn(
-    @Query('status') status: string,
+  handleReturn(
+    @Query('status') _status: string,
     @Query('session_id') sessionId: string,
     @Query('redir') encodedRedir: string,
-    @Res() res: Response,
   ) {
     let targetUrl = 'https://pgxdigital.shop';
     if (encodedRedir) {
@@ -47,6 +56,6 @@ export class GatewayBridgeController {
         // Fallback to pgxdigital.shop
       }
     }
-    return res.redirect(targetUrl);
+    return { url: targetUrl };
   }
 }
