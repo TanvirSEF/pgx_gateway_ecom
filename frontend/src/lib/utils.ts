@@ -5,6 +5,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function formatPrice(price: number | string | undefined | null): string {
+  const num = Number(price) || 0;
+  return num.toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+}
+
 export function resolveImageUrl(url?: string | null): string {
   if (!url) return "/placeholder-product.jpg";
   if (url.startsWith("http://") || url.startsWith("https://")) return url;

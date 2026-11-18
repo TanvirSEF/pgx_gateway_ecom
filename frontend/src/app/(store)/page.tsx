@@ -22,8 +22,14 @@ export default function HomePage() {
 
   const products = apiProducts?.data || [];
 
-  // Featured products showing top digital solutions and smart gadgets
+  // Featured products showing top digital solutions, enterprise rigs and smart gadgets
   const featuredDigitalSlugs = [
+    "nvidia-dgx-h100-enterprise-ai-supercomputer",
+    "apple-mac-pro-rack-m2-ultra-enterprise",
+    "red-v-raptor-xl-8k-vv-cinema-package",
+    "supermicro-8u-hgx-ai-supercomputing-server",
+    "canon-c500-mkii-cine-servo-50-1000mm",
+    "sony-fx9-6k-cinema-master-bundle",
     "ai-business-chatbot-pro",
     "e-commerce-website-kit",
     "marketing-template-bundle",

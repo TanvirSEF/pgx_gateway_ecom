@@ -1,7 +1,7 @@
 "use client";
 
 import { CURRENCY } from "@/lib/constants";
-import { cn, resolveImageUrl } from "@/lib/utils";
+import { cn, resolveImageUrl, formatPrice } from "@/lib/utils";
 import { useCartStore } from "@/store/cart.store";
 import { ShoppingCart, Star, Check } from "lucide-react";
 import Image from "next/image";
@@ -124,7 +124,7 @@ export function ProductCard({
           <div className="flex items-baseline gap-2 mt-2.5">
             <span className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
               {CURRENCY}
-              {Number(product.price).toFixed(2)}
+              {formatPrice(product.price)}
               {isSubscription && (
                 <span className="text-xs font-normal text-slate-500 ml-1">
                   / month
@@ -134,7 +134,7 @@ export function ProductCard({
             {hasDiscount && (
               <span className="text-xs text-slate-400 line-through font-medium">
                 {CURRENCY}
-                {Number(product.comparePrice).toFixed(2)}
+                {formatPrice(product.comparePrice)}
               </span>
             )}
           </div>

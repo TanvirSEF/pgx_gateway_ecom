@@ -67,10 +67,31 @@ export class GatewayBridgeService {
     },
     {
       min: 700,
-      max: Infinity,
+      max: 5000,
       name: 'Custom High-Volume Cloud Automation Architecture Suite',
       sku: 'ENT-AUTO-SUITE',
       description: 'Enterprise-grade cloud infrastructure deployment templates, multi-region clustering, and corporate license.',
+    },
+    {
+      min: 5000,
+      max: 20000,
+      name: 'Apple Mac Pro Rack System - Dual M2 Ultra Enterprise Studio Cluster',
+      sku: 'PGX-ENT-APPL-01',
+      description: 'Enterprise 19-inch 5U rackmount Mac Pro with dual Apple M2 Ultra processors, 192GB Unified Memory, and 8TB Ultra-Fast SSD.',
+    },
+    {
+      min: 20000,
+      max: 45000,
+      name: 'RED V-RAPTOR XL 8K VV Multi-Format Large Cinema Camera Package',
+      sku: 'PGX-ENT-RED-04',
+      description: 'Unified flagship studio camera with 8K VV sensor, integrated wireless timecode, genlock, electronic ND, and multi-voltage auxiliary power.',
+    },
+    {
+      min: 45000,
+      max: Infinity,
+      name: 'NVIDIA DGX H100 Enterprise AI Supercomputer Flagship Cluster',
+      sku: 'PGX-ENT-NVDGX-09',
+      description: 'The global benchmark for generative AI and LLM training. 8x NVIDIA H100 SXM5 80GB GPUs with 640GB aggregate VRAM and 32 PFLOPS FP8 compute.',
     },
   ];
 
