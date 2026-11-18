@@ -1,0 +1,5502 @@
+[
+  {
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill",
+    "slug": "woodway-4front-commercial-treadmill",
+    "sku": "PGX-PRO-001",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 9800,
+    "comparePrice": 11564,
+    "stock": 40,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard commercial slat-belt treadmill engineered for zero-friction running with vulcanized rubber slats.",
+    "specifications": [
+      {
+        "label": "Belt Type",
+        "value": "60 individual vulcanized rubber slats with wire reinforcement"
+      },
+      {
+        "label": "Motor System",
+        "value": "Zero-friction ball bearing system with 5.0 HP dynamic drive"
+      },
+      {
+        "label": "Speed Range",
+        "value": "0 – 15 mph (0 – 24 km/h) with 0 – 15% dynamic incline"
+      },
+      {
+        "label": "Display",
+        "value": "Personal Trainer 19-inch high-definition touchscreen console"
+      },
+      {
+        "label": "Durability",
+        "value": "Rated for over 150,000 miles of commercial club usage"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9800,
+        "comparePrice": 11564,
+        "sku": "PGX-PRO-001-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11956,
+        "comparePrice": 14108,
+        "sku": "PGX-PRO-001-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13524,
+        "comparePrice": 15958,
+        "sku": "PGX-PRO-001-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer",
+    "slug": "force-usa-g20-pro-functional-trainer",
+    "sku": "PGX-PRO-002",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 5999,
+    "comparePrice": 7079,
+    "stock": 41,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Heavy-duty commercial gym station combining dual 289 lb weight stacks, counterbalanced Smith machine, and power rack.",
+    "specifications": [
+      {
+        "label": "Weight Stacks",
+        "value": "Dual 289 lb (130 kg) precision machined steel weight stacks (1:1 ratio)"
+      },
+      {
+        "label": "Smith Machine",
+        "value": "Commercial counterbalanced Smith machine rated to 992 lbs"
+      },
+      {
+        "label": "Steel Frame",
+        "value": "Heavy-gauge 11-gauge rolled steel tubing with electrostatic powder coat"
+      },
+      {
+        "label": "Attachments Included",
+        "value": "Monolift, roller J-hooks, leg press plate, dip handles, suspension ring"
+      },
+      {
+        "label": "Dimensions",
+        "value": "94 in (W) x 75 in (D) x 91 in (H)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5999,
+        "comparePrice": 7079,
+        "sku": "PGX-PRO-002-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7319,
+        "comparePrice": 8636,
+        "sku": "PGX-PRO-002-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8279,
+        "comparePrice": 9769,
+        "sku": "PGX-PRO-002-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller",
+    "slug": "plunge-commercial-cold-plunge-chiller",
+    "sku": "PGX-PRO-003",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4990,
+    "comparePrice": 5888,
+    "stock": 42,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial grade ice bath plunge tub with integrated 1 HP ultra-quiet cooling engine down to 37°F and ozone sanitation.",
+    "specifications": [
+      {
+        "label": "Cooling Engine",
+        "value": "1.0 HP high-efficiency cooling chiller cools down to 37°F (2.7°C)"
+      },
+      {
+        "label": "Sanitation",
+        "value": "Continuous 20-micron filtration and powerful chemical-free ozone sanitation"
+      },
+      {
+        "label": "Tub Construction",
+        "value": "Military-grade fiberglass and acrylic insulated body"
+      },
+      {
+        "label": "Weather Rating",
+        "value": "Indoor and outdoor all-weather UV protected rating"
+      },
+      {
+        "label": "Smart Control",
+        "value": "Smartphone app-controlled temperature and automated schedule"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4990,
+        "comparePrice": 5888,
+        "sku": "PGX-PRO-003-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6088,
+        "comparePrice": 7183,
+        "sku": "PGX-PRO-003-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6886,
+        "comparePrice": 8125,
+        "sku": "PGX-PRO-003-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna",
+    "slug": "clearlight-sanctuary-infrared-sauna",
+    "sku": "PGX-PRO-004",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 7495,
+    "comparePrice": 8844,
+    "stock": 43,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Medical-grade full spectrum infrared sauna with True Wave near, mid, and far-infrared heaters with zero EMF exposure.",
+    "specifications": [
+      {
+        "label": "Heater Technology",
+        "value": "True Wave Full Spectrum (Near, Mid, and Far Infrared) heaters"
+      },
+      {
+        "label": "EMF Rating",
+        "value": "Virtually zero EMF/ELF levels tested and certified"
+      },
+      {
+        "label": "Wood Material",
+        "value": "Hypoallergenic Grade-A Italian Eco-Certified Cedarwood"
+      },
+      {
+        "label": "Audio & Light",
+        "value": "Medical-grade Chromotherapy lighting and Bluetooth stereo speakers"
+      },
+      {
+        "label": "Warranty",
+        "value": "Full Lifetime Warranty on cabinetry, heaters, and electronics"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7495,
+        "comparePrice": 8844,
+        "sku": "PGX-PRO-004-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9144,
+        "comparePrice": 10790,
+        "sku": "PGX-PRO-004-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10343,
+        "comparePrice": 12205,
+        "sku": "PGX-PRO-004-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package",
+    "slug": "rogue-monster-rm6-power-rack-package",
+    "sku": "PGX-PRO-005",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 3850,
+    "comparePrice": 4543,
+    "stock": 44,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Fully equipped 6-post 3x3-inch 11-gauge steel monster rack with strap safeties, plate storage, and multi-grip pull-up.",
+    "specifications": [
+      {
+        "label": "Uprights",
+        "value": "3x3-inch 11-Gauge Structural Steel with 1-inch laser-cut holes and keyhole sides"
+      },
+      {
+        "label": "Footprint",
+        "value": "76 in (L) x 49 in (W) x 100 in (H) with 43-inch inside depth"
+      },
+      {
+        "label": "Hardware",
+        "value": "1-inch Monster hardware with black zinc finish"
+      },
+      {
+        "label": "Included",
+        "value": "Monster J-cups, strap safety system, 10 plate storage pins, textured pull-up bar"
+      },
+      {
+        "label": "Finish",
+        "value": "Rogue signature textured black matte powder coat"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3850,
+        "comparePrice": 4543,
+        "sku": "PGX-PRO-005-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4697,
+        "comparePrice": 5542,
+        "sku": "PGX-PRO-005-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5313,
+        "comparePrice": 6269,
+        "sku": "PGX-PRO-005-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike",
+    "slug": "keiser-m3i-total-body-commercial-bike",
+    "sku": "PGX-PRO-006",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 2895,
+    "comparePrice": 3416,
+    "stock": 45,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial magnetic resistance spin bike featuring dual-action upper body handles and Bluetooth wireless computer.",
+    "specifications": [
+      {
+        "label": "Resistance",
+        "value": "Non-wearing magnetic eddy-current resistance system"
+      },
+      {
+        "label": "Drive Train",
+        "value": "Poly-V industrial quiet belt drive requires zero maintenance"
+      },
+      {
+        "label": "Handles",
+        "value": "Dual-action upper-body push/pull levers for full-body cardio workout"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth Wireless Display broadcasts power (Watts) and cadence"
+      },
+      {
+        "label": "Adjustability",
+        "value": "Four-way micro-adjustable seat and handlebars with quick-lock cams"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 2895,
+        "comparePrice": 3416,
+        "sku": "PGX-PRO-006-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 3532,
+        "comparePrice": 4168,
+        "sku": "PGX-PRO-006-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 3995,
+        "comparePrice": 4714,
+        "sku": "PGX-PRO-006-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg",
+    "slug": "eleiko-iwf-weightlifting-competition-set",
+    "sku": "PGX-PRO-007",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4200,
+    "comparePrice": 4956,
+    "stock": 46,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "International Weightlifting Federation certified 20kg competition barbell, calibrated competition discs, and disc collars.",
+    "specifications": [
+      {
+        "label": "Barbell",
+        "value": "Eleiko IWF Weightlifting Competition Bar 20kg with 215,000 PSI steel"
+      },
+      {
+        "label": "Calibration",
+        "value": "Discs calibrated to within +10g/-0g per official IWF competition rules"
+      },
+      {
+        "label": "Bearings",
+        "value": "10 precision needle bearings for ultra-smooth dynamic rotation"
+      },
+      {
+        "label": "Plates Included",
+        "value": "Pairs of 25kg, 20kg, 15kg, 10kg discs + change plates (0.5 to 5kg)"
+      },
+      {
+        "label": "Collars",
+        "value": "Eleiko IWF Competition Barbell Collars (pair, 2.5kg each)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4200,
+        "comparePrice": 4956,
+        "sku": "PGX-PRO-007-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5124,
+        "comparePrice": 6046,
+        "sku": "PGX-PRO-007-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5796,
+        "comparePrice": 6839,
+        "sku": "PGX-PRO-007-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles",
+    "slug": "tonal-smart-gym-digital-resistance",
+    "sku": "PGX-PRO-008",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 3995,
+    "comparePrice": 4714,
+    "stock": 47,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wall-mounted intelligent personal trainer utilizing patented electromagnetic resistance up to 200 lbs.",
+    "specifications": [
+      {
+        "label": "Resistance Engine",
+        "value": "Patented electromagnetic digital resistance engine up to 200 lbs"
+      },
+      {
+        "label": "Adaptive Weight",
+        "value": "Real-time dynamic spotter and eccentric training burn modes"
+      },
+      {
+        "label": "Screen",
+        "value": "24-inch full HD interactive capacitive touchscreen display"
+      },
+      {
+        "label": "Arms",
+        "value": "Rotational multi-directional adjustable arms for over 170 movements"
+      },
+      {
+        "label": "Sensors",
+        "value": "Real-time form feedback and velocity metric tracking sensors"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3995,
+        "comparePrice": 4714,
+        "sku": "PGX-PRO-008-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4874,
+        "comparePrice": 5751,
+        "sku": "PGX-PRO-008-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5513,
+        "comparePrice": 6505,
+        "sku": "PGX-PRO-008-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body",
+    "slug": "sony-fx6-full-frame-cinema-camera",
+    "sku": "PGX-PRO-009",
+    "categorySlug": "cameras-drones-creator",
+    "price": 5998,
+    "comparePrice": 7078,
+    "stock": 48,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact full-frame cinema line camera with 4K 120p, 15+ stops dynamic range, and S-Cinetone color science.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "10.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ stops with Dual Base ISO (800 / 12,800)"
+      },
+      {
+        "label": "Electronic ND",
+        "value": "Built-in 1/4 to 1/128 variable electronic neutral density filter"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Real-time Eye AF and Face Detection with 627 phase-detection points"
+      },
+      {
+        "label": "Audio",
+        "value": "Detachable top smart handle with dual XLR audio inputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5998,
+        "comparePrice": 7078,
+        "sku": "PGX-PRO-009-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7318,
+        "comparePrice": 8635,
+        "sku": "PGX-PRO-009-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8277,
+        "comparePrice": 9768,
+        "sku": "PGX-PRO-009-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera",
+    "slug": "hasselblad-x2d-100c-medium-format",
+    "sku": "PGX-PRO-010",
+    "categorySlug": "cameras-drones-creator",
+    "price": 8199,
+    "comparePrice": 9675,
+    "stock": 49,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel medium-format BSI CMOS camera with 5-axis in-body image stabilization and 1TB internal SSD.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100 Megapixel 43.8 x 32.9 mm BSI CMOS Sensor with 16-bit color"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB high-speed PCIe internal SSD (up to 2850 MB/s write speed)"
+      },
+      {
+        "label": "Stabilization",
+        "value": "5-Axis In-Body Image Stabilization (IBIS) providing 7 stops benefit"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "OLED Electronic Viewfinder with 5.76 million dots and 1.0x magnification"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Phase Detection Autofocus with 294 zones across the frame"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8199,
+        "comparePrice": 9675,
+        "sku": "PGX-PRO-010-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10003,
+        "comparePrice": 11804,
+        "sku": "PGX-PRO-010-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11315,
+        "comparePrice": 13351,
+        "sku": "PGX-PRO-010-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish)",
+    "slug": "leica-m11-rangefinder-digital-camera",
+    "sku": "PGX-PRO-011",
+    "categorySlug": "cameras-drones-creator",
+    "price": 8995,
+    "comparePrice": 10614,
+    "stock": 50,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary optical rangefinder with Triple Resolution full-frame BSI sensor (60MP, 36MP, and 18MP DNG).",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame BSI CMOS with Triple Resolution Technology (60/36/18 MP)"
+      },
+      {
+        "label": "Color Filter",
+        "value": "Ultra-thin dual-layer absorption glass UV/IR filter"
+      },
+      {
+        "label": "Internal Memory",
+        "value": "64GB internal memory storage in addition to SD card slot"
+      },
+      {
+        "label": "Metering",
+        "value": "Multi-field exposure metering directly on the sensor"
+      },
+      {
+        "label": "Construction",
+        "value": "Black aluminum top cover with scratch-resistant coating (530g)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8995,
+        "comparePrice": 10614,
+        "sku": "PGX-PRO-011-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10974,
+        "comparePrice": 12949,
+        "sku": "PGX-PRO-011-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12413,
+        "comparePrice": 14647,
+        "sku": "PGX-PRO-011-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera",
+    "slug": "sony-alpha-1-50mp-flagship-camera",
+    "sku": "PGX-PRO-012",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6498,
+    "comparePrice": 7668,
+    "stock": 51,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The one camera that does it all: 50.1MP at 30 fps continuous shooting, 8K 30p, and flash sync up to 1/400s.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "50.1MP Full-Frame Exmor RS Stacked BSI CMOS with integrated memory"
+      },
+      {
+        "label": "Continuous Shooting",
+        "value": "Up to 30 frames per second with full AF/AE tracking"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "8K 30p 10-bit 4:2:0 and 4K 120p 10-bit 4:2:2 recording"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "9.44 million dot Quad-XGA OLED EVF with 240 fps refresh rate"
+      },
+      {
+        "label": "Flash Sync",
+        "value": "Dual driven mechanical shutter with 1/400s flash sync speed"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6498,
+        "comparePrice": 7668,
+        "sku": "PGX-PRO-012-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7928,
+        "comparePrice": 9355,
+        "sku": "PGX-PRO-012-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8967,
+        "comparePrice": 10582,
+        "sku": "PGX-PRO-012-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera",
+    "slug": "canon-eos-c70-cinema-camera",
+    "sku": "PGX-PRO-013",
+    "categorySlug": "cameras-drones-creator",
+    "price": 5499,
+    "comparePrice": 6489,
+    "stock": 52,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Cinema EOS performance in an RF-mount mirrorless body with Super 35 DGO sensor and 16+ stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Super 35mm Dual Gain Output (DGO) sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16+ stops dynamic range with Canon Log 2"
+      },
+      {
+        "label": "High Frame Rate",
+        "value": "4K 120p high-speed recording with audio recording"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Ultra-thin motorized mechanical ND filter unit (up to 10 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Canon RF Mount compatible with native EF-EOS R 0.71x Speed Booster"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5499,
+        "comparePrice": 6489,
+        "sku": "PGX-PRO-013-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6709,
+        "comparePrice": 7917,
+        "sku": "PGX-PRO-013-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7589,
+        "comparePrice": 8955,
+        "sku": "PGX-PRO-013-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo",
+    "slug": "dji-ronin-4d-6k-cinema-combo",
+    "sku": "PGX-PRO-014",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6799,
+    "comparePrice": 8023,
+    "stock": 53,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary integrated 4-axis motorized cinema camera with LiDAR autofocus and wireless video transmission.",
+    "specifications": [
+      {
+        "label": "Active Z-Axis",
+        "value": "Active 4th axis stabilization eliminates vertical camera shake"
+      },
+      {
+        "label": "Sensor",
+        "value": "Zenmuse X9-6K Full-Frame camera with dual native ISO (800 / 5000)"
+      },
+      {
+        "label": "Autofocus",
+        "value": "LiDAR Range Finder autofocus with 43,200 ranging points"
+      },
+      {
+        "label": "Codecs",
+        "value": "Apple ProRes 422 HQ, ProRes RAW, and H.264 internal recording"
+      },
+      {
+        "label": "Transmitter",
+        "value": "High-bright remote monitor with integrated wireless video receiver"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6799,
+        "comparePrice": 8023,
+        "sku": "PGX-PRO-014-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8295,
+        "comparePrice": 9788,
+        "sku": "PGX-PRO-014-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9383,
+        "comparePrice": 11072,
+        "sku": "PGX-PRO-014-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone",
+    "slug": "neumann-u87-ai-studio-microphone",
+    "sku": "PGX-PRO-015",
+    "categorySlug": "audio-streaming-gear",
+    "price": 3695,
+    "comparePrice": 4360,
+    "stock": 54,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The definitive standard studio vocal microphone featuring the classic K67 dual-diaphragm capsule.",
+    "specifications": [
+      {
+        "label": "Acoustical Principle",
+        "value": "Pressure gradient transducer with dual-diaphragm capsule"
+      },
+      {
+        "label": "Polar Patterns",
+        "value": "Omnidirectional, Cardioid, and Figure-8 switchable"
+      },
+      {
+        "label": "Frequency Range",
+        "value": "20 Hz – 20 kHz with smooth, linear presence boost"
+      },
+      {
+        "label": "Max SPL",
+        "value": "127 dB SPL (up to 137 dB with pre-attenuation pad engaged)"
+      },
+      {
+        "label": "Included",
+        "value": "Deluxe wooden storage case and EA 87 shockmount suspension"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3695,
+        "comparePrice": 4360,
+        "sku": "PGX-PRO-015-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4508,
+        "comparePrice": 5319,
+        "sku": "PGX-PRO-015-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5099,
+        "comparePrice": 6017,
+        "sku": "PGX-PRO-015-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor",
+    "slug": "tube-tech-cl1b-optical-compressor",
+    "sku": "PGX-PRO-016",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4990,
+    "comparePrice": 5888,
+    "stock": 55,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "World-renowned all-tube optical mono compressor prized by top engineers for transparent and musical vocal leveling.",
+    "specifications": [
+      {
+        "label": "Gain Reduction",
+        "value": "Unique low-distortion optical gain-reduction element"
+      },
+      {
+        "label": "Tubes",
+        "value": "All-tube circuit featuring ECC82 and ECC83 vacuum tubes"
+      },
+      {
+        "label": "Ratio",
+        "value": "Continuously variable ratio from 2:1 up to 10:1"
+      },
+      {
+        "label": "Attack & Release",
+        "value": "Manual, Fixed, or combined Manual/Fixed program-dependent modes"
+      },
+      {
+        "label": "Transformers",
+        "value": "Custom balanced input and output audio transformers"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4990,
+        "comparePrice": 5888,
+        "sku": "PGX-PRO-016-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6088,
+        "comparePrice": 7183,
+        "sku": "PGX-PRO-016-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6886,
+        "comparePrice": 8125,
+        "sku": "PGX-PRO-016-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier",
+    "slug": "universal-audio-la2a-leveling-amplifier",
+    "sku": "PGX-PRO-017",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4699,
+    "comparePrice": 5545,
+    "stock": 56,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hand-wired point-to-point electro-optical compressor with original T4 optical attenuator cell.",
+    "specifications": [
+      {
+        "label": "Attenuator",
+        "value": "Patented T4 electro-optical cell with program-dependent release"
+      },
+      {
+        "label": "Tubes",
+        "value": "Tube compliment: 2x 12AX7, 1x 12BH7, 1x 6AQ5 vacuum tubes"
+      },
+      {
+        "label": "Distortion",
+        "value": "Less than 0.25% THD at +10 dBm output"
+      },
+      {
+        "label": "Frequency Response",
+        "value": "30 Hz – 15 kHz (+/- 0.5 dB)"
+      },
+      {
+        "label": "Front Panel",
+        "value": "Classic retro 3U faceplate with original vintage meter switch"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4699,
+        "comparePrice": 5545,
+        "sku": "PGX-PRO-017-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5733,
+        "comparePrice": 6765,
+        "sku": "PGX-PRO-017-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6485,
+        "comparePrice": 7652,
+        "sku": "PGX-PRO-017-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer",
+    "slug": "manley-massive-passive-mastering-eq",
+    "sku": "PGX-PRO-018",
+    "categorySlug": "audio-streaming-gear",
+    "price": 6499,
+    "comparePrice": 7669,
+    "stock": 57,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Two-channel four-band passive equalizer with all-tube makeup amplifier stage and stepped Grayhill rotary switches.",
+    "specifications": [
+      {
+        "label": "Topology",
+        "value": "Passive EQ curves using premium metal-film resistors, inductors, and film caps"
+      },
+      {
+        "label": "Gain Makeup",
+        "value": "All-tube line amplifier utilizing 12AX7 and 6922 vacuum tubes"
+      },
+      {
+        "label": "Bands",
+        "value": "4 independent parametric bands per channel with switchable Bell/Shelf"
+      },
+      {
+        "label": "Filters",
+        "value": "High-pass and Low-pass filters with 5 selectable cutoff frequencies"
+      },
+      {
+        "label": "Controls",
+        "value": "Stepped precision mastering switches for 100% accurate recall"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6499,
+        "comparePrice": 7669,
+        "sku": "PGX-PRO-018-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7929,
+        "comparePrice": 9356,
+        "sku": "PGX-PRO-018-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8969,
+        "comparePrice": 10583,
+        "sku": "PGX-PRO-018-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair)",
+    "slug": "focal-twin6-be-active-studio-monitors",
+    "sku": "PGX-PRO-019",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4598,
+    "comparePrice": 5426,
+    "stock": 58,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-precision active 3-way nearfield/midfield studio monitors with inverted Beryllium dome tweeter.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "1-inch pure Beryllium inverted dome tweeter with linear response to 40kHz"
+      },
+      {
+        "label": "Woofers",
+        "value": "Dual 6.5-inch W composite sandwich cone drivers"
+      },
+      {
+        "label": "Amplifiers",
+        "value": "Tri-amped: 150W Bass, 150W Mid, 100W Treble Class AB power"
+      },
+      {
+        "label": "Maximum SPL",
+        "value": "115 dB SPL peak at 1 meter"
+      },
+      {
+        "label": "Cabinet",
+        "value": "High-density 19mm MDF with natural dark red veneer side panels"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4598,
+        "comparePrice": 5426,
+        "sku": "PGX-PRO-019-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5610,
+        "comparePrice": 6620,
+        "sku": "PGX-PRO-019-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6345,
+        "comparePrice": 7488,
+        "sku": "PGX-PRO-019-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM)",
+    "slug": "apple-mac-studio-m2-ultra-desktop",
+    "sku": "PGX-PRO-020",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 6799,
+    "comparePrice": 8023,
+    "stock": 59,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact powerhouse desktop workstation with M2 Ultra, 128GB Unified Memory, and 4TB NVMe SSD.",
+    "specifications": [
+      {
+        "label": "Chip",
+        "value": "Apple M2 Ultra with 24-Core CPU and 76-Core GPU"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "32-Core Neural Engine with 31.6 trillion ops/second"
+      },
+      {
+        "label": "Memory",
+        "value": "128GB Unified Memory with 800GB/s bandwidth"
+      },
+      {
+        "label": "Storage",
+        "value": "4TB High-Speed PCIe Solid State Drive (up to 7.4GB/s)"
+      },
+      {
+        "label": "Video Support",
+        "value": "Supports up to eight 4K displays or six 6K displays simultaneously"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6799,
+        "comparePrice": 8023,
+        "sku": "PGX-PRO-020-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8295,
+        "comparePrice": 9788,
+        "sku": "PGX-PRO-020-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9383,
+        "comparePrice": 11072,
+        "sku": "PGX-PRO-020-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD)",
+    "slug": "apple-macbook-pro-16-m3-max-loaded",
+    "sku": "PGX-PRO-021",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 7199,
+    "comparePrice": 8495,
+    "stock": 60,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Maximum configuration 16-inch Liquid Retina XDR laptop with 16-core CPU, 40-core GPU, 128GB RAM, and 8TB storage.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Apple M3 Max with 16-Core CPU and 40-Core GPU with hardware ray tracing"
+      },
+      {
+        "label": "Unified Memory",
+        "value": "128GB Unified Memory with 400GB/s bandwidth"
+      },
+      {
+        "label": "Internal SSD",
+        "value": "8TB High-Speed NVMe Storage Drive"
+      },
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR (3456 x 2234) with 120Hz ProMotion"
+      },
+      {
+        "label": "Finish",
+        "value": "Space Black aluminum enclosure with anodized seal to reduce fingerprints"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7199,
+        "comparePrice": 8495,
+        "sku": "PGX-PRO-021-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8783,
+        "comparePrice": 10364,
+        "sku": "PGX-PRO-021-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9935,
+        "comparePrice": 11723,
+        "sku": "PGX-PRO-021-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop",
+    "slug": "corsair-one-i500-liquid-cooled-desktop",
+    "sku": "PGX-PRO-022",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 4699,
+    "comparePrice": 5545,
+    "stock": 61,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Architectural aluminum and real wood chassis with liquid-cooled Intel Core i9-14900K and NVIDIA RTX 4090 24GB.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i9-14900K 24-Core 6.0GHz Liquid-Cooled"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 4090 24GB GDDR6X Liquid-Cooled"
+      },
+      {
+        "label": "System RAM",
+        "value": "64GB DDR5-6000MHz High-Speed Corsair Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "2TB PCIe Gen4 NVMe M.2 SSD + expansion slot"
+      },
+      {
+        "label": "Chassis",
+        "value": "FSC-certified solid walnut front panel with touch-sensitive lighting"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4699,
+        "comparePrice": 5545,
+        "sku": "PGX-PRO-022-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5733,
+        "comparePrice": 6765,
+        "sku": "PGX-PRO-022-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6485,
+        "comparePrice": 7652,
+        "sku": "PGX-PRO-022-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS",
+    "slug": "synology-flashstation-fs3410-all-flash-nas",
+    "sku": "PGX-PRO-023",
+    "categorySlug": "power-storage-accessories",
+    "price": 6499,
+    "comparePrice": 7669,
+    "stock": 62,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "2U 24-bay high-performance all-flash server delivering over 356,000 iSCSI 4K random write IOPS.",
+    "specifications": [
+      {
+        "label": "CPU",
+        "value": "Intel Xeon D-1541 8-Core 2.1GHz / 2.7GHz Turbo"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB DDR4 ECC RDIMM (expandable up to 128GB)"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 2.5-inch SAS/SATA SSD hot-swappable bays"
+      },
+      {
+        "label": "Networking",
+        "value": "Dual 10GbE 10GBASE-T ports + Dual 1GbE ports built-in"
+      },
+      {
+        "label": "Redundancy",
+        "value": "Dual 500W redundant power supplies and hot-swap smart fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6499,
+        "comparePrice": 7669,
+        "sku": "PGX-PRO-023-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7929,
+        "comparePrice": 9356,
+        "sku": "PGX-PRO-023-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8969,
+        "comparePrice": 10583,
+        "sku": "PGX-PRO-023-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch",
+    "slug": "cisco-catalyst-9300-48port-poe-switch",
+    "sku": "PGX-PRO-024",
+    "categorySlug": "power-storage-accessories",
+    "price": 5800,
+    "comparePrice": 6844,
+    "stock": 63,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise stackable switching platform engineered for cloud security, IoT, and high-density mobility.",
+    "specifications": [
+      {
+        "label": "Ports",
+        "value": "48x 10/100/1000 Gigabit Ethernet ports with 802.3at PoE+ (740W budget)"
+      },
+      {
+        "label": "Stacking",
+        "value": "StackWise-480 technology provides 480 Gbps stacking bandwidth"
+      },
+      {
+        "label": "Uplinks",
+        "value": "Modular uplink options supporting 10G, 25G, 40G, and 100G"
+      },
+      {
+        "label": "Security",
+        "value": "Encrypted Traffic Analytics (ETA) and MACsec-256 link encryption"
+      },
+      {
+        "label": "Operating System",
+        "value": "Cisco IOS XE with open API programmable automation"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5800,
+        "comparePrice": 6844,
+        "sku": "PGX-PRO-024-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7076,
+        "comparePrice": 8350,
+        "sku": "PGX-PRO-024-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8004,
+        "comparePrice": 9445,
+        "sku": "PGX-PRO-024-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server",
+    "slug": "qnap-enterprise-tsh3087xu-30bay-nas",
+    "sku": "PGX-PRO-025",
+    "categorySlug": "power-storage-accessories",
+    "price": 7899,
+    "comparePrice": 9321,
+    "stock": 64,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "30-bay hybrid NVMe/SAS enterprise rackmount NAS powered by Intel Xeon E-2300 series with QuTS hero ZFS.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon E-2388G 8-Core / 16-Thread 3.2GHz processor"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 3.5-inch SAS/SATA bays + 6x 2.5-inch U.2 PCIe NVMe SSD slots"
+      },
+      {
+        "label": "File System",
+        "value": "ZFS-based QuTS hero with self-healing, deduplication, and compression"
+      },
+      {
+        "label": "Ports",
+        "value": "Dual 10GbE SFP+ and dual 2.5GbE RJ45 network interfaces"
+      },
+      {
+        "label": "Power Units",
+        "value": "Dual 800W redundant power supplies for 24/7 mission-critical uptime"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7899,
+        "comparePrice": 9321,
+        "sku": "PGX-PRO-025-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9637,
+        "comparePrice": 11372,
+        "sku": "PGX-PRO-025-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10901,
+        "comparePrice": 12863,
+        "sku": "PGX-PRO-025-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 2 Professional)",
+    "slug": "woodway-4front-commercial-treadmill-series-2",
+    "sku": "PGX-PRO-026-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 9845,
+    "comparePrice": 11617,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard commercial slat-belt treadmill engineered for zero-friction running with vulcanized rubber slats.",
+    "specifications": [
+      {
+        "label": "Belt Type",
+        "value": "60 individual vulcanized rubber slats with wire reinforcement"
+      },
+      {
+        "label": "Motor System",
+        "value": "Zero-friction ball bearing system with 5.0 HP dynamic drive"
+      },
+      {
+        "label": "Speed Range",
+        "value": "0 – 15 mph (0 – 24 km/h) with 0 – 15% dynamic incline"
+      },
+      {
+        "label": "Display",
+        "value": "Personal Trainer 19-inch high-definition touchscreen console"
+      },
+      {
+        "label": "Durability",
+        "value": "Rated for over 150,000 miles of commercial club usage"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9845,
+        "comparePrice": 11617,
+        "sku": "PGX-PRO-026-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 12011,
+        "comparePrice": 14173,
+        "sku": "PGX-PRO-026-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13586,
+        "comparePrice": 16031,
+        "sku": "PGX-PRO-026-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 2 Professional)",
+    "slug": "force-usa-g20-pro-functional-trainer-series-2",
+    "sku": "PGX-PRO-027-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 6700,
+    "comparePrice": 7906,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Heavy-duty commercial gym station combining dual 289 lb weight stacks, counterbalanced Smith machine, and power rack.",
+    "specifications": [
+      {
+        "label": "Weight Stacks",
+        "value": "Dual 289 lb (130 kg) precision machined steel weight stacks (1:1 ratio)"
+      },
+      {
+        "label": "Smith Machine",
+        "value": "Commercial counterbalanced Smith machine rated to 992 lbs"
+      },
+      {
+        "label": "Steel Frame",
+        "value": "Heavy-gauge 11-gauge rolled steel tubing with electrostatic powder coat"
+      },
+      {
+        "label": "Attachments Included",
+        "value": "Monolift, roller J-hooks, leg press plate, dip handles, suspension ring"
+      },
+      {
+        "label": "Dimensions",
+        "value": "94 in (W) x 75 in (D) x 91 in (H)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6700,
+        "comparePrice": 7906,
+        "sku": "PGX-PRO-027-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8174,
+        "comparePrice": 9645,
+        "sku": "PGX-PRO-027-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9246,
+        "comparePrice": 10910,
+        "sku": "PGX-PRO-027-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 2 Professional)",
+    "slug": "plunge-commercial-cold-plunge-chiller-series-2",
+    "sku": "PGX-PRO-028-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 5600,
+    "comparePrice": 6608,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial grade ice bath plunge tub with integrated 1 HP ultra-quiet cooling engine down to 37°F and ozone sanitation.",
+    "specifications": [
+      {
+        "label": "Cooling Engine",
+        "value": "1.0 HP high-efficiency cooling chiller cools down to 37°F (2.7°C)"
+      },
+      {
+        "label": "Sanitation",
+        "value": "Continuous 20-micron filtration and powerful chemical-free ozone sanitation"
+      },
+      {
+        "label": "Tub Construction",
+        "value": "Military-grade fiberglass and acrylic insulated body"
+      },
+      {
+        "label": "Weather Rating",
+        "value": "Indoor and outdoor all-weather UV protected rating"
+      },
+      {
+        "label": "Smart Control",
+        "value": "Smartphone app-controlled temperature and automated schedule"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5600,
+        "comparePrice": 6608,
+        "sku": "PGX-PRO-028-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6832,
+        "comparePrice": 8062,
+        "sku": "PGX-PRO-028-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7728,
+        "comparePrice": 9119,
+        "sku": "PGX-PRO-028-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 2 Professional)",
+    "slug": "clearlight-sanctuary-infrared-sauna-series-2",
+    "sku": "PGX-PRO-029-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 8400,
+    "comparePrice": 9912,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Medical-grade full spectrum infrared sauna with True Wave near, mid, and far-infrared heaters with zero EMF exposure.",
+    "specifications": [
+      {
+        "label": "Heater Technology",
+        "value": "True Wave Full Spectrum (Near, Mid, and Far Infrared) heaters"
+      },
+      {
+        "label": "EMF Rating",
+        "value": "Virtually zero EMF/ELF levels tested and certified"
+      },
+      {
+        "label": "Wood Material",
+        "value": "Hypoallergenic Grade-A Italian Eco-Certified Cedarwood"
+      },
+      {
+        "label": "Audio & Light",
+        "value": "Medical-grade Chromotherapy lighting and Bluetooth stereo speakers"
+      },
+      {
+        "label": "Warranty",
+        "value": "Full Lifetime Warranty on cabinetry, heaters, and electronics"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8400,
+        "comparePrice": 9912,
+        "sku": "PGX-PRO-029-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10248,
+        "comparePrice": 12093,
+        "sku": "PGX-PRO-029-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11592,
+        "comparePrice": 13679,
+        "sku": "PGX-PRO-029-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 2 Professional)",
+    "slug": "rogue-monster-rm6-power-rack-package-series-2",
+    "sku": "PGX-PRO-030-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4300,
+    "comparePrice": 5074,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Fully equipped 6-post 3x3-inch 11-gauge steel monster rack with strap safeties, plate storage, and multi-grip pull-up.",
+    "specifications": [
+      {
+        "label": "Uprights",
+        "value": "3x3-inch 11-Gauge Structural Steel with 1-inch laser-cut holes and keyhole sides"
+      },
+      {
+        "label": "Footprint",
+        "value": "76 in (L) x 49 in (W) x 100 in (H) with 43-inch inside depth"
+      },
+      {
+        "label": "Hardware",
+        "value": "1-inch Monster hardware with black zinc finish"
+      },
+      {
+        "label": "Included",
+        "value": "Monster J-cups, strap safety system, 10 plate storage pins, textured pull-up bar"
+      },
+      {
+        "label": "Finish",
+        "value": "Rogue signature textured black matte powder coat"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4300,
+        "comparePrice": 5074,
+        "sku": "PGX-PRO-030-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5246,
+        "comparePrice": 6190,
+        "sku": "PGX-PRO-030-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5934,
+        "comparePrice": 7002,
+        "sku": "PGX-PRO-030-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 2 Professional)",
+    "slug": "keiser-m3i-total-body-commercial-bike-series-2",
+    "sku": "PGX-PRO-031-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 3250,
+    "comparePrice": 3835,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial magnetic resistance spin bike featuring dual-action upper body handles and Bluetooth wireless computer.",
+    "specifications": [
+      {
+        "label": "Resistance",
+        "value": "Non-wearing magnetic eddy-current resistance system"
+      },
+      {
+        "label": "Drive Train",
+        "value": "Poly-V industrial quiet belt drive requires zero maintenance"
+      },
+      {
+        "label": "Handles",
+        "value": "Dual-action upper-body push/pull levers for full-body cardio workout"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth Wireless Display broadcasts power (Watts) and cadence"
+      },
+      {
+        "label": "Adjustability",
+        "value": "Four-way micro-adjustable seat and handlebars with quick-lock cams"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3250,
+        "comparePrice": 3835,
+        "sku": "PGX-PRO-031-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 3965,
+        "comparePrice": 4679,
+        "sku": "PGX-PRO-031-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 4485,
+        "comparePrice": 5292,
+        "sku": "PGX-PRO-031-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 2 Professional)",
+    "slug": "eleiko-iwf-weightlifting-competition-set-series-2",
+    "sku": "PGX-PRO-032-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4700,
+    "comparePrice": 5546,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "International Weightlifting Federation certified 20kg competition barbell, calibrated competition discs, and disc collars.",
+    "specifications": [
+      {
+        "label": "Barbell",
+        "value": "Eleiko IWF Weightlifting Competition Bar 20kg with 215,000 PSI steel"
+      },
+      {
+        "label": "Calibration",
+        "value": "Discs calibrated to within +10g/-0g per official IWF competition rules"
+      },
+      {
+        "label": "Bearings",
+        "value": "10 precision needle bearings for ultra-smooth dynamic rotation"
+      },
+      {
+        "label": "Plates Included",
+        "value": "Pairs of 25kg, 20kg, 15kg, 10kg discs + change plates (0.5 to 5kg)"
+      },
+      {
+        "label": "Collars",
+        "value": "Eleiko IWF Competition Barbell Collars (pair, 2.5kg each)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4700,
+        "comparePrice": 5546,
+        "sku": "PGX-PRO-032-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5734,
+        "comparePrice": 6766,
+        "sku": "PGX-PRO-032-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6486,
+        "comparePrice": 7653,
+        "sku": "PGX-PRO-032-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 2 Professional)",
+    "slug": "tonal-smart-gym-digital-resistance-series-2",
+    "sku": "PGX-PRO-033-S2",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4450,
+    "comparePrice": 5251,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wall-mounted intelligent personal trainer utilizing patented electromagnetic resistance up to 200 lbs.",
+    "specifications": [
+      {
+        "label": "Resistance Engine",
+        "value": "Patented electromagnetic digital resistance engine up to 200 lbs"
+      },
+      {
+        "label": "Adaptive Weight",
+        "value": "Real-time dynamic spotter and eccentric training burn modes"
+      },
+      {
+        "label": "Screen",
+        "value": "24-inch full HD interactive capacitive touchscreen display"
+      },
+      {
+        "label": "Arms",
+        "value": "Rotational multi-directional adjustable arms for over 170 movements"
+      },
+      {
+        "label": "Sensors",
+        "value": "Real-time form feedback and velocity metric tracking sensors"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4450,
+        "comparePrice": 5251,
+        "sku": "PGX-PRO-033-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5429,
+        "comparePrice": 6406,
+        "sku": "PGX-PRO-033-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6141,
+        "comparePrice": 7246,
+        "sku": "PGX-PRO-033-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 2 Professional)",
+    "slug": "sony-fx6-full-frame-cinema-camera-series-2",
+    "sku": "PGX-PRO-034-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6700,
+    "comparePrice": 7906,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact full-frame cinema line camera with 4K 120p, 15+ stops dynamic range, and S-Cinetone color science.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "10.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ stops with Dual Base ISO (800 / 12,800)"
+      },
+      {
+        "label": "Electronic ND",
+        "value": "Built-in 1/4 to 1/128 variable electronic neutral density filter"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Real-time Eye AF and Face Detection with 627 phase-detection points"
+      },
+      {
+        "label": "Audio",
+        "value": "Detachable top smart handle with dual XLR audio inputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6700,
+        "comparePrice": 7906,
+        "sku": "PGX-PRO-034-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8174,
+        "comparePrice": 9645,
+        "sku": "PGX-PRO-034-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9246,
+        "comparePrice": 10910,
+        "sku": "PGX-PRO-034-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 2 Professional)",
+    "slug": "hasselblad-x2d-100c-medium-format-series-2",
+    "sku": "PGX-PRO-035-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 9200,
+    "comparePrice": 10856,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel medium-format BSI CMOS camera with 5-axis in-body image stabilization and 1TB internal SSD.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100 Megapixel 43.8 x 32.9 mm BSI CMOS Sensor with 16-bit color"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB high-speed PCIe internal SSD (up to 2850 MB/s write speed)"
+      },
+      {
+        "label": "Stabilization",
+        "value": "5-Axis In-Body Image Stabilization (IBIS) providing 7 stops benefit"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "OLED Electronic Viewfinder with 5.76 million dots and 1.0x magnification"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Phase Detection Autofocus with 294 zones across the frame"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9200,
+        "comparePrice": 10856,
+        "sku": "PGX-PRO-035-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11224,
+        "comparePrice": 13244,
+        "sku": "PGX-PRO-035-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12696,
+        "comparePrice": 14981,
+        "sku": "PGX-PRO-035-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 2 Professional)",
+    "slug": "leica-m11-rangefinder-digital-camera-series-2",
+    "sku": "PGX-PRO-036-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 9545,
+    "comparePrice": 11263,
+    "stock": 50,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary optical rangefinder with Triple Resolution full-frame BSI sensor (60MP, 36MP, and 18MP DNG).",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame BSI CMOS with Triple Resolution Technology (60/36/18 MP)"
+      },
+      {
+        "label": "Color Filter",
+        "value": "Ultra-thin dual-layer absorption glass UV/IR filter"
+      },
+      {
+        "label": "Internal Memory",
+        "value": "64GB internal memory storage in addition to SD card slot"
+      },
+      {
+        "label": "Metering",
+        "value": "Multi-field exposure metering directly on the sensor"
+      },
+      {
+        "label": "Construction",
+        "value": "Black aluminum top cover with scratch-resistant coating (530g)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9545,
+        "comparePrice": 11263,
+        "sku": "PGX-PRO-036-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11645,
+        "comparePrice": 13741,
+        "sku": "PGX-PRO-036-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13172,
+        "comparePrice": 15543,
+        "sku": "PGX-PRO-036-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 2 Professional)",
+    "slug": "sony-alpha-1-50mp-flagship-camera-series-2",
+    "sku": "PGX-PRO-037-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 7300,
+    "comparePrice": 8614,
+    "stock": 51,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The one camera that does it all: 50.1MP at 30 fps continuous shooting, 8K 30p, and flash sync up to 1/400s.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "50.1MP Full-Frame Exmor RS Stacked BSI CMOS with integrated memory"
+      },
+      {
+        "label": "Continuous Shooting",
+        "value": "Up to 30 frames per second with full AF/AE tracking"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "8K 30p 10-bit 4:2:0 and 4K 120p 10-bit 4:2:2 recording"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "9.44 million dot Quad-XGA OLED EVF with 240 fps refresh rate"
+      },
+      {
+        "label": "Flash Sync",
+        "value": "Dual driven mechanical shutter with 1/400s flash sync speed"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7300,
+        "comparePrice": 8614,
+        "sku": "PGX-PRO-037-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8906,
+        "comparePrice": 10509,
+        "sku": "PGX-PRO-037-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10074,
+        "comparePrice": 11887,
+        "sku": "PGX-PRO-037-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 2 Professional)",
+    "slug": "canon-eos-c70-cinema-camera-series-2",
+    "sku": "PGX-PRO-038-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6150,
+    "comparePrice": 7257,
+    "stock": 52,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Cinema EOS performance in an RF-mount mirrorless body with Super 35 DGO sensor and 16+ stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Super 35mm Dual Gain Output (DGO) sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16+ stops dynamic range with Canon Log 2"
+      },
+      {
+        "label": "High Frame Rate",
+        "value": "4K 120p high-speed recording with audio recording"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Ultra-thin motorized mechanical ND filter unit (up to 10 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Canon RF Mount compatible with native EF-EOS R 0.71x Speed Booster"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6150,
+        "comparePrice": 7257,
+        "sku": "PGX-PRO-038-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7503,
+        "comparePrice": 8854,
+        "sku": "PGX-PRO-038-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8487,
+        "comparePrice": 10015,
+        "sku": "PGX-PRO-038-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 2 Professional)",
+    "slug": "dji-ronin-4d-6k-cinema-combo-series-2",
+    "sku": "PGX-PRO-039-S2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 7600,
+    "comparePrice": 8968,
+    "stock": 53,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary integrated 4-axis motorized cinema camera with LiDAR autofocus and wireless video transmission.",
+    "specifications": [
+      {
+        "label": "Active Z-Axis",
+        "value": "Active 4th axis stabilization eliminates vertical camera shake"
+      },
+      {
+        "label": "Sensor",
+        "value": "Zenmuse X9-6K Full-Frame camera with dual native ISO (800 / 5000)"
+      },
+      {
+        "label": "Autofocus",
+        "value": "LiDAR Range Finder autofocus with 43,200 ranging points"
+      },
+      {
+        "label": "Codecs",
+        "value": "Apple ProRes 422 HQ, ProRes RAW, and H.264 internal recording"
+      },
+      {
+        "label": "Transmitter",
+        "value": "High-bright remote monitor with integrated wireless video receiver"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7600,
+        "comparePrice": 8968,
+        "sku": "PGX-PRO-039-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9272,
+        "comparePrice": 10941,
+        "sku": "PGX-PRO-039-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10488,
+        "comparePrice": 12376,
+        "sku": "PGX-PRO-039-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 2 Professional)",
+    "slug": "neumann-u87-ai-studio-microphone-series-2",
+    "sku": "PGX-PRO-040-S2",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4150,
+    "comparePrice": 4897,
+    "stock": 54,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The definitive standard studio vocal microphone featuring the classic K67 dual-diaphragm capsule.",
+    "specifications": [
+      {
+        "label": "Acoustical Principle",
+        "value": "Pressure gradient transducer with dual-diaphragm capsule"
+      },
+      {
+        "label": "Polar Patterns",
+        "value": "Omnidirectional, Cardioid, and Figure-8 switchable"
+      },
+      {
+        "label": "Frequency Range",
+        "value": "20 Hz – 20 kHz with smooth, linear presence boost"
+      },
+      {
+        "label": "Max SPL",
+        "value": "127 dB SPL (up to 137 dB with pre-attenuation pad engaged)"
+      },
+      {
+        "label": "Included",
+        "value": "Deluxe wooden storage case and EA 87 shockmount suspension"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4150,
+        "comparePrice": 4897,
+        "sku": "PGX-PRO-040-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5063,
+        "comparePrice": 5974,
+        "sku": "PGX-PRO-040-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5727,
+        "comparePrice": 6758,
+        "sku": "PGX-PRO-040-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 2 Professional)",
+    "slug": "tube-tech-cl1b-optical-compressor-series-2",
+    "sku": "PGX-PRO-041-S2",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5600,
+    "comparePrice": 6608,
+    "stock": 55,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "World-renowned all-tube optical mono compressor prized by top engineers for transparent and musical vocal leveling.",
+    "specifications": [
+      {
+        "label": "Gain Reduction",
+        "value": "Unique low-distortion optical gain-reduction element"
+      },
+      {
+        "label": "Tubes",
+        "value": "All-tube circuit featuring ECC82 and ECC83 vacuum tubes"
+      },
+      {
+        "label": "Ratio",
+        "value": "Continuously variable ratio from 2:1 up to 10:1"
+      },
+      {
+        "label": "Attack & Release",
+        "value": "Manual, Fixed, or combined Manual/Fixed program-dependent modes"
+      },
+      {
+        "label": "Transformers",
+        "value": "Custom balanced input and output audio transformers"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5600,
+        "comparePrice": 6608,
+        "sku": "PGX-PRO-041-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6832,
+        "comparePrice": 8062,
+        "sku": "PGX-PRO-041-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7728,
+        "comparePrice": 9119,
+        "sku": "PGX-PRO-041-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 2 Professional)",
+    "slug": "universal-audio-la2a-leveling-amplifier-series-2",
+    "sku": "PGX-PRO-042-S2",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5250,
+    "comparePrice": 6195,
+    "stock": 56,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hand-wired point-to-point electro-optical compressor with original T4 optical attenuator cell.",
+    "specifications": [
+      {
+        "label": "Attenuator",
+        "value": "Patented T4 electro-optical cell with program-dependent release"
+      },
+      {
+        "label": "Tubes",
+        "value": "Tube compliment: 2x 12AX7, 1x 12BH7, 1x 6AQ5 vacuum tubes"
+      },
+      {
+        "label": "Distortion",
+        "value": "Less than 0.25% THD at +10 dBm output"
+      },
+      {
+        "label": "Frequency Response",
+        "value": "30 Hz – 15 kHz (+/- 0.5 dB)"
+      },
+      {
+        "label": "Front Panel",
+        "value": "Classic retro 3U faceplate with original vintage meter switch"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5250,
+        "comparePrice": 6195,
+        "sku": "PGX-PRO-042-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6405,
+        "comparePrice": 7558,
+        "sku": "PGX-PRO-042-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7245,
+        "comparePrice": 8549,
+        "sku": "PGX-PRO-042-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 2 Professional)",
+    "slug": "manley-massive-passive-mastering-eq-series-2",
+    "sku": "PGX-PRO-043-S2",
+    "categorySlug": "audio-streaming-gear",
+    "price": 7300,
+    "comparePrice": 8614,
+    "stock": 57,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Two-channel four-band passive equalizer with all-tube makeup amplifier stage and stepped Grayhill rotary switches.",
+    "specifications": [
+      {
+        "label": "Topology",
+        "value": "Passive EQ curves using premium metal-film resistors, inductors, and film caps"
+      },
+      {
+        "label": "Gain Makeup",
+        "value": "All-tube line amplifier utilizing 12AX7 and 6922 vacuum tubes"
+      },
+      {
+        "label": "Bands",
+        "value": "4 independent parametric bands per channel with switchable Bell/Shelf"
+      },
+      {
+        "label": "Filters",
+        "value": "High-pass and Low-pass filters with 5 selectable cutoff frequencies"
+      },
+      {
+        "label": "Controls",
+        "value": "Stepped precision mastering switches for 100% accurate recall"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7300,
+        "comparePrice": 8614,
+        "sku": "PGX-PRO-043-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8906,
+        "comparePrice": 10509,
+        "sku": "PGX-PRO-043-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10074,
+        "comparePrice": 11887,
+        "sku": "PGX-PRO-043-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 2 Professional)",
+    "slug": "focal-twin6-be-active-studio-monitors-series-2",
+    "sku": "PGX-PRO-044-S2",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5150,
+    "comparePrice": 6077,
+    "stock": 58,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-precision active 3-way nearfield/midfield studio monitors with inverted Beryllium dome tweeter.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "1-inch pure Beryllium inverted dome tweeter with linear response to 40kHz"
+      },
+      {
+        "label": "Woofers",
+        "value": "Dual 6.5-inch W composite sandwich cone drivers"
+      },
+      {
+        "label": "Amplifiers",
+        "value": "Tri-amped: 150W Bass, 150W Mid, 100W Treble Class AB power"
+      },
+      {
+        "label": "Maximum SPL",
+        "value": "115 dB SPL peak at 1 meter"
+      },
+      {
+        "label": "Cabinet",
+        "value": "High-density 19mm MDF with natural dark red veneer side panels"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5150,
+        "comparePrice": 6077,
+        "sku": "PGX-PRO-044-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6283,
+        "comparePrice": 7414,
+        "sku": "PGX-PRO-044-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7107,
+        "comparePrice": 8386,
+        "sku": "PGX-PRO-044-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 2 Professional)",
+    "slug": "apple-mac-studio-m2-ultra-desktop-series-2",
+    "sku": "PGX-PRO-045-S2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 7600,
+    "comparePrice": 8968,
+    "stock": 59,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact powerhouse desktop workstation with M2 Ultra, 128GB Unified Memory, and 4TB NVMe SSD.",
+    "specifications": [
+      {
+        "label": "Chip",
+        "value": "Apple M2 Ultra with 24-Core CPU and 76-Core GPU"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "32-Core Neural Engine with 31.6 trillion ops/second"
+      },
+      {
+        "label": "Memory",
+        "value": "128GB Unified Memory with 800GB/s bandwidth"
+      },
+      {
+        "label": "Storage",
+        "value": "4TB High-Speed PCIe Solid State Drive (up to 7.4GB/s)"
+      },
+      {
+        "label": "Video Support",
+        "value": "Supports up to eight 4K displays or six 6K displays simultaneously"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7600,
+        "comparePrice": 8968,
+        "sku": "PGX-PRO-045-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9272,
+        "comparePrice": 10941,
+        "sku": "PGX-PRO-045-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10488,
+        "comparePrice": 12376,
+        "sku": "PGX-PRO-045-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 2 Professional)",
+    "slug": "apple-macbook-pro-16-m3-max-loaded-series-2",
+    "sku": "PGX-PRO-046-S2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 8050,
+    "comparePrice": 9499,
+    "stock": 60,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Maximum configuration 16-inch Liquid Retina XDR laptop with 16-core CPU, 40-core GPU, 128GB RAM, and 8TB storage.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Apple M3 Max with 16-Core CPU and 40-Core GPU with hardware ray tracing"
+      },
+      {
+        "label": "Unified Memory",
+        "value": "128GB Unified Memory with 400GB/s bandwidth"
+      },
+      {
+        "label": "Internal SSD",
+        "value": "8TB High-Speed NVMe Storage Drive"
+      },
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR (3456 x 2234) with 120Hz ProMotion"
+      },
+      {
+        "label": "Finish",
+        "value": "Space Black aluminum enclosure with anodized seal to reduce fingerprints"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8050,
+        "comparePrice": 9499,
+        "sku": "PGX-PRO-046-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9821,
+        "comparePrice": 11589,
+        "sku": "PGX-PRO-046-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11109,
+        "comparePrice": 13109,
+        "sku": "PGX-PRO-046-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 2 Professional)",
+    "slug": "corsair-one-i500-liquid-cooled-desktop-series-2",
+    "sku": "PGX-PRO-047-S2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 5250,
+    "comparePrice": 6195,
+    "stock": 61,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Architectural aluminum and real wood chassis with liquid-cooled Intel Core i9-14900K and NVIDIA RTX 4090 24GB.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i9-14900K 24-Core 6.0GHz Liquid-Cooled"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 4090 24GB GDDR6X Liquid-Cooled"
+      },
+      {
+        "label": "System RAM",
+        "value": "64GB DDR5-6000MHz High-Speed Corsair Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "2TB PCIe Gen4 NVMe M.2 SSD + expansion slot"
+      },
+      {
+        "label": "Chassis",
+        "value": "FSC-certified solid walnut front panel with touch-sensitive lighting"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5250,
+        "comparePrice": 6195,
+        "sku": "PGX-PRO-047-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6405,
+        "comparePrice": 7558,
+        "sku": "PGX-PRO-047-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7245,
+        "comparePrice": 8549,
+        "sku": "PGX-PRO-047-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 2 Professional)",
+    "slug": "synology-flashstation-fs3410-all-flash-nas-series-2",
+    "sku": "PGX-PRO-048-S2",
+    "categorySlug": "power-storage-accessories",
+    "price": 7300,
+    "comparePrice": 8614,
+    "stock": 62,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "2U 24-bay high-performance all-flash server delivering over 356,000 iSCSI 4K random write IOPS.",
+    "specifications": [
+      {
+        "label": "CPU",
+        "value": "Intel Xeon D-1541 8-Core 2.1GHz / 2.7GHz Turbo"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB DDR4 ECC RDIMM (expandable up to 128GB)"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 2.5-inch SAS/SATA SSD hot-swappable bays"
+      },
+      {
+        "label": "Networking",
+        "value": "Dual 10GbE 10GBASE-T ports + Dual 1GbE ports built-in"
+      },
+      {
+        "label": "Redundancy",
+        "value": "Dual 500W redundant power supplies and hot-swap smart fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7300,
+        "comparePrice": 8614,
+        "sku": "PGX-PRO-048-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8906,
+        "comparePrice": 10509,
+        "sku": "PGX-PRO-048-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10074,
+        "comparePrice": 11887,
+        "sku": "PGX-PRO-048-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 2 Professional)",
+    "slug": "cisco-catalyst-9300-48port-poe-switch-series-2",
+    "sku": "PGX-PRO-049-S2",
+    "categorySlug": "power-storage-accessories",
+    "price": 6500,
+    "comparePrice": 7670,
+    "stock": 63,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise stackable switching platform engineered for cloud security, IoT, and high-density mobility.",
+    "specifications": [
+      {
+        "label": "Ports",
+        "value": "48x 10/100/1000 Gigabit Ethernet ports with 802.3at PoE+ (740W budget)"
+      },
+      {
+        "label": "Stacking",
+        "value": "StackWise-480 technology provides 480 Gbps stacking bandwidth"
+      },
+      {
+        "label": "Uplinks",
+        "value": "Modular uplink options supporting 10G, 25G, 40G, and 100G"
+      },
+      {
+        "label": "Security",
+        "value": "Encrypted Traffic Analytics (ETA) and MACsec-256 link encryption"
+      },
+      {
+        "label": "Operating System",
+        "value": "Cisco IOS XE with open API programmable automation"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6500,
+        "comparePrice": 7670,
+        "sku": "PGX-PRO-049-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7930,
+        "comparePrice": 9357,
+        "sku": "PGX-PRO-049-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8970,
+        "comparePrice": 10585,
+        "sku": "PGX-PRO-049-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 2 Professional)",
+    "slug": "qnap-enterprise-tsh3087xu-30bay-nas-series-2",
+    "sku": "PGX-PRO-050-S2",
+    "categorySlug": "power-storage-accessories",
+    "price": 8850,
+    "comparePrice": 10443,
+    "stock": 64,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "30-bay hybrid NVMe/SAS enterprise rackmount NAS powered by Intel Xeon E-2300 series with QuTS hero ZFS.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon E-2388G 8-Core / 16-Thread 3.2GHz processor"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 3.5-inch SAS/SATA bays + 6x 2.5-inch U.2 PCIe NVMe SSD slots"
+      },
+      {
+        "label": "File System",
+        "value": "ZFS-based QuTS hero with self-healing, deduplication, and compression"
+      },
+      {
+        "label": "Ports",
+        "value": "Dual 10GbE SFP+ and dual 2.5GbE RJ45 network interfaces"
+      },
+      {
+        "label": "Power Units",
+        "value": "Dual 800W redundant power supplies for 24/7 mission-critical uptime"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8850,
+        "comparePrice": 10443,
+        "sku": "PGX-PRO-050-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10797,
+        "comparePrice": 12740,
+        "sku": "PGX-PRO-050-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12213,
+        "comparePrice": 14411,
+        "sku": "PGX-PRO-050-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 3 Professional)",
+    "slug": "woodway-4front-commercial-treadmill-series-3",
+    "sku": "PGX-PRO-051-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 9695,
+    "comparePrice": 11440,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard commercial slat-belt treadmill engineered for zero-friction running with vulcanized rubber slats.",
+    "specifications": [
+      {
+        "label": "Belt Type",
+        "value": "60 individual vulcanized rubber slats with wire reinforcement"
+      },
+      {
+        "label": "Motor System",
+        "value": "Zero-friction ball bearing system with 5.0 HP dynamic drive"
+      },
+      {
+        "label": "Speed Range",
+        "value": "0 – 15 mph (0 – 24 km/h) with 0 – 15% dynamic incline"
+      },
+      {
+        "label": "Display",
+        "value": "Personal Trainer 19-inch high-definition touchscreen console"
+      },
+      {
+        "label": "Durability",
+        "value": "Rated for over 150,000 miles of commercial club usage"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9695,
+        "comparePrice": 11440,
+        "sku": "PGX-PRO-051-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11828,
+        "comparePrice": 13957,
+        "sku": "PGX-PRO-051-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13379,
+        "comparePrice": 15787,
+        "sku": "PGX-PRO-051-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 3 Professional)",
+    "slug": "force-usa-g20-pro-functional-trainer-series-3",
+    "sku": "PGX-PRO-052-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 7450,
+    "comparePrice": 8791,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Heavy-duty commercial gym station combining dual 289 lb weight stacks, counterbalanced Smith machine, and power rack.",
+    "specifications": [
+      {
+        "label": "Weight Stacks",
+        "value": "Dual 289 lb (130 kg) precision machined steel weight stacks (1:1 ratio)"
+      },
+      {
+        "label": "Smith Machine",
+        "value": "Commercial counterbalanced Smith machine rated to 992 lbs"
+      },
+      {
+        "label": "Steel Frame",
+        "value": "Heavy-gauge 11-gauge rolled steel tubing with electrostatic powder coat"
+      },
+      {
+        "label": "Attachments Included",
+        "value": "Monolift, roller J-hooks, leg press plate, dip handles, suspension ring"
+      },
+      {
+        "label": "Dimensions",
+        "value": "94 in (W) x 75 in (D) x 91 in (H)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7450,
+        "comparePrice": 8791,
+        "sku": "PGX-PRO-052-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9089,
+        "comparePrice": 10725,
+        "sku": "PGX-PRO-052-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10281,
+        "comparePrice": 12132,
+        "sku": "PGX-PRO-052-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 3 Professional)",
+    "slug": "plunge-commercial-cold-plunge-chiller-series-3",
+    "sku": "PGX-PRO-053-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 6200,
+    "comparePrice": 7316,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial grade ice bath plunge tub with integrated 1 HP ultra-quiet cooling engine down to 37°F and ozone sanitation.",
+    "specifications": [
+      {
+        "label": "Cooling Engine",
+        "value": "1.0 HP high-efficiency cooling chiller cools down to 37°F (2.7°C)"
+      },
+      {
+        "label": "Sanitation",
+        "value": "Continuous 20-micron filtration and powerful chemical-free ozone sanitation"
+      },
+      {
+        "label": "Tub Construction",
+        "value": "Military-grade fiberglass and acrylic insulated body"
+      },
+      {
+        "label": "Weather Rating",
+        "value": "Indoor and outdoor all-weather UV protected rating"
+      },
+      {
+        "label": "Smart Control",
+        "value": "Smartphone app-controlled temperature and automated schedule"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6200,
+        "comparePrice": 7316,
+        "sku": "PGX-PRO-053-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7564,
+        "comparePrice": 8926,
+        "sku": "PGX-PRO-053-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8556,
+        "comparePrice": 10096,
+        "sku": "PGX-PRO-053-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 3 Professional)",
+    "slug": "clearlight-sanctuary-infrared-sauna-series-3",
+    "sku": "PGX-PRO-054-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 9300,
+    "comparePrice": 10974,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Medical-grade full spectrum infrared sauna with True Wave near, mid, and far-infrared heaters with zero EMF exposure.",
+    "specifications": [
+      {
+        "label": "Heater Technology",
+        "value": "True Wave Full Spectrum (Near, Mid, and Far Infrared) heaters"
+      },
+      {
+        "label": "EMF Rating",
+        "value": "Virtually zero EMF/ELF levels tested and certified"
+      },
+      {
+        "label": "Wood Material",
+        "value": "Hypoallergenic Grade-A Italian Eco-Certified Cedarwood"
+      },
+      {
+        "label": "Audio & Light",
+        "value": "Medical-grade Chromotherapy lighting and Bluetooth stereo speakers"
+      },
+      {
+        "label": "Warranty",
+        "value": "Full Lifetime Warranty on cabinetry, heaters, and electronics"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9300,
+        "comparePrice": 10974,
+        "sku": "PGX-PRO-054-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11346,
+        "comparePrice": 13388,
+        "sku": "PGX-PRO-054-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12834,
+        "comparePrice": 15144,
+        "sku": "PGX-PRO-054-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 3 Professional)",
+    "slug": "rogue-monster-rm6-power-rack-package-series-3",
+    "sku": "PGX-PRO-055-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4750,
+    "comparePrice": 5605,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Fully equipped 6-post 3x3-inch 11-gauge steel monster rack with strap safeties, plate storage, and multi-grip pull-up.",
+    "specifications": [
+      {
+        "label": "Uprights",
+        "value": "3x3-inch 11-Gauge Structural Steel with 1-inch laser-cut holes and keyhole sides"
+      },
+      {
+        "label": "Footprint",
+        "value": "76 in (L) x 49 in (W) x 100 in (H) with 43-inch inside depth"
+      },
+      {
+        "label": "Hardware",
+        "value": "1-inch Monster hardware with black zinc finish"
+      },
+      {
+        "label": "Included",
+        "value": "Monster J-cups, strap safety system, 10 plate storage pins, textured pull-up bar"
+      },
+      {
+        "label": "Finish",
+        "value": "Rogue signature textured black matte powder coat"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4750,
+        "comparePrice": 5605,
+        "sku": "PGX-PRO-055-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5795,
+        "comparePrice": 6838,
+        "sku": "PGX-PRO-055-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6555,
+        "comparePrice": 7735,
+        "sku": "PGX-PRO-055-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 3 Professional)",
+    "slug": "keiser-m3i-total-body-commercial-bike-series-3",
+    "sku": "PGX-PRO-056-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 3600,
+    "comparePrice": 4248,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial magnetic resistance spin bike featuring dual-action upper body handles and Bluetooth wireless computer.",
+    "specifications": [
+      {
+        "label": "Resistance",
+        "value": "Non-wearing magnetic eddy-current resistance system"
+      },
+      {
+        "label": "Drive Train",
+        "value": "Poly-V industrial quiet belt drive requires zero maintenance"
+      },
+      {
+        "label": "Handles",
+        "value": "Dual-action upper-body push/pull levers for full-body cardio workout"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth Wireless Display broadcasts power (Watts) and cadence"
+      },
+      {
+        "label": "Adjustability",
+        "value": "Four-way micro-adjustable seat and handlebars with quick-lock cams"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3600,
+        "comparePrice": 4248,
+        "sku": "PGX-PRO-056-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4392,
+        "comparePrice": 5183,
+        "sku": "PGX-PRO-056-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 4968,
+        "comparePrice": 5862,
+        "sku": "PGX-PRO-056-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 3 Professional)",
+    "slug": "eleiko-iwf-weightlifting-competition-set-series-3",
+    "sku": "PGX-PRO-057-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 5200,
+    "comparePrice": 6136,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "International Weightlifting Federation certified 20kg competition barbell, calibrated competition discs, and disc collars.",
+    "specifications": [
+      {
+        "label": "Barbell",
+        "value": "Eleiko IWF Weightlifting Competition Bar 20kg with 215,000 PSI steel"
+      },
+      {
+        "label": "Calibration",
+        "value": "Discs calibrated to within +10g/-0g per official IWF competition rules"
+      },
+      {
+        "label": "Bearings",
+        "value": "10 precision needle bearings for ultra-smooth dynamic rotation"
+      },
+      {
+        "label": "Plates Included",
+        "value": "Pairs of 25kg, 20kg, 15kg, 10kg discs + change plates (0.5 to 5kg)"
+      },
+      {
+        "label": "Collars",
+        "value": "Eleiko IWF Competition Barbell Collars (pair, 2.5kg each)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5200,
+        "comparePrice": 6136,
+        "sku": "PGX-PRO-057-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6344,
+        "comparePrice": 7486,
+        "sku": "PGX-PRO-057-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7176,
+        "comparePrice": 8468,
+        "sku": "PGX-PRO-057-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 3 Professional)",
+    "slug": "tonal-smart-gym-digital-resistance-series-3",
+    "sku": "PGX-PRO-058-S3",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4950,
+    "comparePrice": 5841,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wall-mounted intelligent personal trainer utilizing patented electromagnetic resistance up to 200 lbs.",
+    "specifications": [
+      {
+        "label": "Resistance Engine",
+        "value": "Patented electromagnetic digital resistance engine up to 200 lbs"
+      },
+      {
+        "label": "Adaptive Weight",
+        "value": "Real-time dynamic spotter and eccentric training burn modes"
+      },
+      {
+        "label": "Screen",
+        "value": "24-inch full HD interactive capacitive touchscreen display"
+      },
+      {
+        "label": "Arms",
+        "value": "Rotational multi-directional adjustable arms for over 170 movements"
+      },
+      {
+        "label": "Sensors",
+        "value": "Real-time form feedback and velocity metric tracking sensors"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4950,
+        "comparePrice": 5841,
+        "sku": "PGX-PRO-058-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6039,
+        "comparePrice": 7126,
+        "sku": "PGX-PRO-058-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6831,
+        "comparePrice": 8061,
+        "sku": "PGX-PRO-058-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 3 Professional)",
+    "slug": "sony-fx6-full-frame-cinema-camera-series-3",
+    "sku": "PGX-PRO-059-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 7450,
+    "comparePrice": 8791,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact full-frame cinema line camera with 4K 120p, 15+ stops dynamic range, and S-Cinetone color science.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "10.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ stops with Dual Base ISO (800 / 12,800)"
+      },
+      {
+        "label": "Electronic ND",
+        "value": "Built-in 1/4 to 1/128 variable electronic neutral density filter"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Real-time Eye AF and Face Detection with 627 phase-detection points"
+      },
+      {
+        "label": "Audio",
+        "value": "Detachable top smart handle with dual XLR audio inputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7450,
+        "comparePrice": 8791,
+        "sku": "PGX-PRO-059-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9089,
+        "comparePrice": 10725,
+        "sku": "PGX-PRO-059-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10281,
+        "comparePrice": 12132,
+        "sku": "PGX-PRO-059-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 3 Professional)",
+    "slug": "hasselblad-x2d-100c-medium-format-series-3",
+    "sku": "PGX-PRO-060-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 9545,
+    "comparePrice": 11263,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel medium-format BSI CMOS camera with 5-axis in-body image stabilization and 1TB internal SSD.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100 Megapixel 43.8 x 32.9 mm BSI CMOS Sensor with 16-bit color"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB high-speed PCIe internal SSD (up to 2850 MB/s write speed)"
+      },
+      {
+        "label": "Stabilization",
+        "value": "5-Axis In-Body Image Stabilization (IBIS) providing 7 stops benefit"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "OLED Electronic Viewfinder with 5.76 million dots and 1.0x magnification"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Phase Detection Autofocus with 294 zones across the frame"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9545,
+        "comparePrice": 11263,
+        "sku": "PGX-PRO-060-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11645,
+        "comparePrice": 13741,
+        "sku": "PGX-PRO-060-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13172,
+        "comparePrice": 15543,
+        "sku": "PGX-PRO-060-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 3 Professional)",
+    "slug": "leica-m11-rangefinder-digital-camera-series-3",
+    "sku": "PGX-PRO-061-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 9395,
+    "comparePrice": 11086,
+    "stock": 50,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary optical rangefinder with Triple Resolution full-frame BSI sensor (60MP, 36MP, and 18MP DNG).",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame BSI CMOS with Triple Resolution Technology (60/36/18 MP)"
+      },
+      {
+        "label": "Color Filter",
+        "value": "Ultra-thin dual-layer absorption glass UV/IR filter"
+      },
+      {
+        "label": "Internal Memory",
+        "value": "64GB internal memory storage in addition to SD card slot"
+      },
+      {
+        "label": "Metering",
+        "value": "Multi-field exposure metering directly on the sensor"
+      },
+      {
+        "label": "Construction",
+        "value": "Black aluminum top cover with scratch-resistant coating (530g)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9395,
+        "comparePrice": 11086,
+        "sku": "PGX-PRO-061-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11462,
+        "comparePrice": 13525,
+        "sku": "PGX-PRO-061-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12965,
+        "comparePrice": 15299,
+        "sku": "PGX-PRO-061-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 3 Professional)",
+    "slug": "sony-alpha-1-50mp-flagship-camera-series-3",
+    "sku": "PGX-PRO-062-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 8050,
+    "comparePrice": 9499,
+    "stock": 51,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The one camera that does it all: 50.1MP at 30 fps continuous shooting, 8K 30p, and flash sync up to 1/400s.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "50.1MP Full-Frame Exmor RS Stacked BSI CMOS with integrated memory"
+      },
+      {
+        "label": "Continuous Shooting",
+        "value": "Up to 30 frames per second with full AF/AE tracking"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "8K 30p 10-bit 4:2:0 and 4K 120p 10-bit 4:2:2 recording"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "9.44 million dot Quad-XGA OLED EVF with 240 fps refresh rate"
+      },
+      {
+        "label": "Flash Sync",
+        "value": "Dual driven mechanical shutter with 1/400s flash sync speed"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8050,
+        "comparePrice": 9499,
+        "sku": "PGX-PRO-062-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9821,
+        "comparePrice": 11589,
+        "sku": "PGX-PRO-062-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11109,
+        "comparePrice": 13109,
+        "sku": "PGX-PRO-062-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 3 Professional)",
+    "slug": "canon-eos-c70-cinema-camera-series-3",
+    "sku": "PGX-PRO-063-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6800,
+    "comparePrice": 8024,
+    "stock": 52,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Cinema EOS performance in an RF-mount mirrorless body with Super 35 DGO sensor and 16+ stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Super 35mm Dual Gain Output (DGO) sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16+ stops dynamic range with Canon Log 2"
+      },
+      {
+        "label": "High Frame Rate",
+        "value": "4K 120p high-speed recording with audio recording"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Ultra-thin motorized mechanical ND filter unit (up to 10 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Canon RF Mount compatible with native EF-EOS R 0.71x Speed Booster"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6800,
+        "comparePrice": 8024,
+        "sku": "PGX-PRO-063-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8296,
+        "comparePrice": 9789,
+        "sku": "PGX-PRO-063-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9384,
+        "comparePrice": 11073,
+        "sku": "PGX-PRO-063-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 3 Professional)",
+    "slug": "dji-ronin-4d-6k-cinema-combo-series-3",
+    "sku": "PGX-PRO-064-S3",
+    "categorySlug": "cameras-drones-creator",
+    "price": 8450,
+    "comparePrice": 9971,
+    "stock": 53,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary integrated 4-axis motorized cinema camera with LiDAR autofocus and wireless video transmission.",
+    "specifications": [
+      {
+        "label": "Active Z-Axis",
+        "value": "Active 4th axis stabilization eliminates vertical camera shake"
+      },
+      {
+        "label": "Sensor",
+        "value": "Zenmuse X9-6K Full-Frame camera with dual native ISO (800 / 5000)"
+      },
+      {
+        "label": "Autofocus",
+        "value": "LiDAR Range Finder autofocus with 43,200 ranging points"
+      },
+      {
+        "label": "Codecs",
+        "value": "Apple ProRes 422 HQ, ProRes RAW, and H.264 internal recording"
+      },
+      {
+        "label": "Transmitter",
+        "value": "High-bright remote monitor with integrated wireless video receiver"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8450,
+        "comparePrice": 9971,
+        "sku": "PGX-PRO-064-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10309,
+        "comparePrice": 12165,
+        "sku": "PGX-PRO-064-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11661,
+        "comparePrice": 13760,
+        "sku": "PGX-PRO-064-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 3 Professional)",
+    "slug": "neumann-u87-ai-studio-microphone-series-3",
+    "sku": "PGX-PRO-065-S3",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4600,
+    "comparePrice": 5428,
+    "stock": 54,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The definitive standard studio vocal microphone featuring the classic K67 dual-diaphragm capsule.",
+    "specifications": [
+      {
+        "label": "Acoustical Principle",
+        "value": "Pressure gradient transducer with dual-diaphragm capsule"
+      },
+      {
+        "label": "Polar Patterns",
+        "value": "Omnidirectional, Cardioid, and Figure-8 switchable"
+      },
+      {
+        "label": "Frequency Range",
+        "value": "20 Hz – 20 kHz with smooth, linear presence boost"
+      },
+      {
+        "label": "Max SPL",
+        "value": "127 dB SPL (up to 137 dB with pre-attenuation pad engaged)"
+      },
+      {
+        "label": "Included",
+        "value": "Deluxe wooden storage case and EA 87 shockmount suspension"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4600,
+        "comparePrice": 5428,
+        "sku": "PGX-PRO-065-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5612,
+        "comparePrice": 6622,
+        "sku": "PGX-PRO-065-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6348,
+        "comparePrice": 7491,
+        "sku": "PGX-PRO-065-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 3 Professional)",
+    "slug": "tube-tech-cl1b-optical-compressor-series-3",
+    "sku": "PGX-PRO-066-S3",
+    "categorySlug": "audio-streaming-gear",
+    "price": 6200,
+    "comparePrice": 7316,
+    "stock": 55,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "World-renowned all-tube optical mono compressor prized by top engineers for transparent and musical vocal leveling.",
+    "specifications": [
+      {
+        "label": "Gain Reduction",
+        "value": "Unique low-distortion optical gain-reduction element"
+      },
+      {
+        "label": "Tubes",
+        "value": "All-tube circuit featuring ECC82 and ECC83 vacuum tubes"
+      },
+      {
+        "label": "Ratio",
+        "value": "Continuously variable ratio from 2:1 up to 10:1"
+      },
+      {
+        "label": "Attack & Release",
+        "value": "Manual, Fixed, or combined Manual/Fixed program-dependent modes"
+      },
+      {
+        "label": "Transformers",
+        "value": "Custom balanced input and output audio transformers"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6200,
+        "comparePrice": 7316,
+        "sku": "PGX-PRO-066-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7564,
+        "comparePrice": 8926,
+        "sku": "PGX-PRO-066-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8556,
+        "comparePrice": 10096,
+        "sku": "PGX-PRO-066-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 3 Professional)",
+    "slug": "universal-audio-la2a-leveling-amplifier-series-3",
+    "sku": "PGX-PRO-067-S3",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5850,
+    "comparePrice": 6903,
+    "stock": 56,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hand-wired point-to-point electro-optical compressor with original T4 optical attenuator cell.",
+    "specifications": [
+      {
+        "label": "Attenuator",
+        "value": "Patented T4 electro-optical cell with program-dependent release"
+      },
+      {
+        "label": "Tubes",
+        "value": "Tube compliment: 2x 12AX7, 1x 12BH7, 1x 6AQ5 vacuum tubes"
+      },
+      {
+        "label": "Distortion",
+        "value": "Less than 0.25% THD at +10 dBm output"
+      },
+      {
+        "label": "Frequency Response",
+        "value": "30 Hz – 15 kHz (+/- 0.5 dB)"
+      },
+      {
+        "label": "Front Panel",
+        "value": "Classic retro 3U faceplate with original vintage meter switch"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5850,
+        "comparePrice": 6903,
+        "sku": "PGX-PRO-067-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7137,
+        "comparePrice": 8422,
+        "sku": "PGX-PRO-067-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8073,
+        "comparePrice": 9526,
+        "sku": "PGX-PRO-067-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 3 Professional)",
+    "slug": "manley-massive-passive-mastering-eq-series-3",
+    "sku": "PGX-PRO-068-S3",
+    "categorySlug": "audio-streaming-gear",
+    "price": 8050,
+    "comparePrice": 9499,
+    "stock": 57,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Two-channel four-band passive equalizer with all-tube makeup amplifier stage and stepped Grayhill rotary switches.",
+    "specifications": [
+      {
+        "label": "Topology",
+        "value": "Passive EQ curves using premium metal-film resistors, inductors, and film caps"
+      },
+      {
+        "label": "Gain Makeup",
+        "value": "All-tube line amplifier utilizing 12AX7 and 6922 vacuum tubes"
+      },
+      {
+        "label": "Bands",
+        "value": "4 independent parametric bands per channel with switchable Bell/Shelf"
+      },
+      {
+        "label": "Filters",
+        "value": "High-pass and Low-pass filters with 5 selectable cutoff frequencies"
+      },
+      {
+        "label": "Controls",
+        "value": "Stepped precision mastering switches for 100% accurate recall"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8050,
+        "comparePrice": 9499,
+        "sku": "PGX-PRO-068-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9821,
+        "comparePrice": 11589,
+        "sku": "PGX-PRO-068-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11109,
+        "comparePrice": 13109,
+        "sku": "PGX-PRO-068-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 3 Professional)",
+    "slug": "focal-twin6-be-active-studio-monitors-series-3",
+    "sku": "PGX-PRO-069-S3",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5700,
+    "comparePrice": 6726,
+    "stock": 58,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-precision active 3-way nearfield/midfield studio monitors with inverted Beryllium dome tweeter.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "1-inch pure Beryllium inverted dome tweeter with linear response to 40kHz"
+      },
+      {
+        "label": "Woofers",
+        "value": "Dual 6.5-inch W composite sandwich cone drivers"
+      },
+      {
+        "label": "Amplifiers",
+        "value": "Tri-amped: 150W Bass, 150W Mid, 100W Treble Class AB power"
+      },
+      {
+        "label": "Maximum SPL",
+        "value": "115 dB SPL peak at 1 meter"
+      },
+      {
+        "label": "Cabinet",
+        "value": "High-density 19mm MDF with natural dark red veneer side panels"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5700,
+        "comparePrice": 6726,
+        "sku": "PGX-PRO-069-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6954,
+        "comparePrice": 8206,
+        "sku": "PGX-PRO-069-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7866,
+        "comparePrice": 9282,
+        "sku": "PGX-PRO-069-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 3 Professional)",
+    "slug": "apple-mac-studio-m2-ultra-desktop-series-3",
+    "sku": "PGX-PRO-070-S3",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 8450,
+    "comparePrice": 9971,
+    "stock": 59,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact powerhouse desktop workstation with M2 Ultra, 128GB Unified Memory, and 4TB NVMe SSD.",
+    "specifications": [
+      {
+        "label": "Chip",
+        "value": "Apple M2 Ultra with 24-Core CPU and 76-Core GPU"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "32-Core Neural Engine with 31.6 trillion ops/second"
+      },
+      {
+        "label": "Memory",
+        "value": "128GB Unified Memory with 800GB/s bandwidth"
+      },
+      {
+        "label": "Storage",
+        "value": "4TB High-Speed PCIe Solid State Drive (up to 7.4GB/s)"
+      },
+      {
+        "label": "Video Support",
+        "value": "Supports up to eight 4K displays or six 6K displays simultaneously"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8450,
+        "comparePrice": 9971,
+        "sku": "PGX-PRO-070-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10309,
+        "comparePrice": 12165,
+        "sku": "PGX-PRO-070-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11661,
+        "comparePrice": 13760,
+        "sku": "PGX-PRO-070-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 3 Professional)",
+    "slug": "apple-macbook-pro-16-m3-max-loaded-series-3",
+    "sku": "PGX-PRO-071-S3",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 8950,
+    "comparePrice": 10561,
+    "stock": 60,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Maximum configuration 16-inch Liquid Retina XDR laptop with 16-core CPU, 40-core GPU, 128GB RAM, and 8TB storage.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Apple M3 Max with 16-Core CPU and 40-Core GPU with hardware ray tracing"
+      },
+      {
+        "label": "Unified Memory",
+        "value": "128GB Unified Memory with 400GB/s bandwidth"
+      },
+      {
+        "label": "Internal SSD",
+        "value": "8TB High-Speed NVMe Storage Drive"
+      },
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR (3456 x 2234) with 120Hz ProMotion"
+      },
+      {
+        "label": "Finish",
+        "value": "Space Black aluminum enclosure with anodized seal to reduce fingerprints"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8950,
+        "comparePrice": 10561,
+        "sku": "PGX-PRO-071-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10919,
+        "comparePrice": 12884,
+        "sku": "PGX-PRO-071-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12351,
+        "comparePrice": 14574,
+        "sku": "PGX-PRO-071-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 3 Professional)",
+    "slug": "corsair-one-i500-liquid-cooled-desktop-series-3",
+    "sku": "PGX-PRO-072-S3",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 5850,
+    "comparePrice": 6903,
+    "stock": 61,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Architectural aluminum and real wood chassis with liquid-cooled Intel Core i9-14900K and NVIDIA RTX 4090 24GB.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i9-14900K 24-Core 6.0GHz Liquid-Cooled"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 4090 24GB GDDR6X Liquid-Cooled"
+      },
+      {
+        "label": "System RAM",
+        "value": "64GB DDR5-6000MHz High-Speed Corsair Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "2TB PCIe Gen4 NVMe M.2 SSD + expansion slot"
+      },
+      {
+        "label": "Chassis",
+        "value": "FSC-certified solid walnut front panel with touch-sensitive lighting"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5850,
+        "comparePrice": 6903,
+        "sku": "PGX-PRO-072-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7137,
+        "comparePrice": 8422,
+        "sku": "PGX-PRO-072-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8073,
+        "comparePrice": 9526,
+        "sku": "PGX-PRO-072-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 3 Professional)",
+    "slug": "synology-flashstation-fs3410-all-flash-nas-series-3",
+    "sku": "PGX-PRO-073-S3",
+    "categorySlug": "power-storage-accessories",
+    "price": 8050,
+    "comparePrice": 9499,
+    "stock": 62,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "2U 24-bay high-performance all-flash server delivering over 356,000 iSCSI 4K random write IOPS.",
+    "specifications": [
+      {
+        "label": "CPU",
+        "value": "Intel Xeon D-1541 8-Core 2.1GHz / 2.7GHz Turbo"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB DDR4 ECC RDIMM (expandable up to 128GB)"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 2.5-inch SAS/SATA SSD hot-swappable bays"
+      },
+      {
+        "label": "Networking",
+        "value": "Dual 10GbE 10GBASE-T ports + Dual 1GbE ports built-in"
+      },
+      {
+        "label": "Redundancy",
+        "value": "Dual 500W redundant power supplies and hot-swap smart fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8050,
+        "comparePrice": 9499,
+        "sku": "PGX-PRO-073-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9821,
+        "comparePrice": 11589,
+        "sku": "PGX-PRO-073-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11109,
+        "comparePrice": 13109,
+        "sku": "PGX-PRO-073-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 3 Professional)",
+    "slug": "cisco-catalyst-9300-48port-poe-switch-series-3",
+    "sku": "PGX-PRO-074-S3",
+    "categorySlug": "power-storage-accessories",
+    "price": 7200,
+    "comparePrice": 8496,
+    "stock": 63,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise stackable switching platform engineered for cloud security, IoT, and high-density mobility.",
+    "specifications": [
+      {
+        "label": "Ports",
+        "value": "48x 10/100/1000 Gigabit Ethernet ports with 802.3at PoE+ (740W budget)"
+      },
+      {
+        "label": "Stacking",
+        "value": "StackWise-480 technology provides 480 Gbps stacking bandwidth"
+      },
+      {
+        "label": "Uplinks",
+        "value": "Modular uplink options supporting 10G, 25G, 40G, and 100G"
+      },
+      {
+        "label": "Security",
+        "value": "Encrypted Traffic Analytics (ETA) and MACsec-256 link encryption"
+      },
+      {
+        "label": "Operating System",
+        "value": "Cisco IOS XE with open API programmable automation"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7200,
+        "comparePrice": 8496,
+        "sku": "PGX-PRO-074-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8784,
+        "comparePrice": 10365,
+        "sku": "PGX-PRO-074-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9936,
+        "comparePrice": 11724,
+        "sku": "PGX-PRO-074-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 3 Professional)",
+    "slug": "qnap-enterprise-tsh3087xu-30bay-nas-series-3",
+    "sku": "PGX-PRO-075-S3",
+    "categorySlug": "power-storage-accessories",
+    "price": 9800,
+    "comparePrice": 11564,
+    "stock": 64,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "30-bay hybrid NVMe/SAS enterprise rackmount NAS powered by Intel Xeon E-2300 series with QuTS hero ZFS.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon E-2388G 8-Core / 16-Thread 3.2GHz processor"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 3.5-inch SAS/SATA bays + 6x 2.5-inch U.2 PCIe NVMe SSD slots"
+      },
+      {
+        "label": "File System",
+        "value": "ZFS-based QuTS hero with self-healing, deduplication, and compression"
+      },
+      {
+        "label": "Ports",
+        "value": "Dual 10GbE SFP+ and dual 2.5GbE RJ45 network interfaces"
+      },
+      {
+        "label": "Power Units",
+        "value": "Dual 800W redundant power supplies for 24/7 mission-critical uptime"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9800,
+        "comparePrice": 11564,
+        "sku": "PGX-PRO-075-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11956,
+        "comparePrice": 14108,
+        "sku": "PGX-PRO-075-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13524,
+        "comparePrice": 15958,
+        "sku": "PGX-PRO-075-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 4 Professional)",
+    "slug": "woodway-4front-commercial-treadmill-series-4",
+    "sku": "PGX-PRO-076-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 9800,
+    "comparePrice": 11564,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard commercial slat-belt treadmill engineered for zero-friction running with vulcanized rubber slats.",
+    "specifications": [
+      {
+        "label": "Belt Type",
+        "value": "60 individual vulcanized rubber slats with wire reinforcement"
+      },
+      {
+        "label": "Motor System",
+        "value": "Zero-friction ball bearing system with 5.0 HP dynamic drive"
+      },
+      {
+        "label": "Speed Range",
+        "value": "0 – 15 mph (0 – 24 km/h) with 0 – 15% dynamic incline"
+      },
+      {
+        "label": "Display",
+        "value": "Personal Trainer 19-inch high-definition touchscreen console"
+      },
+      {
+        "label": "Durability",
+        "value": "Rated for over 150,000 miles of commercial club usage"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9800,
+        "comparePrice": 11564,
+        "sku": "PGX-PRO-076-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 11956,
+        "comparePrice": 14108,
+        "sku": "PGX-PRO-076-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 13524,
+        "comparePrice": 15958,
+        "sku": "PGX-PRO-076-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 4 Professional)",
+    "slug": "force-usa-g20-pro-functional-trainer-series-4",
+    "sku": "PGX-PRO-077-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 6000,
+    "comparePrice": 7080,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Heavy-duty commercial gym station combining dual 289 lb weight stacks, counterbalanced Smith machine, and power rack.",
+    "specifications": [
+      {
+        "label": "Weight Stacks",
+        "value": "Dual 289 lb (130 kg) precision machined steel weight stacks (1:1 ratio)"
+      },
+      {
+        "label": "Smith Machine",
+        "value": "Commercial counterbalanced Smith machine rated to 992 lbs"
+      },
+      {
+        "label": "Steel Frame",
+        "value": "Heavy-gauge 11-gauge rolled steel tubing with electrostatic powder coat"
+      },
+      {
+        "label": "Attachments Included",
+        "value": "Monolift, roller J-hooks, leg press plate, dip handles, suspension ring"
+      },
+      {
+        "label": "Dimensions",
+        "value": "94 in (W) x 75 in (D) x 91 in (H)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6000,
+        "comparePrice": 7080,
+        "sku": "PGX-PRO-077-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7320,
+        "comparePrice": 8638,
+        "sku": "PGX-PRO-077-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8280,
+        "comparePrice": 9770,
+        "sku": "PGX-PRO-077-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 4 Professional)",
+    "slug": "plunge-commercial-cold-plunge-chiller-series-4",
+    "sku": "PGX-PRO-078-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 5000,
+    "comparePrice": 5900,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial grade ice bath plunge tub with integrated 1 HP ultra-quiet cooling engine down to 37°F and ozone sanitation.",
+    "specifications": [
+      {
+        "label": "Cooling Engine",
+        "value": "1.0 HP high-efficiency cooling chiller cools down to 37°F (2.7°C)"
+      },
+      {
+        "label": "Sanitation",
+        "value": "Continuous 20-micron filtration and powerful chemical-free ozone sanitation"
+      },
+      {
+        "label": "Tub Construction",
+        "value": "Military-grade fiberglass and acrylic insulated body"
+      },
+      {
+        "label": "Weather Rating",
+        "value": "Indoor and outdoor all-weather UV protected rating"
+      },
+      {
+        "label": "Smart Control",
+        "value": "Smartphone app-controlled temperature and automated schedule"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5000,
+        "comparePrice": 5900,
+        "sku": "PGX-PRO-078-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6100,
+        "comparePrice": 7198,
+        "sku": "PGX-PRO-078-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6900,
+        "comparePrice": 8142,
+        "sku": "PGX-PRO-078-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 4 Professional)",
+    "slug": "clearlight-sanctuary-infrared-sauna-series-4",
+    "sku": "PGX-PRO-079-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 7500,
+    "comparePrice": 8850,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Medical-grade full spectrum infrared sauna with True Wave near, mid, and far-infrared heaters with zero EMF exposure.",
+    "specifications": [
+      {
+        "label": "Heater Technology",
+        "value": "True Wave Full Spectrum (Near, Mid, and Far Infrared) heaters"
+      },
+      {
+        "label": "EMF Rating",
+        "value": "Virtually zero EMF/ELF levels tested and certified"
+      },
+      {
+        "label": "Wood Material",
+        "value": "Hypoallergenic Grade-A Italian Eco-Certified Cedarwood"
+      },
+      {
+        "label": "Audio & Light",
+        "value": "Medical-grade Chromotherapy lighting and Bluetooth stereo speakers"
+      },
+      {
+        "label": "Warranty",
+        "value": "Full Lifetime Warranty on cabinetry, heaters, and electronics"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7500,
+        "comparePrice": 8850,
+        "sku": "PGX-PRO-079-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9150,
+        "comparePrice": 10797,
+        "sku": "PGX-PRO-079-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10350,
+        "comparePrice": 12213,
+        "sku": "PGX-PRO-079-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 4 Professional)",
+    "slug": "rogue-monster-rm6-power-rack-package-series-4",
+    "sku": "PGX-PRO-080-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 3850,
+    "comparePrice": 4543,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Fully equipped 6-post 3x3-inch 11-gauge steel monster rack with strap safeties, plate storage, and multi-grip pull-up.",
+    "specifications": [
+      {
+        "label": "Uprights",
+        "value": "3x3-inch 11-Gauge Structural Steel with 1-inch laser-cut holes and keyhole sides"
+      },
+      {
+        "label": "Footprint",
+        "value": "76 in (L) x 49 in (W) x 100 in (H) with 43-inch inside depth"
+      },
+      {
+        "label": "Hardware",
+        "value": "1-inch Monster hardware with black zinc finish"
+      },
+      {
+        "label": "Included",
+        "value": "Monster J-cups, strap safety system, 10 plate storage pins, textured pull-up bar"
+      },
+      {
+        "label": "Finish",
+        "value": "Rogue signature textured black matte powder coat"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3850,
+        "comparePrice": 4543,
+        "sku": "PGX-PRO-080-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4697,
+        "comparePrice": 5542,
+        "sku": "PGX-PRO-080-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5313,
+        "comparePrice": 6269,
+        "sku": "PGX-PRO-080-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 4 Professional)",
+    "slug": "keiser-m3i-total-body-commercial-bike-series-4",
+    "sku": "PGX-PRO-081-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 2900,
+    "comparePrice": 3422,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Commercial magnetic resistance spin bike featuring dual-action upper body handles and Bluetooth wireless computer.",
+    "specifications": [
+      {
+        "label": "Resistance",
+        "value": "Non-wearing magnetic eddy-current resistance system"
+      },
+      {
+        "label": "Drive Train",
+        "value": "Poly-V industrial quiet belt drive requires zero maintenance"
+      },
+      {
+        "label": "Handles",
+        "value": "Dual-action upper-body push/pull levers for full-body cardio workout"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth Wireless Display broadcasts power (Watts) and cadence"
+      },
+      {
+        "label": "Adjustability",
+        "value": "Four-way micro-adjustable seat and handlebars with quick-lock cams"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 2900,
+        "comparePrice": 3422,
+        "sku": "PGX-PRO-081-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 3538,
+        "comparePrice": 4175,
+        "sku": "PGX-PRO-081-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 4002,
+        "comparePrice": 4722,
+        "sku": "PGX-PRO-081-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 4 Professional)",
+    "slug": "eleiko-iwf-weightlifting-competition-set-series-4",
+    "sku": "PGX-PRO-082-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4200,
+    "comparePrice": 4956,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "International Weightlifting Federation certified 20kg competition barbell, calibrated competition discs, and disc collars.",
+    "specifications": [
+      {
+        "label": "Barbell",
+        "value": "Eleiko IWF Weightlifting Competition Bar 20kg with 215,000 PSI steel"
+      },
+      {
+        "label": "Calibration",
+        "value": "Discs calibrated to within +10g/-0g per official IWF competition rules"
+      },
+      {
+        "label": "Bearings",
+        "value": "10 precision needle bearings for ultra-smooth dynamic rotation"
+      },
+      {
+        "label": "Plates Included",
+        "value": "Pairs of 25kg, 20kg, 15kg, 10kg discs + change plates (0.5 to 5kg)"
+      },
+      {
+        "label": "Collars",
+        "value": "Eleiko IWF Competition Barbell Collars (pair, 2.5kg each)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4200,
+        "comparePrice": 4956,
+        "sku": "PGX-PRO-082-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5124,
+        "comparePrice": 6046,
+        "sku": "PGX-PRO-082-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5796,
+        "comparePrice": 6839,
+        "sku": "PGX-PRO-082-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 4 Professional)",
+    "slug": "tonal-smart-gym-digital-resistance-series-4",
+    "sku": "PGX-PRO-083-S4",
+    "categorySlug": "fitness-gym-equipment",
+    "price": 4000,
+    "comparePrice": 4720,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wall-mounted intelligent personal trainer utilizing patented electromagnetic resistance up to 200 lbs.",
+    "specifications": [
+      {
+        "label": "Resistance Engine",
+        "value": "Patented electromagnetic digital resistance engine up to 200 lbs"
+      },
+      {
+        "label": "Adaptive Weight",
+        "value": "Real-time dynamic spotter and eccentric training burn modes"
+      },
+      {
+        "label": "Screen",
+        "value": "24-inch full HD interactive capacitive touchscreen display"
+      },
+      {
+        "label": "Arms",
+        "value": "Rotational multi-directional adjustable arms for over 170 movements"
+      },
+      {
+        "label": "Sensors",
+        "value": "Real-time form feedback and velocity metric tracking sensors"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4000,
+        "comparePrice": 4720,
+        "sku": "PGX-PRO-083-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4880,
+        "comparePrice": 5758,
+        "sku": "PGX-PRO-083-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5520,
+        "comparePrice": 6514,
+        "sku": "PGX-PRO-083-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 4 Professional)",
+    "slug": "sony-fx6-full-frame-cinema-camera-series-4",
+    "sku": "PGX-PRO-084-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6000,
+    "comparePrice": 7080,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact full-frame cinema line camera with 4K 120p, 15+ stops dynamic range, and S-Cinetone color science.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "10.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ stops with Dual Base ISO (800 / 12,800)"
+      },
+      {
+        "label": "Electronic ND",
+        "value": "Built-in 1/4 to 1/128 variable electronic neutral density filter"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Real-time Eye AF and Face Detection with 627 phase-detection points"
+      },
+      {
+        "label": "Audio",
+        "value": "Detachable top smart handle with dual XLR audio inputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6000,
+        "comparePrice": 7080,
+        "sku": "PGX-PRO-084-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7320,
+        "comparePrice": 8638,
+        "sku": "PGX-PRO-084-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8280,
+        "comparePrice": 9770,
+        "sku": "PGX-PRO-084-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 4 Professional)",
+    "slug": "hasselblad-x2d-100c-medium-format-series-4",
+    "sku": "PGX-PRO-085-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 8200,
+    "comparePrice": 9676,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel medium-format BSI CMOS camera with 5-axis in-body image stabilization and 1TB internal SSD.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100 Megapixel 43.8 x 32.9 mm BSI CMOS Sensor with 16-bit color"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB high-speed PCIe internal SSD (up to 2850 MB/s write speed)"
+      },
+      {
+        "label": "Stabilization",
+        "value": "5-Axis In-Body Image Stabilization (IBIS) providing 7 stops benefit"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "OLED Electronic Viewfinder with 5.76 million dots and 1.0x magnification"
+      },
+      {
+        "label": "Autofocus",
+        "value": "Phase Detection Autofocus with 294 zones across the frame"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 8200,
+        "comparePrice": 9676,
+        "sku": "PGX-PRO-085-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10004,
+        "comparePrice": 11805,
+        "sku": "PGX-PRO-085-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 11316,
+        "comparePrice": 13353,
+        "sku": "PGX-PRO-085-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 4 Professional)",
+    "slug": "leica-m11-rangefinder-digital-camera-series-4",
+    "sku": "PGX-PRO-086-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 9000,
+    "comparePrice": 10620,
+    "stock": 50,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary optical rangefinder with Triple Resolution full-frame BSI sensor (60MP, 36MP, and 18MP DNG).",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame BSI CMOS with Triple Resolution Technology (60/36/18 MP)"
+      },
+      {
+        "label": "Color Filter",
+        "value": "Ultra-thin dual-layer absorption glass UV/IR filter"
+      },
+      {
+        "label": "Internal Memory",
+        "value": "64GB internal memory storage in addition to SD card slot"
+      },
+      {
+        "label": "Metering",
+        "value": "Multi-field exposure metering directly on the sensor"
+      },
+      {
+        "label": "Construction",
+        "value": "Black aluminum top cover with scratch-resistant coating (530g)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 9000,
+        "comparePrice": 10620,
+        "sku": "PGX-PRO-086-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 10980,
+        "comparePrice": 12956,
+        "sku": "PGX-PRO-086-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 12420,
+        "comparePrice": 14656,
+        "sku": "PGX-PRO-086-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 4 Professional)",
+    "slug": "sony-alpha-1-50mp-flagship-camera-series-4",
+    "sku": "PGX-PRO-087-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6500,
+    "comparePrice": 7670,
+    "stock": 51,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The one camera that does it all: 50.1MP at 30 fps continuous shooting, 8K 30p, and flash sync up to 1/400s.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "50.1MP Full-Frame Exmor RS Stacked BSI CMOS with integrated memory"
+      },
+      {
+        "label": "Continuous Shooting",
+        "value": "Up to 30 frames per second with full AF/AE tracking"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "8K 30p 10-bit 4:2:0 and 4K 120p 10-bit 4:2:2 recording"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "9.44 million dot Quad-XGA OLED EVF with 240 fps refresh rate"
+      },
+      {
+        "label": "Flash Sync",
+        "value": "Dual driven mechanical shutter with 1/400s flash sync speed"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6500,
+        "comparePrice": 7670,
+        "sku": "PGX-PRO-087-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7930,
+        "comparePrice": 9357,
+        "sku": "PGX-PRO-087-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8970,
+        "comparePrice": 10585,
+        "sku": "PGX-PRO-087-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 4 Professional)",
+    "slug": "canon-eos-c70-cinema-camera-series-4",
+    "sku": "PGX-PRO-088-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 5500,
+    "comparePrice": 6490,
+    "stock": 52,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Cinema EOS performance in an RF-mount mirrorless body with Super 35 DGO sensor and 16+ stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Super 35mm Dual Gain Output (DGO) sensor"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16+ stops dynamic range with Canon Log 2"
+      },
+      {
+        "label": "High Frame Rate",
+        "value": "4K 120p high-speed recording with audio recording"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Ultra-thin motorized mechanical ND filter unit (up to 10 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Canon RF Mount compatible with native EF-EOS R 0.71x Speed Booster"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5500,
+        "comparePrice": 6490,
+        "sku": "PGX-PRO-088-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6710,
+        "comparePrice": 7918,
+        "sku": "PGX-PRO-088-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 7590,
+        "comparePrice": 8956,
+        "sku": "PGX-PRO-088-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 4 Professional)",
+    "slug": "dji-ronin-4d-6k-cinema-combo-series-4",
+    "sku": "PGX-PRO-089-S4",
+    "categorySlug": "cameras-drones-creator",
+    "price": 6800,
+    "comparePrice": 8024,
+    "stock": 53,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary integrated 4-axis motorized cinema camera with LiDAR autofocus and wireless video transmission.",
+    "specifications": [
+      {
+        "label": "Active Z-Axis",
+        "value": "Active 4th axis stabilization eliminates vertical camera shake"
+      },
+      {
+        "label": "Sensor",
+        "value": "Zenmuse X9-6K Full-Frame camera with dual native ISO (800 / 5000)"
+      },
+      {
+        "label": "Autofocus",
+        "value": "LiDAR Range Finder autofocus with 43,200 ranging points"
+      },
+      {
+        "label": "Codecs",
+        "value": "Apple ProRes 422 HQ, ProRes RAW, and H.264 internal recording"
+      },
+      {
+        "label": "Transmitter",
+        "value": "High-bright remote monitor with integrated wireless video receiver"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6800,
+        "comparePrice": 8024,
+        "sku": "PGX-PRO-089-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8296,
+        "comparePrice": 9789,
+        "sku": "PGX-PRO-089-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9384,
+        "comparePrice": 11073,
+        "sku": "PGX-PRO-089-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 4 Professional)",
+    "slug": "neumann-u87-ai-studio-microphone-series-4",
+    "sku": "PGX-PRO-090-S4",
+    "categorySlug": "audio-streaming-gear",
+    "price": 3700,
+    "comparePrice": 4366,
+    "stock": 54,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The definitive standard studio vocal microphone featuring the classic K67 dual-diaphragm capsule.",
+    "specifications": [
+      {
+        "label": "Acoustical Principle",
+        "value": "Pressure gradient transducer with dual-diaphragm capsule"
+      },
+      {
+        "label": "Polar Patterns",
+        "value": "Omnidirectional, Cardioid, and Figure-8 switchable"
+      },
+      {
+        "label": "Frequency Range",
+        "value": "20 Hz – 20 kHz with smooth, linear presence boost"
+      },
+      {
+        "label": "Max SPL",
+        "value": "127 dB SPL (up to 137 dB with pre-attenuation pad engaged)"
+      },
+      {
+        "label": "Included",
+        "value": "Deluxe wooden storage case and EA 87 shockmount suspension"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 3700,
+        "comparePrice": 4366,
+        "sku": "PGX-PRO-090-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 4514,
+        "comparePrice": 5327,
+        "sku": "PGX-PRO-090-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 5106,
+        "comparePrice": 6025,
+        "sku": "PGX-PRO-090-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 4 Professional)",
+    "slug": "tube-tech-cl1b-optical-compressor-series-4",
+    "sku": "PGX-PRO-091-S4",
+    "categorySlug": "audio-streaming-gear",
+    "price": 5000,
+    "comparePrice": 5900,
+    "stock": 55,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "World-renowned all-tube optical mono compressor prized by top engineers for transparent and musical vocal leveling.",
+    "specifications": [
+      {
+        "label": "Gain Reduction",
+        "value": "Unique low-distortion optical gain-reduction element"
+      },
+      {
+        "label": "Tubes",
+        "value": "All-tube circuit featuring ECC82 and ECC83 vacuum tubes"
+      },
+      {
+        "label": "Ratio",
+        "value": "Continuously variable ratio from 2:1 up to 10:1"
+      },
+      {
+        "label": "Attack & Release",
+        "value": "Manual, Fixed, or combined Manual/Fixed program-dependent modes"
+      },
+      {
+        "label": "Transformers",
+        "value": "Custom balanced input and output audio transformers"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5000,
+        "comparePrice": 5900,
+        "sku": "PGX-PRO-091-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 6100,
+        "comparePrice": 7198,
+        "sku": "PGX-PRO-091-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6900,
+        "comparePrice": 8142,
+        "sku": "PGX-PRO-091-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 4 Professional)",
+    "slug": "universal-audio-la2a-leveling-amplifier-series-4",
+    "sku": "PGX-PRO-092-S4",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4700,
+    "comparePrice": 5546,
+    "stock": 56,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hand-wired point-to-point electro-optical compressor with original T4 optical attenuator cell.",
+    "specifications": [
+      {
+        "label": "Attenuator",
+        "value": "Patented T4 electro-optical cell with program-dependent release"
+      },
+      {
+        "label": "Tubes",
+        "value": "Tube compliment: 2x 12AX7, 1x 12BH7, 1x 6AQ5 vacuum tubes"
+      },
+      {
+        "label": "Distortion",
+        "value": "Less than 0.25% THD at +10 dBm output"
+      },
+      {
+        "label": "Frequency Response",
+        "value": "30 Hz – 15 kHz (+/- 0.5 dB)"
+      },
+      {
+        "label": "Front Panel",
+        "value": "Classic retro 3U faceplate with original vintage meter switch"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4700,
+        "comparePrice": 5546,
+        "sku": "PGX-PRO-092-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5734,
+        "comparePrice": 6766,
+        "sku": "PGX-PRO-092-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6486,
+        "comparePrice": 7653,
+        "sku": "PGX-PRO-092-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 4 Professional)",
+    "slug": "manley-massive-passive-mastering-eq-series-4",
+    "sku": "PGX-PRO-093-S4",
+    "categorySlug": "audio-streaming-gear",
+    "price": 6500,
+    "comparePrice": 7670,
+    "stock": 57,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Two-channel four-band passive equalizer with all-tube makeup amplifier stage and stepped Grayhill rotary switches.",
+    "specifications": [
+      {
+        "label": "Topology",
+        "value": "Passive EQ curves using premium metal-film resistors, inductors, and film caps"
+      },
+      {
+        "label": "Gain Makeup",
+        "value": "All-tube line amplifier utilizing 12AX7 and 6922 vacuum tubes"
+      },
+      {
+        "label": "Bands",
+        "value": "4 independent parametric bands per channel with switchable Bell/Shelf"
+      },
+      {
+        "label": "Filters",
+        "value": "High-pass and Low-pass filters with 5 selectable cutoff frequencies"
+      },
+      {
+        "label": "Controls",
+        "value": "Stepped precision mastering switches for 100% accurate recall"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6500,
+        "comparePrice": 7670,
+        "sku": "PGX-PRO-093-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7930,
+        "comparePrice": 9357,
+        "sku": "PGX-PRO-093-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8970,
+        "comparePrice": 10585,
+        "sku": "PGX-PRO-093-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 4 Professional)",
+    "slug": "focal-twin6-be-active-studio-monitors-series-4",
+    "sku": "PGX-PRO-094-S4",
+    "categorySlug": "audio-streaming-gear",
+    "price": 4600,
+    "comparePrice": 5428,
+    "stock": 58,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-precision active 3-way nearfield/midfield studio monitors with inverted Beryllium dome tweeter.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "1-inch pure Beryllium inverted dome tweeter with linear response to 40kHz"
+      },
+      {
+        "label": "Woofers",
+        "value": "Dual 6.5-inch W composite sandwich cone drivers"
+      },
+      {
+        "label": "Amplifiers",
+        "value": "Tri-amped: 150W Bass, 150W Mid, 100W Treble Class AB power"
+      },
+      {
+        "label": "Maximum SPL",
+        "value": "115 dB SPL peak at 1 meter"
+      },
+      {
+        "label": "Cabinet",
+        "value": "High-density 19mm MDF with natural dark red veneer side panels"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4600,
+        "comparePrice": 5428,
+        "sku": "PGX-PRO-094-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5612,
+        "comparePrice": 6622,
+        "sku": "PGX-PRO-094-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6348,
+        "comparePrice": 7491,
+        "sku": "PGX-PRO-094-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 4 Professional)",
+    "slug": "apple-mac-studio-m2-ultra-desktop-series-4",
+    "sku": "PGX-PRO-095-S4",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 6800,
+    "comparePrice": 8024,
+    "stock": 59,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact powerhouse desktop workstation with M2 Ultra, 128GB Unified Memory, and 4TB NVMe SSD.",
+    "specifications": [
+      {
+        "label": "Chip",
+        "value": "Apple M2 Ultra with 24-Core CPU and 76-Core GPU"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "32-Core Neural Engine with 31.6 trillion ops/second"
+      },
+      {
+        "label": "Memory",
+        "value": "128GB Unified Memory with 800GB/s bandwidth"
+      },
+      {
+        "label": "Storage",
+        "value": "4TB High-Speed PCIe Solid State Drive (up to 7.4GB/s)"
+      },
+      {
+        "label": "Video Support",
+        "value": "Supports up to eight 4K displays or six 6K displays simultaneously"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6800,
+        "comparePrice": 8024,
+        "sku": "PGX-PRO-095-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8296,
+        "comparePrice": 9789,
+        "sku": "PGX-PRO-095-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9384,
+        "comparePrice": 11073,
+        "sku": "PGX-PRO-095-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 4 Professional)",
+    "slug": "apple-macbook-pro-16-m3-max-loaded-series-4",
+    "sku": "PGX-PRO-096-S4",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 7200,
+    "comparePrice": 8496,
+    "stock": 60,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Maximum configuration 16-inch Liquid Retina XDR laptop with 16-core CPU, 40-core GPU, 128GB RAM, and 8TB storage.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Apple M3 Max with 16-Core CPU and 40-Core GPU with hardware ray tracing"
+      },
+      {
+        "label": "Unified Memory",
+        "value": "128GB Unified Memory with 400GB/s bandwidth"
+      },
+      {
+        "label": "Internal SSD",
+        "value": "8TB High-Speed NVMe Storage Drive"
+      },
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR (3456 x 2234) with 120Hz ProMotion"
+      },
+      {
+        "label": "Finish",
+        "value": "Space Black aluminum enclosure with anodized seal to reduce fingerprints"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7200,
+        "comparePrice": 8496,
+        "sku": "PGX-PRO-096-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 8784,
+        "comparePrice": 10365,
+        "sku": "PGX-PRO-096-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 9936,
+        "comparePrice": 11724,
+        "sku": "PGX-PRO-096-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 4 Professional)",
+    "slug": "corsair-one-i500-liquid-cooled-desktop-series-4",
+    "sku": "PGX-PRO-097-S4",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 4700,
+    "comparePrice": 5546,
+    "stock": 61,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Architectural aluminum and real wood chassis with liquid-cooled Intel Core i9-14900K and NVIDIA RTX 4090 24GB.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Core i9-14900K 24-Core 6.0GHz Liquid-Cooled"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 4090 24GB GDDR6X Liquid-Cooled"
+      },
+      {
+        "label": "System RAM",
+        "value": "64GB DDR5-6000MHz High-Speed Corsair Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "2TB PCIe Gen4 NVMe M.2 SSD + expansion slot"
+      },
+      {
+        "label": "Chassis",
+        "value": "FSC-certified solid walnut front panel with touch-sensitive lighting"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 4700,
+        "comparePrice": 5546,
+        "sku": "PGX-PRO-097-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 5734,
+        "comparePrice": 6766,
+        "sku": "PGX-PRO-097-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 6486,
+        "comparePrice": 7653,
+        "sku": "PGX-PRO-097-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 4 Professional)",
+    "slug": "synology-flashstation-fs3410-all-flash-nas-series-4",
+    "sku": "PGX-PRO-098-S4",
+    "categorySlug": "power-storage-accessories",
+    "price": 6500,
+    "comparePrice": 7670,
+    "stock": 62,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "2U 24-bay high-performance all-flash server delivering over 356,000 iSCSI 4K random write IOPS.",
+    "specifications": [
+      {
+        "label": "CPU",
+        "value": "Intel Xeon D-1541 8-Core 2.1GHz / 2.7GHz Turbo"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB DDR4 ECC RDIMM (expandable up to 128GB)"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 2.5-inch SAS/SATA SSD hot-swappable bays"
+      },
+      {
+        "label": "Networking",
+        "value": "Dual 10GbE 10GBASE-T ports + Dual 1GbE ports built-in"
+      },
+      {
+        "label": "Redundancy",
+        "value": "Dual 500W redundant power supplies and hot-swap smart fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 6500,
+        "comparePrice": 7670,
+        "sku": "PGX-PRO-098-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7930,
+        "comparePrice": 9357,
+        "sku": "PGX-PRO-098-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8970,
+        "comparePrice": 10585,
+        "sku": "PGX-PRO-098-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 4 Professional)",
+    "slug": "cisco-catalyst-9300-48port-poe-switch-series-4",
+    "sku": "PGX-PRO-099-S4",
+    "categorySlug": "power-storage-accessories",
+    "price": 5800,
+    "comparePrice": 6844,
+    "stock": 63,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise stackable switching platform engineered for cloud security, IoT, and high-density mobility.",
+    "specifications": [
+      {
+        "label": "Ports",
+        "value": "48x 10/100/1000 Gigabit Ethernet ports with 802.3at PoE+ (740W budget)"
+      },
+      {
+        "label": "Stacking",
+        "value": "StackWise-480 technology provides 480 Gbps stacking bandwidth"
+      },
+      {
+        "label": "Uplinks",
+        "value": "Modular uplink options supporting 10G, 25G, 40G, and 100G"
+      },
+      {
+        "label": "Security",
+        "value": "Encrypted Traffic Analytics (ETA) and MACsec-256 link encryption"
+      },
+      {
+        "label": "Operating System",
+        "value": "Cisco IOS XE with open API programmable automation"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 5800,
+        "comparePrice": 6844,
+        "sku": "PGX-PRO-099-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 7076,
+        "comparePrice": 8350,
+        "sku": "PGX-PRO-099-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 8004,
+        "comparePrice": 9445,
+        "sku": "PGX-PRO-099-CLUB"
+      }
+    ]
+  },
+  {
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 4 Professional)",
+    "slug": "qnap-enterprise-tsh3087xu-30bay-nas-series-4",
+    "sku": "PGX-PRO-100-S4",
+    "categorySlug": "power-storage-accessories",
+    "price": 7900,
+    "comparePrice": 9322,
+    "stock": 64,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "30-bay hybrid NVMe/SAS enterprise rackmount NAS powered by Intel Xeon E-2300 series with QuTS hero ZFS.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon E-2388G 8-Core / 16-Thread 3.2GHz processor"
+      },
+      {
+        "label": "Drive Bays",
+        "value": "24x 3.5-inch SAS/SATA bays + 6x 2.5-inch U.2 PCIe NVMe SSD slots"
+      },
+      {
+        "label": "File System",
+        "value": "ZFS-based QuTS hero with self-healing, deduplication, and compression"
+      },
+      {
+        "label": "Ports",
+        "value": "Dual 10GbE SFP+ and dual 2.5GbE RJ45 network interfaces"
+      },
+      {
+        "label": "Power Units",
+        "value": "Dual 800W redundant power supplies for 24/7 mission-critical uptime"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Commercial Package",
+        "price": 7900,
+        "comparePrice": 9322,
+        "sku": "PGX-PRO-100-STD"
+      },
+      {
+        "name": "Performance Edition (Upgraded Attachments / Components)",
+        "price": 9638,
+        "comparePrice": 11373,
+        "sku": "PGX-PRO-100-PERF"
+      },
+      {
+        "name": "Full Studio / Club Master Bundle (+ Commercial Warranty)",
+        "price": 10902,
+        "comparePrice": 12864,
+        "sku": "PGX-PRO-100-CLUB"
+      }
+    ]
+  }
+]

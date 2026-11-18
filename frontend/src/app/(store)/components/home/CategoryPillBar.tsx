@@ -15,6 +15,7 @@ import {
   Code2,
   Megaphone,
   GraduationCap,
+  Dumbbell,
 } from "lucide-react";
 
 export interface CategoryPillItem {
@@ -26,6 +27,7 @@ export interface CategoryPillItem {
 
 export const DIGITAL_CATEGORY_PILLS: CategoryPillItem[] = [
   { id: "all", name: "All Products", slug: "", icon: LayoutGrid },
+  { id: "fitness", name: "Fitness & Gym Gear", slug: "fitness-gym-equipment", icon: Dumbbell },
   { id: "gadgets", name: "Smart Gadgets", slug: "smart-gadgets-wearables", icon: Watch },
   { id: "peripherals", name: "Desk Tech & Keyboards", slug: "desk-tech-peripherals", icon: Keyboard },
   { id: "audio", name: "Audio & Streaming", slug: "audio-streaming-gear", icon: Headphones },
