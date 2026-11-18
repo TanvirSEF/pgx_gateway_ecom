@@ -1,81 +1,63 @@
 "use client";
 
 import {
-  ArrowRight,
+  Download,
   Headphones,
-  Infinity as InfinityIcon,
-  Rocket,
+  RotateCcw,
   ShieldCheck,
+  Truck,
 } from "lucide-react";
-import Link from "next/link";
 
 export function ValuePropGrid() {
-  const cards = [
+  const valueProps = [
     {
-      title: "Get Started Faster",
-      desc: "Instant downloads, no waiting.",
-      linkText: "Browse Now",
-      href: "/shop",
-      icon: Rocket,
-      bg: "bg-gradient-to-br from-[#7e22ce] to-[#6b21a8]",
+      icon: Truck,
+      title: "Worldwide Shipping",
+      desc: "To Your Door",
     },
     {
-      title: "100% Secure",
-      desc: "Your payments and data are always protected.",
-      linkText: "Learn More",
-      href: "/about-us",
+      icon: Download,
+      title: "Instant Digital Delivery",
+      desc: "Access Downloads Immediately",
+    },
+    {
       icon: ShieldCheck,
-      bg: "bg-gradient-to-br from-[#0891b2] to-[#0e7490]",
+      title: "Secure Payments",
+      desc: "Shop with Confidence",
     },
     {
-      title: "Lifetime Access",
-      desc: "Buy once, use forever.",
-      linkText: "View Details",
-      href: "/shop?sort=best-sellers",
-      icon: InfinityIcon,
-      bg: "bg-gradient-to-br from-[#1d4ed8] to-[#1e3a8a]",
+      icon: RotateCcw,
+      title: "Easy Returns",
+      desc: "Hassle-Free",
     },
     {
-      title: "24/7 Support",
-      desc: "We're here to help, anytime, anywhere.",
-      linkText: "Contact Us",
-      href: "/contact-us",
       icon: Headphones,
-      bg: "bg-gradient-to-br from-[#6b21a8] to-[#581c87]",
+      title: "Dedicated Support",
+      desc: "Here to Help 24/7",
     },
   ];
 
   return (
-    <section className="py-10 sm:py-14 bg-background">
+    <section className="bg-white border-b border-slate-200/80 py-6 sm:py-7 select-none">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-          {cards.map((card, idx) => {
-            const Icon = card.icon;
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-4 items-center justify-between divide-y sm:divide-y-0 lg:divide-x divide-slate-100">
+          {valueProps.map((item, idx) => {
+            const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className={`${card.bg} rounded-2xl p-5 sm:p-6 text-white flex flex-col justify-between shadow-lg hover:shadow-xl transition-all duration-300 group select-none`}
+                className="flex items-center gap-3.5 px-2 sm:px-4 py-2 first:pl-0 last:pr-0"
               >
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white mb-4 shadow-inner">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-lg font-bold tracking-tight text-white mb-1">
-                    {card.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
-                    {card.desc}
-                  </p>
+                <div className="w-11 h-11 rounded-xl bg-purple-50 flex items-center justify-center shrink-0 border border-purple-100/80 text-[#9333ea]">
+                  <Icon className="w-5 h-5 stroke-[2.2]" />
                 </div>
-
-                <div className="pt-6">
-                  <Link
-                    href={card.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:underline uppercase tracking-wider group-hover:translate-x-1 transition-transform"
-                  >
-                    <span>{card.linkText}</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
+                <div>
+                  <h4 className="font-extrabold text-xs sm:text-sm text-slate-900 leading-snug tracking-tight">
+                    {item.title}
+                  </h4>
+                  <p className="text-[11px] sm:text-xs text-slate-500 font-medium">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             );

@@ -73,7 +73,7 @@ export function ProductCard({
         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-[#ffffff] border border-slate-100 flex items-center justify-center p-2.5">
           {/* Badge: Best Seller (Purple) or New (Teal) */}
           {isBestSeller && (
-            <span className="absolute top-2.5 left-2.5 z-10 px-2.5 py-0.5 rounded-full bg-[#7c3aed] text-white text-[10px] font-bold tracking-wide shadow-xs">
+            <span className="absolute top-2.5 left-2.5 z-10 px-2.5 py-0.5 rounded-full bg-[#9333ea] text-white text-[10px] font-bold tracking-wide shadow-xs">
               Best Seller
             </span>
           )}
@@ -151,7 +151,7 @@ export function ProductCard({
           className={`w-full py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs active:scale-[0.98] ${
             isAdded
               ? "bg-emerald-600 text-white"
-              : "bg-[#7c3aed] hover:bg-[#6d28d9] text-white"
+              : "bg-[#9333ea] hover:bg-[#7e22ce] text-white"
           }`}
         >
           {isAdded ? (

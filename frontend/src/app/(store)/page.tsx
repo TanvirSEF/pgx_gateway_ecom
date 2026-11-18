@@ -16,75 +16,52 @@ export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
 
   const { data: apiProducts, isLoading } = useGetProducts({
-    limit: 50,
+    limit: 60,
     category: selectedCategory || undefined,
   });
 
   const products = apiProducts?.data || [];
 
-  // Featured products showing top digital solutions, enterprise rigs and smart gadgets
-  const featuredDigitalSlugs = [
-    "nvidia-dgx-h100-enterprise-ai-supercomputer",
-    "apple-mac-pro-rack-m2-ultra-enterprise",
-    "red-v-raptor-xl-8k-vv-cinema-package",
-    "supermicro-8u-hgx-ai-supercomputing-server",
-    "canon-c500-mkii-cine-servo-50-1000mm",
-    "sony-fx9-6k-cinema-master-bundle",
-    "ai-business-chatbot-pro",
-    "e-commerce-website-kit",
-    "marketing-template-bundle",
-    "influencer-partnership-crm-system",
-    "digital-marketing-masterclass",
-    "pgx-ultra-titanium-smartwatch",
-    "pgx-cyberdeck-mechanical-keyboard",
-    "pgx-studioone-usb-microphone",
-    "pgx-turbodrive-2tb-nvme-ssd",
-    "pgx-falcon-4k-gps-drone",
-  ];
-
-  const featuredProducts = products
-    .filter((p: any) => featuredDigitalSlugs.includes(p.slug))
-    .sort(
-      (a: any, b: any) =>
-        featuredDigitalSlugs.indexOf(a.slug) - featuredDigitalSlugs.indexOf(b.slug)
-    );
-
-  const displayProducts =
-    featuredProducts.length > 0
-      ? [...featuredProducts, ...products.filter((p: any) => !featuredDigitalSlugs.includes(p.slug))].slice(0, 10)
-      : products.slice(0, 10);
+  // Pick top high-ticket and mid-range products to showcase
+  const displayProducts = products.slice(0, 10);
 
   return (
-    <div className="bg-background min-h-screen">
-      {/* 1. Hero Showcase with 3D Floating Category Badges & Laptop Mockup */}
+    <div className="bg-[#fafafa] min-h-screen">
+      {/* 1. Hero Showcase: FITNESS. FASHION. TECH. DIGITAL. ALL IN ONE. */}
       <HeroSection />
 
-      {/* 2. Horizontal Digital Categories Pill Selector Bar */}
+      {/* 2. Trust Badges & Value Proposition Strip (5-Column Clean Badges) */}
+      <ValuePropGrid />
+
+      {/* 3. Shop by Category 8-Tile Modern Grid */}
       <CategoryPillBar
         activeSlug={selectedCategory}
         onSelectCategory={(slug) => setSelectedCategory(slug)}
       />
 
-      {/* 3. Featured Products Section (Matching Mockup 5-Card Grid) */}
-      <section className="py-12 sm:py-16 bg-[#f8fafc] border-b border-slate-200/80">
+      {/* 4. Featured Products Section (Exact Mockup Match with Purple Accent Marker) */}
+      <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
         <div className="container mx-auto px-4">
-          {/* Section Header */}
+          {/* Section Header with Signature Purple Accent Bar */}
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Featured Products
-            </h2>
+            <div className="flex items-center gap-2.5">
+              <div className="w-1.5 h-6 sm:h-7 bg-[#9333ea] rounded-full" />
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Featured Products
+              </h2>
+            </div>
             <Link
               href={selectedCategory ? `/shop?category=${selectedCategory}` : "/shop"}
-              className="text-xs sm:text-sm font-bold text-[#7c3aed] hover:text-[#6d28d9] flex items-center gap-1.5 transition-colors group"
+              className="text-xs sm:text-sm font-bold text-[#9333ea] hover:text-[#7e22ce] flex items-center gap-1.5 transition-colors group cursor-pointer"
             >
               <span>View All</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
-          {/* Products Grid */}
+          {/* Products Grid (5-Column E-Commerce Layout) */}
           {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
               {Array.from({ length: 5 }).map((_, idx) => (
                 <div
                   key={idx}
@@ -100,7 +77,7 @@ export default function HomePage() {
             </div>
           ) : displayProducts.length > 0 ? (
             <ScrollReveal direction="up" delay={0.1}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
                 {displayProducts.map((product: any) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
@@ -113,12 +90,12 @@ export default function HomePage() {
                 No products found in this category
               </p>
               <p className="text-xs text-slate-500 mt-1 max-w-sm">
-                Explore our full catalog or select &apos;All Categories&apos; to view all digital assets.
+                Explore our full catalog or select &apos;All Categories&apos; to view all marketplace products.
               </p>
               <button
                 type="button"
                 onClick={() => setSelectedCategory("")}
-                className="mt-4 px-4 py-2 bg-[#7c3aed] text-white rounded-lg text-xs font-bold hover:bg-[#6d28d9] transition-colors cursor-pointer"
+                className="mt-4 px-4 py-2 bg-[#9333ea] text-white rounded-lg text-xs font-bold hover:bg-[#7e22ce] transition-colors cursor-pointer"
               >
                 Reset Filter
               </button>
@@ -126,9 +103,6 @@ export default function HomePage() {
           )}
         </div>
       </section>
-
-      {/* 4. Value Proposition 4-Card Grid */}
-      <ValuePropGrid />
 
       {/* 5. Trust & Reassurance Footer Strip */}
       <TrustStrip />

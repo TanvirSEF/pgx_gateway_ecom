@@ -1,43 +1,66 @@
 "use client";
 
-import { useState } from "react";
+import { ArrowRight, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  LayoutGrid,
-  Watch,
-  Keyboard,
-  Headphones,
-  HardDrive,
-  Camera,
-  Bot,
-  Laptop,
-  Code2,
-  Megaphone,
-  GraduationCap,
-  Dumbbell,
-} from "lucide-react";
 
-export interface CategoryPillItem {
+export interface CategoryTile {
   id: string;
   name: string;
   slug: string;
-  icon: any;
+  imageUrl: string;
 }
 
-export const DIGITAL_CATEGORY_PILLS: CategoryPillItem[] = [
-  { id: "all", name: "All Products", slug: "", icon: LayoutGrid },
-  { id: "fitness", name: "Fitness & Gym Gear", slug: "fitness-gym-equipment", icon: Dumbbell },
-  { id: "gadgets", name: "Smart Gadgets", slug: "smart-gadgets-wearables", icon: Watch },
-  { id: "peripherals", name: "Desk Tech & Keyboards", slug: "desk-tech-peripherals", icon: Keyboard },
-  { id: "audio", name: "Audio & Streaming", slug: "audio-streaming-gear", icon: Headphones },
-  { id: "storage", name: "Fast Storage & Power", slug: "power-storage-accessories", icon: HardDrive },
-  { id: "cameras", name: "Cameras & Drones", slug: "cameras-drones-creator", icon: Camera },
-  { id: "ai", name: "AI Tools & Bots", slug: "ai-tools-automation", icon: Bot },
-  { id: "software", name: "Software & Licenses", slug: "software-licenses", icon: Laptop },
-  { id: "templates", name: "Website Templates", slug: "website-templates", icon: Code2 },
-  { id: "marketing", name: "Digital Marketing", slug: "digital-marketing", icon: Megaphone },
-  { id: "courses", name: "Courses & E-books", slug: "online-courses-ebooks", icon: GraduationCap },
+export const MARKETPLACE_CATEGORIES: CategoryTile[] = [
+  {
+    id: "fitness",
+    name: "Fitness & Gym Equipment",
+    slug: "fitness-gym-equipment",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0939/5657/1425/files/Feierdun_Women_Adjustable_Dumbbell_Set_of_2.png?v=1762148947",
+  },
+  {
+    id: "apparel",
+    name: "Apparel & Fashion",
+    slug: "",
+    imageUrl: "https://cdn.shopify.com/s/files/1/2350/9323/files/55_7de10f34-43da-47f1-8e75-b28d753b033f.png?v=1789718435",
+  },
+  {
+    id: "tech",
+    name: "Electronics & Tech",
+    slug: "desk-tech-peripherals",
+    imageUrl: "https://ts1.mm.bing.net/th?id=OIP.MjTzgonW4pizlmaU2v_cVQHaHa&w=800&h=800&c=7&rs=1&p=0",
+  },
+  {
+    id: "digital",
+    name: "Digital Products",
+    slug: "software-licenses",
+    imageUrl: "https://ts1.mm.bing.net/th?id=OIP.gdKxuXffzlVwHvusrmRLygHaEK&w=800&h=800&c=7&rs=1&p=0",
+  },
+  {
+    id: "home",
+    name: "Home & Living",
+    slug: "",
+    imageUrl: "https://ts3.mm.bing.net/th?id=OIP.G8_58WCR__KqUI4aCxXXNgHaE8&w=800&h=800&c=7&rs=1&p=0",
+  },
+  {
+    id: "wellness",
+    name: "Health & Wellness",
+    slug: "",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0939/5657/1425/files/FED_Fitness_KW1_Hot_and_Cold_Knee_Wrap_Main.webp?v=1793944374",
+  },
+  {
+    id: "gaming",
+    name: "Gaming & Entertainment",
+    slug: "audio-streaming-gear",
+    imageUrl: "https://ts3.mm.bing.net/th?id=OIP.b_kSbTnGLHW-MCKhz9C8YAHaHa&w=800&h=800&c=7&rs=1&p=0",
+  },
+  {
+    id: "gadgets",
+    name: "Smart Gadgets",
+    slug: "smart-gadgets-wearables",
+    imageUrl: "https://ts3.mm.bing.net/th?id=OIP.l6KgNaqEn5RKI7j3ZVYf0AHaHa&w=800&h=800&c=7&rs=1&p=0",
+  },
 ];
 
 interface CategoryPillBarProps {
@@ -50,10 +73,8 @@ export function CategoryPillBar({
   onSelectCategory,
 }: CategoryPillBarProps) {
   const router = useRouter();
-  const [selected, setSelected] = useState(activeSlug);
 
-  const handleSelect = (slug: string) => {
-    setSelected(slug);
+  const handleCategoryClick = (slug: string) => {
     if (onSelectCategory) {
       onSelectCategory(slug);
     } else {
@@ -62,37 +83,58 @@ export function CategoryPillBar({
   };
 
   return (
-    <section className="bg-white border-y border-slate-200/80 shadow-2xs py-4 sm:py-5 overflow-hidden">
+    <section className="bg-white py-10 sm:py-12 border-b border-slate-200/80 select-none">
       <div className="container mx-auto px-4">
-        {/* Horizontal Scroll Container */}
-        <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar scroll-smooth py-1 px-1">
-          {DIGITAL_CATEGORY_PILLS.map((item) => {
-            const Icon = item.icon;
-            const isActive = selected === item.slug;
+        {/* Section Header */}
+        <div className="flex items-center justify-between mb-7">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Shop by Category
+          </h2>
+          <Link
+            href="/shop"
+            className="text-xs sm:text-sm font-bold text-[#9333ea] hover:text-[#7e22ce] flex items-center gap-1.5 transition-colors group cursor-pointer"
+          >
+            <span>View All Categories</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
+        {/* Categories Grid (Exact 8-Card Modern Tile Grid) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4">
+          {MARKETPLACE_CATEGORIES.map((item) => {
+            const isActive = activeSlug === item.slug && item.slug !== "";
 
             return (
               <button
                 key={item.id}
-                onClick={() => handleSelect(item.slug)}
                 type="button"
-                className={`flex flex-col items-center justify-center gap-1.5 px-4 sm:px-5 py-3 rounded-2xl shrink-0 transition-all cursor-pointer border select-none group min-w-[105px] sm:min-w-[120px] ${
+                onClick={() => handleCategoryClick(item.slug)}
+                className={`flex flex-col justify-between bg-[#f8fafc] border hover:border-[#9333ea]/50 rounded-2xl p-3 sm:p-3.5 transition-all duration-300 text-left group hover:shadow-lg cursor-pointer ${
                   isActive
-                    ? "bg-[#ede9fe] text-[#7c3aed] border-[#c4b5fd] shadow-xs font-bold ring-2 ring-[#7c3aed]/20"
-                    : "bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 border-slate-200/90 font-medium hover:border-slate-300"
+                    ? "border-[#9333ea] ring-2 ring-[#9333ea]/20 bg-purple-50/40"
+                    : "border-slate-200/90"
                 }`}
               >
-                <div
-                  className={`p-2 rounded-xl transition-colors ${
-                    isActive
-                      ? "bg-[#7c3aed]/15 text-[#7c3aed]"
-                      : "text-slate-500 group-hover:text-slate-800"
-                  }`}
-                >
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                {/* Product Image Thumbnail */}
+                <div className="relative w-full aspect-square rounded-xl bg-white border border-slate-100 flex items-center justify-center p-2 mb-3 overflow-hidden shadow-2xs">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.name}
+                    fill
+                    unoptimized
+                    className="object-contain p-1.5 group-hover:scale-108 transition-transform duration-300"
+                  />
                 </div>
-                <span className="text-[11px] sm:text-xs text-center leading-tight line-clamp-2 max-w-[100px]">
-                  {item.name}
-                </span>
+
+                {/* Footer: Category Name & Small Arrow */}
+                <div className="flex items-center justify-between gap-1 w-full mt-auto">
+                  <h3 className="font-bold text-slate-900 group-hover:text-[#9333ea] transition-colors text-xs leading-snug line-clamp-2">
+                    {item.name}
+                  </h3>
+                  <div className="w-5 h-5 rounded-full bg-slate-200/70 group-hover:bg-[#9333ea] group-hover:text-white text-slate-600 flex items-center justify-center shrink-0 transition-colors">
+                    <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                  </div>
+                </div>
               </button>
             );
           })}
