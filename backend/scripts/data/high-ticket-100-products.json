@@ -1,0 +1,5510 @@
+[
+  {
+    "name": "NVIDIA DGX H100 Enterprise AI Supercomputer Flagship",
+    "slug": "nvidia-dgx-h100-enterprise-ai-supercomputer",
+    "sku": "PGX-ENT-001",
+    "categorySlug": "ai-tools-automation",
+    "price": 62500,
+    "comparePrice": 73750,
+    "stock": 30,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8x NVIDIA H100 SXM5 80GB GPUs with 640GB aggregate VRAM and 32 PFLOPS FP8 AI compute.",
+    "specifications": [
+      {
+        "label": "GPU Engine",
+        "value": "8x NVIDIA H100 SXM5 80GB HBM3"
+      },
+      {
+        "label": "Bandwidth",
+        "value": "24 Terabytes/sec GPU memory bandwidth"
+      },
+      {
+        "label": "Compute Power",
+        "value": "32 PetaFLOPS FP8 AI compute"
+      },
+      {
+        "label": "Interconnect",
+        "value": "NVLink 900 GB/s bidirectional + 4x NVSwitch"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8480C (112 Cores, 224 Threads)"
+      },
+      {
+        "label": "System Memory",
+        "value": "2.0TB DDR5 ECC Registered Memory"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 62500,
+        "comparePrice": 73750,
+        "sku": "PGX-ENT-001-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 78125,
+        "comparePrice": 92188,
+        "sku": "PGX-ENT-001-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 90625,
+        "comparePrice": 106938,
+        "sku": "PGX-ENT-001-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro 8U HGX AI Supercomputing Server Rig (8x SXM5)",
+    "slug": "supermicro-8u-hgx-ai-supercomputing-server",
+    "sku": "PGX-ENT-002",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 54900,
+    "comparePrice": 64782,
+    "stock": 31,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8U Rackmount AI powerhouse with 8x SXM5 HGX tensor GPUs, Dual Intel Xeon Platinum, and 1.5TB DDR5 ECC.",
+    "specifications": [
+      {
+        "label": "Chassis",
+        "value": "8U Enterprise Rackmount hot-swap modules"
+      },
+      {
+        "label": "GPU Subsystem",
+        "value": "8x NVIDIA SXM5 Tensor Core GPUs"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8592+ (128 Cores)"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5-5600MHz ECC RDIMMs"
+      },
+      {
+        "label": "Storage",
+        "value": "60TB PCIe Gen5 Hot-Swap NVMe U.2"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 54900,
+        "comparePrice": 64782,
+        "sku": "PGX-ENT-002-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 68625,
+        "comparePrice": 80978,
+        "sku": "PGX-ENT-002-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 79605,
+        "comparePrice": 93934,
+        "sku": "PGX-ENT-002-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Dell PowerEdge XE9680 Liquid-Cooled 8-Way AI Server",
+    "slug": "dell-poweredge-xe9680-8way-ai-server",
+    "sku": "PGX-ENT-003",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 58900,
+    "comparePrice": 69502,
+    "stock": 32,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-density multi-GPU server engineered for hyperscale generative AI training with full liquid-cooling loop.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "8x NVIDIA H100 or H200 with NVLink"
+      },
+      {
+        "label": "Cooling",
+        "value": "Direct-to-Chip liquid cooling loops"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual 4th/5th Gen Intel Xeon Scalable"
+      },
+      {
+        "label": "Memory",
+        "value": "Up to 2TB DDR5 ECC memory"
+      },
+      {
+        "label": "Networking",
+        "value": "10x PCIe 5.0 x16 slots with 400GbE NDR"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 58900,
+        "comparePrice": 69502,
+        "sku": "PGX-ENT-003-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 73625,
+        "comparePrice": 86878,
+        "sku": "PGX-ENT-003-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 85405,
+        "comparePrice": 100778,
+        "sku": "PGX-ENT-003-ENT"
+      }
+    ]
+  },
+  {
+    "name": "HPE Cray XD670 Generative AI Supercomputing Chassis",
+    "slug": "hpe-cray-xd670-generative-ai-chassis",
+    "sku": "PGX-ENT-004",
+    "categorySlug": "ai-tools-automation",
+    "price": 61500,
+    "comparePrice": 72570,
+    "stock": 33,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Exascale-class supercomputing chassis with integrated Cray Slingshot interconnect for massive LLMs.",
+    "specifications": [
+      {
+        "label": "Architecture",
+        "value": "HPE Cray XD Exascale Architecture"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x SXM5 GPUs with 640GB HBM3"
+      },
+      {
+        "label": "Interconnect",
+        "value": "Slingshot 200Gbps non-blocking fabric"
+      },
+      {
+        "label": "Storage",
+        "value": "30TB High-IOPS Direct NVMe cache"
+      },
+      {
+        "label": "Power",
+        "value": "4x 3200W Titanium Redundant PSUs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 61500,
+        "comparePrice": 72570,
+        "sku": "PGX-ENT-004-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 76875,
+        "comparePrice": 90713,
+        "sku": "PGX-ENT-004-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 89175,
+        "comparePrice": 105227,
+        "sku": "PGX-ENT-004-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA DGX Station A100 Liquid-Cooled AI Workstation",
+    "slug": "nvidia-dgx-station-ai-workstation",
+    "sku": "PGX-ENT-005",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 38500,
+    "comparePrice": 45430,
+    "stock": 34,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Office-friendly supercomputer with whisper-quiet refrigerant cooling and 4x NVIDIA Tensor Core GPUs.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "4x NVIDIA Tensor Core GPUs (320GB Total VRAM)"
+      },
+      {
+        "label": "Compute",
+        "value": "2.5 PetaFLOPS Tensor FP8 / FP16"
+      },
+      {
+        "label": "CPU",
+        "value": "AMD EPYC 7742 64-Core / 128-Thread 3.4GHz"
+      },
+      {
+        "label": "RAM",
+        "value": "512GB DDR4-3200 ECC Registered"
+      },
+      {
+        "label": "Acoustics",
+        "value": "Whisper-quiet <37 dB sound level"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 38500,
+        "comparePrice": 45430,
+        "sku": "PGX-ENT-005-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 48125,
+        "comparePrice": 56788,
+        "sku": "PGX-ENT-005-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 55825,
+        "comparePrice": 65874,
+        "sku": "PGX-ENT-005-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo ThinkStation PX Dual Xeon Platinum AI Workstation",
+    "slug": "lenovo-thinkstation-px-dual-xeon-platinum",
+    "sku": "PGX-ENT-006",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 36800,
+    "comparePrice": 43424,
+    "stock": 35,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Aston Martin inspired thermals with Dual Intel Xeon Platinum 8490H and 4x NVIDIA RTX 6000 Ada 48GB.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8490H (120 Cores total)"
+      },
+      {
+        "label": "Graphics",
+        "value": "4x NVIDIA RTX 6000 Ada Generation (192GB VRAM)"
+      },
+      {
+        "label": "Memory",
+        "value": "1TB DDR5 ECC Registered RAM"
+      },
+      {
+        "label": "Chassis",
+        "value": "Co-designed with Aston Martin aerodynamic airflow"
+      },
+      {
+        "label": "Power",
+        "value": "Dual 1850W Redundant Power Supplies"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 36800,
+        "comparePrice": 43424,
+        "sku": "PGX-ENT-006-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 46000,
+        "comparePrice": 54280,
+        "sku": "PGX-ENT-006-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 53360,
+        "comparePrice": 62965,
+        "sku": "PGX-ENT-006-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Lambda Labs Hyperplane 8x GPU Deep Learning Server",
+    "slug": "lambda-labs-hyperplane-8x-gpu-server",
+    "sku": "PGX-ENT-007",
+    "categorySlug": "ai-tools-automation",
+    "price": 49500,
+    "comparePrice": 58410,
+    "stock": 36,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Turnkey deep learning server pre-configured with Lambda Stack, PyTorch, TensorFlow, and CUDA libraries.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "8x NVIDIA Tensor Core GPUs (SXM)"
+      },
+      {
+        "label": "Frameworks",
+        "value": "Lambda Stack pre-installed with PyTorch & CUDA"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5 ECC Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "30.72TB PCIe 4.0 NVMe Enterprise SSDs"
+      },
+      {
+        "label": "Warranty",
+        "value": "3-Year Enterprise On-Site Support"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 49500,
+        "comparePrice": 58410,
+        "sku": "PGX-ENT-007-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 61875,
+        "comparePrice": 73013,
+        "sku": "PGX-ENT-007-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 71775,
+        "comparePrice": 84695,
+        "sku": "PGX-ENT-007-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Cisco UCS C480 M5 High-Capacity 6-GPU Server Engine",
+    "slug": "cisco-ucs-c480-m5-gpu-server-engine",
+    "sku": "PGX-ENT-008",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 42900,
+    "comparePrice": 50622,
+    "stock": 37,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U server designed for storage-intensive AI inferencing and massive parallel database acceleration.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Quad Intel Xeon Scalable Processors (Up to 112 Cores)"
+      },
+      {
+        "label": "GPU Support",
+        "value": "Up to 6 Full-Length, Full-Height PCIe GPUs"
+      },
+      {
+        "label": "Memory",
+        "value": "Up to 6TB DDR4 via 48 DIMM slots"
+      },
+      {
+        "label": "Storage",
+        "value": "Up to 32 SAS/SATA/NVMe drives (180TB total)"
+      },
+      {
+        "label": "Management",
+        "value": "Cisco Intersight Cloud-Operated Platform"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 42900,
+        "comparePrice": 50622,
+        "sku": "PGX-ENT-008-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 53625,
+        "comparePrice": 63278,
+        "sku": "PGX-ENT-008-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 62205,
+        "comparePrice": 73402,
+        "sku": "PGX-ENT-008-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro Liquid-Cooled 4U Dual AMD EPYC AI SuperServer",
+    "slug": "supermicro-liquid-4u-dual-epyc-ai-server",
+    "sku": "PGX-ENT-009",
+    "categorySlug": "ai-tools-automation",
+    "price": 52000,
+    "comparePrice": 61360,
+    "stock": 38,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U Dual AMD EPYC 9654 (192 Cores) paired with 8x NVIDIA SXM5 accelerators and custom copper cold plates.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual AMD EPYC 9654 96-Core Processors (192 Cores)"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x SXM5 GPUs with NVLink interconnect"
+      },
+      {
+        "label": "Thermals",
+        "value": "Full closed-loop copper liquid manifold"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5-4800MHz ECC RDIMMs"
+      },
+      {
+        "label": "Networking",
+        "value": "8x 400Gb/s InfiniBand NDR interfaces"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 52000,
+        "comparePrice": 61360,
+        "sku": "PGX-ENT-009-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 65000,
+        "comparePrice": 76700,
+        "sku": "PGX-ENT-009-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 75400,
+        "comparePrice": 88972,
+        "sku": "PGX-ENT-009-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA HGX H200 141GB HBM3e AI Accelerator Node",
+    "slug": "nvidia-hgx-h200-141gb-hbm3e-node",
+    "sku": "PGX-ENT-010",
+    "categorySlug": "ai-tools-automation",
+    "price": 67500,
+    "comparePrice": 79650,
+    "stock": 39,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Next-generation H200 AI supercomputer with 141GB HBM3e per GPU (1.1TB total VRAM at 4.8TB/s bandwidth).",
+    "specifications": [
+      {
+        "label": "Memory",
+        "value": "141GB HBM3e per GPU (1.1 Terabytes Total VRAM)"
+      },
+      {
+        "label": "Bandwidth",
+        "value": "4.8 Terabytes/sec per GPU"
+      },
+      {
+        "label": "Performance",
+        "value": "Double the inference throughput of H100 on Llama 70B"
+      },
+      {
+        "label": "Interconnect",
+        "value": "900 GB/s bi-directional NVLink Gen4"
+      },
+      {
+        "label": "Compute Power",
+        "value": "32 PFLOPS FP8 AI compute power"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 67500,
+        "comparePrice": 79650,
+        "sku": "PGX-ENT-010-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 84375,
+        "comparePrice": 99563,
+        "sku": "PGX-ENT-010-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 97875,
+        "comparePrice": 115493,
+        "sku": "PGX-ENT-010-ENT"
+      }
+    ]
+  },
+  {
+    "name": "BOXX APEXX Matterhorn Quad GPU Extreme Studio Rig",
+    "slug": "boxx-apexx-matterhorn-quad-gpu-rig",
+    "sku": "PGX-ENT-011",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 34500,
+    "comparePrice": 40710,
+    "stock": 40,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Overclocked professional studio workstation with 4x NVIDIA RTX 6000 Ada and liquid cooling.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon w9-3495X 56-Core Overclocked"
+      },
+      {
+        "label": "GPUs",
+        "value": "4x NVIDIA RTX 6000 Ada Generation (192GB VRAM)"
+      },
+      {
+        "label": "RAM",
+        "value": "512GB DDR5-4800 ECC Registered"
+      },
+      {
+        "label": "Storage",
+        "value": "4x 4TB PCIe Gen5 M.2 SSDs (RAID 0/10)"
+      },
+      {
+        "label": "Power Supply",
+        "value": "Dual 2000W Active PFC Power Units"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 34500,
+        "comparePrice": 40710,
+        "sku": "PGX-ENT-011-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 43125,
+        "comparePrice": 50888,
+        "sku": "PGX-ENT-011-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 50025,
+        "comparePrice": 59030,
+        "sku": "PGX-ENT-011-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro SuperBlade 8U AI High-Density Enclosure",
+    "slug": "supermicro-superblade-8u-ai-enclosure",
+    "sku": "PGX-ENT-012",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 64800,
+    "comparePrice": 76464,
+    "stock": 41,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8U blade enclosure supporting up to 20 blade compute nodes with centralized power and cooling.",
+    "specifications": [
+      {
+        "label": "Blade Density",
+        "value": "Up to 20 compute blades in single 8U frame"
+      },
+      {
+        "label": "Networking",
+        "value": "Integrated 100G/200G InfiniBand and 25G Ethernet switches"
+      },
+      {
+        "label": "Power Efficiency",
+        "value": "96% Titanium level hot-swap power supplies"
+      },
+      {
+        "label": "Management",
+        "value": "Centralized CMM chassis management module"
+      },
+      {
+        "label": "Redundancy",
+        "value": "N+1 hot-plug cooling fans and power redundancy"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 64800,
+        "comparePrice": 76464,
+        "sku": "PGX-ENT-012-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 81000,
+        "comparePrice": 95580,
+        "sku": "PGX-ENT-012-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 93960,
+        "comparePrice": 110873,
+        "sku": "PGX-ENT-012-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Asus ESC8000-E11 8-GPU PCIe Gen5 AI Enterprise Rack",
+    "slug": "asus-esc8000-e11-8gpu-enterprise-rack",
+    "sku": "PGX-ENT-013",
+    "categorySlug": "ai-tools-automation",
+    "price": 47800,
+    "comparePrice": 56404,
+    "stock": 42,
+    "isFeatured": true,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U dual-socket enterprise server designed for 8 dual-slot active or passive GPU accelerators.",
+    "specifications": [
+      {
+        "label": "Sockets",
+        "value": "Dual Socket E (LGA 4677) 5th Gen Intel Xeon"
+      },
+      {
+        "label": "GPU Slots",
+        "value": "8x PCIe 5.0 x16 dual-slot GPU slots"
+      },
+      {
+        "label": "Expansion",
+        "value": "Additional 2x PCIe 5.0 x16 low-profile slots for networking"
+      },
+      {
+        "label": "Memory",
+        "value": "32x DDR5 DIMM slots (up to 4TB ECC)"
+      },
+      {
+        "label": "Power",
+        "value": "4x 3000W Platinum/Titanium redundant PSUs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 47800,
+        "comparePrice": 56404,
+        "sku": "PGX-ENT-013-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 59750,
+        "comparePrice": 70505,
+        "sku": "PGX-ENT-013-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 69310,
+        "comparePrice": 81786,
+        "sku": "PGX-ENT-013-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Origin PC Big O Super-Tower Enterprise AI Hybrid",
+    "slug": "origin-pc-big-o-enterprise-ai-hybrid",
+    "sku": "PGX-ENT-014",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 29500,
+    "comparePrice": 34810,
+    "stock": 43,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Custom dual-system liquid-cooled tower integrating an AI compute engine and independent streaming controller.",
+    "specifications": [
+      {
+        "label": "Primary System",
+        "value": "AMD Threadripper PRO 7995WX (96 Cores)"
+      },
+      {
+        "label": "Primary GPUs",
+        "value": "Dual NVIDIA RTX 6000 Ada (96GB VRAM)"
+      },
+      {
+        "label": "Secondary System",
+        "value": "Intel Core i9-14900KS with 4K60 Capture Card"
+      },
+      {
+        "label": "Cooling",
+        "value": "Dual independent custom hardline liquid cooling loops"
+      },
+      {
+        "label": "Chassis",
+        "value": "Custom double-wide aluminum showcase tower"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 29500,
+        "comparePrice": 34810,
+        "sku": "PGX-ENT-014-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 36875,
+        "comparePrice": 43513,
+        "sku": "PGX-ENT-014-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 42775,
+        "comparePrice": 50475,
+        "sku": "PGX-ENT-014-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Altos BrainSphere R685 F5 Dual EPYC 8-GPU AI Engine",
+    "slug": "altos-brainsphere-r685-f5-ai-engine",
+    "sku": "PGX-ENT-015",
+    "categorySlug": "ai-tools-automation",
+    "price": 45900,
+    "comparePrice": 54162,
+    "stock": 44,
+    "isFeatured": true,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "AI training platform powered by Dual AMD EPYC 9004 processors and 8 high-performance Tensor Core GPUs.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual AMD EPYC 9004 Series processors"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x PCIe 5.0 x16 GPU slots"
+      },
+      {
+        "label": "Network",
+        "value": "Dual 100GbE QSFP28 + OCP 3.0 mezzanine slots"
+      },
+      {
+        "label": "Storage",
+        "value": "Up to 24x 2.5-inch hot-swap NVMe drive bays"
+      },
+      {
+        "label": "Thermal",
+        "value": "Redundant heavy-duty PWM hot-swap fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 45900,
+        "comparePrice": 54162,
+        "sku": "PGX-ENT-015-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 57375,
+        "comparePrice": 67703,
+        "sku": "PGX-ENT-015-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 66555,
+        "comparePrice": 78535,
+        "sku": "PGX-ENT-015-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C500 Mark II 5.9K with Cine-Servo 50-1000mm Lens",
+    "slug": "canon-c500-mkii-cine-servo-50-1000mm",
+    "sku": "PGX-ENT-016",
+    "categorySlug": "cameras-drones-creator",
+    "price": 68900,
+    "comparePrice": 81302,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "5.9K Full-Frame Cinema EOS paired with Canon CN20x50 IAS H 50-1000mm ultra-telephoto cine zoom lens.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "5.9K Full-Frame CMOS (38.1 x 20.1 mm) with DPAF"
+      },
+      {
+        "label": "Lens",
+        "value": "Canon CN20x50 IAS H Cine-Servo 50-1000mm T5.0-8.9 (20x zoom)"
+      },
+      {
+        "label": "Extender",
+        "value": "Built-in 1.5x optical extender provides 75-1500mm reach"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ Stops with Canon Log 2/3"
+      },
+      {
+        "label": "Recording",
+        "value": "Cinema RAW Light 5.9K 60p, 4K DCI 120p"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 68900,
+        "comparePrice": 81302,
+        "sku": "PGX-ENT-016-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 86125,
+        "comparePrice": 101628,
+        "sku": "PGX-ENT-016-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 99905,
+        "comparePrice": 117888,
+        "sku": "PGX-ENT-016-ENT"
+      }
+    ]
+  },
+  {
+    "name": "RED V-RAPTOR XL 8K VV Multi-Format Large Cinema Camera Package",
+    "slug": "red-v-raptor-xl-8k-vv-cinema-package",
+    "sku": "PGX-ENT-017",
+    "categorySlug": "cameras-drones-creator",
+    "price": 29995,
+    "comparePrice": 35394,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Unified flagship studio camera with 8K VV sensor, integrated wireless timecode, genlock, and electronic ND.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "35.4MP Full-Frame VistaVision CMOS (40.96 x 21.60 mm)"
+      },
+      {
+        "label": "Frame Rates",
+        "value": "120 fps at 8K 17:9, 150 fps at 8K 2.4:1, 800 fps at 2K"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "17+ stops of verifiable dynamic range"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Internal motorized electronic ND (2 to 7 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Interchangeable Titanium Core PL Mount with Cooke /i"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 29995,
+        "comparePrice": 35394,
+        "sku": "PGX-ENT-017-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 37494,
+        "comparePrice": 44243,
+        "sku": "PGX-ENT-017-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 43493,
+        "comparePrice": 51321,
+        "sku": "PGX-ENT-017-ENT"
+      }
+    ]
+  },
+  {
+    "name": "ARRI ALEXA Mini LF Large Format Cinema Camera Body Package",
+    "slug": "arri-alexa-mini-lf-large-format-package",
+    "sku": "PGX-ENT-018",
+    "categorySlug": "cameras-drones-creator",
+    "price": 64500,
+    "comparePrice": 76110,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hollywood gold standard large-format cinema camera with A2X sensor, MXF/ARRIRAW recording, and MVF-2 viewfinder.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Large Format 4448 x 3096 ALEV 3 A2X CMOS"
+      },
+      {
+        "label": "Color Science",
+        "value": "ARRI REVEAL Color Science with unmatched skin tones"
+      },
+      {
+        "label": "Recording",
+        "value": "Uncompressed ARRIRAW & Apple ProRes to Codex Compact Drives"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "ARRI MVF-2 high-contrast HD OLED Viewfinder"
+      },
+      {
+        "label": "Filters",
+        "value": "Internal Large Format Full Spectrum ND (0.6, 1.2, 1.8)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 64500,
+        "comparePrice": 76110,
+        "sku": "PGX-ENT-018-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 80625,
+        "comparePrice": 95138,
+        "sku": "PGX-ENT-018-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 93525,
+        "comparePrice": 110360,
+        "sku": "PGX-ENT-018-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX9 Full-Frame 6K Cinema Camera Master Production Bundle",
+    "slug": "sony-fx9-6k-cinema-master-bundle",
+    "sku": "PGX-ENT-019",
+    "categorySlug": "cameras-drones-creator",
+    "price": 18950,
+    "comparePrice": 22361,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Sony FX9 6K Full-Frame Exmor R sensor, electronic variable ND, and XDCA extension unit with cine zooms.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "35.7 x 18.8 mm Full-Frame 6K Exmor R CMOS"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ Stops with dual base ISO 800 / 4000"
+      },
+      {
+        "label": "ND Filter",
+        "value": "World-first Full-Frame Electronic Variable ND"
+      },
+      {
+        "label": "AF System",
+        "value": "Fast Hybrid AF with 561 phase-detection points"
+      },
+      {
+        "label": "RAW Output",
+        "value": "16-bit RAW output via XDCA-FX9 extension unit"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 18950,
+        "comparePrice": 22361,
+        "sku": "PGX-ENT-019-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 23688,
+        "comparePrice": 27951,
+        "sku": "PGX-ENT-019-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 27478,
+        "comparePrice": 32423,
+        "sku": "PGX-ENT-019-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Phase One IQ4 150MP Achromatic Medium Format Studio Camera System",
+    "slug": "phase-one-iq4-150mp-medium-format",
+    "sku": "PGX-ENT-020",
+    "categorySlug": "cameras-drones-creator",
+    "price": 22400,
+    "comparePrice": 26432,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "151 Megapixels Backside Illuminated medium-format sensor with Infinity Platform and Capture One RAW engine.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "151 Megapixel 53.4 x 40.0 mm BSI CMOS (14204 x 10652 px)"
+      },
+      {
+        "label": "Color Depth",
+        "value": "16-bit IIQ RAW with 15 stops dynamic range"
+      },
+      {
+        "label": "Platform",
+        "value": "Phase One Infinity Platform with Capture One built-in"
+      },
+      {
+        "label": "Tethering",
+        "value": "USB-C 3.1 Gen 2, 1Gbps Ethernet & Wi-Fi tethering"
+      },
+      {
+        "label": "Exposure",
+        "value": "Up to 60 minutes exposure capability for archival art"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 22400,
+        "comparePrice": 26432,
+        "sku": "PGX-ENT-020-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 28000,
+        "comparePrice": 33040,
+        "sku": "PGX-ENT-020-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 32480,
+        "comparePrice": 38326,
+        "sku": "PGX-ENT-020-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Leica S3 Medium Format Camera System with Summarit-S Cine Kit",
+    "slug": "leica-s3-medium-format-cine-kit",
+    "sku": "PGX-ENT-021",
+    "categorySlug": "cameras-drones-creator",
+    "price": 31900,
+    "comparePrice": 37642,
+    "stock": 30,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "German-engineered Leica S-System medium format with 64MP ProFormat CMOS sensor and central leaf shutter.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Leica ProFormat 30 x 45 mm CMOS (64 Megapixels)"
+      },
+      {
+        "label": "Dual Shutter",
+        "value": "Focal plane shutter (1/4000s) + Central leaf shutter (1/1000s)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15 stops dynamic range with ISO up to 50,000"
+      },
+      {
+        "label": "Video",
+        "value": "Cine 4K (4096 x 2160) 24fps full-sensor recording"
+      },
+      {
+        "label": "Optics Included",
+        "value": "Leica Summarit-S 70mm f/2.5 ASPH CS Lens"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 31900,
+        "comparePrice": 37642,
+        "sku": "PGX-ENT-021-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 39875,
+        "comparePrice": 47053,
+        "sku": "PGX-ENT-021-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 46255,
+        "comparePrice": 54581,
+        "sku": "PGX-ENT-021-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony VENICE 2 8K Digital Cinema Camera Body with Full Frame RAW",
+    "slug": "sony-venice-2-8k-digital-cinema-camera",
+    "sku": "PGX-ENT-022",
+    "categorySlug": "cameras-drones-creator",
+    "price": 58000,
+    "comparePrice": 68440,
+    "stock": 31,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Full-frame 8.6K 3:2 sensor camera with 16 stops of dynamic range and internal X-OCN recording.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame 8.6K (8640 x 5760) 3:2 CMOS"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16 Stops with Dual Base ISO 800 / 3200"
+      },
+      {
+        "label": "Internal Recording",
+        "value": "X-OCN XT/ST/LT and Apple ProRes 4444 to AXS memory"
+      },
+      {
+        "label": "ND Filters",
+        "value": "8-step mechanical ND filter mechanism built-in"
+      },
+      {
+        "label": "Mount",
+        "value": "Interchangeable PL Mount and Lever Lock E-mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 58000,
+        "comparePrice": 68440,
+        "sku": "PGX-ENT-022-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 72500,
+        "comparePrice": 85550,
+        "sku": "PGX-ENT-022-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 84100,
+        "comparePrice": 99238,
+        "sku": "PGX-ENT-022-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad H6D-100c Medium Format DSLR Studio Kit",
+    "slug": "hasselblad-h6d-100c-medium-format-kit",
+    "sku": "PGX-ENT-023",
+    "categorySlug": "cameras-drones-creator",
+    "price": 26900,
+    "comparePrice": 31742,
+    "stock": 32,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel 53.4 x 40.0mm CMOS sensor with 15 stops dynamic range, UHD 4K video, and Wi-Fi.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100MP CMOS Sensor (11600 x 8700 pixels)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15 stops with 16-bit color depth"
+      },
+      {
+        "label": "Shutter Speeds",
+        "value": "60 minutes to 1/2000s with HC/HCD leaf shutter lenses"
+      },
+      {
+        "label": "Video",
+        "value": "4K UHD RAW video and Full HD video recording"
+      },
+      {
+        "label": "Display",
+        "value": "3.0-inch 920k-dot touchscreen LCD monitor"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 26900,
+        "comparePrice": 31742,
+        "sku": "PGX-ENT-023-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 33625,
+        "comparePrice": 39678,
+        "sku": "PGX-ENT-023-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 39005,
+        "comparePrice": 46026,
+        "sku": "PGX-ENT-023-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Cooke Anamorphic/i Full Frame Plus 40mm T2.3 Prime Lens",
+    "slug": "cooke-anamorphic-full-frame-plus-40mm",
+    "sku": "PGX-ENT-024",
+    "categorySlug": "cameras-drones-creator",
+    "price": 33500,
+    "comparePrice": 39530,
+    "stock": 33,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary Cooke Look cinema anamorphic lens covering full frame VistaVision sensors with /i data communication.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "40mm with 1.8x anamorphic squeeze"
+      },
+      {
+        "label": "Coverage",
+        "value": "Full Frame Plus and VistaVision sensor coverage"
+      },
+      {
+        "label": "Aperture",
+        "value": "Fast T2.3 to T22 continuous iris"
+      },
+      {
+        "label": "Communication",
+        "value": "Cooke /i Technology frame-by-frame lens metadata"
+      },
+      {
+        "label": "Mount",
+        "value": "Precision titanium PL Mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 33500,
+        "comparePrice": 39530,
+        "sku": "PGX-ENT-024-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 41875,
+        "comparePrice": 49413,
+        "sku": "PGX-ENT-024-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 48575,
+        "comparePrice": 57319,
+        "sku": "PGX-ENT-024-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Angenieux Optimo Ultra 12x Multi-Format Cinema Zoom Package",
+    "slug": "angenieux-optimo-ultra-12x-cinema-zoom",
+    "sku": "PGX-ENT-025",
+    "categorySlug": "cameras-drones-creator",
+    "price": 59500,
+    "comparePrice": 70210,
+    "stock": 34,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-end cinema zoom with Interchangeable Optical Rear (IRO) technology for S35, U35, and Full Frame.",
+    "specifications": [
+      {
+        "label": "Zoom Range",
+        "value": "12x Optical Zoom (36-435mm Full Frame, 24-290mm S35)"
+      },
+      {
+        "label": "IRO Technology",
+        "value": "Swappable optical rear elements for multiple formats"
+      },
+      {
+        "label": "Aperture",
+        "value": "T4.2 Full Frame / T2.8 S35 across zoom range"
+      },
+      {
+        "label": "Weight",
+        "value": "Rigid lightweight mechanical chassis with zero breathing"
+      },
+      {
+        "label": "Mount",
+        "value": "PL Mount with universal sub-mount options"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 59500,
+        "comparePrice": 70210,
+        "sku": "PGX-ENT-025-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 74375,
+        "comparePrice": 87763,
+        "sku": "PGX-ENT-025-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 86275,
+        "comparePrice": 101805,
+        "sku": "PGX-ENT-025-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Fujinon Premista 28-100mm T2.9 Large Format Cine Zoom Lens",
+    "slug": "fujinon-premista-28-100mm-t29-cine-zoom",
+    "sku": "PGX-ENT-026",
+    "categorySlug": "cameras-drones-creator",
+    "price": 38800,
+    "comparePrice": 45784,
+    "stock": 35,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Standard zoom lens covering full-frame and large sensors with exceptional optical clarity and Cooke /i.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "28-100mm with constant T2.9 maximum aperture"
+      },
+      {
+        "label": "Image Circle",
+        "value": "46.3mm covering all modern large-format cinema sensors"
+      },
+      {
+        "label": "Iris",
+        "value": "13-blade iris for circular natural bokeh"
+      },
+      {
+        "label": "Focus Rotation",
+        "value": "280 degrees smooth mechanical barrel rotation"
+      },
+      {
+        "label": "Communication",
+        "value": "ZEISS eXtended Data and Cooke /i Technology"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 38800,
+        "comparePrice": 45784,
+        "sku": "PGX-ENT-026-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 48500,
+        "comparePrice": 57230,
+        "sku": "PGX-ENT-026-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 56260,
+        "comparePrice": 66387,
+        "sku": "PGX-ENT-026-ENT"
+      }
+    ]
+  },
+  {
+    "name": "RED KOMODO-X 6K Production Pack with Zeiss Supreme Primes",
+    "slug": "red-komodo-x-6k-zeiss-supreme-pack",
+    "sku": "PGX-ENT-027",
+    "categorySlug": "cameras-drones-creator",
+    "price": 24500,
+    "comparePrice": 28910,
+    "stock": 36,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact 6K Super35 Global Shutter sensor camera paired with Zeiss Supreme Prime cine lenses.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "19.9MP Super35 Global Shutter CMOS"
+      },
+      {
+        "label": "Frame Rates",
+        "value": "6K up to 80fps, 4K up to 120fps with zero rolling shutter"
+      },
+      {
+        "label": "Mount",
+        "value": "Locking RF Mount compatible with PL adapters"
+      },
+      {
+        "label": "Audio",
+        "value": "Integrated professional locking 5-pin audio input"
+      },
+      {
+        "label": "Monitoring",
+        "value": "Wireless 1080p control via RED Control app"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 24500,
+        "comparePrice": 28910,
+        "sku": "PGX-ENT-027-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 30625,
+        "comparePrice": 36138,
+        "sku": "PGX-ENT-027-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 35525,
+        "comparePrice": 41920,
+        "sku": "PGX-ENT-027-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony BVM-HX3110 30.5-Inch 4K HDR Critical Master Studio Monitor",
+    "slug": "sony-bvm-hx3110-4k-hdr-master-monitor",
+    "sku": "PGX-ENT-028",
+    "categorySlug": "cameras-drones-creator",
+    "price": 32500,
+    "comparePrice": 38350,
+    "stock": 37,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Industry reference grade Dual-Layer LCD 4K HDR master monitor delivering 4000 nits peak luminance.",
+    "specifications": [
+      {
+        "label": "Panel",
+        "value": "30.5-inch 4096 x 2160 Dual-Layer LCD with wide color gamut"
+      },
+      {
+        "label": "Peak Luminance",
+        "value": "4,000 cd/m2 peak brightness for HDR grading"
+      },
+      {
+        "label": "Color Space",
+        "value": "ITU-R BT.2020, DCI-P3, S-Gamut3, and Adobe RGB"
+      },
+      {
+        "label": "Interfaces",
+        "value": "12G-SDI, 3G-SDI, HDMI, and SMPTE ST 2110 IP video"
+      },
+      {
+        "label": "Calibration",
+        "value": "High-precision internal 3D LUT look management"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 32500,
+        "comparePrice": 38350,
+        "sku": "PGX-ENT-028-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 40625,
+        "comparePrice": 47938,
+        "sku": "PGX-ENT-028-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 47125,
+        "comparePrice": 55608,
+        "sku": "PGX-ENT-028-ENT"
+      }
+    ]
+  },
+  {
+    "name": "ZEISS Supreme Prime 50mm T1.5 Full-Frame Cinema Lens",
+    "slug": "zeiss-supreme-prime-50mm-t15-lens",
+    "sku": "PGX-ENT-029",
+    "categorySlug": "cameras-drones-creator",
+    "price": 19800,
+    "comparePrice": 23364,
+    "stock": 38,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-speed cine prime lens covering full-frame sensors with gentle sharpness and ZEISS eXtended Data.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "50mm with ultra-fast T1.5 maximum aperture"
+      },
+      {
+        "label": "Image Circle",
+        "value": "46.3mm diameter covering full frame and large formats"
+      },
+      {
+        "label": "eXtended Data",
+        "value": "Frame-accurate shading and distortion lens data"
+      },
+      {
+        "label": "Focus Throw",
+        "value": "300 degrees focus ring rotation with calibrated scale"
+      },
+      {
+        "label": "Front Diameter",
+        "value": "Standardized 95mm front diameter across series"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 19800,
+        "comparePrice": 23364,
+        "sku": "PGX-ENT-029-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 24750,
+        "comparePrice": 29205,
+        "sku": "PGX-ENT-029-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 28710,
+        "comparePrice": 33878,
+        "sku": "PGX-ENT-029-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Leitz Cine Summilux-C 25mm T1.4 Large-Aperture Cine Prime",
+    "slug": "leitz-cine-summilux-c-25mm-t14-prime",
+    "sku": "PGX-ENT-030",
+    "categorySlug": "cameras-drones-creator",
+    "price": 28500,
+    "comparePrice": 33630,
+    "stock": 39,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Exclusive cinema prime engineered by Leica with telecentric design for zero chromatic aberration.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "25mm wide-angle with ultra-fast T1.4 aperture"
+      },
+      {
+        "label": "Optical Design",
+        "value": "Telecentric multi-element cinema optics"
+      },
+      {
+        "label": "Breathing",
+        "value": "Virtually zero focus breathing throughout pull"
+      },
+      {
+        "label": "Chassis",
+        "value": "Ultra-durable titanium construction with cam focus"
+      },
+      {
+        "label": "Mount",
+        "value": "Hardened stainless steel PL Mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 28500,
+        "comparePrice": 33630,
+        "sku": "PGX-ENT-030-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 35625,
+        "comparePrice": 42038,
+        "sku": "PGX-ENT-030-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 41325,
+        "comparePrice": 48764,
+        "sku": "PGX-ENT-030-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Phantom VEO 4K 990 High-Speed Slow Motion Camera System",
+    "slug": "phantom-veo-4k-990-high-speed-camera",
+    "sku": "PGX-ENT-031",
+    "categorySlug": "cameras-drones-creator",
+    "price": 52900,
+    "comparePrice": 62422,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Records 938 frames per second at 4K resolution (4096 x 2304) for scientific, sports, and commercial slow-mo.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "9.4 Megapixel 35mm CMOS with global electronic shutter"
+      },
+      {
+        "label": "Maximum Speed",
+        "value": "938 fps at 4K resolution / up to 29,000 fps at reduced size"
+      },
+      {
+        "label": "Internal RAM",
+        "value": "72GB high-speed circular memory buffer"
+      },
+      {
+        "label": "Throughput",
+        "value": "9.9 Gigapixels/second maximum data rate"
+      },
+      {
+        "label": "Storage",
+        "value": "Removable CFast 2.0 media recording up to 90MB/s"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 52900,
+        "comparePrice": 62422,
+        "sku": "PGX-ENT-031-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 66125,
+        "comparePrice": 78028,
+        "sku": "PGX-ENT-031-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 76705,
+        "comparePrice": 90512,
+        "sku": "PGX-ENT-031-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Blackmagic URSA Cine 12K Large Format Camera Master Package",
+    "slug": "blackmagic-ursa-cine-12k-master-package",
+    "sku": "PGX-ENT-032",
+    "categorySlug": "cameras-drones-creator",
+    "price": 16995,
+    "comparePrice": 20054,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary large-format RGBW 12K sensor delivering 12288 x 8040 resolution with 16 stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "12K Large Format RGBW Sensor (35.64 x 17.82 mm)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16 Stops of dynamic range at ISO 800 native"
+      },
+      {
+        "label": "Lens Mount",
+        "value": "Interchangeable PL, LPL, and Locking EF Mounts"
+      },
+      {
+        "label": "Media",
+        "value": "High-speed 8TB Blackmagic Media Module built-in"
+      },
+      {
+        "label": "Networking",
+        "value": "10G Ethernet for high-speed direct cloud editing"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 16995,
+        "comparePrice": 20054,
+        "sku": "PGX-ENT-032-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 21244,
+        "comparePrice": 25068,
+        "sku": "PGX-ENT-032-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 24643,
+        "comparePrice": 29078,
+        "sku": "PGX-ENT-032-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Teradek Bolt 4K MAX 12G-SDI Zero-Delay Wireless Transceiver Set",
+    "slug": "teradek-bolt-4k-max-12g-sdi-transceiver",
+    "sku": "PGX-ENT-033",
+    "categorySlug": "cameras-drones-creator",
+    "price": 13990,
+    "comparePrice": 16508,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wireless 4K HDR transmitter & receiver kit with zero-latency (<1ms) transmission up to 5,000 feet line-of-sight.",
+    "specifications": [
+      {
+        "label": "Video Formats",
+        "value": "4K DCI, 4K UHD, and 1080p 10-bit 4:2:2 HDR"
+      },
+      {
+        "label": "Range",
+        "value": "Up to 5,000 ft (1,500 m) with Array 4K antenna"
+      },
+      {
+        "label": "Latency",
+        "value": "Zero delay (<0.001 sec) for live focus pulling"
+      },
+      {
+        "label": "Security",
+        "value": "AES-256 encryption with RSA 1024 key exchange"
+      },
+      {
+        "label": "Interconnection",
+        "value": "12G-SDI and HDMI 2.0 inputs and outputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 13990,
+        "comparePrice": 16508,
+        "sku": "PGX-ENT-033-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 17488,
+        "comparePrice": 20635,
+        "sku": "PGX-ENT-033-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 20286,
+        "comparePrice": 23937,
+        "sku": "PGX-ENT-033-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Freefly Systems MoVI Pro Handheld Motorized 3-Axis Gimbal Master Rig",
+    "slug": "freefly-movi-pro-motorized-gimbal-master-rig",
+    "sku": "PGX-ENT-034",
+    "categorySlug": "cameras-drones-creator",
+    "price": 11950,
+    "comparePrice": 14101,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard handheld 3-axis motorized camera stabilizer with hot-swap batteries and MoVI Ring Pro.",
+    "specifications": [
+      {
+        "label": "Payload Capacity",
+        "value": "Up to 15 lbs (6.8 kg) for RED, ARRI Mini & Sony cinema rigs"
+      },
+      {
+        "label": "Battery System",
+        "value": "Dual hot-swappable batteries with auxiliary camera power"
+      },
+      {
+        "label": "Tracking Accuracy",
+        "value": "High-resolution encoders on all three axes (pan, tilt, roll)"
+      },
+      {
+        "label": "Tuning",
+        "value": "Auto-tune algorithms with iOS/Android Bluetooth app"
+      },
+      {
+        "label": "Accessories Included",
+        "value": "MoVI Ring Pro, Mimic controller, and hard travel case"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 11950,
+        "comparePrice": 14101,
+        "sku": "PGX-ENT-034-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 14938,
+        "comparePrice": 17626,
+        "sku": "PGX-ENT-034-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 17328,
+        "comparePrice": 20446,
+        "sku": "PGX-ENT-034-ENT"
+      }
+    ]
+  },
+  {
+    "name": "SmallHD Cine 24 High-Bright 4K Production Master Monitor Studio Kit",
+    "slug": "smallhd-cine-24-high-bright-4k-monitor",
+    "sku": "PGX-ENT-035",
+    "categorySlug": "cameras-drones-creator",
+    "price": 10499,
+    "comparePrice": 12389,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "24-inch 4K production monitor with 1350 nits daylight-viewable brightness and PageOS 5 operating system.",
+    "specifications": [
+      {
+        "label": "Screen Size",
+        "value": "24-inch IPS LCD panel with 3840 x 2160 resolution"
+      },
+      {
+        "label": "Brightness",
+        "value": "1350 nits daylight visible with 1000:1 contrast ratio"
+      },
+      {
+        "label": "Color Gamut",
+        "value": "100% DCI-P3 coverage with 10-bit color depth"
+      },
+      {
+        "label": "Connectivity",
+        "value": "4x 12G-SDI inputs, 4x 12G-SDI outputs, and HDMI 2.0"
+      },
+      {
+        "label": "Chassis",
+        "value": "Unibody milled aluminum enclosure with cheeseplate mounts"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 10499,
+        "comparePrice": 12389,
+        "sku": "PGX-ENT-035-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 13124,
+        "comparePrice": 15486,
+        "sku": "PGX-ENT-035-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 15224,
+        "comparePrice": 17964,
+        "sku": "PGX-ENT-035-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Genelec 8361A SAM Flagship 7.1.4 Dolby Atmos Recording Array",
+    "slug": "genelec-8361a-atmos-immersive-array",
+    "sku": "PGX-ENT-036",
+    "categorySlug": "audio-streaming-gear",
+    "price": 34800,
+    "comparePrice": 41064,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Three-way coaxial Smart Active Monitors with 7382A studio subwoofer and GLM 4 automated calibration.",
+    "specifications": [
+      {
+        "label": "Drivers",
+        "value": "Point source coaxial MDC driver with acoustically concealed woofers"
+      },
+      {
+        "label": "Frequency",
+        "value": "30 Hz – 43 kHz (-6 dB) with point source phase precision"
+      },
+      {
+        "label": "Peak SPL",
+        "value": "118 dB continuous SPL per monitor without distortion"
+      },
+      {
+        "label": "Subwoofer",
+        "value": "Genelec 7382A SAM (3x 15-inch woofers, 2500W power)"
+      },
+      {
+        "label": "DSP Control",
+        "value": "GLM 4 network calibration software and microphone kit"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 34800,
+        "comparePrice": 41064,
+        "sku": "PGX-ENT-036-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 43500,
+        "comparePrice": 51330,
+        "sku": "PGX-ENT-036-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 50460,
+        "comparePrice": 59543,
+        "sku": "PGX-ENT-036-ENT"
+      }
+    ]
+  },
+  {
+    "name": "ATC SCM150ASL Pro 3-Way Active Reference Studio Monitors (Pair)",
+    "slug": "atc-scm150asl-pro-3way-active-monitors",
+    "sku": "PGX-ENT-037",
+    "categorySlug": "audio-streaming-gear",
+    "price": 27500,
+    "comparePrice": 32450,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary British hand-built 3-way active monitors with Super Linear magnet technology and 15-inch bass driver.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "25mm dual suspension S-Spec soft dome"
+      },
+      {
+        "label": "Midrange",
+        "value": "ATC SM75-150S 75mm Super Dome driver"
+      },
+      {
+        "label": "Bass Driver",
+        "value": "375mm (15-inch) Super Linear bass driver"
+      },
+      {
+        "label": "Amplifiers",
+        "value": "Tri-amped pack (200W Bass, 100W Mid, 50W High)"
+      },
+      {
+        "label": "Max SPL",
+        "value": "117 dB continuous SPL at 1 meter"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 27500,
+        "comparePrice": 32450,
+        "sku": "PGX-ENT-037-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 34375,
+        "comparePrice": 40563,
+        "sku": "PGX-ENT-037-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 39875,
+        "comparePrice": 47053,
+        "sku": "PGX-ENT-037-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Solid State Logic Duality Fuse 24-Channel Analog SuperAnalogue Console",
+    "slug": "ssl-duality-fuse-24-channel-console",
+    "sku": "PGX-ENT-038",
+    "categorySlug": "audio-streaming-gear",
+    "price": 45000,
+    "comparePrice": 53100,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hybrid analog mixing console and DAW controller featuring SSL SuperAnalogue circuitry and Fusion processor built-in.",
+    "specifications": [
+      {
+        "label": "Channels",
+        "value": "24 SuperAnalogue mic preamps and channel strips"
+      },
+      {
+        "label": "Processing",
+        "value": "Integrated SSL Fusion analog color processor in master section"
+      },
+      {
+        "label": "DAW Control",
+        "value": "High-resolution moving fader DAW control for Pro Tools & Logic"
+      },
+      {
+        "label": "Routing",
+        "value": "Dual stereo mix buses with SSL G-Series Master Bus Compressor"
+      },
+      {
+        "label": "Monitoring",
+        "value": "Complete 5.1 surround monitoring section with talkback"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 45000,
+        "comparePrice": 53100,
+        "sku": "PGX-ENT-038-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 56250,
+        "comparePrice": 66375,
+        "sku": "PGX-ENT-038-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 65250,
+        "comparePrice": 76995,
+        "sku": "PGX-ENT-038-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Neve BCM10/2 MkII 10-Channel Classic Studio Mixing Console",
+    "slug": "neve-bcm10-2-mkii-console",
+    "sku": "PGX-ENT-039",
+    "categorySlug": "audio-streaming-gear",
+    "price": 39500,
+    "comparePrice": 46610,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Classic tracking and mixing console with 10 legendary Neve 1073 mic preamps and Marinair transformers.",
+    "specifications": [
+      {
+        "label": "Preamps",
+        "value": "10x Genuine Rupert Neve 1073 Channel Modules"
+      },
+      {
+        "label": "Transformers",
+        "value": "Hand-wound Marinair specification input and output transformers"
+      },
+      {
+        "label": "Buses",
+        "value": "Direct outputs per channel + stereo main mix bus"
+      },
+      {
+        "label": "Monitoring",
+        "value": "Comprehensive monitor controller with headphone outputs"
+      },
+      {
+        "label": "Chassis",
+        "value": "Compact desktop form factor with vintage Neve styling"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 39500,
+        "comparePrice": 46610,
+        "sku": "PGX-ENT-039-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 49375,
+        "comparePrice": 58263,
+        "sku": "PGX-ENT-039-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 57275,
+        "comparePrice": 67585,
+        "sku": "PGX-ENT-039-ENT"
+      }
+    ]
+  },
+  {
+    "name": "PMC BB6-A Ultra-Resolution 3-Way Active Main Studio Monitors (Pair)",
+    "slug": "pmc-bb6-a-ultra-resolution-main-monitors",
+    "sku": "PGX-ENT-040",
+    "categorySlug": "audio-streaming-gear",
+    "price": 42000,
+    "comparePrice": 49560,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Mastering grade main studio monitors with Advanced Transmission Line (ATL) bass loading delivering 17Hz bass.",
+    "specifications": [
+      {
+        "label": "Bass Loading",
+        "value": "ATL (Advanced Transmission Line) with Laminair aerodynamic vents"
+      },
+      {
+        "label": "Frequency Response",
+        "value": "17 Hz – 25 kHz (+/- 3 dB)"
+      },
+      {
+        "label": "Power Pack",
+        "value": "State-of-the-art 3225W per channel Class-D amplification"
+      },
+      {
+        "label": "Mid Driver",
+        "value": "75mm soft dome high-power mid-frequency transducer"
+      },
+      {
+        "label": "DSP Engine",
+        "value": "Precision digital crossover and room alignment filters"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 42000,
+        "comparePrice": 49560,
+        "sku": "PGX-ENT-040-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 52500,
+        "comparePrice": 61950,
+        "sku": "PGX-ENT-040-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 60900,
+        "comparePrice": 71862,
+        "sku": "PGX-ENT-040-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Telefunken Elektroakustik U47 Flagship Tube Condenser Microphone",
+    "slug": "telefunken-u47-flagship-tube-microphone",
+    "sku": "PGX-ENT-041",
+    "categorySlug": "audio-streaming-gear",
+    "price": 11495,
+    "comparePrice": 13564,
+    "stock": 30,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Historic recreation of the most revered vocal microphone in recording history with BV8 transformer and VF14K tube.",
+    "specifications": [
+      {
+        "label": "Capsule",
+        "value": "M7 historical dual-membrane brass capsule"
+      },
+      {
+        "label": "Vacuum Tube",
+        "value": "Telefunken VF14K custom vacuum tube"
+      },
+      {
+        "label": "Transformer",
+        "value": "Historical reproduction BV8 output transformer"
+      },
+      {
+        "label": "Polar Patterns",
+        "value": "Cardioid and Omnidirectional"
+      },
+      {
+        "label": "Accessories",
+        "value": "M 940 power supply, Gotham tube cable, and locking flightcase"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 11495,
+        "comparePrice": 13564,
+        "sku": "PGX-ENT-041-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 14369,
+        "comparePrice": 16955,
+        "sku": "PGX-ENT-041-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 16668,
+        "comparePrice": 19668,
+        "sku": "PGX-ENT-041-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony C-800G PAC Large-Diaphragm Studio Tube Vocal Microphone",
+    "slug": "sony-c800g-pac-studio-tube-microphone",
+    "sku": "PGX-ENT-042",
+    "categorySlug": "audio-streaming-gear",
+    "price": 12900,
+    "comparePrice": 15222,
+    "stock": 31,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "World-famous hip-hop and pop vocal microphone featuring external Peltier thermo-electric cooling system.",
+    "specifications": [
+      {
+        "label": "Capsule",
+        "value": "Dual 6-micron gold-sputtered diaphragm capsule"
+      },
+      {
+        "label": "Cooling System",
+        "value": "Built-in Peltier cooling section maintains optimal 6AU6 tube temperature"
+      },
+      {
+        "label": "Signal to Noise",
+        "value": "Ultra-high 76 dB signal-to-noise ratio"
+      },
+      {
+        "label": "Sensitivity",
+        "value": "-32 dB/Pa high sensitivity output"
+      },
+      {
+        "label": "Included",
+        "value": "AC-MC800G dedicated power supply and cradle suspension"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 12900,
+        "comparePrice": 15222,
+        "sku": "PGX-ENT-042-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 16125,
+        "comparePrice": 19028,
+        "sku": "PGX-ENT-042-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 18705,
+        "comparePrice": 22072,
+        "sku": "PGX-ENT-042-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Burl Audio Mothership BMB1 64-Channel Multi-Track Converter Rig",
+    "slug": "burl-audio-mothership-64-channel-rig",
+    "sku": "PGX-ENT-043",
+    "categorySlug": "audio-streaming-gear",
+    "price": 21800,
+    "comparePrice": 25724,
+    "stock": 32,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Modular audio converter system with discrete class-A BX1 transformers on every analog input channel.",
+    "specifications": [
+      {
+        "label": "Channels",
+        "value": "64 Analog Inputs and 64 Analog Outputs"
+      },
+      {
+        "label": "Circuits",
+        "value": "Discrete Class-A circuits with proprietary BX1 iron transformers"
+      },
+      {
+        "label": "Networking",
+        "value": "Direct Pro Tools HDX or Dante IP audio connectivity"
+      },
+      {
+        "label": "Clocking",
+        "value": "Burl Audio custom master clock with sub-picosecond jitter"
+      },
+      {
+        "label": "Chassis",
+        "value": "Rugged 4U modular aluminum chassis with hot-swap slots"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 21800,
+        "comparePrice": 25724,
+        "sku": "PGX-ENT-043-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 27250,
+        "comparePrice": 32155,
+        "sku": "PGX-ENT-043-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 31610,
+        "comparePrice": 37300,
+        "sku": "PGX-ENT-043-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Fairchild 670 Dual-Channel Tube Mastering Limiter Reissue",
+    "slug": "fairchild-670-dual-channel-limiter-reissue",
+    "sku": "PGX-ENT-044",
+    "categorySlug": "audio-streaming-gear",
+    "price": 35000,
+    "comparePrice": 41300,
+    "stock": 33,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Authentic point-to-point hand-wired reissue of the Holy Grail variable-mu tube compressor featuring 20 tubes.",
+    "specifications": [
+      {
+        "label": "Topology",
+        "value": "Variable-Mu gain reduction with 20 vacuum tubes and 14 transformers"
+      },
+      {
+        "label": "Modes",
+        "value": "Independent Left/Right or Lateral/Vertical (Mid/Side) operation"
+      },
+      {
+        "label": "Attack Time",
+        "value": "Sub-millisecond (0.2 ms to 0.4 ms) peak capture speed"
+      },
+      {
+        "label": "Release Steps",
+        "value": "6-position rotary switch with program-dependent auto release"
+      },
+      {
+        "label": "Weight",
+        "value": "65 lbs (29.5 kg) heavy-duty steel rack chassis (6U)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 35000,
+        "comparePrice": 41300,
+        "sku": "PGX-ENT-044-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 43750,
+        "comparePrice": 51625,
+        "sku": "PGX-ENT-044-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 50750,
+        "comparePrice": 59885,
+        "sku": "PGX-ENT-044-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Grace Design m908 24-Channel Surround & Immersive Monitor Controller",
+    "slug": "grace-design-m908-immersive-monitor-controller",
+    "sku": "PGX-ENT-045",
+    "categorySlug": "audio-streaming-gear",
+    "price": 10995,
+    "comparePrice": 12974,
+    "stock": 34,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Flagship studio monitor controller supporting up to 24-channel speaker configurations for Dolby Atmos and DTS:X.",
+    "specifications": [
+      {
+        "label": "Channels",
+        "value": "Up to 24 output channels with independent bass management"
+      },
+      {
+        "label": "DSP Engine",
+        "value": "Powerful DSP with 12 bands of parametric EQ per speaker"
+      },
+      {
+        "label": "Conversion",
+        "value": "32-bit / 192kHz state-of-the-art D/A conversion"
+      },
+      {
+        "label": "Inputs",
+        "value": "USB, AES/EBU, Dante, Ravenna/AES67, and analog inputs"
+      },
+      {
+        "label": "Remote",
+        "value": "Ergonomic desktop remote unit with color LCD display"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 10995,
+        "comparePrice": 12974,
+        "sku": "PGX-ENT-045-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 13744,
+        "comparePrice": 16218,
+        "sku": "PGX-ENT-045-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 15943,
+        "comparePrice": 18812,
+        "sku": "PGX-ENT-045-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Hills Mastering Compressor Discrete Class-A Optical/VCA",
+    "slug": "shadow-hills-mastering-compressor-class-a",
+    "sku": "PGX-ENT-046",
+    "categorySlug": "audio-streaming-gear",
+    "price": 11800,
+    "comparePrice": 13924,
+    "stock": 35,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Stereo mastering compressor pairing dual compression stages (Electro-Optical + Discrete VCA) with switchable transformers.",
+    "specifications": [
+      {
+        "label": "Compression Stages",
+        "value": "Dual sequential stages: Optical cell followed by Discrete VCA"
+      },
+      {
+        "label": "Transformers",
+        "value": "Switchable Nickel, Iron, and Steel output transformers"
+      },
+      {
+        "label": "Controls",
+        "value": "Stepped 24-position Elma rotary attenuators for 100% recallability"
+      },
+      {
+        "label": "Sidechain",
+        "value": "Comprehensive stereo sidechain high-pass filters"
+      },
+      {
+        "label": "Power Supply",
+        "value": "External 2U linear power supply with low noise floor"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 11800,
+        "comparePrice": 13924,
+        "sku": "PGX-ENT-046-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 14750,
+        "comparePrice": 17405,
+        "sku": "PGX-ENT-046-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 17110,
+        "comparePrice": 20190,
+        "sku": "PGX-ENT-046-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Prism Sound ADA-8XR 16-Channel High-Resolution Modular Converter",
+    "slug": "prism-sound-ada-8xr-modular-converter",
+    "sku": "PGX-ENT-047",
+    "categorySlug": "audio-streaming-gear",
+    "price": 15400,
+    "comparePrice": 18172,
+    "stock": 36,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Mastering studio reference multichannel converter with ultra-low jitter CleverClox clocking architecture.",
+    "specifications": [
+      {
+        "label": "Resolution",
+        "value": "24-bit / 192kHz PCM and DSD recording formats"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "130 dB dynamic range with negligible harmonic distortion"
+      },
+      {
+        "label": "Clocking",
+        "value": "Proprietary CleverClox dual hybrid PLL clock circuitry"
+      },
+      {
+        "label": "Modules",
+        "value": "Dual 8-channel analog line input/output cards"
+      },
+      {
+        "label": "Routing",
+        "value": "Simultaneous mixing and monitoring with zero latency"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 15400,
+        "comparePrice": 18172,
+        "sku": "PGX-ENT-047-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 19250,
+        "comparePrice": 22715,
+        "sku": "PGX-ENT-047-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 22330,
+        "comparePrice": 26349,
+        "sku": "PGX-ENT-047-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Focal Trio11 Be Active 3-Way Dual-Mode Near/Midfield Monitors (Pair)",
+    "slug": "focal-trio11-be-active-3way-monitors",
+    "sku": "PGX-ENT-048",
+    "categorySlug": "audio-streaming-gear",
+    "price": 10400,
+    "comparePrice": 12272,
+    "stock": 37,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1520523839898-507127b72db5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Flagship studio monitor featuring pure Beryllium inverted dome tweeter and W composite sandwich cone drivers.",
+    "specifications": [
+      {
+        "label": "Tweeter",
+        "value": "1-inch pure Beryllium inverted dome with protective grille"
+      },
+      {
+        "label": "Midrange",
+        "value": "5-inch W composite sandwich cone with TMD surround"
+      },
+      {
+        "label": "Subwoofer",
+        "value": "10-inch high-excursion W composite subwoofer"
+      },
+      {
+        "label": "FOCUS Mode",
+        "value": "Foot-switchable dual mode (3-way or 2-way monitor emulation)"
+      },
+      {
+        "label": "Amplification",
+        "value": "Class G/AB tri-amplification totaling 450W RMS per unit"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 10400,
+        "comparePrice": 12272,
+        "sku": "PGX-ENT-048-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 13000,
+        "comparePrice": 15340,
+        "sku": "PGX-ENT-048-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 15080,
+        "comparePrice": 17794,
+        "sku": "PGX-ENT-048-ENT"
+      }
+    ]
+  },
+  {
+    "name": "dCS Vivaldi Master Clock & Upsampler High-End Digital Audio Stack",
+    "slug": "dcs-vivaldi-master-clock-upsampler-stack",
+    "sku": "PGX-ENT-049",
+    "categorySlug": "audio-streaming-gear",
+    "price": 36500,
+    "comparePrice": 43070,
+    "stock": 38,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Ultra-precision aerospace grade digital audio upsampler and multi-stage temperature-controlled master clock.",
+    "specifications": [
+      {
+        "label": "Clock Stability",
+        "value": "Dual temperature-compensated crystal oscillators (+/-0.1 ppm)"
+      },
+      {
+        "label": "Upsampling",
+        "value": "Upsamples Red Book CD or high-res audio to DSD or DXD format"
+      },
+      {
+        "label": "Ring DAC",
+        "value": "Proprietary dCS Ring DAC architecture with discrete array"
+      },
+      {
+        "label": "Inputs",
+        "value": "Dual AES, S/PDIF, Optical, USB Audio, and Ethernet streaming"
+      },
+      {
+        "label": "Enclosure",
+        "value": "Machined aerospace aluminum chassis with acoustic damping"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 36500,
+        "comparePrice": 43070,
+        "sku": "PGX-ENT-049-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 45625,
+        "comparePrice": 53838,
+        "sku": "PGX-ENT-049-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 52925,
+        "comparePrice": 62452,
+        "sku": "PGX-ENT-049-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Avid Pro Tools MTRX II with 64-Channel Dante & HDX Audio Engine",
+    "slug": "avid-pro-tools-mtrx-ii-dante-engine",
+    "sku": "PGX-ENT-050",
+    "categorySlug": "audio-streaming-gear",
+    "price": 16900,
+    "comparePrice": 19942,
+    "stock": 39,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Comprehensive audio interface and monitoring matrix with 256 Dante channels, MADI, and 64 DigiLink channels.",
+    "specifications": [
+      {
+        "label": "Matrix Size",
+        "value": "4096 x 4096 non-blocking internal routing matrix"
+      },
+      {
+        "label": "I/O Formats",
+        "value": "256 Dante channels, 64 DigiLink channels, 128 MADI channels"
+      },
+      {
+        "label": "Preamps",
+        "value": "Optional high-definition mic preamps with remote gain control"
+      },
+      {
+        "label": "SPQ Processing",
+        "value": "Built-in SPQ speaker processing with 16 filters per channel"
+      },
+      {
+        "label": "Redundancy",
+        "value": "Dual internal power supplies for critical broadcast reliability"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 16900,
+        "comparePrice": 19942,
+        "sku": "PGX-ENT-050-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 21125,
+        "comparePrice": 24928,
+        "sku": "PGX-ENT-050-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 24505,
+        "comparePrice": 28916,
+        "sku": "PGX-ENT-050-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Apple Mac Pro Rack System - Dual M2 Ultra Enterprise Studio Cluster",
+    "slug": "apple-mac-pro-rack-m2-ultra-enterprise",
+    "sku": "PGX-ENT-051",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 14999,
+    "comparePrice": 17699,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise 19-inch 5U rackmount Mac Pro with dual Apple M2 Ultra processors, 192GB Unified Memory, and 8TB SSD.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Apple M2 Ultra (24-Core CPU, 76-Core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "192GB Unified Memory with 800GB/s bandwidth"
+      },
+      {
+        "label": "Storage",
+        "value": "8TB PCIe 4.0 NVMe Solid State Drive"
+      },
+      {
+        "label": "PCIe Slots",
+        "value": "6x Full-Length PCI Express Gen 4 expansion slots"
+      },
+      {
+        "label": "Chassis",
+        "value": "Rackmount 5U enclosure with stainless steel rails"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 14999,
+        "comparePrice": 17699,
+        "sku": "PGX-ENT-051-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 18749,
+        "comparePrice": 22124,
+        "sku": "PGX-ENT-051-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 21749,
+        "comparePrice": 25664,
+        "sku": "PGX-ENT-051-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Apple Pro Display XDR Nano-Texture Dual Master Studio Station",
+    "slug": "apple-pro-display-xdr-dual-station",
+    "sku": "PGX-ENT-052",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 14500,
+    "comparePrice": 17110,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Pair of 32-inch 6K Retina displays with nano-texture glass, Pro Stands, and calibrated magnetic 4K webcams.",
+    "specifications": [
+      {
+        "label": "Resolution",
+        "value": "6016 x 3384 pixels (20.4 million pixels) at 218 ppi"
+      },
+      {
+        "label": "Glass",
+        "value": "Nano-texture glass etched at nanometer level for zero glare"
+      },
+      {
+        "label": "Brightness",
+        "value": "1000 nits sustained full-screen brightness, 1600 nits peak"
+      },
+      {
+        "label": "Contrast Ratio",
+        "value": "1,000,000:1 contrast ratio with 576 local dimming zones"
+      },
+      {
+        "label": "Stands",
+        "value": "2x Precision engineered Apple Pro Stands with counterbalanced tilt"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 14500,
+        "comparePrice": 17110,
+        "sku": "PGX-ENT-052-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 18125,
+        "comparePrice": 21388,
+        "sku": "PGX-ENT-052-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 21025,
+        "comparePrice": 24810,
+        "sku": "PGX-ENT-052-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NetApp AFF A400 All-Flash NVMe High-Availability Storage SAN Array",
+    "slug": "netapp-aff-a400-all-flash-san-array",
+    "sku": "PGX-ENT-053",
+    "categorySlug": "power-storage-accessories",
+    "price": 48900,
+    "comparePrice": 57702,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Enterprise flash array delivering up to 300TB usable NVMe storage with 100GbE clustering and microsecond latency.",
+    "specifications": [
+      {
+        "label": "Storage Capacity",
+        "value": "300 Terabytes All-Flash NVMe raw storage"
+      },
+      {
+        "label": "Controllers",
+        "value": "Dual active-active high-availability controllers"
+      },
+      {
+        "label": "Latency",
+        "value": "Sub-millisecond (under 100 microseconds) response times"
+      },
+      {
+        "label": "Connectivity",
+        "value": "100GbE / 32Gb Fibre Channel host interfaces"
+      },
+      {
+        "label": "Software",
+        "value": "NetApp ONTAP 9 enterprise data management suite"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 48900,
+        "comparePrice": 57702,
+        "sku": "PGX-ENT-053-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 61125,
+        "comparePrice": 72128,
+        "sku": "PGX-ENT-053-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 70905,
+        "comparePrice": 83668,
+        "sku": "PGX-ENT-053-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Pure Storage FlashArray//X20 R3 DirectFlash Petabyte Scalable Array",
+    "slug": "pure-storage-flasharray-x20-r3",
+    "sku": "PGX-ENT-054",
+    "categorySlug": "power-storage-accessories",
+    "price": 52500,
+    "comparePrice": 61950,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100% NVMe storage array with DirectFlash modules, hardware compression, and 99.9999% uptime guarantee.",
+    "specifications": [
+      {
+        "label": "Raw Capacity",
+        "value": "180TB NVMe DirectFlash modules (Expandable to 1PB effective)"
+      },
+      {
+        "label": "Reduction",
+        "value": "Average 5:1 inline hardware deduplication and compression"
+      },
+      {
+        "label": "Availability",
+        "value": "99.9999% (six nines) guaranteed availability"
+      },
+      {
+        "label": "IOPS",
+        "value": "Over 1,000,000 32K IOPS at sub-500us latency"
+      },
+      {
+        "label": "Architecture",
+        "value": "Evergreen non-disruptive controller upgrade model"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 52500,
+        "comparePrice": 61950,
+        "sku": "PGX-ENT-054-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 65625,
+        "comparePrice": 77438,
+        "sku": "PGX-ENT-054-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 76125,
+        "comparePrice": 89828,
+        "sku": "PGX-ENT-054-ENT"
+      }
+    ]
+  },
+  {
+    "name": "DJI Matrice 350 RTK Commercial Heavy-Payload Surveying Drone Kit",
+    "slug": "dji-matrice-350-rtk-surveying-drone-kit",
+    "sku": "PGX-ENT-055",
+    "categorySlug": "cameras-drones-creator",
+    "price": 18500,
+    "comparePrice": 21830,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1507582020432-2a3bc4ff7a8b?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Industrial flagship drone with 55 minutes flight time, IP55 rating, night-vision FPV, and multi-payload support.",
+    "specifications": [
+      {
+        "label": "Flight Time",
+        "value": "Up to 55 minutes max flight time without payload"
+      },
+      {
+        "label": "Max Payload",
+        "value": "2.7 kg (5.95 lbs) multi-gimbal payload capacity"
+      },
+      {
+        "label": "Transmission",
+        "value": "O3 Enterprise 20 km transmission with triple-channel 1080p"
+      },
+      {
+        "label": "Protection",
+        "value": "IP55 water and dust ingress protection rating"
+      },
+      {
+        "label": "Sensors Included",
+        "value": "Zenmuse H20T Quad-Sensor Thermal and Zoom payload"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 18500,
+        "comparePrice": 21830,
+        "sku": "PGX-ENT-055-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 23125,
+        "comparePrice": 27288,
+        "sku": "PGX-ENT-055-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 26825,
+        "comparePrice": 31654,
+        "sku": "PGX-ENT-055-ENT"
+      }
+    ]
+  },
+  {
+    "name": "DJI Inspire 3 Full-Frame 8K Cinema Drone Master Combo",
+    "slug": "dji-inspire-3-8k-cinema-drone-combo",
+    "sku": "PGX-ENT-056",
+    "categorySlug": "cameras-drones-creator",
+    "price": 16499,
+    "comparePrice": 19469,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1521405924368-64c5b84bec60?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Full-frame 8K/75fps ProRes RAW & CinemaDNG drone with centimeter-level RTK waypoint repeatability.",
+    "specifications": [
+      {
+        "label": "Camera",
+        "value": "Zenmuse X9-8K Air Full-Frame gimbal camera"
+      },
+      {
+        "label": "Video Formats",
+        "value": "8K 75fps ProRes RAW and 8K 25fps CinemaDNG"
+      },
+      {
+        "label": "Top Speed",
+        "value": "94 km/h (58 mph) maximum horizontal speed"
+      },
+      {
+        "label": "Navigation",
+        "value": "Centimeter-level RTK positioning with dual antennas"
+      },
+      {
+        "label": "Obstacle Sensing",
+        "value": "Omnidirectional obstacle sensing system with custom radar"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 16499,
+        "comparePrice": 19469,
+        "sku": "PGX-ENT-056-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 20624,
+        "comparePrice": 24336,
+        "sku": "PGX-ENT-056-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 23924,
+        "comparePrice": 28230,
+        "sku": "PGX-ENT-056-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Freefly Alta X Heavy-Lift Cinema Drone Ready-To-Fly Package",
+    "slug": "freefly-alta-x-heavy-lift-cinema-drone",
+    "sku": "PGX-ENT-057",
+    "categorySlug": "cameras-drones-creator",
+    "price": 24900,
+    "comparePrice": 29382,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Industrial heavy-lift quadcopter capable of carrying up to 35 lbs (15.9 kg) payloads with RED or ARRI cameras.",
+    "specifications": [
+      {
+        "label": "Payload Capacity",
+        "value": "35 lbs (15.9 kg) maximum cinema payload"
+      },
+      {
+        "label": "Flight Time",
+        "value": "Up to 35 minutes hover time with lightweight payload"
+      },
+      {
+        "label": "Foldability",
+        "value": "Folds to 50% of operating size for quick transport"
+      },
+      {
+        "label": "Autopilot",
+        "value": "ActivePX4 enterprise flight management controller"
+      },
+      {
+        "label": "Gimbal Support",
+        "value": "Top or bottom mount MoVI Pro / MoVI XL compatibility"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 24900,
+        "comparePrice": 29382,
+        "sku": "PGX-ENT-057-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 31125,
+        "comparePrice": 36728,
+        "sku": "PGX-ENT-057-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 36105,
+        "comparePrice": 42604,
+        "sku": "PGX-ENT-057-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Fortinet FortiGate 3700F Hyperscale Enterprise Data Center Firewall",
+    "slug": "fortinet-fortigate-3700f-hyperscale-firewall",
+    "sku": "PGX-ENT-058",
+    "categorySlug": "software-licenses",
+    "price": 49800,
+    "comparePrice": 58764,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hyperscale security appliance delivering 600 Gbps firewall throughput with hardware NP7 acceleration.",
+    "specifications": [
+      {
+        "label": "Throughput",
+        "value": "600 Gbps IPv4 Firewall throughput (UDP 1518 bytes)"
+      },
+      {
+        "label": "Threat Protection",
+        "value": "75 Gbps Threat Prevention with deep packet inspection"
+      },
+      {
+        "label": "Hardware Chips",
+        "value": "Seventh-generation SPU NP7 Network Processors"
+      },
+      {
+        "label": "Ports",
+        "value": "4x 400GE QSFP-DD, 4x 100GE QSFP28, and 16x 25GE SFP28"
+      },
+      {
+        "label": "Sessions",
+        "value": "Up to 120 Million concurrent TCP sessions"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 49800,
+        "comparePrice": 58764,
+        "sku": "PGX-ENT-058-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 62250,
+        "comparePrice": 73455,
+        "sku": "PGX-ENT-058-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 72210,
+        "comparePrice": 85208,
+        "sku": "PGX-ENT-058-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Palo Alto Networks PA-5450 Modular 4U Next-Gen Cyber Firewall Rig",
+    "slug": "palo-alto-pa-5450-modular-firewall-rig",
+    "sku": "PGX-ENT-059",
+    "categorySlug": "software-licenses",
+    "price": 56500,
+    "comparePrice": 66670,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-speed modular security platform with up to 120 Gbps threat prevention and 100G interfaces.",
+    "specifications": [
+      {
+        "label": "App-ID Throughput",
+        "value": "135 Gbps Application Identification throughput"
+      },
+      {
+        "label": "Threat Prevention",
+        "value": "120 Gbps full security profile inspection"
+      },
+      {
+        "label": "Architecture",
+        "value": "Modular chassis with redundant Management and Network cards"
+      },
+      {
+        "label": "IPsec VPN",
+        "value": "68 Gbps IPsec VPN throughput with hardware acceleration"
+      },
+      {
+        "label": "Clustering",
+        "value": "High-availability active/passive and active/active clustering"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 56500,
+        "comparePrice": 66670,
+        "sku": "PGX-ENT-059-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 70625,
+        "comparePrice": 83338,
+        "sku": "PGX-ENT-059-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 81925,
+        "comparePrice": 96672,
+        "sku": "PGX-ENT-059-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Arista 7060X5 64-Port 400GbE Ultra-Low-Latency Spine Switch",
+    "slug": "arista-7060x5-64-port-400gbe-switch",
+    "sku": "PGX-ENT-060",
+    "categorySlug": "power-storage-accessories",
+    "price": 38900,
+    "comparePrice": 45902,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "2U data center switch with 64 ports of 400G OSFP/QSFP-DD delivering 25.6 Tbps non-blocking bandwidth.",
+    "specifications": [
+      {
+        "label": "Throughput",
+        "value": "25.6 Terabits/sec non-blocking switching throughput"
+      },
+      {
+        "label": "Packet Forwarding",
+        "value": "Up to 10.6 Billion packets per second (Bpps)"
+      },
+      {
+        "label": "Latency",
+        "value": "Sub-800 nanoseconds consistent port-to-port latency"
+      },
+      {
+        "label": "Ports",
+        "value": "64x 400GbE QSFP-DD wire-speed ports"
+      },
+      {
+        "label": "OS",
+        "value": "Arista EOS modular extensible Linux operating system"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 38900,
+        "comparePrice": 45902,
+        "sku": "PGX-ENT-060-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 48625,
+        "comparePrice": 57378,
+        "sku": "PGX-ENT-060-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 56405,
+        "comparePrice": 66558,
+        "sku": "PGX-ENT-060-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Cisco Nexus 9364C-GX 64-Port 100G Cloud Datacenter Core Switch",
+    "slug": "cisco-nexus-9364c-gx-100g-switch",
+    "sku": "PGX-ENT-061",
+    "categorySlug": "power-storage-accessories",
+    "price": 26500,
+    "comparePrice": 31270,
+    "stock": 30,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-performance spine switch delivering 12.8 Tbps bandwidth and 4.3 Bpps forwarding for leaf-spine fabrics.",
+    "specifications": [
+      {
+        "label": "Bandwidth",
+        "value": "12.8 Tbps wire-speed non-blocking fabric"
+      },
+      {
+        "label": "Ports",
+        "value": "64x 100G QSFP28 ports supporting breakout to 4x 25G"
+      },
+      {
+        "label": "Buffers",
+        "value": "Smart buffering with deep shared dynamic packet buffers"
+      },
+      {
+        "label": "Telemetry",
+        "value": "Hardware-based streaming telemetry with microburst detection"
+      },
+      {
+        "label": "Power Supplies",
+        "value": "Dual redundant hot-swappable AC power units"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 26500,
+        "comparePrice": 31270,
+        "sku": "PGX-ENT-061-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 33125,
+        "comparePrice": 39088,
+        "sku": "PGX-ENT-061-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 38425,
+        "comparePrice": 45342,
+        "sku": "PGX-ENT-061-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Samsung 110-Inch MicroLED 4K The Wall Luxury Enterprise Display",
+    "slug": "samsung-110-inch-microled-4k-the-wall",
+    "sku": "PGX-ENT-062",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 65000,
+    "comparePrice": 76700,
+    "stock": 31,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Self-emitting inorganic microscopic LEDs with 20-bit color processing, Majestic Sound, and Infinity Screen.",
+    "specifications": [
+      {
+        "label": "Screen Size",
+        "value": "110-inch seamless monolithic bezel-less display"
+      },
+      {
+        "label": "Display Tech",
+        "value": "Self-illuminating MicroLED (over 24 million microscopic LEDs)"
+      },
+      {
+        "label": "Processor",
+        "value": "Micro AI Processor with deep learning neural upscaling"
+      },
+      {
+        "label": "Brightness",
+        "value": "2,000 nits peak luminance with true black levels"
+      },
+      {
+        "label": "Audio",
+        "value": "Integrated Arena Sound with 100W 6.2.2 channel speakers"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 65000,
+        "comparePrice": 76700,
+        "sku": "PGX-ENT-062-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 81250,
+        "comparePrice": 95875,
+        "sku": "PGX-ENT-062-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 94250,
+        "comparePrice": 111215,
+        "sku": "PGX-ENT-062-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Planar CarbonLight CLI Series 150-Inch Curved LED Video Wall System",
+    "slug": "planar-carbonlight-150-inch-curved-video-wall",
+    "sku": "PGX-ENT-063",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 57900,
+    "comparePrice": 68322,
+    "stock": 32,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Lightweight carbon fiber LED video wall for broadcast newsrooms, command centers, and virtual production.",
+    "specifications": [
+      {
+        "label": "Chassis",
+        "value": "Carbon fiber framing (under 10 lbs per panel)"
+      },
+      {
+        "label": "Pixel Pitch",
+        "value": "1.9mm ultra-fine indoor pixel pitch"
+      },
+      {
+        "label": "Curvature",
+        "value": "Faceted concave and convex curving capability (+/- 5 degrees)"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "3840 Hz high refresh rate for on-camera broadcast use"
+      },
+      {
+        "label": "Controller Included",
+        "value": "Brompton SX40 4K LED master processor"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 57900,
+        "comparePrice": 68322,
+        "sku": "PGX-ENT-063-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 72375,
+        "comparePrice": 85403,
+        "sku": "PGX-ENT-063-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 83955,
+        "comparePrice": 99067,
+        "sku": "PGX-ENT-063-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony Crystal LED CH-Series 140-Inch High-Contrast Video Wall Display",
+    "slug": "sony-crystal-led-ch-series-140-inch-display",
+    "sku": "PGX-ENT-064",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 63500,
+    "comparePrice": 74930,
+    "stock": 33,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Super fine Micro LED video wall technology with X1 for Crystal LED image processor and 1,000,000:1 contrast.",
+    "specifications": [
+      {
+        "label": "Contrast",
+        "value": "1,000,000:1 exceptional contrast ratio with deep blacks"
+      },
+      {
+        "label": "Color Space",
+        "value": "Wide color gamut reproducing almost 100% of DCI-P3"
+      },
+      {
+        "label": "Viewing Angle",
+        "value": "Extra-wide nearly 180-degree horizontal/vertical view"
+      },
+      {
+        "label": "Processing",
+        "value": "X1 for Crystal LED processor with 22-bit super bit mapping"
+      },
+      {
+        "label": "Surface",
+        "value": "Anti-reflection surface treatment for high ambient light"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 63500,
+        "comparePrice": 74930,
+        "sku": "PGX-ENT-064-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 79375,
+        "comparePrice": 93663,
+        "sku": "PGX-ENT-064-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 92075,
+        "comparePrice": 108649,
+        "sku": "PGX-ENT-064-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Quantum computing Qilimanjaro Neuromorphic QPU Development Pod",
+    "slug": "quantum-neuromorphic-qpu-development-pod",
+    "sku": "PGX-ENT-065",
+    "categorySlug": "ai-tools-automation",
+    "price": 59000,
+    "comparePrice": 69620,
+    "stock": 34,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Analog quantum-inspired neuromorphic development node with 512 analog tensor cores for combinatorial optimization.",
+    "specifications": [
+      {
+        "label": "Core Architecture",
+        "value": "512 Analog Neuromorphic Tensor Units"
+      },
+      {
+        "label": "Algorithm Acceleration",
+        "value": "QUBO, Ising spin glass, and quadratic unconstrained optimization"
+      },
+      {
+        "label": "Power Efficiency",
+        "value": "Under 400W power draw for exascale algorithm simulation"
+      },
+      {
+        "label": "Host Interface",
+        "value": "PCIe 5.0 x16 with direct C++/Python QPU runtime SDK"
+      },
+      {
+        "label": "Enclosure",
+        "value": "3U Rackmount chassis with shielded RF isolation chamber"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 59000,
+        "comparePrice": 69620,
+        "sku": "PGX-ENT-065-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 73750,
+        "comparePrice": 87025,
+        "sku": "PGX-ENT-065-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 85550,
+        "comparePrice": 100949,
+        "sku": "PGX-ENT-065-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA DGX H100 Enterprise AI Supercomputer Flagship (Tier 2 Enhanced Edition)",
+    "slug": "nvidia-dgx-h100-enterprise-ai-supercomputer-tier-2",
+    "sku": "PGX-ENT-066-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 67500,
+    "comparePrice": 79650,
+    "stock": 35,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8x NVIDIA H100 SXM5 80GB GPUs with 640GB aggregate VRAM and 32 PFLOPS FP8 AI compute.",
+    "specifications": [
+      {
+        "label": "GPU Engine",
+        "value": "8x NVIDIA H100 SXM5 80GB HBM3"
+      },
+      {
+        "label": "Bandwidth",
+        "value": "24 Terabytes/sec GPU memory bandwidth"
+      },
+      {
+        "label": "Compute Power",
+        "value": "32 PetaFLOPS FP8 AI compute"
+      },
+      {
+        "label": "Interconnect",
+        "value": "NVLink 900 GB/s bidirectional + 4x NVSwitch"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8480C (112 Cores, 224 Threads)"
+      },
+      {
+        "label": "System Memory",
+        "value": "2.0TB DDR5 ECC Registered Memory"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 67500,
+        "comparePrice": 79650,
+        "sku": "PGX-ENT-066-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 84375,
+        "comparePrice": 99563,
+        "sku": "PGX-ENT-066-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 97875,
+        "comparePrice": 115493,
+        "sku": "PGX-ENT-066-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro 8U HGX AI Supercomputing Server Rig (8x SXM5) (Tier 2 Enhanced Edition)",
+    "slug": "supermicro-8u-hgx-ai-supercomputing-server-tier-2",
+    "sku": "PGX-ENT-067-T2",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 59300,
+    "comparePrice": 69974,
+    "stock": 36,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8U Rackmount AI powerhouse with 8x SXM5 HGX tensor GPUs, Dual Intel Xeon Platinum, and 1.5TB DDR5 ECC.",
+    "specifications": [
+      {
+        "label": "Chassis",
+        "value": "8U Enterprise Rackmount hot-swap modules"
+      },
+      {
+        "label": "GPU Subsystem",
+        "value": "8x NVIDIA SXM5 Tensor Core GPUs"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8592+ (128 Cores)"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5-5600MHz ECC RDIMMs"
+      },
+      {
+        "label": "Storage",
+        "value": "60TB PCIe Gen5 Hot-Swap NVMe U.2"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 59300,
+        "comparePrice": 69974,
+        "sku": "PGX-ENT-067-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 74125,
+        "comparePrice": 87468,
+        "sku": "PGX-ENT-067-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 85985,
+        "comparePrice": 101462,
+        "sku": "PGX-ENT-067-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Dell PowerEdge XE9680 Liquid-Cooled 8-Way AI Server (Tier 2 Enhanced Edition)",
+    "slug": "dell-poweredge-xe9680-8way-ai-server-tier-2",
+    "sku": "PGX-ENT-068-T2",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 63600,
+    "comparePrice": 75048,
+    "stock": 37,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-density multi-GPU server engineered for hyperscale generative AI training with full liquid-cooling loop.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "8x NVIDIA H100 or H200 with NVLink"
+      },
+      {
+        "label": "Cooling",
+        "value": "Direct-to-Chip liquid cooling loops"
+      },
+      {
+        "label": "CPUs",
+        "value": "Dual 4th/5th Gen Intel Xeon Scalable"
+      },
+      {
+        "label": "Memory",
+        "value": "Up to 2TB DDR5 ECC memory"
+      },
+      {
+        "label": "Networking",
+        "value": "10x PCIe 5.0 x16 slots with 400GbE NDR"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 63600,
+        "comparePrice": 75048,
+        "sku": "PGX-ENT-068-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 79500,
+        "comparePrice": 93810,
+        "sku": "PGX-ENT-068-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 92220,
+        "comparePrice": 108820,
+        "sku": "PGX-ENT-068-ENT"
+      }
+    ]
+  },
+  {
+    "name": "HPE Cray XD670 Generative AI Supercomputing Chassis (Tier 2 Enhanced Edition)",
+    "slug": "hpe-cray-xd670-generative-ai-chassis-tier-2",
+    "sku": "PGX-ENT-069-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 66400,
+    "comparePrice": 78352,
+    "stock": 38,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Exascale-class supercomputing chassis with integrated Cray Slingshot interconnect for massive LLMs.",
+    "specifications": [
+      {
+        "label": "Architecture",
+        "value": "HPE Cray XD Exascale Architecture"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x SXM5 GPUs with 640GB HBM3"
+      },
+      {
+        "label": "Interconnect",
+        "value": "Slingshot 200Gbps non-blocking fabric"
+      },
+      {
+        "label": "Storage",
+        "value": "30TB High-IOPS Direct NVMe cache"
+      },
+      {
+        "label": "Power",
+        "value": "4x 3200W Titanium Redundant PSUs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 66400,
+        "comparePrice": 78352,
+        "sku": "PGX-ENT-069-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 83000,
+        "comparePrice": 97940,
+        "sku": "PGX-ENT-069-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 96280,
+        "comparePrice": 113610,
+        "sku": "PGX-ENT-069-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA DGX Station A100 Liquid-Cooled AI Workstation (Tier 2 Enhanced Edition)",
+    "slug": "nvidia-dgx-station-ai-workstation-tier-2",
+    "sku": "PGX-ENT-070-T2",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 41600,
+    "comparePrice": 49088,
+    "stock": 39,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Office-friendly supercomputer with whisper-quiet refrigerant cooling and 4x NVIDIA Tensor Core GPUs.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "4x NVIDIA Tensor Core GPUs (320GB Total VRAM)"
+      },
+      {
+        "label": "Compute",
+        "value": "2.5 PetaFLOPS Tensor FP8 / FP16"
+      },
+      {
+        "label": "CPU",
+        "value": "AMD EPYC 7742 64-Core / 128-Thread 3.4GHz"
+      },
+      {
+        "label": "RAM",
+        "value": "512GB DDR4-3200 ECC Registered"
+      },
+      {
+        "label": "Acoustics",
+        "value": "Whisper-quiet <37 dB sound level"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 41600,
+        "comparePrice": 49088,
+        "sku": "PGX-ENT-070-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 52000,
+        "comparePrice": 61360,
+        "sku": "PGX-ENT-070-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 60320,
+        "comparePrice": 71178,
+        "sku": "PGX-ENT-070-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo ThinkStation PX Dual Xeon Platinum AI Workstation (Tier 2 Enhanced Edition)",
+    "slug": "lenovo-thinkstation-px-dual-xeon-platinum-tier-2",
+    "sku": "PGX-ENT-071-T2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 39700,
+    "comparePrice": 46846,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Aston Martin inspired thermals with Dual Intel Xeon Platinum 8490H and 4x NVIDIA RTX 6000 Ada 48GB.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual Intel Xeon Platinum 8490H (120 Cores total)"
+      },
+      {
+        "label": "Graphics",
+        "value": "4x NVIDIA RTX 6000 Ada Generation (192GB VRAM)"
+      },
+      {
+        "label": "Memory",
+        "value": "1TB DDR5 ECC Registered RAM"
+      },
+      {
+        "label": "Chassis",
+        "value": "Co-designed with Aston Martin aerodynamic airflow"
+      },
+      {
+        "label": "Power",
+        "value": "Dual 1850W Redundant Power Supplies"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 39700,
+        "comparePrice": 46846,
+        "sku": "PGX-ENT-071-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 49625,
+        "comparePrice": 58558,
+        "sku": "PGX-ENT-071-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 57565,
+        "comparePrice": 67927,
+        "sku": "PGX-ENT-071-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Lambda Labs Hyperplane 8x GPU Deep Learning Server (Tier 2 Enhanced Edition)",
+    "slug": "lambda-labs-hyperplane-8x-gpu-server-tier-2",
+    "sku": "PGX-ENT-072-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 53500,
+    "comparePrice": 63130,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Turnkey deep learning server pre-configured with Lambda Stack, PyTorch, TensorFlow, and CUDA libraries.",
+    "specifications": [
+      {
+        "label": "GPUs",
+        "value": "8x NVIDIA Tensor Core GPUs (SXM)"
+      },
+      {
+        "label": "Frameworks",
+        "value": "Lambda Stack pre-installed with PyTorch & CUDA"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5 ECC Memory"
+      },
+      {
+        "label": "Storage",
+        "value": "30.72TB PCIe 4.0 NVMe Enterprise SSDs"
+      },
+      {
+        "label": "Warranty",
+        "value": "3-Year Enterprise On-Site Support"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 53500,
+        "comparePrice": 63130,
+        "sku": "PGX-ENT-072-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 66875,
+        "comparePrice": 78913,
+        "sku": "PGX-ENT-072-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 77575,
+        "comparePrice": 91539,
+        "sku": "PGX-ENT-072-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Cisco UCS C480 M5 High-Capacity 6-GPU Server Engine (Tier 2 Enhanced Edition)",
+    "slug": "cisco-ucs-c480-m5-gpu-server-engine-tier-2",
+    "sku": "PGX-ENT-073-T2",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 46300,
+    "comparePrice": 54634,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U server designed for storage-intensive AI inferencing and massive parallel database acceleration.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Quad Intel Xeon Scalable Processors (Up to 112 Cores)"
+      },
+      {
+        "label": "GPU Support",
+        "value": "Up to 6 Full-Length, Full-Height PCIe GPUs"
+      },
+      {
+        "label": "Memory",
+        "value": "Up to 6TB DDR4 via 48 DIMM slots"
+      },
+      {
+        "label": "Storage",
+        "value": "Up to 32 SAS/SATA/NVMe drives (180TB total)"
+      },
+      {
+        "label": "Management",
+        "value": "Cisco Intersight Cloud-Operated Platform"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 46300,
+        "comparePrice": 54634,
+        "sku": "PGX-ENT-073-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 57875,
+        "comparePrice": 68293,
+        "sku": "PGX-ENT-073-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 67135,
+        "comparePrice": 79219,
+        "sku": "PGX-ENT-073-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro Liquid-Cooled 4U Dual AMD EPYC AI SuperServer (Tier 2 Enhanced Edition)",
+    "slug": "supermicro-liquid-4u-dual-epyc-ai-server-tier-2",
+    "sku": "PGX-ENT-074-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 56200,
+    "comparePrice": 66316,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U Dual AMD EPYC 9654 (192 Cores) paired with 8x NVIDIA SXM5 accelerators and custom copper cold plates.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual AMD EPYC 9654 96-Core Processors (192 Cores)"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x SXM5 GPUs with NVLink interconnect"
+      },
+      {
+        "label": "Thermals",
+        "value": "Full closed-loop copper liquid manifold"
+      },
+      {
+        "label": "RAM",
+        "value": "1.5TB DDR5-4800MHz ECC RDIMMs"
+      },
+      {
+        "label": "Networking",
+        "value": "8x 400Gb/s InfiniBand NDR interfaces"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 56200,
+        "comparePrice": 66316,
+        "sku": "PGX-ENT-074-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 70250,
+        "comparePrice": 82895,
+        "sku": "PGX-ENT-074-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 81490,
+        "comparePrice": 96158,
+        "sku": "PGX-ENT-074-ENT"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA HGX H200 141GB HBM3e AI Accelerator Node (Tier 2 Enhanced Edition)",
+    "slug": "nvidia-hgx-h200-141gb-hbm3e-node-tier-2",
+    "sku": "PGX-ENT-075-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 61900,
+    "comparePrice": 73042,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Next-generation H200 AI supercomputer with 141GB HBM3e per GPU (1.1TB total VRAM at 4.8TB/s bandwidth).",
+    "specifications": [
+      {
+        "label": "Memory",
+        "value": "141GB HBM3e per GPU (1.1 Terabytes Total VRAM)"
+      },
+      {
+        "label": "Bandwidth",
+        "value": "4.8 Terabytes/sec per GPU"
+      },
+      {
+        "label": "Performance",
+        "value": "Double the inference throughput of H100 on Llama 70B"
+      },
+      {
+        "label": "Interconnect",
+        "value": "900 GB/s bi-directional NVLink Gen4"
+      },
+      {
+        "label": "Compute Power",
+        "value": "32 PFLOPS FP8 AI compute power"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 61900,
+        "comparePrice": 73042,
+        "sku": "PGX-ENT-075-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 77375,
+        "comparePrice": 91303,
+        "sku": "PGX-ENT-075-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 89755,
+        "comparePrice": 105911,
+        "sku": "PGX-ENT-075-ENT"
+      }
+    ]
+  },
+  {
+    "name": "BOXX APEXX Matterhorn Quad GPU Extreme Studio Rig (Tier 2 Enhanced Edition)",
+    "slug": "boxx-apexx-matterhorn-quad-gpu-rig-tier-2",
+    "sku": "PGX-ENT-076-T2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 37300,
+    "comparePrice": 44014,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Overclocked professional studio workstation with 4x NVIDIA RTX 6000 Ada and liquid cooling.",
+    "specifications": [
+      {
+        "label": "Processor",
+        "value": "Intel Xeon w9-3495X 56-Core Overclocked"
+      },
+      {
+        "label": "GPUs",
+        "value": "4x NVIDIA RTX 6000 Ada Generation (192GB VRAM)"
+      },
+      {
+        "label": "RAM",
+        "value": "512GB DDR5-4800 ECC Registered"
+      },
+      {
+        "label": "Storage",
+        "value": "4x 4TB PCIe Gen5 M.2 SSDs (RAID 0/10)"
+      },
+      {
+        "label": "Power Supply",
+        "value": "Dual 2000W Active PFC Power Units"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 37300,
+        "comparePrice": 44014,
+        "sku": "PGX-ENT-076-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 46625,
+        "comparePrice": 55018,
+        "sku": "PGX-ENT-076-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 54085,
+        "comparePrice": 63820,
+        "sku": "PGX-ENT-076-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Supermicro SuperBlade 8U AI High-Density Enclosure (Tier 2 Enhanced Edition)",
+    "slug": "supermicro-superblade-8u-ai-enclosure-tier-2",
+    "sku": "PGX-ENT-077-T2",
+    "categorySlug": "smart-gadgets-wearables",
+    "price": 68400,
+    "comparePrice": 80712,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "8U blade enclosure supporting up to 20 blade compute nodes with centralized power and cooling.",
+    "specifications": [
+      {
+        "label": "Blade Density",
+        "value": "Up to 20 compute blades in single 8U frame"
+      },
+      {
+        "label": "Networking",
+        "value": "Integrated 100G/200G InfiniBand and 25G Ethernet switches"
+      },
+      {
+        "label": "Power Efficiency",
+        "value": "96% Titanium level hot-swap power supplies"
+      },
+      {
+        "label": "Management",
+        "value": "Centralized CMM chassis management module"
+      },
+      {
+        "label": "Redundancy",
+        "value": "N+1 hot-plug cooling fans and power redundancy"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 68400,
+        "comparePrice": 80712,
+        "sku": "PGX-ENT-077-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 85500,
+        "comparePrice": 100890,
+        "sku": "PGX-ENT-077-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 99180,
+        "comparePrice": 117032,
+        "sku": "PGX-ENT-077-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Asus ESC8000-E11 8-GPU PCIe Gen5 AI Enterprise Rack (Tier 2 Enhanced Edition)",
+    "slug": "asus-esc8000-e11-8gpu-enterprise-rack-tier-2",
+    "sku": "PGX-ENT-078-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 51600,
+    "comparePrice": 60888,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "4U dual-socket enterprise server designed for 8 dual-slot active or passive GPU accelerators.",
+    "specifications": [
+      {
+        "label": "Sockets",
+        "value": "Dual Socket E (LGA 4677) 5th Gen Intel Xeon"
+      },
+      {
+        "label": "GPU Slots",
+        "value": "8x PCIe 5.0 x16 dual-slot GPU slots"
+      },
+      {
+        "label": "Expansion",
+        "value": "Additional 2x PCIe 5.0 x16 low-profile slots for networking"
+      },
+      {
+        "label": "Memory",
+        "value": "32x DDR5 DIMM slots (up to 4TB ECC)"
+      },
+      {
+        "label": "Power",
+        "value": "4x 3000W Platinum/Titanium redundant PSUs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 51600,
+        "comparePrice": 60888,
+        "sku": "PGX-ENT-078-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 64500,
+        "comparePrice": 76110,
+        "sku": "PGX-ENT-078-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 74820,
+        "comparePrice": 88288,
+        "sku": "PGX-ENT-078-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Origin PC Big O Super-Tower Enterprise AI Hybrid (Tier 2 Enhanced Edition)",
+    "slug": "origin-pc-big-o-enterprise-ai-hybrid-tier-2",
+    "sku": "PGX-ENT-079-T2",
+    "categorySlug": "desk-tech-peripherals",
+    "price": 31900,
+    "comparePrice": 37642,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Custom dual-system liquid-cooled tower integrating an AI compute engine and independent streaming controller.",
+    "specifications": [
+      {
+        "label": "Primary System",
+        "value": "AMD Threadripper PRO 7995WX (96 Cores)"
+      },
+      {
+        "label": "Primary GPUs",
+        "value": "Dual NVIDIA RTX 6000 Ada (96GB VRAM)"
+      },
+      {
+        "label": "Secondary System",
+        "value": "Intel Core i9-14900KS with 4K60 Capture Card"
+      },
+      {
+        "label": "Cooling",
+        "value": "Dual independent custom hardline liquid cooling loops"
+      },
+      {
+        "label": "Chassis",
+        "value": "Custom double-wide aluminum showcase tower"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 31900,
+        "comparePrice": 37642,
+        "sku": "PGX-ENT-079-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 39875,
+        "comparePrice": 47053,
+        "sku": "PGX-ENT-079-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 46255,
+        "comparePrice": 54581,
+        "sku": "PGX-ENT-079-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Altos BrainSphere R685 F5 Dual EPYC 8-GPU AI Engine (Tier 2 Enhanced Edition)",
+    "slug": "altos-brainsphere-r685-f5-ai-engine-tier-2",
+    "sku": "PGX-ENT-080-T2",
+    "categorySlug": "ai-tools-automation",
+    "price": 49600,
+    "comparePrice": 58528,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "AI training platform powered by Dual AMD EPYC 9004 processors and 8 high-performance Tensor Core GPUs.",
+    "specifications": [
+      {
+        "label": "CPUs",
+        "value": "Dual AMD EPYC 9004 Series processors"
+      },
+      {
+        "label": "Accelerators",
+        "value": "8x PCIe 5.0 x16 GPU slots"
+      },
+      {
+        "label": "Network",
+        "value": "Dual 100GbE QSFP28 + OCP 3.0 mezzanine slots"
+      },
+      {
+        "label": "Storage",
+        "value": "Up to 24x 2.5-inch hot-swap NVMe drive bays"
+      },
+      {
+        "label": "Thermal",
+        "value": "Redundant heavy-duty PWM hot-swap fans"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 49600,
+        "comparePrice": 58528,
+        "sku": "PGX-ENT-080-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 62000,
+        "comparePrice": 73160,
+        "sku": "PGX-ENT-080-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 71920,
+        "comparePrice": 84866,
+        "sku": "PGX-ENT-080-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Canon EOS C500 Mark II 5.9K with Cine-Servo 50-1000mm Lens (Tier 2 Enhanced Edition)",
+    "slug": "canon-c500-mkii-cine-servo-50-1000mm-tier-2",
+    "sku": "PGX-ENT-081-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 66400,
+    "comparePrice": 78352,
+    "stock": 30,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "5.9K Full-Frame Cinema EOS paired with Canon CN20x50 IAS H 50-1000mm ultra-telephoto cine zoom lens.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "5.9K Full-Frame CMOS (38.1 x 20.1 mm) with DPAF"
+      },
+      {
+        "label": "Lens",
+        "value": "Canon CN20x50 IAS H Cine-Servo 50-1000mm T5.0-8.9 (20x zoom)"
+      },
+      {
+        "label": "Extender",
+        "value": "Built-in 1.5x optical extender provides 75-1500mm reach"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ Stops with Canon Log 2/3"
+      },
+      {
+        "label": "Recording",
+        "value": "Cinema RAW Light 5.9K 60p, 4K DCI 120p"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 66400,
+        "comparePrice": 78352,
+        "sku": "PGX-ENT-081-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 83000,
+        "comparePrice": 97940,
+        "sku": "PGX-ENT-081-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 96280,
+        "comparePrice": 113610,
+        "sku": "PGX-ENT-081-ENT"
+      }
+    ]
+  },
+  {
+    "name": "RED V-RAPTOR XL 8K VV Multi-Format Large Cinema Camera Package (Tier 2 Enhanced Edition)",
+    "slug": "red-v-raptor-xl-8k-vv-cinema-package-tier-2",
+    "sku": "PGX-ENT-082-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 32400,
+    "comparePrice": 38232,
+    "stock": 31,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Unified flagship studio camera with 8K VV sensor, integrated wireless timecode, genlock, and electronic ND.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "35.4MP Full-Frame VistaVision CMOS (40.96 x 21.60 mm)"
+      },
+      {
+        "label": "Frame Rates",
+        "value": "120 fps at 8K 17:9, 150 fps at 8K 2.4:1, 800 fps at 2K"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "17+ stops of verifiable dynamic range"
+      },
+      {
+        "label": "ND Filter",
+        "value": "Internal motorized electronic ND (2 to 7 stops)"
+      },
+      {
+        "label": "Mount",
+        "value": "Interchangeable Titanium Core PL Mount with Cooke /i"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 32400,
+        "comparePrice": 38232,
+        "sku": "PGX-ENT-082-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 40500,
+        "comparePrice": 47790,
+        "sku": "PGX-ENT-082-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 46980,
+        "comparePrice": 55436,
+        "sku": "PGX-ENT-082-ENT"
+      }
+    ]
+  },
+  {
+    "name": "ARRI ALEXA Mini LF Large Format Cinema Camera Body Package (Tier 2 Enhanced Edition)",
+    "slug": "arri-alexa-mini-lf-large-format-package-tier-2",
+    "sku": "PGX-ENT-083-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 65400,
+    "comparePrice": 77172,
+    "stock": 32,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Hollywood gold standard large-format cinema camera with A2X sensor, MXF/ARRIRAW recording, and MVF-2 viewfinder.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Large Format 4448 x 3096 ALEV 3 A2X CMOS"
+      },
+      {
+        "label": "Color Science",
+        "value": "ARRI REVEAL Color Science with unmatched skin tones"
+      },
+      {
+        "label": "Recording",
+        "value": "Uncompressed ARRIRAW & Apple ProRes to Codex Compact Drives"
+      },
+      {
+        "label": "Viewfinder",
+        "value": "ARRI MVF-2 high-contrast HD OLED Viewfinder"
+      },
+      {
+        "label": "Filters",
+        "value": "Internal Large Format Full Spectrum ND (0.6, 1.2, 1.8)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 65400,
+        "comparePrice": 77172,
+        "sku": "PGX-ENT-083-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 81750,
+        "comparePrice": 96465,
+        "sku": "PGX-ENT-083-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 94830,
+        "comparePrice": 111899,
+        "sku": "PGX-ENT-083-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony FX9 Full-Frame 6K Cinema Camera Master Production Bundle (Tier 2 Enhanced Edition)",
+    "slug": "sony-fx9-6k-cinema-master-bundle-tier-2",
+    "sku": "PGX-ENT-084-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 20500,
+    "comparePrice": 24190,
+    "stock": 33,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Sony FX9 6K Full-Frame Exmor R sensor, electronic variable ND, and XDCA extension unit with cine zooms.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "35.7 x 18.8 mm Full-Frame 6K Exmor R CMOS"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15+ Stops with dual base ISO 800 / 4000"
+      },
+      {
+        "label": "ND Filter",
+        "value": "World-first Full-Frame Electronic Variable ND"
+      },
+      {
+        "label": "AF System",
+        "value": "Fast Hybrid AF with 561 phase-detection points"
+      },
+      {
+        "label": "RAW Output",
+        "value": "16-bit RAW output via XDCA-FX9 extension unit"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 20500,
+        "comparePrice": 24190,
+        "sku": "PGX-ENT-084-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 25625,
+        "comparePrice": 30238,
+        "sku": "PGX-ENT-084-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 29725,
+        "comparePrice": 35076,
+        "sku": "PGX-ENT-084-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Phase One IQ4 150MP Achromatic Medium Format Studio Camera System (Tier 2 Enhanced Edition)",
+    "slug": "phase-one-iq4-150mp-medium-format-tier-2",
+    "sku": "PGX-ENT-085-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 24200,
+    "comparePrice": 28556,
+    "stock": 34,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "151 Megapixels Backside Illuminated medium-format sensor with Infinity Platform and Capture One RAW engine.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "151 Megapixel 53.4 x 40.0 mm BSI CMOS (14204 x 10652 px)"
+      },
+      {
+        "label": "Color Depth",
+        "value": "16-bit IIQ RAW with 15 stops dynamic range"
+      },
+      {
+        "label": "Platform",
+        "value": "Phase One Infinity Platform with Capture One built-in"
+      },
+      {
+        "label": "Tethering",
+        "value": "USB-C 3.1 Gen 2, 1Gbps Ethernet & Wi-Fi tethering"
+      },
+      {
+        "label": "Exposure",
+        "value": "Up to 60 minutes exposure capability for archival art"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 24200,
+        "comparePrice": 28556,
+        "sku": "PGX-ENT-085-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 30250,
+        "comparePrice": 35695,
+        "sku": "PGX-ENT-085-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 35090,
+        "comparePrice": 41406,
+        "sku": "PGX-ENT-085-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Leica S3 Medium Format Camera System with Summarit-S Cine Kit (Tier 2 Enhanced Edition)",
+    "slug": "leica-s3-medium-format-cine-kit-tier-2",
+    "sku": "PGX-ENT-086-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 34500,
+    "comparePrice": 40710,
+    "stock": 35,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "German-engineered Leica S-System medium format with 64MP ProFormat CMOS sensor and central leaf shutter.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Leica ProFormat 30 x 45 mm CMOS (64 Megapixels)"
+      },
+      {
+        "label": "Dual Shutter",
+        "value": "Focal plane shutter (1/4000s) + Central leaf shutter (1/1000s)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15 stops dynamic range with ISO up to 50,000"
+      },
+      {
+        "label": "Video",
+        "value": "Cine 4K (4096 x 2160) 24fps full-sensor recording"
+      },
+      {
+        "label": "Optics Included",
+        "value": "Leica Summarit-S 70mm f/2.5 ASPH CS Lens"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 34500,
+        "comparePrice": 40710,
+        "sku": "PGX-ENT-086-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 43125,
+        "comparePrice": 50888,
+        "sku": "PGX-ENT-086-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 50025,
+        "comparePrice": 59030,
+        "sku": "PGX-ENT-086-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony VENICE 2 8K Digital Cinema Camera Body with Full Frame RAW (Tier 2 Enhanced Edition)",
+    "slug": "sony-venice-2-8k-digital-cinema-camera-tier-2",
+    "sku": "PGX-ENT-087-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 62600,
+    "comparePrice": 73868,
+    "stock": 36,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Full-frame 8.6K 3:2 sensor camera with 16 stops of dynamic range and internal X-OCN recording.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "Full-Frame 8.6K (8640 x 5760) 3:2 CMOS"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16 Stops with Dual Base ISO 800 / 3200"
+      },
+      {
+        "label": "Internal Recording",
+        "value": "X-OCN XT/ST/LT and Apple ProRes 4444 to AXS memory"
+      },
+      {
+        "label": "ND Filters",
+        "value": "8-step mechanical ND filter mechanism built-in"
+      },
+      {
+        "label": "Mount",
+        "value": "Interchangeable PL Mount and Lever Lock E-mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 62600,
+        "comparePrice": 73868,
+        "sku": "PGX-ENT-087-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 78250,
+        "comparePrice": 92335,
+        "sku": "PGX-ENT-087-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 90770,
+        "comparePrice": 107109,
+        "sku": "PGX-ENT-087-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Hasselblad H6D-100c Medium Format DSLR Studio Kit (Tier 2 Enhanced Edition)",
+    "slug": "hasselblad-h6d-100c-medium-format-kit-tier-2",
+    "sku": "PGX-ENT-088-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 29100,
+    "comparePrice": 34338,
+    "stock": 37,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "100 Megapixel 53.4 x 40.0mm CMOS sensor with 15 stops dynamic range, UHD 4K video, and Wi-Fi.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "100MP CMOS Sensor (11600 x 8700 pixels)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "15 stops with 16-bit color depth"
+      },
+      {
+        "label": "Shutter Speeds",
+        "value": "60 minutes to 1/2000s with HC/HCD leaf shutter lenses"
+      },
+      {
+        "label": "Video",
+        "value": "4K UHD RAW video and Full HD video recording"
+      },
+      {
+        "label": "Display",
+        "value": "3.0-inch 920k-dot touchscreen LCD monitor"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 29100,
+        "comparePrice": 34338,
+        "sku": "PGX-ENT-088-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 36375,
+        "comparePrice": 42923,
+        "sku": "PGX-ENT-088-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 42195,
+        "comparePrice": 49790,
+        "sku": "PGX-ENT-088-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Cooke Anamorphic/i Full Frame Plus 40mm T2.3 Prime Lens (Tier 2 Enhanced Edition)",
+    "slug": "cooke-anamorphic-full-frame-plus-40mm-tier-2",
+    "sku": "PGX-ENT-089-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 36200,
+    "comparePrice": 42716,
+    "stock": 38,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Legendary Cooke Look cinema anamorphic lens covering full frame VistaVision sensors with /i data communication.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "40mm with 1.8x anamorphic squeeze"
+      },
+      {
+        "label": "Coverage",
+        "value": "Full Frame Plus and VistaVision sensor coverage"
+      },
+      {
+        "label": "Aperture",
+        "value": "Fast T2.3 to T22 continuous iris"
+      },
+      {
+        "label": "Communication",
+        "value": "Cooke /i Technology frame-by-frame lens metadata"
+      },
+      {
+        "label": "Mount",
+        "value": "Precision titanium PL Mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 36200,
+        "comparePrice": 42716,
+        "sku": "PGX-ENT-089-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 45250,
+        "comparePrice": 53395,
+        "sku": "PGX-ENT-089-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 52490,
+        "comparePrice": 61938,
+        "sku": "PGX-ENT-089-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Angenieux Optimo Ultra 12x Multi-Format Cinema Zoom Package (Tier 2 Enhanced Edition)",
+    "slug": "angenieux-optimo-ultra-12x-cinema-zoom-tier-2",
+    "sku": "PGX-ENT-090-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 64300,
+    "comparePrice": 75874,
+    "stock": 39,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-end cinema zoom with Interchangeable Optical Rear (IRO) technology for S35, U35, and Full Frame.",
+    "specifications": [
+      {
+        "label": "Zoom Range",
+        "value": "12x Optical Zoom (36-435mm Full Frame, 24-290mm S35)"
+      },
+      {
+        "label": "IRO Technology",
+        "value": "Swappable optical rear elements for multiple formats"
+      },
+      {
+        "label": "Aperture",
+        "value": "T4.2 Full Frame / T2.8 S35 across zoom range"
+      },
+      {
+        "label": "Weight",
+        "value": "Rigid lightweight mechanical chassis with zero breathing"
+      },
+      {
+        "label": "Mount",
+        "value": "PL Mount with universal sub-mount options"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 64300,
+        "comparePrice": 75874,
+        "sku": "PGX-ENT-090-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 80375,
+        "comparePrice": 94843,
+        "sku": "PGX-ENT-090-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 93235,
+        "comparePrice": 110017,
+        "sku": "PGX-ENT-090-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Fujinon Premista 28-100mm T2.9 Large Format Cine Zoom Lens (Tier 2 Enhanced Edition)",
+    "slug": "fujinon-premista-28-100mm-t29-cine-zoom-tier-2",
+    "sku": "PGX-ENT-091-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 41900,
+    "comparePrice": 49442,
+    "stock": 40,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Standard zoom lens covering full-frame and large sensors with exceptional optical clarity and Cooke /i.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "28-100mm with constant T2.9 maximum aperture"
+      },
+      {
+        "label": "Image Circle",
+        "value": "46.3mm covering all modern large-format cinema sensors"
+      },
+      {
+        "label": "Iris",
+        "value": "13-blade iris for circular natural bokeh"
+      },
+      {
+        "label": "Focus Rotation",
+        "value": "280 degrees smooth mechanical barrel rotation"
+      },
+      {
+        "label": "Communication",
+        "value": "ZEISS eXtended Data and Cooke /i Technology"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 41900,
+        "comparePrice": 49442,
+        "sku": "PGX-ENT-091-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 52375,
+        "comparePrice": 61803,
+        "sku": "PGX-ENT-091-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 60755,
+        "comparePrice": 71691,
+        "sku": "PGX-ENT-091-ENT"
+      }
+    ]
+  },
+  {
+    "name": "RED KOMODO-X 6K Production Pack with Zeiss Supreme Primes (Tier 2 Enhanced Edition)",
+    "slug": "red-komodo-x-6k-zeiss-supreme-pack-tier-2",
+    "sku": "PGX-ENT-092-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 26500,
+    "comparePrice": 31270,
+    "stock": 41,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Compact 6K Super35 Global Shutter sensor camera paired with Zeiss Supreme Prime cine lenses.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "19.9MP Super35 Global Shutter CMOS"
+      },
+      {
+        "label": "Frame Rates",
+        "value": "6K up to 80fps, 4K up to 120fps with zero rolling shutter"
+      },
+      {
+        "label": "Mount",
+        "value": "Locking RF Mount compatible with PL adapters"
+      },
+      {
+        "label": "Audio",
+        "value": "Integrated professional locking 5-pin audio input"
+      },
+      {
+        "label": "Monitoring",
+        "value": "Wireless 1080p control via RED Control app"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 26500,
+        "comparePrice": 31270,
+        "sku": "PGX-ENT-092-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 33125,
+        "comparePrice": 39088,
+        "sku": "PGX-ENT-092-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 38425,
+        "comparePrice": 45342,
+        "sku": "PGX-ENT-092-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Sony BVM-HX3110 30.5-Inch 4K HDR Critical Master Studio Monitor (Tier 2 Enhanced Edition)",
+    "slug": "sony-bvm-hx3110-4k-hdr-master-monitor-tier-2",
+    "sku": "PGX-ENT-093-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 35100,
+    "comparePrice": 41418,
+    "stock": 42,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Industry reference grade Dual-Layer LCD 4K HDR master monitor delivering 4000 nits peak luminance.",
+    "specifications": [
+      {
+        "label": "Panel",
+        "value": "30.5-inch 4096 x 2160 Dual-Layer LCD with wide color gamut"
+      },
+      {
+        "label": "Peak Luminance",
+        "value": "4,000 cd/m2 peak brightness for HDR grading"
+      },
+      {
+        "label": "Color Space",
+        "value": "ITU-R BT.2020, DCI-P3, S-Gamut3, and Adobe RGB"
+      },
+      {
+        "label": "Interfaces",
+        "value": "12G-SDI, 3G-SDI, HDMI, and SMPTE ST 2110 IP video"
+      },
+      {
+        "label": "Calibration",
+        "value": "High-precision internal 3D LUT look management"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 35100,
+        "comparePrice": 41418,
+        "sku": "PGX-ENT-093-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 43875,
+        "comparePrice": 51773,
+        "sku": "PGX-ENT-093-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 50895,
+        "comparePrice": 60056,
+        "sku": "PGX-ENT-093-ENT"
+      }
+    ]
+  },
+  {
+    "name": "ZEISS Supreme Prime 50mm T1.5 Full-Frame Cinema Lens (Tier 2 Enhanced Edition)",
+    "slug": "zeiss-supreme-prime-50mm-t15-lens-tier-2",
+    "sku": "PGX-ENT-094-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 21400,
+    "comparePrice": 25252,
+    "stock": 43,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "High-speed cine prime lens covering full-frame sensors with gentle sharpness and ZEISS eXtended Data.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "50mm with ultra-fast T1.5 maximum aperture"
+      },
+      {
+        "label": "Image Circle",
+        "value": "46.3mm diameter covering full frame and large formats"
+      },
+      {
+        "label": "eXtended Data",
+        "value": "Frame-accurate shading and distortion lens data"
+      },
+      {
+        "label": "Focus Throw",
+        "value": "300 degrees focus ring rotation with calibrated scale"
+      },
+      {
+        "label": "Front Diameter",
+        "value": "Standardized 95mm front diameter across series"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 21400,
+        "comparePrice": 25252,
+        "sku": "PGX-ENT-094-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 26750,
+        "comparePrice": 31565,
+        "sku": "PGX-ENT-094-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 31030,
+        "comparePrice": 36615,
+        "sku": "PGX-ENT-094-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Leitz Cine Summilux-C 25mm T1.4 Large-Aperture Cine Prime (Tier 2 Enhanced Edition)",
+    "slug": "leitz-cine-summilux-c-25mm-t14-prime-tier-2",
+    "sku": "PGX-ENT-095-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 30800,
+    "comparePrice": 36344,
+    "stock": 44,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Exclusive cinema prime engineered by Leica with telecentric design for zero chromatic aberration.",
+    "specifications": [
+      {
+        "label": "Focal Length",
+        "value": "25mm wide-angle with ultra-fast T1.4 aperture"
+      },
+      {
+        "label": "Optical Design",
+        "value": "Telecentric multi-element cinema optics"
+      },
+      {
+        "label": "Breathing",
+        "value": "Virtually zero focus breathing throughout pull"
+      },
+      {
+        "label": "Chassis",
+        "value": "Ultra-durable titanium construction with cam focus"
+      },
+      {
+        "label": "Mount",
+        "value": "Hardened stainless steel PL Mount"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 30800,
+        "comparePrice": 36344,
+        "sku": "PGX-ENT-095-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 38500,
+        "comparePrice": 45430,
+        "sku": "PGX-ENT-095-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 44660,
+        "comparePrice": 52699,
+        "sku": "PGX-ENT-095-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Phantom VEO 4K 990 High-Speed Slow Motion Camera System (Tier 2 Enhanced Edition)",
+    "slug": "phantom-veo-4k-990-high-speed-camera-tier-2",
+    "sku": "PGX-ENT-096-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 57100,
+    "comparePrice": 67378,
+    "stock": 45,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Records 938 frames per second at 4K resolution (4096 x 2304) for scientific, sports, and commercial slow-mo.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "9.4 Megapixel 35mm CMOS with global electronic shutter"
+      },
+      {
+        "label": "Maximum Speed",
+        "value": "938 fps at 4K resolution / up to 29,000 fps at reduced size"
+      },
+      {
+        "label": "Internal RAM",
+        "value": "72GB high-speed circular memory buffer"
+      },
+      {
+        "label": "Throughput",
+        "value": "9.9 Gigapixels/second maximum data rate"
+      },
+      {
+        "label": "Storage",
+        "value": "Removable CFast 2.0 media recording up to 90MB/s"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 57100,
+        "comparePrice": 67378,
+        "sku": "PGX-ENT-096-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 71375,
+        "comparePrice": 84223,
+        "sku": "PGX-ENT-096-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 82795,
+        "comparePrice": 97698,
+        "sku": "PGX-ENT-096-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Blackmagic URSA Cine 12K Large Format Camera Master Package (Tier 2 Enhanced Edition)",
+    "slug": "blackmagic-ursa-cine-12k-master-package-tier-2",
+    "sku": "PGX-ENT-097-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 18400,
+    "comparePrice": 21712,
+    "stock": 46,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Revolutionary large-format RGBW 12K sensor delivering 12288 x 8040 resolution with 16 stops dynamic range.",
+    "specifications": [
+      {
+        "label": "Sensor",
+        "value": "12K Large Format RGBW Sensor (35.64 x 17.82 mm)"
+      },
+      {
+        "label": "Dynamic Range",
+        "value": "16 Stops of dynamic range at ISO 800 native"
+      },
+      {
+        "label": "Lens Mount",
+        "value": "Interchangeable PL, LPL, and Locking EF Mounts"
+      },
+      {
+        "label": "Media",
+        "value": "High-speed 8TB Blackmagic Media Module built-in"
+      },
+      {
+        "label": "Networking",
+        "value": "10G Ethernet for high-speed direct cloud editing"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 18400,
+        "comparePrice": 21712,
+        "sku": "PGX-ENT-097-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 23000,
+        "comparePrice": 27140,
+        "sku": "PGX-ENT-097-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 26680,
+        "comparePrice": 31482,
+        "sku": "PGX-ENT-097-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Teradek Bolt 4K MAX 12G-SDI Zero-Delay Wireless Transceiver Set (Tier 2 Enhanced Edition)",
+    "slug": "teradek-bolt-4k-max-12g-sdi-transceiver-tier-2",
+    "sku": "PGX-ENT-098-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 15100,
+    "comparePrice": 17818,
+    "stock": 47,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "Wireless 4K HDR transmitter & receiver kit with zero-latency (<1ms) transmission up to 5,000 feet line-of-sight.",
+    "specifications": [
+      {
+        "label": "Video Formats",
+        "value": "4K DCI, 4K UHD, and 1080p 10-bit 4:2:2 HDR"
+      },
+      {
+        "label": "Range",
+        "value": "Up to 5,000 ft (1,500 m) with Array 4K antenna"
+      },
+      {
+        "label": "Latency",
+        "value": "Zero delay (<0.001 sec) for live focus pulling"
+      },
+      {
+        "label": "Security",
+        "value": "AES-256 encryption with RSA 1024 key exchange"
+      },
+      {
+        "label": "Interconnection",
+        "value": "12G-SDI and HDMI 2.0 inputs and outputs"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 15100,
+        "comparePrice": 17818,
+        "sku": "PGX-ENT-098-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 18875,
+        "comparePrice": 22273,
+        "sku": "PGX-ENT-098-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 21895,
+        "comparePrice": 25836,
+        "sku": "PGX-ENT-098-ENT"
+      }
+    ]
+  },
+  {
+    "name": "Freefly Systems MoVI Pro Handheld Motorized 3-Axis Gimbal Master Rig (Tier 2 Enhanced Edition)",
+    "slug": "freefly-movi-pro-motorized-gimbal-master-rig-tier-2",
+    "sku": "PGX-ENT-099-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 12900,
+    "comparePrice": 15222,
+    "stock": 48,
+    "isFeatured": false,
+    "isHot": false,
+    "cdnUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "The gold standard handheld 3-axis motorized camera stabilizer with hot-swap batteries and MoVI Ring Pro.",
+    "specifications": [
+      {
+        "label": "Payload Capacity",
+        "value": "Up to 15 lbs (6.8 kg) for RED, ARRI Mini & Sony cinema rigs"
+      },
+      {
+        "label": "Battery System",
+        "value": "Dual hot-swappable batteries with auxiliary camera power"
+      },
+      {
+        "label": "Tracking Accuracy",
+        "value": "High-resolution encoders on all three axes (pan, tilt, roll)"
+      },
+      {
+        "label": "Tuning",
+        "value": "Auto-tune algorithms with iOS/Android Bluetooth app"
+      },
+      {
+        "label": "Accessories Included",
+        "value": "MoVI Ring Pro, Mimic controller, and hard travel case"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 12900,
+        "comparePrice": 15222,
+        "sku": "PGX-ENT-099-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 16125,
+        "comparePrice": 19028,
+        "sku": "PGX-ENT-099-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 18705,
+        "comparePrice": 22072,
+        "sku": "PGX-ENT-099-ENT"
+      }
+    ]
+  },
+  {
+    "name": "SmallHD Cine 24 High-Bright 4K Production Master Monitor Studio Kit (Tier 2 Enhanced Edition)",
+    "slug": "smallhd-cine-24-high-bright-4k-monitor-tier-2",
+    "sku": "PGX-ENT-100-T2",
+    "categorySlug": "cameras-drones-creator",
+    "price": 11300,
+    "comparePrice": 13334,
+    "stock": 49,
+    "isFeatured": false,
+    "isHot": true,
+    "cdnUrl": "https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=1200&q=80",
+    "shortDesc": "24-inch 4K production monitor with 1350 nits daylight-viewable brightness and PageOS 5 operating system.",
+    "specifications": [
+      {
+        "label": "Screen Size",
+        "value": "24-inch IPS LCD panel with 3840 x 2160 resolution"
+      },
+      {
+        "label": "Brightness",
+        "value": "1350 nits daylight visible with 1000:1 contrast ratio"
+      },
+      {
+        "label": "Color Gamut",
+        "value": "100% DCI-P3 coverage with 10-bit color depth"
+      },
+      {
+        "label": "Connectivity",
+        "value": "4x 12G-SDI inputs, 4x 12G-SDI outputs, and HDMI 2.0"
+      },
+      {
+        "label": "Chassis",
+        "value": "Unibody milled aluminum enclosure with cheeseplate mounts"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Standard Hardware Package (Base Spec)",
+        "price": 11300,
+        "comparePrice": 13334,
+        "sku": "PGX-ENT-100-STD"
+      },
+      {
+        "name": "High-Throughput Configuration (Performance Upgrade)",
+        "price": 14125,
+        "comparePrice": 16668,
+        "sku": "PGX-ENT-100-PERF"
+      },
+      {
+        "name": "Turnkey Enterprise Deployment (+ 3-Year 24/7 SLA)",
+        "price": 16385,
+        "comparePrice": 19334,
+        "sku": "PGX-ENT-100-ENT"
+      }
+    ]
+  }
+]
