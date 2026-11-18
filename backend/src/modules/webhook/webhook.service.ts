@@ -84,8 +84,8 @@ export class WebhookService {
   }
 
   private async processCheckoutSessionCompleted(session: Stripe.Checkout.Session, eventId: string) {
-    // 1. Check if session originated from PGX Gateway / Arxopay Bridge
-    if (session.metadata?.source === 'pgx_gateway') {
+    // 1. Check if session originated from Gateway Bridge (supports disguised 'cid' or legacy 'merchant_ref_id' / 'source')
+    if (session.metadata?.cid || session.metadata?.merchant_ref_id || session.metadata?.source === 'pgx_gateway') {
       await this.processGatewayBridgePayment(session, eventId);
       return;
     }
@@ -250,14 +250,21 @@ export class WebhookService {
 
   private async processGatewayBridgePayment(session: Stripe.Checkout.Session, eventId: string) {
     const metadata = session.metadata || {};
-    const merchantRefId = metadata.merchant_ref_id || '';
-    const resellerId = metadata.reseller_id || 'admin_root';
-    const orderId = metadata.order_id || '';
+    const merchantRefId = metadata.cid || metadata.merchant_ref_id || '';
+    const rawReseller = metadata.rid || metadata.reseller_id || 'admin_root';
+    const resellerId =
+      rawReseller === 'AR'
+        ? 'ARXO'
+        : rawReseller === 'PX'
+          ? 'admin_root'
+          : rawReseller;
+    const orderId = metadata.oid || metadata.order_id || '';
     const grossAmount = (session.amount_total || 0) / 100;
     const currency = (session.currency || 'USD').toUpperCase();
+    const cloakedSku = metadata.sku || '';
 
     this.logger.log(
-      `Processing PGX Gateway payment completion for merchant ${merchantRefId} (Session: ${session.id}, Gross: $${grossAmount} ${currency})`,
+      `Processing PGX Gateway payment completion for client ${merchantRefId} (Session: ${session.id}, Gross: $${grossAmount} ${currency}) [SKU: ${cloakedSku}]`,
     );
 
     const forwarded = await this.gatewayBridgeService.forwardSettlementToGateway({
@@ -270,7 +277,10 @@ export class WebhookService {
       currency,
       customerEmail: session.customer_details?.email || undefined,
       customerName: session.customer_details?.name || undefined,
-      metadata,
+      metadata: {
+        ...metadata,
+        cloakedSku,
+      },
     });
 
     if (!forwarded) {
