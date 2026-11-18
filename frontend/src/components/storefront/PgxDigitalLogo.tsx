@@ -26,7 +26,7 @@ export function PgxDigitalLogo({
           PGX
         </span>
         <span className="font-extrabold text-xl sm:text-2xl text-[#8b5cf6] ml-1.5 tracking-tight">
-          DIGITAL
+          MARKETPLACE
         </span>
       </div>
       <span
