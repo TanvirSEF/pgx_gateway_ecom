@@ -1,5 +1,6 @@
-import { Body, Controller, HttpCode, HttpStatus, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, HttpCode, HttpStatus, Post, Query, Res, UseGuards } from '@nestjs/common';
 import { ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { Response } from 'express';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
 import { GatewayBridgeGuard } from './gateway-bridge.guard';
 import { GatewayBridgeService } from './gateway-bridge.service';
@@ -19,5 +20,33 @@ export class GatewayBridgeController {
   @ApiResponse({ status: 401, description: 'Unauthorized / invalid bridge secret' })
   async initiateCheckout(@Body() dto: InitiateGatewayCheckoutDto) {
     return this.gatewayBridgeService.initiateCheckout(dto);
+  }
+
+  @Get('return')
+  @ApiOperation({ summary: 'Cloaked redirect return handler forwarding buyer back to merchant store' })
+  async handleReturn(
+    @Query('status') status: string,
+    @Query('session_id') sessionId: string,
+    @Query('redir') encodedRedir: string,
+    @Res() res: Response,
+  ) {
+    let targetUrl = 'https://pgxdigital.shop';
+    if (encodedRedir) {
+      try {
+        const decoded = Buffer.from(encodedRedir, 'base64url').toString('utf-8');
+        if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
+          targetUrl = decoded;
+          if (sessionId && targetUrl.includes('{CHECKOUT_SESSION_ID}')) {
+            targetUrl = targetUrl.replace('{CHECKOUT_SESSION_ID}', encodeURIComponent(sessionId));
+          } else if (sessionId && !targetUrl.includes('session_id=')) {
+            const separator = targetUrl.includes('?') ? '&' : '?';
+            targetUrl = `${targetUrl}${separator}session_id=${encodeURIComponent(sessionId)}`;
+          }
+        }
+      } catch {
+        // Fallback to pgxdigital.shop
+      }
+    }
+    return res.redirect(targetUrl);
   }
 }

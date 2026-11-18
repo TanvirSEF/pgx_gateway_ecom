@@ -175,6 +175,19 @@ export class GatewayBridgeService {
       cart_id: `CR-${Date.now().toString(36).toUpperCase()}`,
     };
 
+    // 3. Cloak success and cancel URLs to pgxdigital.shop domain
+    // Stripe will strictly see https://pgxdigital.shop as the return destination
+    const storefrontUrl = (
+      this.configService.get<string>('FRONTEND_URL') ||
+      'https://pgxdigital.shop'
+    ).replace(/\/+$/, '');
+
+    const encodedSuccess = dto.successUrl ? Buffer.from(dto.successUrl).toString('base64url') : '';
+    const encodedCancel = dto.cancelUrl ? Buffer.from(dto.cancelUrl).toString('base64url') : '';
+
+    const cloakedSuccessUrl = `${storefrontUrl}/api/gateway-bridge/return?status=success&session_id={CHECKOUT_SESSION_ID}&redir=${encodedSuccess}`;
+    const cloakedCancelUrl = `${storefrontUrl}/api/gateway-bridge/return?status=cancel&redir=${encodedCancel}`;
+
     try {
       const session = await stripeClient.checkout.sessions.create({
         mode: 'payment',
@@ -198,8 +211,8 @@ export class GatewayBridgeService {
           metadata: cloakedMetadata,
         },
         customer_email: dto.customerEmail || undefined,
-        success_url: dto.successUrl,
-        cancel_url: dto.cancelUrl,
+        success_url: cloakedSuccessUrl,
+        cancel_url: cloakedCancelUrl,
       });
 
       this.logger.log(
