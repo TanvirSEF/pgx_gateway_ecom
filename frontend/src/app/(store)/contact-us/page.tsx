@@ -46,14 +46,14 @@ export default function ContactUsPage() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
-            Support & Global Inquiries
+          <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#9333ea]">
+            Support &amp; Global Inquiries
           </span>
           <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-foreground mt-2 font-mono">
             Get in Touch
           </h1>
           <p className="text-muted-foreground text-sm mt-2">
-            Have questions regarding gym equipment, commercial gym fitouts, or your order? We’re here to help.
+            Have questions regarding fitness gear, apparel, tech hardware, software licenses, or your order? We’re here to help 24/7.
           </p>
         </div>
 
