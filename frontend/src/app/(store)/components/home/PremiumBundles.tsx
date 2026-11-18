@@ -141,6 +141,7 @@ export function PremiumBundlesSection() {
                     alt={bundle.name}
                     width={220}
                     height={160}
+                    unoptimized
                     className="object-contain max-h-full group-hover:scale-105 transition-transform duration-500 mix-blend-multiply"
                   />
                 </div>

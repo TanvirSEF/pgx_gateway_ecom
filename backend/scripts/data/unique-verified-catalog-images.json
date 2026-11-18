@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "c534befa-e08f-4971-b34e-bca6fff31d4a",
+    "name": "Canon EOS C500 Mark II 5.9K with Cine-Servo 50-1000mm Lens",
+    "price": "68900.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.VqBZS4uqPvAYOioCs6ehMQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "04be75da-d9e1-47df-be34-cab0894610ea",
+    "name": "Supermicro SuperBlade 8U AI High-Density Enclosure (Tier 2 Enhanced Edition)",
+    "price": "68400.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.zaBK3FczKp7T4WDjdpM5-gHaC9&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9c06a161-22d4-4a58-8481-e533805bdf68",
+    "name": "NVIDIA DGX H100 Enterprise AI Supercomputer Flagship (Tier 2 Enhanced Edition)",
+    "price": "67500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.qoAX8R2DQ2-Ok5J_E6f4awHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "bc2f6790-3f3e-49af-aea8-275b557ee0b8",
+    "name": "NVIDIA HGX H200 141GB HBM3e AI Accelerator Node",
+    "price": "67500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.7KEEpOKiZRKl-v0VNvRoSgHaEH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9782c27d-8cec-4d05-8f6c-24fb97788122",
+    "name": "Canon EOS C500 Mark II 5.9K with Cine-Servo 50-1000mm Lens (Tier 2 Enhanced Edition)",
+    "price": "66400.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.1ElEPY_NThGfqV8KY4NhAwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5bfb0fd8-f4c4-4ae2-bf3a-85ffcbefeee3",
+    "name": "HPE Cray XD670 Generative AI Supercomputing Chassis (Tier 2 Enhanced Edition)",
+    "price": "66400.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.Jcdt_XmSWR0_MU-2rCgAsQHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a0aa2f2c-f847-4919-9c16-508f70f93d7d",
+    "name": "ARRI ALEXA Mini LF Large Format Cinema Camera Body Package (Tier 2 Enhanced Edition)",
+    "price": "65400.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.BEo-CRLqU6PErbjxcE9ZYgHaE7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "840ab173-e75e-4a13-9dbe-39cd1a3bc8a3",
+    "name": "Samsung 110-Inch MicroLED 4K The Wall Luxury Enterprise Display",
+    "price": "65000.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.G8_58WCR__KqUI4aCxXXNgHaE8&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f8ead699-7412-46a8-afd0-48bc0b934bf2",
+    "name": "Supermicro SuperBlade 8U AI High-Density Enclosure",
+    "price": "64800.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.KgG2lkq7vSWeD5eEooNrwQHaC9&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3610b6d0-0eb0-4b26-bd70-2f0981977179",
+    "name": "ARRI ALEXA Mini LF Large Format Cinema Camera Body Package",
+    "price": "64500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.-5BzT2HW7GwSdCHl5Mm-wQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "453ced8b-9cc2-4692-af4d-be721b81bf4c",
+    "name": "Angenieux Optimo Ultra 12x Multi-Format Cinema Zoom Package (Tier 2 Enhanced Edition)",
+    "price": "64300.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.3f3bCU-YEkaTkxL1qnfl0gHaIO&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "b1667edf-fac7-44c8-b3f1-f5415a0dcf1e",
+    "name": "Dell PowerEdge XE9680 Liquid-Cooled 8-Way AI Server (Tier 2 Enhanced Edition)",
+    "price": "63600.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.k5D6x8zK_PUV9ZJaBbbveQHaDY&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3fb56728-ac5b-4b08-8492-366160d196ff",
+    "name": "Sony Crystal LED CH-Series 140-Inch High-Contrast Video Wall Display",
+    "price": "63500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.xr_Vmfirs7pG2CNeXQZ9JgHaFX&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6a8259ff-deeb-46f5-b92b-6edf2c1de72f",
+    "name": "Sony VENICE 2 8K Digital Cinema Camera Body with Full Frame RAW (Tier 2 Enhanced Edition)",
+    "price": "62600.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.rOwMWXrRgx5NbDLFEeTFzgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "fd31fca3-9eb8-40df-8247-1c8f7193e1bd",
+    "name": "NVIDIA DGX H100 Enterprise AI Supercomputer Flagship",
+    "price": "62500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.GVFJ74gQdoGdn4b-VBpXgQHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "41159435-2f1d-492a-9087-0047d78675ec",
+    "name": "NVIDIA HGX H200 141GB HBM3e AI Accelerator Node (Tier 2 Enhanced Edition)",
+    "price": "61900.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.KOquYnEUL3Lu1_DZSJ6nhAHaF6&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "8711e973-8e3d-4526-b710-17149c895f7f",
+    "name": "HPE Cray XD670 Generative AI Supercomputing Chassis",
+    "price": "61500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.BZCu3Tcobr4GYPFXGLwLewHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "413b2fb3-7aae-4f75-a629-b83b10010104",
+    "name": "Angenieux Optimo Ultra 12x Multi-Format Cinema Zoom Package",
+    "price": "59500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.YqYMGFtYmdDiAKraay2dngHaIT&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "27f0e8da-28c4-4aed-a736-5467bf0b59fc",
+    "name": "Supermicro 8U HGX AI Supercomputing Server Rig (8x SXM5) (Tier 2 Enhanced Edition)",
+    "price": "59300.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.VyQWdxjebWDMbdgkejX9UAHaFR&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "b622f8db-e01a-4be1-8838-7339a659bf06",
+    "name": "Quantum computing Qilimanjaro Neuromorphic QPU Development Pod",
+    "price": "59000.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.vx-HJO96-U2gle-Xe4cHGgHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f86940fc-344c-48cf-913e-85abf9ba4a88",
+    "name": "Dell PowerEdge XE9680 Liquid-Cooled 8-Way AI Server",
+    "price": "58900.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.M1g0AbMcufdJ6mqd3XFJtAHaFp&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "89adc26e-8e2d-47af-88a4-63d616d76ebc",
+    "name": "Sony VENICE 2 8K Digital Cinema Camera Body with Full Frame RAW",
+    "price": "58000.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.5sXW9WNfraeGNK9mzdBzpQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e4e70b49-4eb6-4ea5-af28-3b81e87ad19c",
+    "name": "Planar CarbonLight CLI Series 150-Inch Curved LED Video Wall System",
+    "price": "57900.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.NGIu5Bhc2Vx4z9_P5pResgHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "7ef6cdba-78d6-4028-a5bd-c5575932df23",
+    "name": "Phantom VEO 4K 990 High-Speed Slow Motion Camera System (Tier 2 Enhanced Edition)",
+    "price": "57100.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.GE8S3yw1QPsZQW-E1FDEmQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e8ee892e-e5b6-4725-ac09-7fdd4ae85d1b",
+    "name": "Palo Alto Networks PA-5450 Modular 4U Next-Gen Cyber Firewall Rig",
+    "price": "56500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.fZHDNm4B-0tOG2GdwlGPrwHaFq&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6833915a-03d4-4158-9fb8-4c3160f32323",
+    "name": "Supermicro Liquid-Cooled 4U Dual AMD EPYC AI SuperServer (Tier 2 Enhanced Edition)",
+    "price": "56200.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.p5Mi6Hlub538p2rY_eDXGwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "8cb964a0-0447-48c4-b39f-2c2dff2a30a3",
+    "name": "Supermicro 8U HGX AI Supercomputing Server Rig (8x SXM5)",
+    "price": "54900.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.gPSa2GB9fk_AgHvqw3P-DwHaEo&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "739fef32-1a83-41e0-9e53-34287fc40011",
+    "name": "Lambda Labs Hyperplane 8x GPU Deep Learning Server (Tier 2 Enhanced Edition)",
+    "price": "53500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.flGxDUGFhTuciEiGu9B0cgHaEl&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "dae16710-4f22-4015-8d7a-90153e4c9e75",
+    "name": "Phantom VEO 4K 990 High-Speed Slow Motion Camera System",
+    "price": "52900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.g2YJ7Zzgm6LJUUpYOZsI1QAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d5dc1149-3cc5-4944-9d08-ed71f8e5dfe6",
+    "name": "Pure Storage FlashArray//X20 R3 DirectFlash Petabyte Scalable Array",
+    "price": "52500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.E_AraQAMXiQ52_1-pdB7KgHaCM&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a7dcb5e5-64bd-41ef-a8fd-4dbfb1b4b712",
+    "name": "Supermicro Liquid-Cooled 4U Dual AMD EPYC AI SuperServer",
+    "price": "52000.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.HjX4kd73JRx03trhRr4tTgHaE8&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d94f7ca9-b733-46b0-8b5b-ce117e49bb9c",
+    "name": "Asus ESC8000-E11 8-GPU PCIe Gen5 AI Enterprise Rack (Tier 2 Enhanced Edition)",
+    "price": "51600.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.gyZv_LzfVyqiV_-YMq0SeAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9daa2513-49de-4ef9-a776-fd872741974e",
+    "name": "Fortinet FortiGate 3700F Hyperscale Enterprise Data Center Firewall",
+    "price": "49800.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.HiQJ8sbizLcaFEw6JO25_AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0c2722df-fcdc-43b4-8b9e-de00ff602dae",
+    "name": "Altos BrainSphere R685 F5 Dual EPYC 8-GPU AI Engine (Tier 2 Enhanced Edition)",
+    "price": "49600.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.a3OE0FvVM2TkVdWw6dgWogHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "7363c476-f289-45e0-8804-d895d54aaaf0",
+    "name": "Lambda Labs Hyperplane 8x GPU Deep Learning Server",
+    "price": "49500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.MqBEnrPM3jfalqd4R_QQoAHaDD&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "27d3bdd7-92ce-4a6b-82aa-39631e955f73",
+    "name": "NetApp AFF A400 All-Flash NVMe High-Availability Storage SAN Array",
+    "price": "48900.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.gLZvZpvvfKjQ-oGE2Mk2XgHaHH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5c19524c-1cdc-42a7-be91-312c22d1d737",
+    "name": "Asus ESC8000-E11 8-GPU PCIe Gen5 AI Enterprise Rack",
+    "price": "47800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.gy6dnHG_s29N5bmm354ajgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9b9c6065-5ea8-46b4-bdd9-dfd9c20ad65d",
+    "name": "Cisco UCS C480 M5 High-Capacity 6-GPU Server Engine (Tier 2 Enhanced Edition)",
+    "price": "46300.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.ek7HuL9XEgfBgrjgsYOZugHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "fb092671-bf59-4486-968a-ad2d595077f9",
+    "name": "Altos BrainSphere R685 F5 Dual EPYC 8-GPU AI Engine",
+    "price": "45900.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.W_5VQ27Da_2dNjyksnRvLQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "66e63abe-4b68-4199-9670-a7de61b7a56e",
+    "name": "Solid State Logic Duality Fuse 24-Channel Analog SuperAnalogue Console",
+    "price": "45000.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.-1NEtZRzYqZ7mIfg5hRheAHaEk&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e1acd657-3768-40ca-8d7c-8b0d11e1b6aa",
+    "name": "Cisco UCS C480 M5 High-Capacity 6-GPU Server Engine",
+    "price": "42900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.g75PVm292EtYd_l7CNMGJAHaC6&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2c2dfe39-5322-4cc7-b23f-0e17f1896afa",
+    "name": "PMC BB6-A Ultra-Resolution 3-Way Active Main Studio Monitors (Pair)",
+    "price": "42000.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.7ZM-FHoYbw6MjvTU7imLFAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6f32c742-efd6-40ef-b912-60ebc92d535c",
+    "name": "Fujinon Premista 28-100mm T2.9 Large Format Cine Zoom Lens (Tier 2 Enhanced Edition)",
+    "price": "41900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.wMvblX51W8wN506dFoy_TwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2563231a-37b9-4429-b634-9cd1d9b5914d",
+    "name": "NVIDIA DGX Station A100 Liquid-Cooled AI Workstation (Tier 2 Enhanced Edition)",
+    "price": "41600.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.U7AL4_MuprPhEYoSyiLeTQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "608d6bc5-dac6-4c45-9e31-c401105da935",
+    "name": "Lenovo ThinkStation PX Dual Xeon Platinum AI Workstation (Tier 2 Enhanced Edition)",
+    "price": "39700.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.E6stW5zL71hNPt6xd-ZvSwHaGL&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "61ea6a1a-1e05-4289-9ec1-0d0b7f470070",
+    "name": "Neve BCM10/2 MkII 10-Channel Classic Studio Mixing Console",
+    "price": "39500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.K2fUIl2HyCO6xyS2G1HHnQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "af6092ba-6116-4472-85a9-125acb93b283",
+    "name": "Arista 7060X5 64-Port 400GbE Ultra-Low-Latency Spine Switch",
+    "price": "38900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.pBWMxnkYRvH3BeK9oKmKAQAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2ae3d5aa-52b7-46aa-9467-9db1b893547e",
+    "name": "Fujinon Premista 28-100mm T2.9 Large Format Cine Zoom Lens",
+    "price": "38800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.IlFUMjZjHdsuPFv_k1Y_oQHaET&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6c7c0fd5-f5ba-4c75-af8c-5e5e76ff9ec0",
+    "name": "NVIDIA DGX Station A100 Liquid-Cooled AI Workstation",
+    "price": "38500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.84uCF-CCRUfPP68uYwaI0AHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "aeb412c0-378a-4116-834b-21c075770463",
+    "name": "BOXX APEXX Matterhorn Quad GPU Extreme Studio Rig (Tier 2 Enhanced Edition)",
+    "price": "37300.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.WLOLtXp-qS5DK4TuilQR6gHaE3&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "34bb406f-ed7d-44a6-89e1-cd063b4ba0aa",
+    "name": "Lenovo ThinkStation PX Dual Xeon Platinum AI Workstation",
+    "price": "36800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.rD99-7zwPZR2VfUb_50oOgHaGL&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "297faa98-ae07-49cd-a666-30e0146f8f7e",
+    "name": "dCS Vivaldi Master Clock & Upsampler High-End Digital Audio Stack",
+    "price": "36500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.Wm4AuALCQU7TWipn9ZXDiAHaEw&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f909eff3-36ae-4fa8-b08e-9ccac8f4ce14",
+    "name": "Cooke Anamorphic/i Full Frame Plus 40mm T2.3 Prime Lens (Tier 2 Enhanced Edition)",
+    "price": "36200.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.oU9TS8UyO9bdoorUkW9C7wHaKF&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d0edb197-8e2c-445b-adb7-405416586224",
+    "name": "Sony BVM-HX3110 30.5-Inch 4K HDR Critical Master Studio Monitor (Tier 2 Enhanced Edition)",
+    "price": "35100.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.i7isd7SB5y8i3792D5sKFQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "46fa5269-1312-4623-a890-c69e72bec4a3",
+    "name": "Fairchild 670 Dual-Channel Tube Mastering Limiter Reissue",
+    "price": "35000.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.e5r_KMjiwEM5t6zPcK_I7wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "867d5360-bc44-442e-a4b5-354008e4d10d",
+    "name": "Genelec 8361A SAM Flagship 7.1.4 Dolby Atmos Recording Array",
+    "price": "34800.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.DHu2SOpYkkdieTSpYIME7QHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "8e18bebd-1be3-4420-ae20-b89eb22db546",
+    "name": "BOXX APEXX Matterhorn Quad GPU Extreme Studio Rig",
+    "price": "34500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.0ta2m9QrYut0H8c8GJLN9wHaE3&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2b3ec889-7d9e-4155-b581-84c281cf1834",
+    "name": "Leica S3 Medium Format Camera System with Summarit-S Cine Kit (Tier 2 Enhanced Edition)",
+    "price": "34500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.r7rqWqUnXzCjnj6E0SYjZAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "4dd26b23-3e74-4688-a8d2-322d67778f88",
+    "name": "Cooke Anamorphic/i Full Frame Plus 40mm T2.3 Prime Lens",
+    "price": "33500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.Gq6-lIOgN88nnbqI91BV_AAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "79b4bb71-e4ca-474a-9aeb-2b80e45884a4",
+    "name": "Sony BVM-HX3110 30.5-Inch 4K HDR Critical Master Studio Monitor",
+    "price": "32500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.KRJ246jw9K7Gz1quqNhy-gHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "bb9ab267-bdf0-436d-9278-4e5eea7708ad",
+    "name": "RED V-RAPTOR XL 8K VV Multi-Format Large Cinema Camera Package (Tier 2 Enhanced Edition)",
+    "price": "32400.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.1e6IqgsRf8VJzH1ndZeK0AHaE7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d00ded10-05b5-4ef5-babb-4e1be3bddf68",
+    "name": "Leica S3 Medium Format Camera System with Summarit-S Cine Kit",
+    "price": "31900.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.ojjHXdTtB_bQTY2tmDuBoQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "19d1a166-43a2-457c-b220-a15763ab5a35",
+    "name": "Origin PC Big O Super-Tower Enterprise AI Hybrid (Tier 2 Enhanced Edition)",
+    "price": "31900.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.A4FXVEgactHpLOmhvu5szgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "b5771c4e-8d21-4ee4-ba71-b72847c870e3",
+    "name": "Leitz Cine Summilux-C 25mm T1.4 Large-Aperture Cine Prime (Tier 2 Enhanced Edition)",
+    "price": "30800.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.XRg7v-Y3PTGjnGlaI7A3nQHaF1&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "017a11b0-cfba-4cc3-9d68-d70f222204b2",
+    "name": "RED V-RAPTOR XL 8K VV Multi-Format Large Cinema Camera Package",
+    "price": "29995.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.BSJZSbsbGBmndASGAWI_4gHaGj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "334b8293-d0ad-4178-ae08-fced2cf84827",
+    "name": "Origin PC Big O Super-Tower Enterprise AI Hybrid",
+    "price": "29500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP._ANbKnU0OkyVpHRGC912BgAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "46943abf-b753-4dd0-acae-c20331c764c1",
+    "name": "Hasselblad H6D-100c Medium Format DSLR Studio Kit (Tier 2 Enhanced Edition)",
+    "price": "29100.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.xC8LgUuaweu_WDhlbwpoXAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0f78c187-b7b5-481f-bbf0-de0465f7d96d",
+    "name": "Leitz Cine Summilux-C 25mm T1.4 Large-Aperture Cine Prime",
+    "price": "28500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.jIuKnoJu_OSnw7vfxkqttgHaFE&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5a98259a-6a85-42ef-b427-2cfc1ce5ea77",
+    "name": "ATC SCM150ASL Pro 3-Way Active Reference Studio Monitors (Pair)",
+    "price": "27500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.wGXtYSb_Oy8CjQ7iv6NDygHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a33044cd-3544-4a4d-a829-27c8877d0075",
+    "name": "Hasselblad H6D-100c Medium Format DSLR Studio Kit",
+    "price": "26900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.x-9fPgbVCaays2CaN1UBBwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6fcf9035-1845-4290-963a-48c41ca50456",
+    "name": "RED KOMODO-X 6K Production Pack with Zeiss Supreme Primes (Tier 2 Enhanced Edition)",
+    "price": "26500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.F9_yPLwoik7aM02xldpE6gHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3b1c3720-5b6b-4933-9bb8-0a2ad48b1366",
+    "name": "Cisco Nexus 9364C-GX 64-Port 100G Cloud Datacenter Core Switch",
+    "price": "26500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.fdQqsQgfhJBzp9ITKTo5OgHaBt&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "c5e1562d-c39a-4078-828f-de94dbd2ddec",
+    "name": "Freefly Alta X Heavy-Lift Cinema Drone Ready-To-Fly Package",
+    "price": "24900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.NJwQu5v0szw_zdQHmBS4qwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "1c90c8ff-2695-4ee9-859e-5238818065c1",
+    "name": "RED KOMODO-X 6K Production Pack with Zeiss Supreme Primes",
+    "price": "24500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.EYSIzxtcCG1irQzRZkFIqAHaEL&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "1e04101e-50a7-4fca-b1dd-32c8debd7057",
+    "name": "Phase One IQ4 150MP Achromatic Medium Format Studio Camera System (Tier 2 Enhanced Edition)",
+    "price": "24200.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.XIfJ8X8tYCFFIN99q9dqDAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "394e1d64-3187-43eb-add0-3907953c0b2b",
+    "name": "Phase One IQ4 150MP Achromatic Medium Format Studio Camera System",
+    "price": "22400.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.v1qRHmcJw3yXFGOESrzoSAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2bc1962f-cbc0-452d-b844-16c4a9086baf",
+    "name": "Burl Audio Mothership BMB1 64-Channel Multi-Track Converter Rig",
+    "price": "21800.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.dRdYwnJflX3PoHKVa1aoMAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6ce082ef-dfd3-4ab4-bb8e-1614c3993de1",
+    "name": "ZEISS Supreme Prime 50mm T1.5 Full-Frame Cinema Lens (Tier 2 Enhanced Edition)",
+    "price": "21400.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.LRxPRgctCXWikBxDYb4uNAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "b705f903-3ed5-478f-b6df-adc572b24230",
+    "name": "Sony FX9 Full-Frame 6K Cinema Camera Master Production Bundle (Tier 2 Enhanced Edition)",
+    "price": "20500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Og5g8TLHoBvSUmhMIAkisQHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "c6de42e4-edbc-4014-ac86-28b11ba4f06b",
+    "name": "ZEISS Supreme Prime 50mm T1.5 Full-Frame Cinema Lens",
+    "price": "19800.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.e1uW_qyWDbHSetMoqkIoJgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3c2a2c74-e01f-439b-bc98-4ce36e370d14",
+    "name": "Sony FX9 Full-Frame 6K Cinema Camera Master Production Bundle",
+    "price": "18950.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81mm1bn7uwL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "a042ab26-2dc4-4634-80be-170f649b4b5d",
+    "name": "DJI Matrice 350 RTK Commercial Heavy-Payload Surveying Drone Kit",
+    "price": "18500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.uCuemVVIyMp9mjRlrkl_zwHaLH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "39086d8d-b7da-4883-9d98-67993f3eb367",
+    "name": "Blackmagic URSA Cine 12K Large Format Camera Master Package (Tier 2 Enhanced Edition)",
+    "price": "18400.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.AXL-MEfvzvc5HZI9JTCsUwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "47bda7e7-61e3-4301-a353-7f695a52f22b",
+    "name": "Blackmagic URSA Cine 12K Large Format Camera Master Package",
+    "price": "16995.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71hVONwqUlL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "e0ddc1d6-7bbb-4e09-affa-e0d219d86df8",
+    "name": "Avid Pro Tools MTRX II with 64-Channel Dante & HDX Audio Engine",
+    "price": "16900.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.oDx_zbGlISLZzbNiQnmBsgHaEF&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "62844947-191a-4edb-9130-8675fdd61b95",
+    "name": "DJI Inspire 3 Full-Frame 8K Cinema Drone Master Combo",
+    "price": "16499.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61XaF72ZK9L._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "83afabfe-7de6-42d3-aab7-8d1a22507ca7",
+    "name": "Prism Sound ADA-8XR 16-Channel High-Resolution Modular Converter",
+    "price": "15400.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.0raxnaaCmOu-fwDrROuWTAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e6f5ef7c-822b-43c8-b3e0-c07c998a6424",
+    "name": "Teradek Bolt 4K MAX 12G-SDI Zero-Delay Wireless Transceiver Set (Tier 2 Enhanced Edition)",
+    "price": "15100.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.h7wDw1OAFIr5DLXO4lwM2AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "8abbe700-c59e-4b48-81a5-0b709c93d706",
+    "name": "Apple Mac Pro Rack System - Dual M2 Ultra Enterprise Studio Cluster",
+    "price": "14999.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.l5Ch-mdQNJxkG-tvM6xUGwHaDt&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "70a95cfe-117c-4452-a12f-4acd56d597d9",
+    "name": "Apple Pro Display XDR Nano-Texture Dual Master Studio Station",
+    "price": "14500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.0vN4klDiRMQtp-GE38EixgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "524d0966-17cf-4c99-b07c-741fe0630b0c",
+    "name": "Teradek Bolt 4K MAX 12G-SDI Zero-Delay Wireless Transceiver Set",
+    "price": "13990.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.WI3ov4o_-hlbypzZWY8tDQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "23485246-72da-43c5-a123-dea4c89f71ef",
+    "name": "Freefly Systems MoVI Pro Handheld Motorized 3-Axis Gimbal Master Rig (Tier 2 Enhanced Edition)",
+    "price": "12900.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.YUITKAqS8bbTrBYUmk4EoQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d48e8501-83e7-4fa1-ac80-7c52599986a9",
+    "name": "Sony C-800G PAC Large-Diaphragm Studio Tube Vocal Microphone",
+    "price": "12900.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.slqZ72atS_IDsNuEMeOySwHaML&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "272b7b23-22fc-4322-b8a9-3f9f3294a3cb",
+    "name": "Freefly Systems MoVI Pro Handheld Motorized 3-Axis Gimbal Master Rig",
+    "price": "11950.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.6WTpTfnoxgk7QuAV1Vh7_wHaEq&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6b234199-f13c-4900-ad8c-c0a344df1877",
+    "name": "Shadow Hills Mastering Compressor Discrete Class-A Optical/VCA",
+    "price": "11800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.R3j_Azo2V5c6T3xe5UH0KQHaF0&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5a852f55-f849-4225-b262-b97c2b7d1373",
+    "name": "Telefunken Elektroakustik U47 Flagship Tube Condenser Microphone",
+    "price": "11495.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Q72MGHI_eUCm0qcmxXkZjAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "297a8e1a-9236-4847-9bf5-8526503a883e",
+    "name": "SmallHD Cine 24 High-Bright 4K Production Master Monitor Studio Kit (Tier 2 Enhanced Edition)",
+    "price": "11300.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.bAnuEpRuA9kMvDnZK39_9AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "846807a9-9dcd-47b9-a7a0-9628b359e3fa",
+    "name": "Grace Design m908 24-Channel Surround & Immersive Monitor Controller",
+    "price": "10995.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.lqXI5OOei_sVwoFEQijUaQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "530c091b-49cf-4a07-8ae9-181522fdc620",
+    "name": "SmallHD Cine 24 High-Bright 4K Production Master Monitor Studio Kit",
+    "price": "10499.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.W7hGJIEWLFhJuDHQ-AzU0gHaFB&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "042b6436-363a-4d41-b69a-738b08c5dfba",
+    "name": "Focal Trio11 Be Active 3-Way Dual-Mode Near/Midfield Monitors (Pair)",
+    "price": "10400.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.h8JJuzp6-Ki99brkh78AAAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "7a887ddc-3088-473a-8a11-0ccd2553cf4a",
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 2 Professional)",
+    "price": "9845.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.vBXDzxl4VW62V-Tb6fY5cgHaHZ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "56a113aa-6706-431f-90cc-5526a6c6bca2",
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill",
+    "price": "9800.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.YGLm9rfm0KedWe-pMZIrYgHaIV&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "568b6cf5-6953-4fd4-9c5c-dcda44df8270",
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 3 Professional)",
+    "price": "9800.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/7173lcdSj0L._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "71e91b4c-4f57-461c-8bde-373d3710defa",
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 4 Professional)",
+    "price": "9800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.5C56AbAMKRTt_uVIMWTt5gHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "52c7c1db-d37f-4586-bb71-513fc1ebff62",
+    "name": "Woodway 4Front Commercial Slat Belt Treadmill (Series 3 Professional)",
+    "price": "9695.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.h80oAv7Ya30tsu1nmuHQBQHaIV&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "98ca2462-3870-4265-8bbb-8bf28e3c3b64",
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 3 Professional)",
+    "price": "9545.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61hoCEfb6oL.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "3f301657-082d-42c0-a590-cb6addc93cb0",
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 2 Professional)",
+    "price": "9545.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.SzXezHs5PMsO6EYZPhycbQHaF7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "11b3c4d6-e79a-4878-80c0-cbabfcfad500",
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 3 Professional)",
+    "price": "9395.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.SpQCdPJY6vnBi2Vl7pyorgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "39bbc0bc-abd8-47d9-82d1-95fe73c1d481",
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 3 Professional)",
+    "price": "9300.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.UD5tYXwv_vGrKmCAhAe1kAHaJQ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f94ba2ef-a329-40c0-8439-81a4dd26f502",
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 2 Professional)",
+    "price": "9200.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.-EwHvieyRMUZ5arwyfxpIwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "ad067537-39e3-416f-baa7-090494cc4b5d",
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish) (Series 4 Professional)",
+    "price": "9000.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.fYqOVNQM2xwcSZBi3h_nRgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0017cd8c-07a8-449f-8a06-b9726b1a465c",
+    "name": "Leica M11 Rangefinder Digital Camera Body (Black Finish)",
+    "price": "8995.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.U3NfSVi3nPfS05H7zjCLFgHaF7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "64c45bc9-4815-463f-a215-2761e317000b",
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 3 Professional)",
+    "price": "8950.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.MjTzgonW4pizlmaU2v_cVQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3cc8d2b7-fb3f-4873-ac65-13bcd3cdf302",
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 2 Professional)",
+    "price": "8850.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.KJ2CloWwG0X9y0GpkhM08wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "12634d41-8313-4c30-8e44-078a7acb719c",
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 3 Professional)",
+    "price": "8450.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61U89OHG7bL._AC_SL1200_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "37b3073d-096e-444d-acaa-3e17dc012b71",
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 3 Professional)",
+    "price": "8450.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.pdIsK72WZGeuo5rqalBiBwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "c7d9ab44-1881-46f0-a1e4-488c1b1c500b",
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 2 Professional)",
+    "price": "8400.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.-1nz4ZCWBf64HghHoiGeMQHaJr&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0f61d58f-2e46-40b3-b802-79538a103e5e",
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera (Series 4 Professional)",
+    "price": "8200.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.gFnAaCsr75n8m6uIRJY6mQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e3de7a2e-9e7e-4241-9240-fe5d18a64e31",
+    "name": "Hasselblad X2D 100C Medium Format Mirrorless Camera",
+    "price": "8199.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/51QGGRDa7aL._AC_SX679_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "f971a2f8-e43f-4286-b00c-afc7cf6c37d1",
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 3 Professional)",
+    "price": "8050.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.b4Fvsr1x1qWXsQiPWvXbrQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "77c9eaad-0cfe-4998-aa7c-3b587091dade",
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 2 Professional)",
+    "price": "8050.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.7w-NqC8Hgc1nKKeKoe9KQAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5dffcf84-33d1-4dc2-b753-dd53a4edea1a",
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 3 Professional)",
+    "price": "8050.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.fIqkadN3zOKgG87xdhdQHAHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "127e5d73-39f8-4529-ab3f-35e6808bbfbf",
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 3 Professional)",
+    "price": "8050.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.O0fULEqgUmGyK9Tbd-xzVQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "014da825-f5fd-4184-88e2-3769edb00a08",
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server (Series 4 Professional)",
+    "price": "7900.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.DaRP0wDZjR_tMLTmRik0-wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "10017385-3c8f-4834-853a-4372d9af4d97",
+    "name": "QNAP Enterprise TS-h3087XU-RP 30-Bay Hybrid Storage Server",
+    "price": "7899.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.k7OYlLW8Z4Uvac0KraCgBQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2f64be88-a28b-4d93-b651-a5a7d3384725",
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 2 Professional)",
+    "price": "7600.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.F66lpLQFvzQCdinKjx1DDgHaGV&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "63ee6752-f93c-4d22-b091-5ec9eaf615a2",
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 2 Professional)",
+    "price": "7600.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.q_0ZzpbPHSMVcz9aoGOC6wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "121fb17d-7fc6-41e5-b4f7-090a7347d3a5",
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna (Series 4 Professional)",
+    "price": "7500.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.YDkVBUkod-hybVsHzQtvywHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "c89f361c-7c4f-4752-9880-06a6013c3611",
+    "name": "Clearlight Sanctuary 2-Person Full-Spectrum Infrared Sauna",
+    "price": "7495.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.rjWCFruU42WGQDUoFoPUFgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "19a9a8eb-3e24-4582-96a1-97685601bacd",
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 3 Professional)",
+    "price": "7450.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.WwPLaV_7X2cVlbh5J0oGlwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "1cfde543-0318-4e1b-9c76-526cf32d920e",
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 3 Professional)",
+    "price": "7450.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/91lGaE187wL._AC_SX679_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "56fe3cb1-6fbe-4a8c-8f83-a56f8766ebff",
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 2 Professional)",
+    "price": "7300.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61nYvultqaS.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "ca809141-87cb-4d2b-89f4-4b8702be20d6",
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 2 Professional)",
+    "price": "7300.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.RSBa2Dvt12pgnbNM-VgWUQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a9e7ea30-6125-49dc-943d-4ba8fc0c8e4f",
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 2 Professional)",
+    "price": "7300.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.GeUFQQWvW9kb0fVxWeRJXQHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "074c7eeb-ce04-4a8a-b868-9e0f2d3c6ce5",
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 3 Professional)",
+    "price": "7200.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.DVjAqcGUxd2EUmSMgA7oqgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "7b72d228-ba88-42ee-b32a-1be16d21f67e",
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD) (Series 4 Professional)",
+    "price": "7200.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.6BVDQDwfzButx8fSDXfC8AHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a1c40d33-c721-4af4-a8b0-c99a3e7c5465",
+    "name": "Apple MacBook Pro 16\" M3 Max Fully Loaded (128GB RAM, 8TB SSD)",
+    "price": "7199.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.lecVqnD76B0A_s9HF5tsLgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "ffc5fc74-a47f-4126-a220-6abae186d7d0",
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM) (Series 4 Professional)",
+    "price": "6800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.WHau-NTYvGdtzzvhessTkAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "b8112008-2df2-43ed-90f0-88d4e3fe3fd6",
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 3 Professional)",
+    "price": "6800.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71eel+1fh8L._AC_SX679_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "49aa9d2f-f58e-44b9-a09b-f76561da9370",
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo (Series 4 Professional)",
+    "price": "6800.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/612uYc9ZulL._AC_SL1200_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "91652b79-9f5f-49c8-a1e6-2099b801ad37",
+    "name": "Apple Mac Studio M2 Ultra (24-Core CPU, 76-Core GPU, 128GB RAM)",
+    "price": "6799.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.NASU2tst58npWN3u5H8HAgHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "acb03c48-750a-4166-92bb-418306c816a4",
+    "name": "DJI Ronin 4D 6K 4-Axis Cinema Camera Gimbal Combo",
+    "price": "6799.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.FuvzwO1lMvB5H-W9Vq2kAwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "7649df8b-c3a9-4eda-b94a-e8e16fba4983",
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 2 Professional)",
+    "price": "6700.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.ZZP2OoggLdfzRpNbPFXZJQHaHh&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "eebdb678-377e-4716-a453-5d8622f313c3",
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 2 Professional)",
+    "price": "6700.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.gBtPajeeMaGo2LIb7k8glwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0615402b-fe09-403c-89af-69e404263e99",
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera (Series 4 Professional)",
+    "price": "6500.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.YnDffMvprzbu-TbFXrvtgQHaFv&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9c7466e4-15c9-4d8c-9116-077d596ea5ad",
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS (Series 4 Professional)",
+    "price": "6500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.l_UnVE9K2sBU4QYiERZzKAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d6a5eb34-300a-45ea-9e26-b63429f444c0",
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 2 Professional)",
+    "price": "6500.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/519huuRCBGL.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "45191678-e748-4391-afce-2a1c8a1953de",
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer (Series 4 Professional)",
+    "price": "6500.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.3CFIinPbw52V7zs7USiTVAHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "ae8a42fb-16a4-46f5-afd1-442afd116c4d",
+    "name": "Manley Massive Passive Stereo Tube Mastering Equalizer",
+    "price": "6499.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.TM-n8tPWWTGRrwXjDSFlpAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "e339af3a-2951-4d56-a7f7-98f179ff104f",
+    "name": "Synology FlashStation FS3410 24-Bay All-Flash Enterprise NAS",
+    "price": "6499.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.z24W8rkHvininOuKTpNvuQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "9b89db3f-0e0a-442a-88cf-a8a6b3043cc3",
+    "name": "Sony Alpha 1 50.1MP Flagship Mirrorless Full-Frame Camera",
+    "price": "6498.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.yXP2bTzGbV03F6wO_WkNvQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0cd452f7-aa66-4b8f-9386-544686c39033",
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 3 Professional)",
+    "price": "6200.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.9lORbTLidiKjG_5aKb0h6QHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "52d7b40b-de38-4cfd-9da8-a9a680f61a81",
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 3 Professional)",
+    "price": "6200.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61c+2VTZQcL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "b1642feb-039a-4ba7-ab61-480c4d6e575a",
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 2 Professional)",
+    "price": "6150.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.fJ5ipJtsI53lOlUYpIu5HgHaGE&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "585bd4bd-a86a-4869-a396-635a9b986603",
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body (Series 4 Professional)",
+    "price": "6000.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/812b2QK1jyL.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "b373cf62-cb87-496d-9e4d-885e7aa4a761",
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer (Series 4 Professional)",
+    "price": "6000.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.tY8Kv19dHhJzoAmHCrPqlAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cef618c5-680e-40cd-8017-9c6987931ada",
+    "name": "Force USA G20 Pro All-In-One Commercial Functional Trainer",
+    "price": "5999.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.-RGr6E0urIMZRQcVZp8V2AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d64345d7-c277-448e-86d6-1ea83f8db269",
+    "name": "Sony FX6 Full-Frame 4K Cinema Camera Production Body",
+    "price": "5998.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.wX7vbT3UDvuceAiOCaB6_wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "00e8d38f-e6e3-40d5-b68a-03331bc392a0",
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 3 Professional)",
+    "price": "5850.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.30zuLSgefEy1EAqQNUCuEgHaCD&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "6b852481-927b-4ab8-97a3-9dd54a9ca74f",
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 3 Professional)",
+    "price": "5850.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.PpytNvhOhUzX9Iow5ebjXwHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "53d1e16d-296c-40f1-b18e-e469cd8d336e",
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch (Series 4 Professional)",
+    "price": "5800.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.Dgvfpi_0UsBRwutPHp7L9QHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "49290bf7-dc61-4336-b91e-ae11103a4459",
+    "name": "Cisco Catalyst 9300 48-Port PoE+ Enterprise Cloud Switch",
+    "price": "5800.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.I7O7rhggeqE4VbVEFsv3zgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "41ca38d0-03a5-43f6-a70f-2369ec417469",
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 3 Professional)",
+    "price": "5700.00",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0422/3813/products/active-studio-monitors-focal-twin6-be-professional-studio-monitor-speakers-pair-1_2000x.jpg?v=1553503614",
+    "source": "shopify-cdn"
+  },
+  {
+    "id": "1e40bd50-aaa7-41d4-bbaf-b1ed846eaca0",
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 2 Professional)",
+    "price": "5600.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.6HGo7WR1WRvwN_ldEI2C_gHaFX&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "fcd755e7-d37d-4ce8-a882-031f8a6f6c60",
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 2 Professional)",
+    "price": "5600.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.v66iLxpwZCDzXeRjirXCAwHaC9&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "52da1961-7a5d-4d92-a1c7-2ee37b95f6d1",
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera (Series 4 Professional)",
+    "price": "5500.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.sZTIeLQPREzWScTEq2SxdAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "0e8e3296-1cc7-4387-830d-b01677dce88c",
+    "name": "Canon EOS C70 4K Super 35 Dual Gain Cinema Camera",
+    "price": "5499.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.97VAIJGq840kK6FD9xFoZAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "81645cd1-46b4-4c4c-8bb9-f7cf6754dce7",
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 2 Professional)",
+    "price": "5250.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81dj6B9pUbL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "5594a761-adf4-441d-8271-cc3abd99cecb",
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 2 Professional)",
+    "price": "5250.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.KfGljXNUlGFabsyMPL0RBQAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2f46d632-0598-46f3-9789-e568c30b6324",
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 3 Professional)",
+    "price": "5200.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.G07FoPJx4AF7iBFBqwsJPQHaJQ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "98d4ddcb-76ec-4238-8d50-926d41cd7b4c",
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 2 Professional)",
+    "price": "5150.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.z6LIfHRa5yA1Ye_gao2tGgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "57f8855f-3e82-4e47-bda2-5f5ab39f8a7d",
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor (Series 4 Professional)",
+    "price": "5000.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.UPtsNuw2k7gF5sCr9offfgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f762c271-16ce-4655-857c-7ae933159e15",
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller (Series 4 Professional)",
+    "price": "5000.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.hJ1Xb8MmzmGxipqvo2GFYwHaEM&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a16ee982-c68d-4de1-ac59-daa5eb5c4b4b",
+    "name": "Plunge All-Weather Commercial Cold Plunge Tub with Chiller",
+    "price": "4990.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61M+Nwf7osL._AC_SL1100_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "ea03dbd2-f9a6-4b5f-8331-3ade42c7c3e2",
+    "name": "Tube-Tech CL 1B Optical Tube Mastering Compressor",
+    "price": "4990.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.coA5pToTFn2zY5w3eLLFEgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "293febf6-015c-4849-a9ff-aaa041c94afd",
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 3 Professional)",
+    "price": "4950.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.wdmd6jozdkhn9OXOUyEf4AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "1277786a-9559-453c-b50a-98a56e210292",
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 3 Professional)",
+    "price": "4750.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.AJUfTGK27FuC1Nv7XlHMRwHaHu&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f8857bc2-8093-48e1-9e29-fe140ff42db8",
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop (Series 4 Professional)",
+    "price": "4700.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.skG2Dzdx309lVcfMMh0LKgHaKq&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "22443546-30f9-4f59-8e2e-ad95483bb4fa",
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier (Series 4 Professional)",
+    "price": "4700.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.egCyS2SwdOayj5mcDYDmhgHaF0&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "627b1f22-af6b-467e-917d-2345d46100e8",
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 2 Professional)",
+    "price": "4700.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.Ro0P2khWcgK0bcUljx5CgAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f94e8a96-dc56-46e6-b089-e8db2069f316",
+    "name": "Corsair ONE i500 Compact Liquid-Cooled AI Creator Desktop",
+    "price": "4699.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71f6N6Aj-tL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "809b30aa-b386-46a9-b763-99a5313a4d67",
+    "name": "Universal Audio Teletronix LA-2A Classic Leveling Amplifier",
+    "price": "4699.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.Ej0LcUWGTl_XnqbBh85ifAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a38e45e2-5ef8-4c76-a1f0-7504c2228b0d",
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair) (Series 4 Professional)",
+    "price": "4600.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.dJY-fnmwLDBcKgrkeu_2xgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "ab9f5f8e-3958-4779-b6b7-2412e2fdd681",
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 3 Professional)",
+    "price": "4600.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.VLvEh8UNpcTnctaJR7a1oQHaIH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "18f93319-2f8f-406b-93a9-22e5b4a0e5cc",
+    "name": "Focal Twin6 Be 3-Way Active Studio Reference Monitors (Pair)",
+    "price": "4598.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.RYlgohuZQdXMKJZJyOW56QHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "c86d1430-389c-48fc-a540-7b48d662fec6",
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 2 Professional)",
+    "price": "4450.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.NTyS_aqv5lWjieRG89zQzgHaHH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "40297113-bea1-427a-a5fc-545e76cefcb6",
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 2 Professional)",
+    "price": "4300.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.j04vdJrcV-RoCfZSXcCzIQHaGk&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "ee5871c3-6dee-435b-86f4-6ed19c0d30ef",
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg",
+    "price": "4200.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.W4QZPjYwltI1pqHNFXLpmAHaJQ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "65aafb0f-24a0-42fe-8c6d-7141cbd610ff",
+    "name": "Eleiko IWF Weightlifting Olympic Competition Set 190kg (Series 4 Professional)",
+    "price": "4200.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.S0zORiNiDd7-5EkfWOO4jgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "3f467b46-7c68-4bd5-b28f-96497ef9b2f7",
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 2 Professional)",
+    "price": "4150.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.P5qQO3f0OmAWfXH5PzHB0wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "94cf717e-5bc4-4953-b858-027e2a7748a5",
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles (Series 4 Professional)",
+    "price": "4000.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.Mhl117ZJL1Eg2QjrcytLbwHaD4&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "d7edb816-5c5a-46c7-851f-3162f266ea28",
+    "name": "Tonal Smart Home Gym Digital Resistance System with Smart Handles",
+    "price": "3995.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.B1RhgL8gF4NgjxMLPebEEAHaFC&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "24513104-cd69-43cb-bf92-a0cf96514cac",
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package",
+    "price": "3850.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.nliFkfZtxlfOQ9_Wh-qjygHaD5&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "2a1da458-5cac-4878-9d4f-a49890e42f85",
+    "name": "Rogue Monster RM-6 6-Post Commercial Power Rack Package (Series 4 Professional)",
+    "price": "3850.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.WfKYCK124iXd-g8_ZO3qBAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "a6a0cfc5-c01a-4bcf-8358-188cb9818eb1",
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone (Series 4 Professional)",
+    "price": "3700.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.kV_YdaXXyJDOcxfiJgr2zgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "4061dd76-a57b-488a-9431-7df5e3ca6905",
+    "name": "Neumann U87 Ai Large-Diaphragm Studio Condenser Microphone",
+    "price": "3695.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.rJ3OgsQJ0e3CUwnMg5UkHwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "f8dfd1f5-4b02-4b3a-9d0a-504b91d9cf18",
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 3 Professional)",
+    "price": "3600.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.PiqGRoa4cBjZjxs1m1l7lAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "4a63a1dc-ba6c-4e15-94cf-1fd8db27e0a6",
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 2 Professional)",
+    "price": "3250.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.pGWC8Jdwg0NntZkXdxmbQgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "5535a73a-eae5-4014-a159-cc9dc4e9e749",
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike (Series 4 Professional)",
+    "price": "2900.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.zVHLBsbiSCkiWjexTJGLXQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "69370965-aeeb-43be-a934-63fac7e2c6ef",
+    "name": "Keiser M3i Total Body Commercial Indoor Cycling Studio Bike",
+    "price": "2895.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.WsThdsHo6mtS_dhwlsRpowHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesjz32000q3gimv1guvxud",
+    "name": "Ray-Ban Meta - Wayfarer Smart Glasses with Audio & Camera",
+    "price": "299.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.tTcuT9NrB2wLn_nhlmm3EAHaDN&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesl09c004q3gimlvpyk0ef",
+    "name": "DJI Mini 4 Pro Drone with RC 2 Smart Controller & 4K HDR Video",
+    "price": "299.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71J-z2aMg7L._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesjuvb000a3gimu15wdgz0",
+    "name": "Apple Watch Ultra 2 [GPS + Cellular 49mm] Smartwatch with Rugged Titanium Case",
+    "price": "249.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.l6KgNaqEn5RKI7j3ZVYf0AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesl2bd004y3gimon5n1s6a",
+    "name": "GoPro HERO12 Black - Waterproof Action Camera with 5.3K60 Video",
+    "price": "229.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xvL9XGwYL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesk8hb001q3gimva4e7une",
+    "name": "ASUS ZenScreen 15.6” 1080P Portable USB-C Monitor (MB16AHG)",
+    "price": "219.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.aWAGxmXjzCF6ZoBRr6d_4gHaEj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesjvxv000e3gim4korsj8m",
+    "name": "Oura Ring Gen 3 Horizon - Smart Ring Health, Sleep & Activity Tracker",
+    "price": "199.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.-FzFOP9K-E4G-fsuRlgTQQHaHQ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesku1200423gim7su6kx0n",
+    "name": "CalDigit TS4 Thunderbolt 4 Dock - 18 Ports 98W Charging 8K Display",
+    "price": "199.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71AIrTnJ2qL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskpvz003m3gim5lvazxhr",
+    "name": "SanDisk 2TB Extreme PRO Portable SSD - Up to 2000MB/s USB 3.2",
+    "price": "189.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Mftbu8HaCR65La9jlMmvfwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskhp1002q3gim9smj5tjf",
+    "name": "Sennheiser HD 660S2 Open-Back Audiophile Dynamic Headphones",
+    "price": "179.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.b_kSbTnGLHW-MCKhz9C8YAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesklsj00363gimxs74vwhq",
+    "name": "Audioengine A2+ Wireless Powered Desktop Studio Speakers (Pair)",
+    "price": "169.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/51odD6JDkML._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweslksd006y3gim1cf9s6w8",
+    "name": "Next.js 15 Full-Stack E-Commerce Website Kit (Stripe, Tailwind, PostgreSQL)",
+    "price": "149.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.QaMVF5VTkbxI4dEfwKOtXwHaD_&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk7d0001m3gimqq3rxjzt",
+    "name": "Elgato Stream Deck MK.2 - 15 Customizable LCD Macro Keys",
+    "price": "149.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.Fuu1PBo6TpEikbMn77UwqQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesjwzu000i3gimag2ruplv",
+    "name": "Humane AI Pin - Wireless Standalone Wearable Voice Assistant",
+    "price": "149.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.hQN1xjrvO4ltoQglsFSVtgHaEc&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskgnv002m3gimm7qmcn9q",
+    "name": "Sony WF-1000XM5 Industry Leading Noise Canceling Wireless Earbuds",
+    "price": "139.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81RZMfw6UdL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesl1ad004u3gimrgcijhug",
+    "name": "OBSBOT Tiny 2 AI-Powered 4K PTZ Webcam with Auto-Tracking",
+    "price": "139.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/51XeBqiCrRL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesk58q001e3gimwtcurq3w",
+    "name": "Keychron Q1 Pro QMK/VIA Wireless Custom Mechanical Keyboard",
+    "price": "139.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.zQvImXceFBC84Sr2DGEYzQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesjy2f000m3gim1rlxj8u4",
+    "name": "WHOOP 4.0 Activity & Health Tracker with 12 Month Membership",
+    "price": "129.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.K8n9mhaogEfdehfqloZ1qgHaLH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskjqd002y3gim200d60m3",
+    "name": "RØDE Wireless PRO Dual-Channel Wireless Microphone System",
+    "price": "129.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.dUeYvj6BbzHoaP3PZv6NFgHaJA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskv1r00463gimqi3xsyqt",
+    "name": "SanDisk 512GB Extreme PRO SDXC UHS-II Memory Card (Up to 300MB/s)",
+    "price": "119.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81yxML+5ShL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesk03w000u3gim3vbx2rst",
+    "name": "Muse S (Gen 2) Brain Sensing EEG Sleep Tracker Headband",
+    "price": "119.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81kz1qOZd2L._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesl7hf005i3gimmmukf9s2",
+    "name": "Elgato Green Screen - Collapsible Wrinkle-Resistant Chroma Key Panel",
+    "price": "119.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.svfam5Ft7zIUOIHCPcT5PwHaHo&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskfn7002i3gim2cqbq1n1",
+    "name": "Shure MV7 USB Podcast Microphone with XLR Hybrid Output",
+    "price": "119.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/81jiprM2l+L._SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesl3d200523gimgaawiy48",
+    "name": "DJI Osmo Mobile 6 Smartphone Gimbal Stabilizer (3-Axis Handheld)",
+    "price": "99.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61w6YyNlYdL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskt0b003y3gimmrim73yz",
+    "name": "Anker 737 Power Bank (PowerCore 24K) 24,000mAh 140W Portable Charger",
+    "price": "99.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.1jt-A6z-IPvQyRFlWO_4qAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesknuh003e3gim5roeqlqo",
+    "name": "Shokz OpenRun Pro Premium Bone Conduction Open-Ear Headphones",
+    "price": "99.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/413GNqoIsgL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskdlv002a3gimzmj8ui7u",
+    "name": "Twelve South Curve Stand for MacBooks and Laptops",
+    "price": "89.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Dr0fkCgcXMFiG8AvRK21FQHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesl6gl005e3gimbdnru37a",
+    "name": "Glide Gear TMP 100 Adjustable iPad/Tablet Teleprompter System",
+    "price": "89.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.UvOgLsduFvBwf05nAGsQMwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm49400923gim1ackmvnb",
+    "name": "Network Packet Security Inspector & Traffic Sniffer (Deep Packet Inspection)",
+    "price": "89.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.gNKM6FOKpFNIDY1ZOAHFvQHaDJ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskipq002u3gimc54mv34j",
+    "name": "Fosi Audio K5 Pro Gaming DAC & Headphone Amplifier 24-Bit/96kHz",
+    "price": "89.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.ITfBA5MY2rPKeii0GNi7BgHaF7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslbkk005y3gimf4g9ta6s",
+    "name": "Autonomous Agent Workflow Engine - Multi-LLM Orchestrator",
+    "price": "89.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.QZB8r1MQBV_yBoHhbYBmEAHaEW&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk9ib001u3gim2pknbqak",
+    "name": "Wacom Intuos Pro Creative Pen Tablet (Medium)",
+    "price": "89.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Pov-TPpbL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskrya003u3gim24c05esp",
+    "name": "Belkin BoostCharge Pro 3-in-1 Wireless Charging Stand with MagSafe 15W",
+    "price": "79.00",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/670997-Product-11-I-638834618435359234.jpg?v=1747865105",
+    "source": "shopify-cdn"
+  },
+  {
+    "id": "cmwesl4dx00563gim93ki0dxl",
+    "name": "Neewer 18-inch Bi-Color LED Ring Light Kit with 75\" Light Stand",
+    "price": "79.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.tMJuKLKPTFHp003pVKdpQwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslow9007e3gimxrelrnbt",
+    "name": "Directory & Remote Job Board Platform Kit (Algolia Search, Paid Listings)",
+    "price": "79.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.7I8QdMwSfdLoi2e2znBbzwHaEG&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk25x00123gimi3bjasc4",
+    "name": "Withings Body Smart - Wi-Fi Body Composition Smart Scale",
+    "price": "79.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.zFsQevOYw2yiJmzKtTl8ywHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskcl400263gimsoqfkm0b",
+    "name": "Apple Magic Trackpad - Wireless, Rechargeable Multi-Touch",
+    "price": "79.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/41KZtzhlK+L._AC_UY218_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweslx1w008a3gimlw3x3sgo",
+    "name": "Ultra-Fast API Gateway & Traffic Shaper Engine (Reverse Proxy, Rate Limiter)",
+    "price": "79.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.uyRJwVgiQU4XGNzEFrJ7cgHaK9&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk14o000y3gim4691omby",
+    "name": "LARQ Bottle PureVis - Self-Cleaning UV Water Bottle (24 oz)",
+    "price": "69.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61gZc5exsyL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskajj001y3gimr4e7jluh",
+    "name": "Ergotron LX Heavy Duty Desk Mount LCD Monitor Arm",
+    "price": "69.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71epZvL8jiL.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesl5fw005a3gims0c7oo4x",
+    "name": "Moment Anamorphic 1.33x Mobile Lens for iPhone and Android",
+    "price": "69.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61v6l0n7VDS._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweskz8j004m3gim4ru7k0fm",
+    "name": "Anker Solix 30W Portable Solar Charger with Dual USB Power Ports",
+    "price": "69.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.mS-mX4h8mSXylMAWTDTgMgHaDC&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslhpm006m3gimezezmg0t",
+    "name": "Vision Object Detection API Kit - Real-Time YOLOv8 Pipeline",
+    "price": "69.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.MqJeF-bgcc9A6JMfghb8KQHaDt&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk69j001i3gim5ku6h6g6",
+    "name": "Logitech MX Master 3S Wireless Performance Mouse",
+    "price": "69.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61xKiCADfpL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweslqxx007m3gimyf7ubznd",
+    "name": "Real Estate & Modern Property Showcase Theme (Mapbox Integration)",
+    "price": "69.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.PMkl9siGRxF7danZoUMEUwHaI3&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskqwx003q3gim07a78b8z",
+    "name": "Anker Prime 140W GaN Wall Charger (3-Port Multi-Device Fast Charger)",
+    "price": "69.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.IXCdekFb_wdWwfRC3xVxJwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesl8i8005m3gimy0bw8hnk",
+    "name": "Elgato Key Light Air - 1400 Lumens Professional Studio LED Panel",
+    "price": "69.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.MoRLpCc0_-VTNAzl9JB0QgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslv0a00823gimpgfwuair",
+    "name": "CloudSync Enterprise SaaS Desktop Client (Encrypted Multi-Cloud Vault)",
+    "price": "59.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.z7AR4MvuiYNuF0uHDlZ8awHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmikm00am3gimpf6ycmz7",
+    "name": "Microservices with Go & Docker Mastery - Production Distributed Systems",
+    "price": "59.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.EupOpcUTjajM0wTX7AsvpQHaFT&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskmtp003a3gimobwmzhmu",
+    "name": "Elgato Wave Mic Arm LP - Premium Low Profile Microphone Arm",
+    "price": "59.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61WTr1XgYYL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesmopw00ba3gimzlw6spak",
+    "name": "Cyber Security & Defensive Web Application Penetration Testing Course",
+    "price": "59.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.USPXsUnNVxqjUBmO_2cbrQHaFQ&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslnv4007a3gim7nomfott",
+    "name": "Fintech & Web3 Analytics Dashboard Theme (Charts, Real-Time WebSockets)",
+    "price": "59.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.HD-w-NlXTj9OH7A2TqCyswHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesldmj00663gimjsgpwib6",
+    "name": "LangChain RAG Knowledge Base Builder - Vector Search & Indexing",
+    "price": "59.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.gBvVx7G3tPnxMW7Ec1HYFgHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk483001a3gimtkqvlgk8",
+    "name": "BenQ ScreenBar Halo LED Monitor Light Bar with Wireless Controller",
+    "price": "59.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/611czrKfdTL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesliq5006q3gimtut5axoy",
+    "name": "AI Support Ticket Auto-Responder - Zendesk & Freshdesk Integration",
+    "price": "55.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.JoyD2exed7jjOAGtw4riTgHaEg&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskkra00323gimffx3542e",
+    "name": "Auralex Acoustics Studiofoam Acoustic Panels (12-Pack, Charcoal)",
+    "price": "49.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/51smMuCLz+L._AC_SS450_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesm17d008q3gim52ic07q0",
+    "name": "Database Schema Visualizer Pro (Interactive ERD Generator for SQL/Prisma)",
+    "price": "49.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.KiiWmPBkeqARGRaN9dMrfwHaD4&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmnof00b63gimhplxdxbj",
+    "name": "React Native & Expo Production Mobile Architecture Complete Guide",
+    "price": "49.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.f4Nf0bzmPmkI-6YAWS2kawHaFH&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesk36u00163gimie1l3taa",
+    "name": "Apple AirTag (4-Pack) Bluetooth Precision Finding Tracker",
+    "price": "49.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71gY9E+cTaS._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesljri006u3gimbtmpf3hr",
+    "name": "Local LLM Desktop Assistant - Offline Private AI Terminal (Electron)",
+    "price": "49.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.tQmt8R790yFeC4PyQ1t_vwHaE8&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesllsx00723gim3o78ta0u",
+    "name": "SaaS Modern Landing Page System - High-Converting Framer Motion Components",
+    "price": "49.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.KcSb58CDKO2Y42fRxpsiRwHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm9dx009m3gimurz64evh",
+    "name": "High-Converting Sales Funnel Architecture Pack (Lead Magnets, VSL Frameworks)",
+    "price": "49.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.oXW78uTzTQbODPRS0ECPqgHaEf&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesltzl007y3gimtettxnq9",
+    "name": "Enterprise Multipurpose Tailwind Admin Panel (50+ Custom Widgets)",
+    "price": "49.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.K5VoRi7Aws_cp451ClCr6AHaD4&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmgjh00ae3gimsx3v0aqp",
+    "name": "Full-Stack Next.js 15 & Server Actions Architecture Video Bootcamp",
+    "price": "49.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Hs-wjnD2rtv6ZS1OOhkfswHaLG&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslajs005u3gimod4g2icw",
+    "name": "AI Business Chatbot Pro - Multi-Channel Conversational Agent",
+    "price": "49.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.s9XRXnu-3qFi1wwTxAWKCgHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskemj002e3gimle9fp6fu",
+    "name": "SteelSeries PrismCaps - Double Shot PBT Keycaps Set",
+    "price": "45.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71oqZPkzXqL._AC_SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmweslfo7006e3gimv0kzlv2a",
+    "name": "Whisper Real-Time Audio Transcriber API - Multi-Language Engine",
+    "price": "45.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.vDiSmdwf6B4646ZUvIdrFwHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesky7o004i3gimvkm0ktzf",
+    "name": "APC SurgeArrest Essential 6-Outlet Surge Protector Power Strip",
+    "price": "45.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.IhdudshC-yfmyuouqyN6zAHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmehy00a63gim64qm91nk",
+    "name": "Social Media Automation Scripts & Webhook Workflows (Make & Zapier)",
+    "price": "45.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.Vx94DWA09eHN4Cv9-976FAHaEA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslclw00623gimy3us4al8",
+    "name": "Voice AI Studio Suite - Ultra-Realistic Neural Speech Synthesis",
+    "price": "39.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.2BHoQh9J4DY8ilsSCZWoiQHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm59r00963gimg5xdggzs",
+    "name": "Digital Marketing Growth Bundle (Canva, Figma, Notion & Ads Templates)",
+    "price": "39.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.wH439xpTJ9bF4uSl8-uyqwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm27y008u3gim9v1vqw07",
+    "name": "Docker & Kubernetes Container Monitor GUI (Lightweight System Metrics)",
+    "price": "39.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.ZwMIbcRot-7e2jPbzTi-GAHaGv&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslmud00763gimahoxrmlg",
+    "name": "Creative Agency & Designer Portfolio Template (Dark Mode, 3D Canvas)",
+    "price": "39.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.-GVHuLnC7ihn5xW0YuoQsQAAAA&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslz41008i3gim7cv140b4",
+    "name": "ScreenCapture & Video Studio Desktop (4K60 Recording, Instant Annotations)",
+    "price": "39.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71CD0vTppgL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesmaef009q3gimlm1f19wy",
+    "name": "Google Ads Performance Max & Search ROI Campaign Matrix (Spreadsheets)",
+    "price": "39.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.cChYUelRLAD4WcvH0SWvNAHaEe&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskbk700223gimdmapgt05",
+    "name": "Orbitkey Desk Mat with Magnetic Cable Holder (Large, Black)",
+    "price": "39.00",
+    "imageUrl": "https://ts4.explicit.bing.net/th?id=OIP.PKwDaPh6G6uVV_IfXmsD5AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmmn400b23gimztwimwrn",
+    "name": "System Design Interview Bible - High-Scale Architecture Real-World Case Studies",
+    "price": "39.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61ie-pLtXbL._AC_SL3840_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesmlmm00ay3gimf5rejgwc",
+    "name": "The $100k Developer Solopreneur Playbook (Idea to Profitable SaaS)",
+    "price": "35.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61KBgtIGGML._SL1500_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesmdhc00a23gimix4m3hyv",
+    "name": "Influencer & Creator Partnership CRM System (Outreach, Contracts, ROI Tracker)",
+    "price": "35.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.XbPJ00ifZ0IGzCnzVRr2UAHaEz&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslgp1006i3gimcf1u54ki",
+    "name": "AI Copywriting & Landing Page Engine - High-Converting Sales Copy",
+    "price": "35.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.YLP3FlE8gEWXBRizZr0eAwHaGC&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm069008m3gimmlbslbuq",
+    "name": "Markdown Knowledge Vault Desktop (Bi-Directional Linking, Local-First)",
+    "price": "35.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.gdKxuXffzlVwHvusrmRLygHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslryi007q3gimlg3ga1nq",
+    "name": "Developer Documentation & API Reference Theme (Mintlify/Nextra Style)",
+    "price": "35.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.z-7-NV9HZvnYdMrcM1yRSwHaEg&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskov9003i3gimr4li5a9q",
+    "name": "Stedman Corporation Proscreen XL Professional Studio Pop Filter",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.TM_yxlBGNbWvoM9QrVRaUAHaIX&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslenj006a3gim3o9mwkuw",
+    "name": "Midjourney Master Prompt System - Commercial Visual Generation Kit",
+    "price": "29.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.6cMjIMTM2NKz2uMMmDLA1wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslsz2007u3gimxuv95djr",
+    "name": "Global Tech Summit & Conference Landing Theme (Schedule, Speaker Bios)",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.jwsgE3k7wufBsIybs9v-5AHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslw1100863gimoyphi2s2",
+    "name": "DevFlow Pro Developer IDE Extension (AI Code Review, Git Graph)",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP._PdUh0_8RyRA4tvxABs0kQHaEK&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm38j008y3gimjdvs5pum",
+    "name": "REST & GraphQL High-Performance API Testing CLI (Automated Test Suites)",
+    "price": "29.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.9v__gX_BrEX1cMf0uGCwtQHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmfii00aa3gimhmaffuj5",
+    "name": "Digital Marketing Masterclass 2026 - Complete Full-Funnel Video Course",
+    "price": "29.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.BFWtzqGy3Yqb_oGaZDJmTAHaD0&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmklw00au3gimzghn6s9k",
+    "name": "Modern TypeScript Enterprise Patterns & Architecture Handbook",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.awgIbqKDRcAnitYIdP1MgwHaE8&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweslpx2007i3gimpyfa7r2s",
+    "name": "Minimalist Developer Blog & Substack-Style Newsletter Starter (MDX)",
+    "price": "29.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.iqUJzH2vbXGRlt75FlBLJQHaFj&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmbf4009u3gimus9ubwm4",
+    "name": "B2B Cold Outreach Email Master Vault (100+ Enterprise Closed Deals)",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.Wh8-U6Df9VMjdScpSNigGwHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm8cw009i3gims9gj19g5",
+    "name": "Email Newsletter Revenue Launch Kit (Klaviyo & Mailchimp Automation Flows)",
+    "price": "29.00",
+    "imageUrl": "https://ts2.mm.bing.net/th?id=OIP.Hrhfo3RU0qtvyEipp1RPogHaNM&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskw3v004a3gimq3f6sy60",
+    "name": "Cable Matters Intel Certified 40Gbps Thunderbolt 4 Cable (2-Pack, 2m)",
+    "price": "29.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/61EmRQMWxCL._AC_SY300_SX300_QL70_ML2_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesmjld00aq3gim8txvwvcc",
+    "name": "Advanced CSS, Tailwind CSS & Framer Motion Animations Masterclass",
+    "price": "25.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.xIPHgZzeKwYkp7i5GEgS0AHaDt&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmcg4009y3gimwtcp31za",
+    "name": "Omnichannel Content Repurposing Playbook (Turn 1 Long Video into 20 Assets)",
+    "price": "25.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.cdJ_O_lc4W72Ew6Lcp7yOQHaE7&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesly2m008e3gim93ptnfzg",
+    "name": "GitCommit AI Terminal Assistant (Automated Conventional Commit Generator)",
+    "price": "25.00",
+    "imageUrl": "https://ts1.mm.bing.net/th?id=OIP.Im7h1vT4JpmaEKJmVAF25wHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmweskx6e004e3gimq8iarbhp",
+    "name": "Anker Magnetic Cable Holder - Desktop Cord Management Organizer",
+    "price": "24.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/71kjAYiudvL._AC_.jpg",
+    "source": "amazon-cdn"
+  },
+  {
+    "id": "cmwesm6an009a3gimhml5z85y",
+    "name": "SEO Growth Blueprint 2026 - Complete Organic Search Domination Playbook",
+    "price": "24.00",
+    "imageUrl": "https://ts4.mm.bing.net/th?id=OIP.Mv4ovU1wn024UIzVM3bwoQHaE8&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesl9iv005q3gim6lw0w7um",
+    "name": "Altura Photo Professional Camera Cleaning Kit for DSLR & Mirrorless",
+    "price": "24.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.X6UaJ919hHDn7wkcdPdldgHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesm7bu009e3gimma88jzxd",
+    "name": "Viral Ad Hooks & TikTok Scripts Pack (500+ Tested E-Commerce Formats)",
+    "price": "19.00",
+    "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.WroAPSu3Kn3uV5JtSW5iigHaHa&w=800&h=800&c=7&rs=1&p=0",
+    "source": "bing-hires"
+  },
+  {
+    "id": "cmwesmhk100ai3gimfe3pdpyk",
+    "name": "The AI Engineering & Prompt Systems Handbook (E-Book + Code Repository)",
+    "price": "19.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/718UareuKGL._SL1500_.jpg",
+    "source": "amazon-cdn"
+  }
+]
