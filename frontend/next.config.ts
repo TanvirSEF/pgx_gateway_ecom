@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "api.pgxmarketplace.shop",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "pgxmarketplace.shop",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "m.media-amazon.com",
         pathname: "/**",
       },

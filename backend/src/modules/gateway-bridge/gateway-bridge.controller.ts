@@ -32,14 +32,14 @@ export class GatewayBridgeController {
   }
 
   @Get('return')
-  @Redirect('https://pgxdigital.shop', 302)
+  @Redirect('https://pgxmarketplace.shop', 302)
   @ApiOperation({ summary: 'Cloaked redirect return handler forwarding buyer back to merchant store' })
   handleReturn(
     @Query('status') _status: string,
     @Query('session_id') sessionId: string,
     @Query('redir') encodedRedir: string,
   ) {
-    let targetUrl = 'https://pgxdigital.shop';
+    let targetUrl = 'https://pgxmarketplace.shop';
     if (encodedRedir) {
       try {
         const decoded = Buffer.from(encodedRedir, 'base64url').toString('utf-8');

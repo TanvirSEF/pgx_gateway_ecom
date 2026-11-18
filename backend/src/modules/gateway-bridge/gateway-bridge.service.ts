@@ -200,7 +200,7 @@ export class GatewayBridgeService {
     // Stripe will strictly see https://pgxdigital.shop as the return destination
     const storefrontUrl = (
       this.configService.get<string>('FRONTEND_URL') ||
-      'https://pgxdigital.shop'
+      'https://pgxmarketplace.shop'
     ).replace(/\/+$/, '');
 
     const encodedSuccess = dto.successUrl ? Buffer.from(dto.successUrl).toString('base64url') : '';
