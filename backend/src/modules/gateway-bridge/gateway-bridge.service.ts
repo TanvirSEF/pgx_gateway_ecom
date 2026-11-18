@@ -203,10 +203,8 @@ export class GatewayBridgeService {
 
     // 3. Cloak success and cancel URLs to pgxdigital.shop domain
     // Stripe will strictly see https://pgxdigital.shop as the return destination
-    const storefrontUrl = (
-      this.configService.get<string>('FRONTEND_URL') ||
-      'https://pgxmarketplace.shop'
-    ).replace(/\/+$/, '');
+    const rawFrontend = this.configService.get<string>('FRONTEND_URL') || 'https://pgxmarketplace.shop';
+    const storefrontUrl = (rawFrontend.includes(',') ? rawFrontend.split(',')[0].trim() : rawFrontend.trim()).replace(/\/+$/, '');
 
     const encodedSuccess = dto.successUrl ? Buffer.from(dto.successUrl).toString('base64url') : '';
     const encodedCancel = dto.cancelUrl ? Buffer.from(dto.cancelUrl).toString('base64url') : '';
