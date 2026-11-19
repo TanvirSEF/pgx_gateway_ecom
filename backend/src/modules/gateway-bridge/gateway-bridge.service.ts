@@ -201,16 +201,18 @@ export class GatewayBridgeService {
       cart_id: `CR-${Date.now().toString(36).toUpperCase()}`,
     };
 
-    // 3. Cloak success and cancel URLs to pgxdigital.shop domain
-    // Stripe will strictly see https://pgxdigital.shop as the return destination
-    const rawFrontend = this.configService.get<string>('FRONTEND_URL') || 'https://pgxmarketplace.shop';
-    const storefrontUrl = (rawFrontend.includes(',') ? rawFrontend.split(',')[0].trim() : rawFrontend.trim()).replace(/\/+$/, '');
+    // 3. Cloak success and cancel URLs to backend bridge domain
+    // Stripe will strictly see https://api.pgxmarketplace.shop as the return destination
+    const backendApiUrl = (
+      this.configService.get<string>('BACKEND_URL') ||
+      'https://api.pgxmarketplace.shop'
+    ).replace(/\/+$/, '');
 
     const encodedSuccess = dto.successUrl ? Buffer.from(dto.successUrl).toString('base64url') : '';
     const encodedCancel = dto.cancelUrl ? Buffer.from(dto.cancelUrl).toString('base64url') : '';
 
-    const cloakedSuccessUrl = `${storefrontUrl}/api/gateway-bridge/return?status=success&session_id={CHECKOUT_SESSION_ID}&redir=${encodedSuccess}`;
-    const cloakedCancelUrl = `${storefrontUrl}/api/gateway-bridge/return?status=cancel&redir=${encodedCancel}`;
+    const cloakedSuccessUrl = `${backendApiUrl}/api/gateway-bridge/return?status=success&session_id={CHECKOUT_SESSION_ID}&redir=${encodedSuccess}`;
+    const cloakedCancelUrl = `${backendApiUrl}/api/gateway-bridge/return?status=cancel&redir=${encodedCancel}`;
 
     try {
       const session = await stripeClient.checkout.sessions.create({
