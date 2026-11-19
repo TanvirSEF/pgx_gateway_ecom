@@ -2,15 +2,15 @@ import {
   Body,
   Controller,
   Get,
-  Header,
   HttpCode,
   HttpStatus,
   Post,
   Query,
-  Redirect,
+  Res,
   UseGuards,
 } from '@nestjs/common';
 import { ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import type { Response } from 'express';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
 import { GatewayBridgeGuard } from './gateway-bridge.guard';
 import { GatewayBridgeService } from './gateway-bridge.service';
@@ -33,10 +33,8 @@ export class GatewayBridgeController {
   }
 
   @Get('pay')
-  @Header('Content-Type', 'text/html; charset=utf-8')
-  @Header('Referrer-Policy', 'no-referrer')
   @ApiOperation({ summary: 'Anonymized payment relay page that strips merchant origin and redirects to Stripe Checkout' })
-  handlePay(@Query('s') encodedUrl: string) {
+  handlePay(@Query('s') encodedUrl: string, @Res() res: Response) {
     let targetStripeUrl = 'https://pgxmarketplace.shop';
     if (encodedUrl) {
       try {
@@ -49,7 +47,9 @@ export class GatewayBridgeController {
       }
     }
 
-    return `<!DOCTYPE html>
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.setHeader('Referrer-Policy', 'no-referrer');
+    return res.send(`<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -96,16 +96,17 @@ export class GatewayBridgeController {
     }
   </script>
 </body>
-</html>`;
+</html>`);
   }
 
   @Get('return')
-  @Redirect('https://pgxmarketplace.shop', 302)
   @ApiOperation({ summary: 'Cloaked redirect return handler forwarding buyer back to merchant store' })
   handleReturn(
     @Query('status') _status: string,
     @Query('session_id') sessionId: string,
     @Query('redir') encodedRedir: string,
+    @Query('target') rawTarget: string,
+    @Res() res: Response,
   ) {
     let targetUrl = 'https://pgxmarketplace.shop';
     if (encodedRedir) {
@@ -113,17 +114,23 @@ export class GatewayBridgeController {
         const decoded = Buffer.from(encodedRedir, 'base64url').toString('utf-8');
         if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
           targetUrl = decoded;
-          if (sessionId && targetUrl.includes('{CHECKOUT_SESSION_ID}')) {
-            targetUrl = targetUrl.replace('{CHECKOUT_SESSION_ID}', encodeURIComponent(sessionId));
-          } else if (sessionId && !targetUrl.includes('session_id=')) {
-            const separator = targetUrl.includes('?') ? '&' : '?';
-            targetUrl = `${targetUrl}${separator}session_id=${encodeURIComponent(sessionId)}`;
-          }
         }
       } catch {
-        // Fallback to pgxdigital.shop
+        // Fallback
+      }
+    } else if (rawTarget && (rawTarget.startsWith('http://') || rawTarget.startsWith('https://'))) {
+      targetUrl = rawTarget;
+    }
+
+    if (targetUrl !== 'https://pgxmarketplace.shop') {
+      if (sessionId && targetUrl.includes('{CHECKOUT_SESSION_ID}')) {
+        targetUrl = targetUrl.replace('{CHECKOUT_SESSION_ID}', encodeURIComponent(sessionId));
+      } else if (sessionId && !targetUrl.includes('session_id=')) {
+        const separator = targetUrl.includes('?') ? '&' : '?';
+        targetUrl = `${targetUrl}${separator}session_id=${encodeURIComponent(sessionId)}`;
       }
     }
-    return { url: targetUrl };
+
+    return res.redirect(302, targetUrl);
   }
 }
