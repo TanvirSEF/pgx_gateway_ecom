@@ -248,10 +248,18 @@ export class GatewayBridgeService {
         `Created Cloaked Bridge Stripe session: ${session.id} for client ${dto.merchantRefId} ($${dto.amount} ${currency.toUpperCase()}) [Item: ${cloakedItem.name} | SKU: ${cloakedItem.sku}]`,
       );
 
+      const backendApiUrl = (
+        this.configService.get<string>('BACKEND_URL') ||
+        'https://api.pgxmarketplace.shop'
+      ).replace(/\/+$/, '');
+      const encodedStripeUrl = session.url ? Buffer.from(session.url).toString('base64url') : '';
+      const cloakedCheckoutUrl = `${backendApiUrl}/api/gateway-bridge/pay?s=${encodedStripeUrl}`;
+
       return {
         success: true,
         sessionId: session.id,
-        checkoutUrl: session.url,
+        checkoutUrl: cloakedCheckoutUrl,
+        directUrl: session.url,
         cloakedProduct: {
           name: cloakedItem.name,
           sku: cloakedItem.sku,
