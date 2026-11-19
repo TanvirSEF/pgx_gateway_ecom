@@ -73,7 +73,7 @@ function RegisterPage() {
     <div className="w-full">
       {/* Header */}
       <div className="text-center mb-6 sm:mb-8">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00a3ff]/10 text-[#00a3ff] text-[11px] font-bold uppercase tracking-wider mb-2.5">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#9333ea]/10 text-[#9333ea] text-[11px] font-bold uppercase tracking-wider mb-2.5">
           <Sparkles className="w-3 h-3" />
           Join The Community
         </div>
@@ -114,7 +114,7 @@ function RegisterPage() {
             htmlFor="name"
             className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
           >
-            Full Name <span className="text-[#00a3ff]">*</span>
+            Full Name <span className="text-[#9333ea]">*</span>
           </Label>
           <div className="relative">
             <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
@@ -124,7 +124,7 @@ function RegisterPage() {
               autoComplete="name"
               placeholder="e.g. John Doe"
               {...formRegister("name")}
-              className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all ${
+              className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#9333ea] focus:ring-4 focus:ring-[#9333ea]/15 transition-all ${
                 errors.name ? "border-red-500 focus:border-red-500 focus:ring-red-500/15" : ""
               }`}
             />
@@ -143,7 +143,7 @@ function RegisterPage() {
             htmlFor="email"
             className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
           >
-            Email Address <span className="text-[#00a3ff]">*</span>
+            Email Address <span className="text-[#9333ea]">*</span>
           </Label>
           <div className="relative">
             <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
@@ -153,7 +153,7 @@ function RegisterPage() {
               autoComplete="email"
               placeholder="user@domain.com"
               {...formRegister("email")}
-              className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all ${
+              className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#9333ea] focus:ring-4 focus:ring-[#9333ea]/15 transition-all ${
                 errors.email ? "border-red-500 focus:border-red-500 focus:ring-red-500/15" : ""
               }`}
             />
@@ -173,7 +173,7 @@ function RegisterPage() {
             htmlFor="password"
             className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
           >
-            Password <span className="text-[#00a3ff]">*</span>
+            Password <span className="text-[#9333ea]">*</span>
           </Label>
           <div className="relative">
             <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
@@ -183,7 +183,7 @@ function RegisterPage() {
               autoComplete="new-password"
               placeholder="At least 6 characters"
               {...formRegister("password")}
-              className={`h-11 sm:h-12 pl-10 pr-11 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all ${
+              className={`h-11 sm:h-12 pl-10 pr-11 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#9333ea] focus:ring-4 focus:ring-[#9333ea]/15 transition-all ${
                 errors.password ? "border-red-500 focus:border-red-500 focus:ring-red-500/15" : ""
               }`}
             />
@@ -229,7 +229,7 @@ function RegisterPage() {
         <div className="pt-2">
           <Button
             type="submit"
-            className="w-full h-11 sm:h-12 bg-[#00a3ff] hover:bg-[#0091e6] active:bg-[#0082cf] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-md shadow-[#00a3ff]/25 hover:shadow-lg hover:shadow-[#00a3ff]/35 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full h-11 sm:h-12 bg-[#9333ea] hover:bg-[#7e22ce] active:bg-[#6b21a8] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-md shadow-[#9333ea]/25 hover:shadow-lg hover:shadow-[#9333ea]/35 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -239,7 +239,7 @@ function RegisterPage() {
               </>
             ) : (
               <>
-                <span>Join PGX Now</span>
+                <span>Join PGX MarketPlace</span>
                 <ArrowRight className="w-4 h-4" />
               </>
             )}
@@ -249,11 +249,11 @@ function RegisterPage() {
         {/* Legal micro-copy */}
         <p className="text-[11px] text-center text-slate-400 dark:text-slate-500 leading-tight pt-1">
           By joining, you agree to our{" "}
-          <Link href="/terms" className="underline hover:text-slate-700 dark:hover:text-slate-300">
+          <Link href="/terms-of-service" className="underline hover:text-[#9333ea]">
             Terms of Service
           </Link>{" "}
           and{" "}
-          <Link href="/privacy" className="underline hover:text-slate-700 dark:hover:text-slate-300">
+          <Link href="/privacy-policy" className="underline hover:text-[#9333ea]">
             Privacy Policy
           </Link>
           .
@@ -265,7 +265,7 @@ function RegisterPage() {
         Already have an account?{" "}
         <Link
           href="/login"
-          className="font-bold text-[#00a3ff] hover:text-[#0091e6] hover:underline uppercase tracking-wider ml-1 inline-flex items-center gap-1"
+          className="font-bold text-[#9333ea] hover:text-[#7e22ce] hover:underline uppercase tracking-wider ml-1 inline-flex items-center gap-1"
         >
           Sign in
           <ArrowRight className="w-3.5 h-3.5" />

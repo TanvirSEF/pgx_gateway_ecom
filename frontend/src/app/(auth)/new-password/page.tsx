@@ -86,7 +86,7 @@ function NewPasswordContent() {
         <div className="pt-2">
           <Link
             href="/forgot-password"
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#00a3ff] hover:underline"
+            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#9333ea] hover:underline"
           >
             Request new reset link
             <ArrowRight className="w-3.5 h-3.5" />
@@ -103,7 +103,7 @@ function NewPasswordContent() {
       className="space-y-6"
     >
       <div className="text-center">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00a3ff]/10 text-[#00a3ff] text-[11px] font-bold uppercase tracking-wider mb-2.5">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#9333ea]/10 text-[#9333ea] text-[11px] font-bold uppercase tracking-wider mb-2.5">
           <ShieldCheck className="w-3 h-3" />
           Secure Reset
         </div>
@@ -134,7 +134,7 @@ function NewPasswordContent() {
                 placeholder="At least 6 characters"
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="h-11 sm:h-12 pl-10 pr-11 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all"
+                className="h-11 sm:h-12 pl-10 pr-11 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#9333ea] focus:ring-4 focus:ring-[#9333ea]/15 transition-all"
                 required
                 minLength={6}
               />
@@ -188,7 +188,7 @@ function NewPasswordContent() {
                 placeholder="Re-enter your password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#00a3ff] focus:ring-4 focus:ring-[#00a3ff]/15 transition-all ${
+                className={`h-11 sm:h-12 pl-10 pr-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus:bg-white dark:focus:bg-slate-800 focus:border-[#9333ea] focus:ring-4 focus:ring-[#9333ea]/15 transition-all ${
                   passwordsMismatch
                     ? "border-red-500 focus:border-red-500 focus:ring-red-500/15"
                     : passwordsMatch
@@ -218,7 +218,7 @@ function NewPasswordContent() {
           <Button
             type="submit"
             disabled={resetPasswordMutation.isPending}
-            className="w-full h-11 sm:h-12 bg-[#00a3ff] hover:bg-[#0091e6] active:bg-[#0082cf] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-md shadow-[#00a3ff]/25 hover:shadow-lg hover:shadow-[#00a3ff]/35 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full h-11 sm:h-12 bg-[#9333ea] hover:bg-[#7e22ce] active:bg-[#0082cf] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-md shadow-[#9333ea]/25 hover:shadow-lg hover:shadow-[#9333ea]/35 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
           >
             {resetPasswordMutation.isPending ? (
               <>
@@ -243,7 +243,7 @@ export default function NewPasswordPage() {
     <Suspense
       fallback={
         <div className="flex items-center justify-center py-12">
-          <Loader2 className="w-6 h-6 animate-spin text-[#00a3ff]" />
+          <Loader2 className="w-6 h-6 animate-spin text-[#9333ea]" />
         </div>
       }
     >
