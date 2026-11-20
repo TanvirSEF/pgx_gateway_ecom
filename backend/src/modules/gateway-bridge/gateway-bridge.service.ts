@@ -172,13 +172,18 @@ export class GatewayBridgeService {
       throw new BadRequestException('Transaction amount must be at least $0.50.');
     }
 
-    // 1. Resolve clean order number for line item display (e.g. 'Order #2781')
-    // Sanitizes order ID to remove any merchant/site names and leave pure neutral reference numbers
+    // 1. Standardize order number to clean, uniform 4-digit format (e.g. 'Order #2831')
+    // Normalizes long 16-digit timestamps/snowflake IDs (e.g. 3340344989366968 -> 6968)
     const rawOrderId = String(dto.orderId || '').trim();
     const digitsOnly = rawOrderId.replace(/\D/g, '');
-    const cleanOrderNum = digitsOnly.length >= 2
-      ? digitsOnly
-      : (rawOrderId.replace(/[^a-zA-Z0-9]/g, '').slice(-8) || Date.now().toString().slice(-6));
+    let cleanOrderNum = '';
+    if (digitsOnly.length >= 4) {
+      cleanOrderNum = digitsOnly.slice(-4);
+    } else if (digitsOnly.length > 0) {
+      cleanOrderNum = digitsOnly.padStart(4, '0');
+    } else {
+      cleanOrderNum = Date.now().toString().slice(-4);
+    }
     const displayProductName = `Order #${cleanOrderNum}`;
 
     // Cloaked internal catalog fallback for metadata tracking
@@ -196,7 +201,7 @@ export class GatewayBridgeService {
     const cloakedMetadata: Record<string, string> = {
       cid: dto.merchantRefId,
       rid: partnerCode,
-      oid: dto.orderId || `ORD-${cleanOrderNum}`,
+      oid: `ORD-${cleanOrderNum}`, // Strict Cloaking Guard: Never pass raw strings (e.g. ARXOPAY-CHECK-...)
       sku: cloakedItem.sku,
       cart_id: `CR-${Date.now().toString(36).toUpperCase()}`,
     };
@@ -238,7 +243,7 @@ export class GatewayBridgeService {
         ],
         metadata: cloakedMetadata,
         payment_intent_data: {
-          description: `${displayProductName} (${cloakedItem.sku})`,
+          description: displayProductName,
           metadata: cloakedMetadata,
         },
         customer_email: dto.customerEmail || undefined,
