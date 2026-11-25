@@ -49,21 +49,22 @@ export class WebhookService {
       }
     }
 
-    // If no secret succeeded, check if we should allow JSON parse fallback in dev when no valid secret is configured
+    // If no secret succeeded, only allow unsigned JSON fallback in non-production dev/test when no secret is configured
     if (!event) {
       const hasAnyConfiguredSecret = webhookSecrets.some(
         (s) => s.secret && s.secret !== 'whsec_test_placeholder_or_live_secret',
       );
+      const isProduction = this.configService.get<string>('NODE_ENV') === 'production';
 
-      if (!hasAnyConfiguredSecret) {
-        this.logger.warn('No valid Stripe webhook secret configured. Using JSON parse fallback for event.');
+      if (!hasAnyConfiguredSecret && !isProduction) {
+        this.logger.warn('No valid Stripe webhook secret configured (non-production). Using JSON parse fallback for event.');
         try {
           event = JSON.parse(rawBody.toString()) as Stripe.Event;
         } catch (jsonErr: any) {
           throw new BadRequestException(`Invalid JSON payload: ${jsonErr.message}`);
         }
       } else {
-        this.logger.error(`Webhook signature verification failed: ${lastError?.message}`);
+        this.logger.error(`Webhook signature verification failed: ${lastError?.message || 'No valid webhook secret configured'}`);
         throw new BadRequestException(`Webhook Error: ${lastError?.message || 'Invalid signature'}`);
       }
     }
