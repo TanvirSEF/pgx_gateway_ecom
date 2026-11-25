@@ -1,40 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { env } from '@/env';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const sessionId = searchParams.get('session_id') || '';
-  const redir = searchParams.get('redir') || '';
-  const rawTarget = searchParams.get('target') || '';
+  const apiBase = env.NEXT_PUBLIC_API_URL.replace(/\/+$/, '');
+  const backendReturnUrl = new URL(`${apiBase}/gateway-bridge/return`);
 
-  let targetUrl = 'https://pgxmarketplace.shop';
+  searchParams.forEach((value, key) => {
+    backendReturnUrl.searchParams.set(key, value);
+  });
 
-  if (redir) {
-    try {
-      const decoded = Buffer.from(redir, 'base64url').toString('utf-8');
-      if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
-        targetUrl = decoded;
-      }
-    } catch {
-      // Fallback to homepage
-    }
-  } else if (rawTarget && (rawTarget.startsWith('http://') || rawTarget.startsWith('https://'))) {
-    targetUrl = rawTarget;
-  }
-
-  if (targetUrl !== 'https://pgxmarketplace.shop') {
-    if (sessionId && targetUrl.includes('{CHECKOUT_SESSION_ID}')) {
-      targetUrl = targetUrl.replace('{CHECKOUT_SESSION_ID}', encodeURIComponent(sessionId));
-    } else if (sessionId && !targetUrl.includes('session_id=')) {
-      const separator = targetUrl.includes('?') ? '&' : '?';
-      targetUrl = `${targetUrl}${separator}session_id=${encodeURIComponent(sessionId)}`;
-    }
-  }
-
-  try {
-    return NextResponse.redirect(targetUrl, 302);
-  } catch {
-    return NextResponse.redirect(new URL('/', req.url), 302);
-  }
+  return NextResponse.redirect(backendReturnUrl.toString(), {
+    status: 302,
+    headers: {
+      'Referrer-Policy': 'no-referrer',
+    },
+  });
 }

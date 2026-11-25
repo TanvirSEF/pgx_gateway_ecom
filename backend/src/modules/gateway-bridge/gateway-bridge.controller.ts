@@ -9,16 +9,21 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import type { Response } from 'express';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
 import { GatewayBridgeGuard } from './gateway-bridge.guard';
 import { GatewayBridgeService } from './gateway-bridge.service';
+import { openRedirectUrl } from './redirect-token.helper';
 
 @ApiTags('Gateway Bridge')
 @Controller('gateway-bridge')
 export class GatewayBridgeController {
-  constructor(private readonly gatewayBridgeService: GatewayBridgeService) {}
+  constructor(
+    private readonly gatewayBridgeService: GatewayBridgeService,
+    private readonly configService: ConfigService,
+  ) {}
 
   @Post('initiate')
   @HttpCode(HttpStatus.OK)
@@ -104,25 +109,19 @@ export class GatewayBridgeController {
   handleReturn(
     @Query('status') _status: string,
     @Query('session_id') sessionId: string,
-    @Query('redir') encodedRedir: string,
-    @Query('target') rawTarget: string,
+    @Query('redir') sealedRedir: string,
     @Res() res: Response,
   ) {
-    let targetUrl = 'https://pgxmarketplace.shop';
-    if (encodedRedir) {
-      try {
-        const decoded = Buffer.from(encodedRedir, 'base64url').toString('utf-8');
-        if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
-          targetUrl = decoded;
-        }
-      } catch {
-        // Fallback
-      }
-    } else if (rawTarget && (rawTarget.startsWith('http://') || rawTarget.startsWith('https://'))) {
-      targetUrl = rawTarget;
-    }
+    const defaultDestination = 'https://pgxmarketplace.shop';
+    const redirectSecret =
+      this.configService.get<string>('GATEWAY_REDIRECT_SECRET') ||
+      this.configService.get<string>('GATEWAY_BRIDGE_SECRET') ||
+      this.configService.get<string>('JWT_SECRET') ||
+      '';
 
-    if (targetUrl !== 'https://pgxmarketplace.shop') {
+    let targetUrl = openRedirectUrl(sealedRedir, redirectSecret) || defaultDestination;
+
+    if (targetUrl !== defaultDestination) {
       if (sessionId && targetUrl.includes('{CHECKOUT_SESSION_ID}')) {
         targetUrl = targetUrl.replace('{CHECKOUT_SESSION_ID}', encodeURIComponent(sessionId));
       } else if (sessionId && !targetUrl.includes('session_id=')) {
@@ -131,6 +130,7 @@ export class GatewayBridgeController {
       }
     }
 
+    res.setHeader('Referrer-Policy', 'no-referrer');
     return res.redirect(302, targetUrl);
   }
 }

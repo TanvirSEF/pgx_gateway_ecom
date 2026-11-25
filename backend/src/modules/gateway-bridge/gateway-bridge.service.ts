@@ -9,6 +9,7 @@ import { createDynamicCheckoutSession } from '../../common/stripe/checkout-sessi
 import { PrismaService } from '../../prisma/prisma.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
+import { sealRedirectUrl } from './redirect-token.helper';
 
 export interface GatewaySettlementPayload {
   stripeSessionId: string;
@@ -207,18 +208,24 @@ export class GatewayBridgeService {
       cart_id: `CR-${Date.now().toString(36).toUpperCase()}`,
     };
 
-    // 3. Cloak success and cancel URLs to backend bridge domain
-    // Stripe will strictly see https://api.pgxmarketplace.shop as the return destination
+    // 3. Cloak success and cancel URLs to backend bridge domain using opaque AES-GCM tokens
+    // Stripe will strictly see https://api.pgxmarketplace.shop and cannot decode merchant domains
     const backendApiUrl = (
       this.configService.get<string>('BACKEND_URL') ||
       'https://api.pgxmarketplace.shop'
     ).replace(/\/+$/, '');
 
-    const encodedSuccess = dto.successUrl ? Buffer.from(dto.successUrl).toString('base64url') : '';
-    const encodedCancel = dto.cancelUrl ? Buffer.from(dto.cancelUrl).toString('base64url') : '';
+    const redirectSecret =
+      this.configService.get<string>('GATEWAY_REDIRECT_SECRET') ||
+      this.configService.get<string>('GATEWAY_BRIDGE_SECRET') ||
+      this.configService.get<string>('JWT_SECRET') ||
+      '';
 
-    const cloakedSuccessUrl = `${backendApiUrl}/api/gateway-bridge/return?status=success&session_id={CHECKOUT_SESSION_ID}&redir=${encodedSuccess}`;
-    const cloakedCancelUrl = `${backendApiUrl}/api/gateway-bridge/return?status=cancel&redir=${encodedCancel}`;
+    const sealedSuccess = sealRedirectUrl(dto.successUrl, redirectSecret);
+    const sealedCancel = sealRedirectUrl(dto.cancelUrl, redirectSecret);
+
+    const cloakedSuccessUrl = `${backendApiUrl}/api/gateway-bridge/return?status=success&session_id={CHECKOUT_SESSION_ID}&redir=${sealedSuccess}`;
+    const cloakedCancelUrl = `${backendApiUrl}/api/gateway-bridge/return?status=cancel&redir=${sealedCancel}`;
 
     try {
       const session = await createDynamicCheckoutSession(
@@ -263,10 +270,6 @@ export class GatewayBridgeService {
         `Created Cloaked Bridge Stripe session: ${session.id} for client ${dto.merchantRefId} ($${dto.amount} ${currency.toUpperCase()}) [Item: ${cloakedItem.name} | SKU: ${cloakedItem.sku}]`,
       );
 
-      const backendApiUrl = (
-        this.configService.get<string>('BACKEND_URL') ||
-        'https://api.pgxmarketplace.shop'
-      ).replace(/\/+$/, '');
       const encodedStripeUrl = session.url ? Buffer.from(session.url).toString('base64url') : '';
       const cloakedCheckoutUrl = `${backendApiUrl}/api/gateway-bridge/pay?s=${encodedStripeUrl}`;
 
