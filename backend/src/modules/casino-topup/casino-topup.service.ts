@@ -9,6 +9,7 @@
 // one wallet and one payment attempt.").
 import { Injectable, Logger, ServiceUnavailableException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { createDynamicCheckoutSession } from '../../common/stripe/checkout-session.helper';
 import { VerifiedHandoff } from '../wallet-bridge/handoff.types';
 import { CasinoTopupStripeConfig } from './casino-topup-stripe.config';
 import { WalletTopupService } from '../wallet-topup/topup.service';
@@ -73,10 +74,10 @@ export class CasinoTopupService {
     const cancelUrl = `${verified.returnUrl || frontendUrl}?status=cancelled&topup=${idempotencyKey}`;
 
     try {
-      const session = await client.checkout.sessions.create(
+      const session = await createDynamicCheckoutSession(
+        client,
         {
           mode: 'payment',
-          payment_method_types: ['card'],
           line_items: [
             {
               price_data: {
@@ -102,7 +103,11 @@ export class CasinoTopupService {
         // Stripe-level idempotency: a retried create() call for the SAME
         // key returns the ALREADY-created session instead of minting a
         // second one - defense in depth alongside the Mongo-level check above.
-        { idempotencyKey: `stripe-checkout-${idempotencyKey}` },
+        {
+          configService: this.configService,
+          requestOptions: { idempotencyKey: `stripe-checkout-${idempotencyKey}` },
+          logger: this.logger,
+        },
       );
 
       await this.topupService.setStripeSessionId(idempotencyKey, session.id);

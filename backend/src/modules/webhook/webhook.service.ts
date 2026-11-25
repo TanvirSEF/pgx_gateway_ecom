@@ -71,9 +71,15 @@ export class WebhookService {
     this.logger.log(`Received Stripe webhook event: ${event.type} [${event.id}]`);
 
     switch (event.type) {
-      case 'checkout.session.completed': {
+      case 'checkout.session.completed':
+      case 'checkout.session.async_payment_succeeded': {
         const session = event.data.object as Stripe.Checkout.Session;
         await this.processCheckoutSessionCompleted(session, event.id);
+        break;
+      }
+      case 'checkout.session.async_payment_failed': {
+        const session = event.data.object as Stripe.Checkout.Session;
+        await this.processCheckoutSessionAsyncFailed(session);
         break;
       }
       default:
@@ -84,6 +90,16 @@ export class WebhookService {
   }
 
   private async processCheckoutSessionCompleted(session: Stripe.Checkout.Session, eventId: string) {
+    // Delayed/async payment methods (e.g. SEPA Direct Debit, ACH) fire
+    // checkout.session.completed with payment_status === 'unpaid' and settle
+    // later via checkout.session.async_payment_succeeded. Never fulfill early.
+    if (session.payment_status && session.payment_status !== 'paid' && session.payment_status !== 'no_payment_required') {
+      this.logger.log(
+        `Checkout session ${session.id} has payment_status=${session.payment_status}; awaiting async settlement before fulfilling.`,
+      );
+      return;
+    }
+
     // 1. Check if session originated from Gateway Bridge (supports disguised 'cid' or legacy 'merchant_ref_id' / 'source')
     if (session.metadata?.cid || session.metadata?.merchant_ref_id || session.metadata?.source === 'pgx_gateway') {
       await this.processGatewayBridgePayment(session, eventId);
@@ -288,5 +304,38 @@ export class WebhookService {
         `Settlement forwarding to PGX Gateway returned unsuccessful status for session ${session.id}. May require retry.`,
       );
     }
+  }
+
+  private async processCheckoutSessionAsyncFailed(session: Stripe.Checkout.Session) {
+    this.logger.warn(`Async Stripe Checkout payment failed for session ${session.id}`);
+
+    if (session.metadata?.type !== 'order_payment') {
+      return;
+    }
+
+    const orderId = session.metadata?.orderId;
+    const orderNumber = session.metadata?.orderNumber;
+    if (!orderId && !orderNumber) return;
+
+    const order = await this.prisma.order.findFirst({
+      where: orderId ? { id: orderId } : { orderNumber },
+    });
+
+    if (!order || order.paymentStatus === PaymentStatus.PAID || order.status === OrderStatus.CANCELLED) {
+      return;
+    }
+
+    await this.prisma.order.update({
+      where: { id: order.id },
+      data: {
+        status: OrderStatus.CANCELLED,
+        statusHistory: {
+          create: {
+            status: OrderStatus.CANCELLED,
+            note: `Async payment failed via Stripe Checkout (Session: ${session.id})`,
+          },
+        },
+      },
+    });
   }
 }

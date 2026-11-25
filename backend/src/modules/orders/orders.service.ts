@@ -8,6 +8,7 @@ import {
 import { ConfigService } from '@nestjs/config';
 import { OrderStatus, PaymentMethod, PaymentStatus, Prisma } from '@prisma/client';
 import { CouponsService } from 'modules/coupons/service';
+import { createDynamicCheckoutSession } from '../../common/stripe/checkout-session.helper';
 import { PrismaService } from '../../prisma/prisma.service';
 import { MailService } from '../mail/mail.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
@@ -281,25 +282,32 @@ export class OrdersService {
             ? (await this.prisma.user.findUnique({ where: { id: data.userId } }))?.email
             : undefined);
 
-        const session = await stripeClient.checkout.sessions.create({
-          payment_method_types: ['card'],
-          mode: 'payment',
-          customer_email: customerEmail || undefined,
-          line_items,
-          discounts: discounts.length > 0 ? discounts : undefined,
-          metadata: {
-            orderId: order.id,
-            orderNumber: order.orderNumber,
-            type: 'order_payment',
+        const session = await createDynamicCheckoutSession(
+          stripeClient,
+          {
+            mode: 'payment',
+            customer_email: customerEmail || undefined,
+            line_items,
+            discounts: discounts.length > 0 ? discounts : undefined,
+            metadata: {
+              orderId: order.id,
+              orderNumber: order.orderNumber,
+              type: 'order_payment',
+            },
+            success_url: `${frontendUrl}/order-confirmation/${order.orderNumber}?session_id={CHECKOUT_SESSION_ID}&payment_success=true`,
+            cancel_url: `${frontendUrl}/checkout?cancelled=true&order=${order.orderNumber}`,
           },
-          success_url: `${frontendUrl}/order-confirmation/${order.orderNumber}?session_id={CHECKOUT_SESSION_ID}&payment_success=true`,
-          cancel_url: `${frontendUrl}/checkout?cancelled=true&order=${order.orderNumber}`,
-        });
+          {
+            configService: this.configService,
+            mode: profile.mode === 'LIVE' ? 'live' : 'test',
+            logger: this.logger,
+          },
+        );
 
         checkoutUrl = session.url || undefined;
       } catch (stripeErr: any) {
         this.logger.error(`Failed to create Stripe Checkout session for order ${order.orderNumber}:`, stripeErr);
-        throw new BadRequestException(`Failed to initialize card payment: ${stripeErr.message}`);
+        throw new BadRequestException(`Failed to initialize payment: ${stripeErr.message}`);
       }
     }
 

@@ -17,6 +17,7 @@
 // (an orphaned EUR/Supabase top-up path) and the guard added for it.
 import { BadRequestException, Injectable, InternalServerErrorException, Logger, NotFoundException, ServiceUnavailableException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { createDynamicCheckoutSession } from '../../common/stripe/checkout-session.helper';
 import { PrismaService } from '../../prisma/prisma.service';
 import { GlobalUserLinkService } from '../global-user-link/global-user-link.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
@@ -165,31 +166,38 @@ export class WalletService {
       const { client: stripeClient, profile } = await this.dynamicSettingsService.getStripeClient();
       const currency = (profile.currency || 'eur').toLowerCase();
 
-      const session = await stripeClient.checkout.sessions.create({
-        payment_method_types: ['card'],
-        mode: 'payment',
-        customer_email: userEmail,
-        line_items: [
-          {
-            price_data: {
-              currency,
-              product_data: {
-                name: 'PGX Wallet Deposit',
-                description: `Add ${currency.toUpperCase()} ${dto.amount.toFixed(2)} credits to your universal PGX wallet`,
+      const session = await createDynamicCheckoutSession(
+        stripeClient,
+        {
+          mode: 'payment',
+          customer_email: userEmail,
+          line_items: [
+            {
+              price_data: {
+                currency,
+                product_data: {
+                  name: 'PGX Wallet Deposit',
+                  description: `Add ${currency.toUpperCase()} ${dto.amount.toFixed(2)} credits to your universal PGX wallet`,
+                },
+                unit_amount: amountInCents,
               },
-              unit_amount: amountInCents,
+              quantity: 1,
             },
-            quantity: 1,
+          ],
+          metadata: {
+            user_id: targetUserId,
+            amount_eur: dto.amount.toString(),
+            type: 'wallet_topup',
           },
-        ],
-        metadata: {
-          user_id: targetUserId,
-          amount_eur: dto.amount.toString(),
-          type: 'wallet_topup',
+          success_url: successUrl,
+          cancel_url: cancelUrl,
         },
-        success_url: successUrl,
-        cancel_url: cancelUrl,
-      });
+        {
+          configService: this.configService,
+          mode: profile.mode === 'LIVE' ? 'live' : 'test',
+          logger: this.logger,
+        },
+      );
 
       this.logger.log(`Created Stripe Checkout session ${session.id} for user ${userId}, amount: €${dto.amount}`);
 

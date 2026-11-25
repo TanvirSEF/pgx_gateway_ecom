@@ -5,6 +5,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { createDynamicCheckoutSession } from '../../common/stripe/checkout-session.helper';
 import { PrismaService } from '../../prisma/prisma.service';
 import { DynamicSettingsService } from '../settings/dynamic-settings.service';
 import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto';
@@ -220,36 +221,43 @@ export class GatewayBridgeService {
     const cloakedCancelUrl = `${backendApiUrl}/api/gateway-bridge/return?status=cancel&redir=${encodedCancel}`;
 
     try {
-      const session = await stripeClient.checkout.sessions.create({
-        mode: 'payment',
-        payment_method_types: ['card'],
-        payment_method_options: {
-          card: {
-            request_three_d_secure: 'any',
-          },
-        },
-        line_items: [
-          {
-            price_data: {
-              currency,
-              product_data: {
-                name: displayProductName,
-                description: `Payment for ${displayProductName}`,
-              },
-              unit_amount: unitAmountCents,
+      const session = await createDynamicCheckoutSession(
+        stripeClient,
+        {
+          mode: 'payment',
+          payment_method_options: {
+            card: {
+              request_three_d_secure: 'any',
             },
-            quantity: 1,
           },
-        ],
-        metadata: cloakedMetadata,
-        payment_intent_data: {
-          description: displayProductName,
+          line_items: [
+            {
+              price_data: {
+                currency,
+                product_data: {
+                  name: displayProductName,
+                  description: `Payment for ${displayProductName}`,
+                },
+                unit_amount: unitAmountCents,
+              },
+              quantity: 1,
+            },
+          ],
           metadata: cloakedMetadata,
+          payment_intent_data: {
+            description: displayProductName,
+            metadata: cloakedMetadata,
+          },
+          customer_email: dto.customerEmail || undefined,
+          success_url: cloakedSuccessUrl,
+          cancel_url: cloakedCancelUrl,
         },
-        customer_email: dto.customerEmail || undefined,
-        success_url: cloakedSuccessUrl,
-        cancel_url: cloakedCancelUrl,
-      });
+        {
+          configService: this.configService,
+          mode: targetMode,
+          logger: this.logger,
+        },
+      );
 
       this.logger.log(
         `Created Cloaked Bridge Stripe session: ${session.id} for client ${dto.merchantRefId} ($${dto.amount} ${currency.toUpperCase()}) [Item: ${cloakedItem.name} | SKU: ${cloakedItem.sku}]`,
