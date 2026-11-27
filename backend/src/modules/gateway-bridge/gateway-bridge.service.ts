@@ -12,7 +12,9 @@ import { InitiateGatewayCheckoutDto } from './dto/initiate-gateway-checkout.dto'
 import { sealRedirectUrl } from './redirect-token.helper';
 
 export interface GatewaySettlementPayload {
-  stripeSessionId: string;
+  status?: 'succeeded' | 'failed';
+  stripeSessionId?: string;
+  stripePaymentIntentId?: string;
   stripeEventId: string;
   merchantRefId: string;
   resellerId: string;
@@ -23,6 +25,8 @@ export interface GatewaySettlementPayload {
   customerName?: string;
   cloakedProductName?: string;
   realProductName?: string;
+  failureReason?: string;
+  declineCode?: string;
   metadata?: Record<string, any>;
 }
 
@@ -327,5 +331,55 @@ export class GatewayBridgeService {
       this.logger.error(`Network error forwarding settlement to PGX Gateway: ${fetchErr.message}`);
       return false;
     }
+  }
+
+  /**
+   * Queries Stripe directly for a Checkout Session's current payment/failure status
+   * so PGX Gateway can reconcile any stuck pending transactions.
+   */
+  async getStripeSessionStatus(sessionId: string): Promise<{
+    sessionId: string;
+    sessionStatus: string | null;
+    paymentStatus: string | null;
+    paymentIntentId: string | undefined;
+    paymentIntentStatus: string | null;
+    hasPaymentError: boolean;
+    failureReason: string | undefined;
+    declineCode: string | undefined;
+    grossAmount: number;
+    currency: string;
+    customerEmail: string | undefined;
+    customerName: string | undefined;
+  }> {
+    const modeHint = sessionId.startsWith('cs_live_') ? 'live' : sessionId.startsWith('cs_test_') ? 'test' : undefined;
+    const { client: stripeClient } = await this.dynamicSettingsService.getStripeClient(modeHint);
+
+    if (!stripeClient) {
+      throw new InternalServerErrorException('Stripe payment processor is not configured.');
+    }
+
+    const session = await stripeClient.checkout.sessions.retrieve(sessionId, {
+      expand: ['payment_intent'],
+    });
+
+    const pi = typeof session.payment_intent === 'object' && session.payment_intent !== null
+      ? (session.payment_intent as any)
+      : null;
+    const lastErr = pi?.last_payment_error;
+
+    return {
+      sessionId: session.id,
+      sessionStatus: session.status,
+      paymentStatus: session.payment_status,
+      paymentIntentId: typeof session.payment_intent === 'string' ? session.payment_intent : pi?.id,
+      paymentIntentStatus: pi?.status || null,
+      hasPaymentError: Boolean(lastErr),
+      failureReason: lastErr?.message || (session.status === 'expired' ? 'Checkout session expired without payment' : undefined),
+      declineCode: lastErr?.decline_code || lastErr?.code || (session.status === 'expired' ? 'checkout.session.expired' : undefined),
+      grossAmount: (session.amount_total || 0) / 100,
+      currency: (session.currency || 'USD').toUpperCase(),
+      customerEmail: session.customer_details?.email || session.customer_email || undefined,
+      customerName: session.customer_details?.name || undefined,
+    };
   }
 }

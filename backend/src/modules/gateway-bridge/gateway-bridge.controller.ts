@@ -4,6 +4,7 @@ import {
   Get,
   HttpCode,
   HttpStatus,
+  Param,
   Post,
   Query,
   Res,
@@ -35,6 +36,14 @@ export class GatewayBridgeController {
   @ApiResponse({ status: 401, description: 'Unauthorized / invalid bridge secret' })
   async initiateCheckout(@Body() dto: InitiateGatewayCheckoutDto) {
     return this.gatewayBridgeService.initiateCheckout(dto);
+  }
+
+  @Get('session-status/:sessionId')
+  @UseGuards(GatewayBridgeGuard)
+  @ApiOperation({ summary: 'Retrieve live Stripe status and decline details for a Checkout session' })
+  @ApiHeader({ name: 'x-gateway-bridge-secret', description: 'Shared gateway bridge secret' })
+  async getSessionStatus(@Param('sessionId') sessionId: string): Promise<Record<string, any>> {
+    return this.gatewayBridgeService.getStripeSessionStatus(sessionId);
   }
 
   @Get('pay')

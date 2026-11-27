@@ -80,7 +80,17 @@ export class WebhookService {
       }
       case 'checkout.session.async_payment_failed': {
         const session = event.data.object as Stripe.Checkout.Session;
-        await this.processCheckoutSessionAsyncFailed(session);
+        await this.processCheckoutSessionAsyncFailed(session, event.id);
+        break;
+      }
+      case 'checkout.session.expired': {
+        const session = event.data.object as Stripe.Checkout.Session;
+        await this.processCheckoutSessionExpired(session, event.id);
+        break;
+      }
+      case 'payment_intent.payment_failed': {
+        const paymentIntent = event.data.object as Stripe.PaymentIntent;
+        await this.processPaymentIntentFailed(paymentIntent, event.id, stripeClient);
         break;
       }
       default:
@@ -307,8 +317,125 @@ export class WebhookService {
     }
   }
 
-  private async processCheckoutSessionAsyncFailed(session: Stripe.Checkout.Session) {
+  private async forwardGatewayBridgeFailure(params: {
+    stripeSessionId?: string;
+    stripePaymentIntentId?: string;
+    stripeEventId: string;
+    metadata: Record<string, any>;
+    grossAmount: number;
+    currency: string;
+    customerEmail?: string;
+    customerName?: string;
+    failureReason: string;
+    declineCode: string;
+  }) {
+    const merchantRefId = params.metadata.cid || params.metadata.merchant_ref_id || '';
+    if (!merchantRefId) return;
+
+    const rawReseller = params.metadata.rid || params.metadata.reseller_id || 'admin_root';
+    const resellerId =
+      rawReseller === 'AR'
+        ? 'ARXO'
+        : rawReseller === 'PX'
+          ? 'admin_root'
+          : rawReseller;
+    const orderId = params.metadata.oid || params.metadata.order_id || '';
+
+    this.logger.warn(
+      `Forwarding PGX Gateway payment failure for client ${merchantRefId} (Session: ${params.stripeSessionId || 'N/A'}, PI: ${params.stripePaymentIntentId || 'N/A'}, Reason: ${params.declineCode})`,
+    );
+
+    await this.gatewayBridgeService.forwardSettlementToGateway({
+      status: 'failed',
+      stripeSessionId: params.stripeSessionId,
+      stripePaymentIntentId: params.stripePaymentIntentId,
+      stripeEventId: params.stripeEventId,
+      merchantRefId,
+      resellerId,
+      orderId,
+      grossAmount: params.grossAmount,
+      currency: params.currency,
+      customerEmail: params.customerEmail,
+      customerName: params.customerName,
+      failureReason: params.failureReason,
+      declineCode: params.declineCode,
+      metadata: {
+        ...params.metadata,
+        cloakedSku: params.metadata.sku || '',
+      },
+    });
+  }
+
+  private async processCheckoutSessionExpired(session: Stripe.Checkout.Session, eventId: string) {
+    const metadata = session.metadata || {};
+    if (metadata.cid || metadata.merchant_ref_id || metadata.source === 'pgx_gateway') {
+      await this.forwardGatewayBridgeFailure({
+        stripeSessionId: session.id,
+        stripeEventId: eventId,
+        metadata,
+        grossAmount: (session.amount_total || 0) / 100,
+        currency: (session.currency || 'USD').toUpperCase(),
+        customerEmail: session.customer_details?.email || session.customer_email || undefined,
+        customerName: session.customer_details?.name || undefined,
+        failureReason: 'Checkout session expired without payment',
+        declineCode: 'checkout.session.expired',
+      });
+    }
+  }
+
+  private async processPaymentIntentFailed(
+    paymentIntent: Stripe.PaymentIntent,
+    eventId: string,
+    stripeClient: Stripe,
+  ) {
+    const metadata = paymentIntent.metadata || {};
+    if (!metadata.cid && !metadata.merchant_ref_id && metadata.source !== 'pgx_gateway') {
+      return;
+    }
+
+    let resolvedSessionId: string | undefined;
+    try {
+      const sessions = await stripeClient.checkout.sessions.list({
+        payment_intent: paymentIntent.id,
+        limit: 1,
+      });
+      resolvedSessionId = sessions.data[0]?.id;
+    } catch (err: any) {
+      this.logger.warn(`Could not resolve Checkout Session for failed PI ${paymentIntent.id}: ${err.message}`);
+    }
+
+    const lastErr = paymentIntent.last_payment_error;
+    await this.forwardGatewayBridgeFailure({
+      stripeSessionId: resolvedSessionId,
+      stripePaymentIntentId: paymentIntent.id,
+      stripeEventId: eventId,
+      metadata,
+      grossAmount: (paymentIntent.amount || 0) / 100,
+      currency: (paymentIntent.currency || 'USD').toUpperCase(),
+      customerEmail: paymentIntent.receipt_email || undefined,
+      failureReason: lastErr?.message || 'Card payment declined or blocked by Stripe',
+      declineCode: lastErr?.decline_code || lastErr?.code || 'payment_failed',
+    });
+  }
+
+  private async processCheckoutSessionAsyncFailed(session: Stripe.Checkout.Session, eventId: string) {
     this.logger.warn(`Async Stripe Checkout payment failed for session ${session.id}`);
+
+    const metadata = session.metadata || {};
+    if (metadata.cid || metadata.merchant_ref_id || metadata.source === 'pgx_gateway') {
+      await this.forwardGatewayBridgeFailure({
+        stripeSessionId: session.id,
+        stripeEventId: eventId,
+        metadata,
+        grossAmount: (session.amount_total || 0) / 100,
+        currency: (session.currency || 'USD').toUpperCase(),
+        customerEmail: session.customer_details?.email || session.customer_email || undefined,
+        customerName: session.customer_details?.name || undefined,
+        failureReason: 'Async payment failed in Stripe',
+        declineCode: 'async_payment_failed',
+      });
+      return;
+    }
 
     if (session.metadata?.type !== 'order_payment') {
       return;
